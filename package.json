@@ -14,9 +14,12 @@
     "gsap": "^3.12.5",
     "next": "14.2.3",
     "react": "^18",
+    "react-bootstrap": "^2.10.2",
     "react-dom": "^18",
     "react-icon": "^1.0.0",
-    "react-icons": "^5.2.0"
+    "react-icons": "^5.2.0",
+    "react-scroll-motion": "^0.3.3",
+    "react-scroll-to-top": "^3.0.0"
   },
   "devDependencies": {
     "eslint": "^8",

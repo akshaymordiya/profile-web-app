@@ -1,21 +1,30 @@
-'use client'
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import { BiSolidPencil } from "react-icons/bi";
 import { IoReorderTwoOutline } from "react-icons/io5";
-import Header from "./Header";
-import { Offcanvas } from "react-bootstrap";
-import { useState } from "react";
 
-const HomeHeader = () => {
-  const [show, setShow] = useState(false);
+const Header = () => {
+  const [position, setPosition] = useState(window.pageYOffset);
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      let moving = window.pageYOffset;
+      setVisible(position > moving);
+      setPosition(moving);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [position]);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const cls = visible
+    ? "header-area header-transparent header-ptlr int-menu header-sticky-cloned header-pinned"
+    : "header-area header-transparent header-ptlr int-menu header-sticky-cloned";
   return (
     <>
-      <Header />
       <header>
-        <div className="header-3 header-transparent">
+        <div className={cls}>
           <div className="container-fluid">
             <div className="row align-items-center">
               <div className="col-xl-6 col-lg-6 col-md-6 col-6">
@@ -34,7 +43,7 @@ const HomeHeader = () => {
                     </a>
                   </div>
                   <div className="header-bar">
-                    <button className="bar-btn" onClick={ handleShow }>
+                    <button className="bar-btn">
                       <IoReorderTwoOutline />
                     </button>
                   </div>
@@ -44,18 +53,8 @@ const HomeHeader = () => {
           </div>
         </div>
       </header>
-      {/* <Offcanvas show={show} onHide={handleClose} responsive="lg">
-        <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Responsive offcanvas</Offcanvas.Title>
-        </Offcanvas.Header>
-        <Offcanvas.Body>
-          <p className="mb-0">
-            This is content within an <code>.offcanvas-lg</code>.
-          </p>
-        </Offcanvas.Body>
-      </Offcanvas> */}
     </>
   );
 };
 
-export default HomeHeader;
+export default Header;

@@ -5,13 +5,12 @@ import { CgArrowLongDown } from "react-icons/cg";
 import { TbArrowDownRight } from "react-icons/tb";
 
 const MainPage = () => {
-
   return (
     <>
       <HomeHeader />
       <div id="home-content">
         <main>
-          <div className="home-area black-bg-3 home-ptb z-index-1 smooth p-relative btn-trigger-3">
+          <div className="home-area black-bg-3 home-ptb z-index-1 smooth position-relative btn-trigger-3">
             <div className="shape-1">
               <img src="/assets/hero-shape-2-1.png" alt="" />
             </div>
@@ -45,10 +44,7 @@ const MainPage = () => {
               <div className="row">
                 <div className="col-xl-12">
                   <div className="header_content">
-                    <h3
-                      className="header__title tp-char-animation"
-                      style={{ perspective: "300px" }}
-                    >
+                    <h3 className="header__title tp-char-animation">
                       <div
                         style={{
                           position: "relative",
@@ -353,7 +349,7 @@ const MainPage = () => {
           </div>
 
           <div
-            className="project-area p-relative black-bg-3"
+            className="project-area position-relative black-bg-3"
             style={{ paddingTop: "110px" }}
           >
             <div className="container">
@@ -369,7 +365,18 @@ const MainPage = () => {
               </div>
               <div className="row">
                 <div className="col-lg-12">
-                  <img src="/assets/portfolio-1.jpg" alt="" />
+                  <div className="stack_card">
+                    <img src="/assets/portfolio-1.jpg" alt="" />
+                  </div>
+                  <div className="stack_card">
+                    <img src="/assets/portfolio-2.jpg" alt="" />
+                  </div>
+                  <div className="stack_card">
+                    <img src="/assets/portfolio-3.jpg" alt="" />
+                  </div>
+                  <div className="stack_card">
+                    <img src="/assets/portfolio-4.jpg" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
