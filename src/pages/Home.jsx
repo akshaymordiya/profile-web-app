@@ -1,10 +1,21 @@
+'use client'
 import HomeFooter from "@/components/HomeFooter";
 import HomeHeader from "@/components/HomeHeader";
-import React from "react";
+import React, { useRef } from "react";
 import { CgArrowLongDown } from "react-icons/cg";
 import { TbArrowDownRight } from "react-icons/tb";
 
 const MainPage = () => {
+  const secondSectionRef = useRef(null);
+
+  const scrollToNextSection = () => {
+    if (secondSectionRef.current) {
+      window.scrollTo({
+        top: secondSectionRef.current.offsetTop,
+        behavior: 'smooth'
+      });
+    }
+  };
   return (
     <>
       <HomeHeader />
@@ -31,7 +42,7 @@ const MainPage = () => {
                 Istagram
               </a>
             </div>
-            <a href="#" className="pointer">
+            <a href="#" className="pointer" onClick={scrollToNextSection}>
               <div className="header-scrool-down d-none d-lg-inline-flex">
                 <span className="text">Scroll</span>
                 <span>
@@ -103,7 +114,7 @@ const MainPage = () => {
                       </div>
                     </h3>
                   </div>
-                  <div className="homebtn-box d-flex align-items-center justify-content-start justify-content-md-center">
+                  <div className="homebtn-box d-flex align-items-center flex-wrap justify-content-start justify-content-md-center">
                     <div
                       style={{
                         translate: "none",
@@ -111,7 +122,7 @@ const MainPage = () => {
                         scale: "none",
                         opacity: "1",
                         transform: " translate(0px, 0px)",
-                        marginRight: "30px",
+                        marginRight: "30px ",
                       }}
                     >
                       <a className="btn-blue" href="#">
@@ -132,6 +143,7 @@ const MainPage = () => {
           </div>
 
           <div
+          ref={secondSectionRef}
             id="service"
             className="service-area services-panel-area service-overlay-bg black-bg-2 z-index-1"
             style={{ paddingTop: "150px", paddingBottom: "125px" }}
@@ -270,7 +282,7 @@ const MainPage = () => {
                 </div>
                 <div className="col-xl-7 col-lg-7">
                   <div className="service-right-wrap">
-                    <div className="stack__card">
+                    <div className="stack__card justify-content-md-center justify-content-start">
                       <div className="service-item d-flex align-items-start mb-25 services-panel">
                         <div className="service-icon">
                           <span>
@@ -292,7 +304,7 @@ const MainPage = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="stack__card">
+                    <div className="stack__card justify-content-md-center justify-content-start">
                       <div className="service-item d-flex align-items-start mb-25 services-panel">
                         <div className="service-icon">
                           <span>
@@ -314,7 +326,7 @@ const MainPage = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="stack__card">
+                    <div className="stack__card justify-content-md-center justify-content-start">
                       <div className="service-item d-flex align-items-start mb-25 services-panel">
                         <div className="service-icon">
                           <span>
@@ -401,12 +413,12 @@ const MainPage = () => {
                     </div>
                   </div>
                   <div className="col-xl-6 col-lg-4 col-md-4 ">
-                    <div className="blog-btn text-start text-md-end">
+                    <div className="blog-btn text-start d-flex justify-content-start justify-content-md-end">
                       <div
-                        className="text-start text-md-end"
+                        className="text-end"
                         style={{
                           width: "250px",
-                          transform: " translate(300px, 0px)",
+                          transform: " translate(0px, 0px)",
                         }}
                       >
                         <a className="btn-blue text-start text-md-end" href="#">

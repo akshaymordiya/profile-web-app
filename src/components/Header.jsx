@@ -4,23 +4,27 @@ import { BiSolidPencil } from "react-icons/bi";
 import { IoReorderTwoOutline } from "react-icons/io5";
 
 const Header = () => {
-  const [position, setPosition] = useState(window.pageYOffset);
-  const [visible, setVisible] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
+  const [visible, setVisible] = useState(true);
+
   useEffect(() => {
     const handleScroll = () => {
-      let moving = window.pageYOffset;
-      setVisible(position > moving);
-      setPosition(moving);
+      const currentScrollPos = window.pageYOffset;
+      const isVisible = prevScrollPos > currentScrollPos || currentScrollPos < 90;
+      setVisible(isVisible);
+      setPrevScrollPos(currentScrollPos);
     };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [position]);
 
-  const cls = visible
-    ? "header-area header-transparent header-ptlr int-menu header-sticky-cloned header-pinned"
-    : "header-area header-transparent header-ptlr int-menu header-sticky-cloned";
+    window.addEventListener('scroll', handleScroll);
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [prevScrollPos]);
+  const cls = !visible
+    ? "header-area header-transparent header-ptlr int-menu header-sticky-cloned "
+    : "header-area header-transparent header-ptlr int-menu header-sticky-cloned header-pinned";
+
   return (
     <>
       <header>
