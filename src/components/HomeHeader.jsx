@@ -34,7 +34,7 @@ const HomeHeader = () => {
 
   return (
     <>
-      <header>
+      {/* <header>
         <div className={cls}>
           <div className="container-fluid">
             <div className="row align-items-center">
@@ -63,7 +63,7 @@ const HomeHeader = () => {
             </div>
           </div>
         </div>
-      </header>
+      </header> */}
       <Offcanvas backdrop={false} show={show} onHide={handleClose} scroll>
         {/* <Offcanvas.Header >
           <Offcanvas.Title></Offcanvas.Title>

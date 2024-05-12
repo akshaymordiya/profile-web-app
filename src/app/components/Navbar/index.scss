@@ -1,0 +1,90 @@
+@import "../../../styles/variables";
+
+.header {
+  width: 100%;
+  height: auto;
+  padding: 1.8rem 5rem;
+  padding-bottom:0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+
+  &_contact-container {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+
+    .btn-white {
+      height: 40px;
+      line-height: 40px;
+      border-radius: 100px;
+      padding: 0 12px 0 32px;
+      font-weight: 400;
+      font-size: 15px;
+      text-align: center;
+      text-transform: capitalize;
+      display: inline-block;
+      overflow: hidden;
+      letter-spacing: -0.01em;
+      background-color: transparent;
+      font-family: var(--pw-ff-body);
+      transition: 0.2s;
+      position: relative;
+      z-index: 1;
+      text-decoration: none;
+      color: $white;
+      box-shadow: inherit;
+
+      &::after {
+        position: absolute;
+        content: "";
+        right: 0;
+        width: 100%;
+        background-color: $black;
+        z-index: -1;
+        top: 0;
+        height: 100%;
+        border-radius: 100px;
+        transition: all 0.3s ease-out;
+      }
+
+      .text {
+        position: relative;
+        margin-left: 0;
+
+        &::after {
+          background-color: $black;
+          position: absolute;
+          content: "";
+          right: 0;
+          width: 100%;
+          background-color: $white;
+          z-index: -1;
+        }
+
+        .pencil {
+          margin-left: 1.8rem;
+        }
+      }
+
+      &:hover {
+        color: $purple-dark;
+        text-decoration: underline;
+
+        &::after {
+          width: 40px;
+        }
+
+        .text {
+          .pencil {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
