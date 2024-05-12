@@ -1,0 +1,29 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes upwradLinear {
+  0% {
+    transform: translateY(0px); 
+  }
+  50% {
+    transform: translateY(-3px); 
+  }
+  100% {
+    transform: translateY(0px); 
+  }
+}
