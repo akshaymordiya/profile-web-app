@@ -21,7 +21,7 @@ const MainPage = () => {
       <HomeHeader />
       <div id="home-content">
         <main>
-          <div className="home-area black-bg-3 home-ptb z-index-1 smooth position-relative btn-trigger-3">
+          <div className="home-area black-bg-3 home-ptb z-index-1 smooth position-relative">
             <div className="shape-1">
               <img src="/assets/hero-shape-2-1.png" alt="" />
             </div>

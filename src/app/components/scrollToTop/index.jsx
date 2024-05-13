@@ -36,7 +36,7 @@ const ScrollToTop = () => {
         `}
         onClick={scrollToTop}
       >
-        <KeyboardDoubleArrowUpRoundedIcon       className='up_arrow'
+        <KeyboardDoubleArrowUpRoundedIcon className='up_arrow'
         />
       </button>
     )

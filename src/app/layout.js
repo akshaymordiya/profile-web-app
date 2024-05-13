@@ -4,6 +4,7 @@ import "./globals.css"
 
 import ScrollToTop from "./components/scrollToTop";
 import Navbar from "./components/Navbar";
+import 'bootstrap/dist/css/bootstrap.css';
 
 const inter = Inter({ subsets: ["latin"] });
 

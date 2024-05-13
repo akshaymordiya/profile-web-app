@@ -27,7 +27,7 @@
 }
 body {
   font-family: var(--pw-ff-body);
-  font-size: 14px;
+  /* font-size: 14px; */
   font-weight: 400;
   color: var(--pw-text-body);
   line-height: 26px;
@@ -1178,3 +1178,7 @@ a {
   padding-right: 20px;
 }
 }
+
+
+
+
