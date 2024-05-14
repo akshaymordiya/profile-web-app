@@ -4,6 +4,7 @@ import Link from 'next/link';
 //components
 import Logo from '../Logo';
 import Menu from '../Menu';
+import CTA from '../CTA';
 
 //icon
 import MenuOpenRoundedIcon from '@mui/icons-material/MenuOpenRounded';
@@ -22,15 +23,14 @@ const Navbar = () => {
         hiddenOnSmallerDevices 
       />
       <div className={`${BASE_CLASSNAME}_contact-container`}>
-        <Link 
-          className="btn-white"
-          href="/contact"
-        >
-          <span className="text">
-            Let's Talk
-            <CreateRoundedIcon className='pencil' fontSize='sm' />  
-          </span>
-        </Link>
+        <CTA
+          linkText="Let's Talk"
+          linkHref='/contact'
+          icon={CreateRoundedIcon}
+          iconProps={{
+            fontSize: 'sm'
+          }}
+        />
         <MenuOpenRoundedIcon className='menu_icon'/>
       </div>
     </header>

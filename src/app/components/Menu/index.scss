@@ -36,17 +36,30 @@
       content: "";
       position: absolute;
       bottom: -20px;
-      width: 0px;
       height: 2px;
       background-color: $black;
       border-radius: 10%;
       animation: rightToLeft 0.3s forwards;
+      width: 100%;
     }
 
+    &:not(.active) {
+      &::after {
+        content: "";
+        width: 0%;
+      }
+    }
+    
     &:hover {
       &::after {
         animation: leftToRight 0.3s forwards;
         width: 100%;
+      }
+    }
+    
+    &.active {
+      &::after {
+        animation: leftToRight 0.3s forwards;
       }
     }
   }

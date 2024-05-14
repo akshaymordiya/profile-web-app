@@ -1,0 +1,27 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/animations";
+
+.btn-blue {
+  height: 68px;
+  line-height: 68px;
+  padding: 0 24px 0 37px;
+  font-weight: 400;
+  font-size: 16px;
+  animation: bounce2 2s ease;
+
+  &::after {
+    background-color: $purple;
+  }
+
+  .text {
+    .pencil {
+      margin-left: 2rem;
+    }
+  }
+
+  &:hover {
+    &::after {
+      width: 72px;
+    }
+  }
+}

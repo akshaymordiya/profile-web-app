@@ -1,5 +1,7 @@
+'use client';
 import React from 'react'
 import Link from 'next/link';
+import { usePathname } from 'next/navigation'
 
 import menuItems from "../../../data/menu.json";
 
@@ -14,6 +16,7 @@ const Menu = ({
   hiddenOnSmallerDevices = false,
   useAsVerticalMenu = false
 }) => {
+  const pathname = usePathname();
   return (
     <div className={`
       ${BASE_CLASSNAME} ${className}
@@ -26,6 +29,7 @@ const Menu = ({
           className={`
             ${BASE_CLASSNAME}_link 
             ${itemclass}
+            ${pathname === item.page ? 'active' : ''}
           `}
           href={item.page}
         >

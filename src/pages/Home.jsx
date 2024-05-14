@@ -1,6 +1,5 @@
 'use client'
 import HomeFooter from "@/components/HomeFooter";
-import HomeHeader from "@/components/HomeHeader";
 import React, { useRef } from "react";
 import { CgArrowLongDown } from "react-icons/cg";
 import { TbArrowDownRight } from "react-icons/tb";
@@ -18,7 +17,6 @@ const MainPage = () => {
   };
   return (
     <>
-      <HomeHeader />
       <div id="home-content">
         <main>
           <div className="home-area black-bg-3 home-ptb z-index-1 smooth position-relative">
@@ -142,7 +140,7 @@ const MainPage = () => {
             </div>
           </div>
 
-          <div
+          {/* <div
           ref={secondSectionRef}
             id="service"
             className="service-area services-panel-area service-overlay-bg black-bg-2 z-index-1"
@@ -494,7 +492,7 @@ const MainPage = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </main>
         <HomeFooter />
       </div>
