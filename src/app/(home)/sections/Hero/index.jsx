@@ -1,135 +1,124 @@
 import React from 'react';
+
+import CTA from '@/app/components/CTA';
+import IMG from '@/app/components/IMG';
+import SocialLinks from '@/app/components/SocialLinks';
+import Scroll from '@/app/components/Scroll';
+import Grid from '@/app/components/Grid';
+import AnimatedCharactors from '@/app/components/AnimatedCharactors';
+
+import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
+
+import { TbArrowDownRight } from "react-icons/tb";
+
 import "./index.scss";
 
-import { CgArrowLongDown } from "react-icons/cg";
-import { TbArrowDownRight } from "react-icons/tb";
-import CTA from '@/app/components/CTA';
+const BASE_CLASSNAME = "hero-container"
 
 const Hero = () => {
   return (
-    <div className="home-area black-bg-3 home-ptb z-index-1 smooth position-relative">
-      <div className="shape-1">
-        <img src="/assets/hero-shape-2-1.png" alt="" />
-      </div>
-      <div className="shape-2">
-        <img src="/assets/hero-shape-2-2.png" alt="" />
-      </div>
-      <div className="social-wrap d-none d-lg-inline-flex">
-        <a target="_blank" href="#">
-          Facebook
-        </a>
-        <a target="_blank" href="#">
-          Twitter
-        </a>
-        <a target="_blank" href="#">
-          Dribble
-        </a>
-        <a target="_blank" href="#">
-          Istagram
-        </a>
-      </div>
-      <a href="#" className="pointer" >
-        <div className="header-scrool-down d-none d-lg-inline-flex">
-          <span className="text">Scroll</span>
+    <div className={BASE_CLASSNAME}>
+      {['top', 'bottom'].map((pos, index) => (
+        <IMG 
+          key={`img-${index + 3}`}
+          src={`/assets/hero-shape-2-${index + 1}.png`}
+          useContainer
+          useRawImgTag
+          containerClasses={`shape ${pos}`}
+          imageClasses='shape_img'
+          alt={`'shape-${index + 1}`}
+        />
+      ))}
+      <SocialLinks
+        wrapperClasses={`${BASE_CLASSNAME}_social_links_container`}
+        linkClasses="social_link" 
+      />
+      <Scroll
+        scrollHref='#about'
+        text='Scroll'
+        icon={KeyboardDoubleArrowDownIcon}
+        iconProps={{
+          className: "scroll_icon"
+        }}
+      />
+      <Grid classNames={`${BASE_CLASSNAME}_grid`}>
+        <Grid.Item 
+          xs={12}
+          sm={12}
+          md={12}
+          lg={12} 
+          xlg={7} itemClass='charactor_Wrapper top'
+        >
+          <AnimatedCharactors
+            charactors='creative'
+            capitlized
+            leftSpaceOnLastCharactor
+          />
+        </Grid.Item>
+        <Grid.Item
+          xs={12}
+          sm={12}
+          md={12}
+          lg={12} 
+          xlg={5} itemClass='video_animation'>
           <span>
-            <CgArrowLongDown />
+            <video
+              id="myvideo"
+              src="/assets/diego-video.mp4"
+              autoPlay
+              loop
+              playsInline
+            ></video>
           </span>
-        </div>
-      </a>
-
-      <div className="container">
-        <div className="row">
-          <div className="col-xl-12">
-            <div className="header_content">
-              <h3 className="header__title tp-char-animation">
-                <div
-                  style={{
-                    position: "relative",
-                    display: "inline-block",
-                    marginRight: "30px",
-                  }}
-                >
-                  <div className="animated-letter">C</div>
-                  <div className="animated-letter">r</div>
-                  <div className="animated-letter">e</div>
-                  <div className="animated-letter">a</div>
-                  <div className="animated-letter">t</div>
-                  <div className="animated-letter">i</div>
-                  <div className="animated-letter">v</div>
-                  <div className="animated-letter">e</div>
-                </div>
-                <span>
-                  <video
-                    id="myvideo"
-                    src="/assets/diego-video.mp4"
-                    autoPlay
-                    loop
-                    playsInline
-                  ></video>
-                </span>
-                <br />
-                <div
-                  style={{
-                    position: "relative",
-                    display: "inline-block",
-                    marginRight: "30px",
-                  }}
-                >
-                  <div className="animated-letter">V</div>
-                  <div className="animated-letter">i</div>
-                  <div className="animated-letter">s</div>
-                  <div className="animated-letter">u</div>
-                  <div className="animated-letter">a</div>
-                  <div className="animated-letter">l</div>
-                </div>
-                <div
-                  style={{
-                    position: "relative",
-                    display: "inline-block",
-                    marginRight: "30px",
-                  }}
-                >
-                  <div className="animated-letter">D</div>
-                  <div className="animated-letter">e</div>
-                  <div className="animated-letter">s</div>
-                  <div className="animated-letter">i</div>
-                  <div className="animated-letter">g</div>
-                  <div className="animated-letter">n</div>
-                  <div className="animated-letter">e</div>
-                  <div className="animated-letter">r</div>
-                </div>
-              </h3>
-            </div>
-            <div className="homebtn-box d-flex align-items-center flex-wrap justify-content-start justify-content-md-center">
-              <div
-                style={{
-                  translate: "none",
-                  rotate: "none",
-                  scale: "none",
-                  opacity: "1",
-                  transform: " translate(0px, 0px)",
-                  marginRight: "30px ",
-                }}
-              >
-                <CTA 
-                  linkText='View Our Work'
-                  linkHref='/work'
-                  linkClass='btn-blue'
-                  icon={TbArrowDownRight}
-                  iconProps={{
-                    className: 'pencil',
-                    fontSize: 'sm'
-                  }}
-                />
-              </div>
-              <p>
-                Hello, I am Diego a designer from Barcelona. Specialised{" "}
-                <br /> in creating fantastic digital experiences.!
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+        </Grid.Item>
+        <Grid.Item
+          xs={12}
+          sm={12}
+          md={12}
+          lg={12}
+          xlg={12} itemClass='charactor_Wrapper bottom'>
+          <AnimatedCharactors
+            charactors='visual'
+            capitlized
+            leftSpaceOnLastCharactor
+            wrapperClass='first_text'
+          />
+          <AnimatedCharactors 
+            charactors='Designer'
+            capitlized
+            leftSpaceOnLastCharactor
+          />
+        </Grid.Item>
+        <Grid.Item
+          xs={12}
+          sm={12}
+          md={6}
+          lg={6}
+          xlg={5}
+          itemClass='cta'
+        >
+          <CTA 
+            linkText='View Our Work'
+            linkHref='/work'
+            linkClass='btn-blue'
+            icon={TbArrowDownRight}
+            iconProps={{
+              className: 'pencil',
+              fontSize: 'sm'
+            }}
+          />
+        </Grid.Item>
+        <Grid.Item
+          xs={12}
+          sm={12}
+          md={6}
+          lg={6}
+          xlg={7} 
+          itemClass='description_text'
+        >
+            Hello, I am Diego a designer from Barcelona. Specialised in creating fantastic digital experiences.!
+        </Grid.Item>
+      </Grid>
     </div>
   )
 }

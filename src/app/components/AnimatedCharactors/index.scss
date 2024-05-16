@@ -1,0 +1,26 @@
+@import "../../../styles/animations";
+
+.charactor-wrapper {
+  width: fit-content;
+  height: auto;
+  display: inline-block;
+  position: relative;
+
+  &.space-end-x {
+    margin-right: 30px;
+  }
+
+  .charactor {
+    position: relative;
+    display: inline-block;
+    opacity: 0;
+    animation: animated_charactors 1s ease forwards;
+    animation-fill-mode: forwards;
+
+    @for $i from 1 through 12 {
+      &:nth-child(#{$i}) {
+        animation-delay: 0.1s * ($i - 1);
+      } 
+    }
+  }
+}
