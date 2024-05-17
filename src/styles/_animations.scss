@@ -103,3 +103,23 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes slideRightToLeft {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes rotate_img {
+  0% {
+    transform: translate(-50%,-50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%,-50%) rotate(1turn);
+  }
+}
+

@@ -1,5 +1,7 @@
 import React from "react";
 import Shape1 from "../shape1/Shape1";
+import './panalarea.scss'
+import ServiceCard from "../servicecard/ServiceCard";
 
 const ServicePanalArea = () => {
   return (
@@ -14,7 +16,7 @@ const ServicePanalArea = () => {
         <div className="container position-sticky">
           <div className="row">
             <div className="col-xl-5 col-lg-5 ">
-              <div className="stack__card">
+              <div className="stack_card">
                 <div className="service-title-box services-panel-pin">
                   <span className="section-subtitle">OUR PROCESS</span>
                   <h3 className="section-title">
@@ -31,85 +33,7 @@ const ServicePanalArea = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-7 col-lg-7">
-              <div className="service-right-wrap">
-                <div className="stack__card justify-content-md-center justify-content-start">
-                  <div
-                    className="service-item d-flex align-items-start services-panel"
-                    style={{ marginBottom: "25px" }}
-                  >
-                    <div className="service-icon">
-                      <span>
-                        <img src="" alt="" />
-                      </span>
-                      <div className="service-content">
-                        <h3 className="service-content-title">
-                          Design <br /> Strategy
-                        </h3>
-                        <p>
-                          We always ensure that it combines a clean <br />
-                          and beautiful visual design.
-                        </p>
-                        <div className="service-content-tag">
-                          <span className="me-2">UI/UX Audit</span>
-                          <span>Workshops</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="stack__card justify-content-md-center justify-content-start">
-                  <div className="service-item d-flex align-items-start mb-25 services-panel">
-                    <div className="service-icon">
-                      <span>
-                        <img src="" alt="" />
-                      </span>
-                      <div className="service-content">
-                        <h3 className="service-content-title">
-                          Design <br /> Strategy
-                        </h3>
-                        <p>
-                          We always ensure that it combines a clean <br />
-                          and beautiful visual design.
-                        </p>
-                        <div className="service-content-tag">
-                          <span className="me-2">UI/UX Audit</span>
-                          <span>Workshops</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="stack__card justify-content-md-center justify-content-start">
-                  <div className="service-item d-flex align-items-start mb-25 services-panel">
-                    <div className="service-icon">
-                      <span>
-                        <img src="" alt="" />
-                      </span>
-                      <div className="service-content">
-                        <h3 className="service-content-title">
-                          Design <br /> Strategy
-                        </h3>
-                        <p>
-                          We always ensure that it combines a clean <br />
-                          and beautiful visual design.
-                        </p>
-                        <div className="service-content-tag">
-                          <span className="me-2">UI/UX Audit</span>
-                          <span>Workshops</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="service-btn-box">
-                  <a href="#">
-                    Call me to get more extra service
-                    <span>Call Now</span>
-                  </a>
-                </div>
-              </div>
-            </div>
+            <ServiceCard />
           </div>
         </div>
       </div>

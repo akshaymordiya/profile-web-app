@@ -15,6 +15,8 @@ import SlideNav from "@/app/components/Slidernav/SlideNav";
 import BrandButton from "@/app/components/Brand/BrandButton";
 import ServicePrice from "@/app/components/ServicePrice/ServicePrice";
 import ServiceCategory from "@/app/components/servicecategory/ServiceCategory";
+import Footerasocial from "@/app/components/footerservice/footerasocial";
+import FooterService from "@/app/components/footerservice/FooterService";
 
 //TODO:: The child page of Services route
 function Services() {
@@ -184,6 +186,7 @@ function Services() {
         </section>
 
         <BrandButton />
+        <FooterService />
       </main>
     </>
   );

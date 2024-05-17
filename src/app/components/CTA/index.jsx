@@ -1,5 +1,5 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 
 import "./index.scss";
 
@@ -8,9 +8,9 @@ const CTA = ({
   linkClass = "",
   linkHref = "/",
   icon: Icon,
-  iconProps = {}
+  iconProps = {},
 }) => {
-  const { className = ""} = iconProps
+  const { className = "" } = iconProps;
   return (
     <Link
       className={`
@@ -19,16 +19,14 @@ const CTA = ({
       `}
       href={linkHref}
     >
-     <div>
-     <span className="text">
-        {linkText}
-        {Icon && (
-          <Icon className={`pencil ${className}`} {...iconProps} />
-        )}
-      </span>
-     </div>
+      <div>
+        <span className="text">
+          {linkText}
+          {Icon && <Icon className={`pencil ${className}`} {...iconProps} />}
+        </span>
+      </div>
     </Link>
-  )
-}
+  );
+};
 
-export default CTA
+export default CTA;

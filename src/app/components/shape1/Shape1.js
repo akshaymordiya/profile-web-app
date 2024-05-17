@@ -1,5 +1,9 @@
 import React from "react";
 import "./shapes.scss";
+import Image from "next/image";
+import shape1 from "../../../../public/assets/service-shape-1.png";
+import shape2 from "../../../../public/assets/service-shape-2.png";
+import star from "../../../../public/assets/star.png";
 
 const Shape1 = () => {
   return (
@@ -24,13 +28,13 @@ const Shape1 = () => {
         </div>
       </div>
       <div className="service-shape-1">
-        <img src="/assets/service-shape-1.png" alt="" />
+        <Image src={shape1} alt="shape-image" />
       </div>
       <div className="service-shape-2 d-none d-lg-block">
-        <img src="/assets/service-shape-2.png" alt="" />
+        <Image src={shape2} alt="shape-image" />
       </div>
       <div className="service-shape-3">
-        <img src="/assets/star.png" alt="" />
+        <Image src={star} alt="" />
       </div>
     </>
   );

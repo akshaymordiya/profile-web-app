@@ -361,68 +361,7 @@ button {
   margin-bottom: 25px;
 }
 
-.service-right-wrap {
-  padding-left: 70px;
-}
-
-.service-item {
-  background: #2d3866;
-  border-radius: 30px;
-  display: inline-flex;
-  padding: 60px 70px;
-  box-shadow: 0 -8px 0 0 #172351;
-}
-
-.service-content-title {
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 1.1;
-  color: var(--common-white);
-  margin-bottom: 16px;
-  font-family: var(--digon-serif);
-}
-.service-content p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: hsla(0, 0%, 100%, 0.7);
-  margin-bottom: 28px;
-}
-
-.service-content-tag span {
-  border: 1px solid hsla(0, 0%, 100%, 0.1);
-  border-radius: 100px;
-  display: inline-block;
-  height: 30px;
-  line-height: 29px;
-  padding: 0 20px;
-  font-weight: 500;
-  font-size: 13px;
-  color: #fff;
-}
-
-.stack__card {
-  display: flex;
-  /* justify-content: center; */
-  align-items: center;
-  height: 380px;
-  width: 606px;
-  position: sticky;
-  top: 100px;
-}
-
-.stack_card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 800px;
-  width: 100%;
-  position: sticky;
-  top: 100px    ;
-  /* transform: scale(var(--scale-factor)); */
-}
-
-img{
+img {
   max-width: 100%;
 }
 .stack_card img {
@@ -433,26 +372,6 @@ img{
   /* transition: transform 0.5s ease; */
 }
 
-.service-btn-box a {
-  height: 56px;
-  line-height: 56px;
-  background: #4c40f7;
-  border-radius: 30px;
-  width: 100%;
-  padding: 0 20px;
-  display: inline-block;
-  text-align: center;
-  font-weight: 400;
-  font-size: 18px;
-  color: hsla(0, 0%, 100%, 0.7);
-}
-
-.service-btn-box a span {
-  font-weight: 500;
-  font-size: 18px;
-  color: #fff;
-  text-decoration: underline;
-}
 
 .service-overlay-bg:after {
   position: absolute;

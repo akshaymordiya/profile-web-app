@@ -89,14 +89,6 @@ const About = () => {
             <div className="service__text d-none d-lg-block col-md-4">
               <span>ABOUT ME</span>
             </div>
-            {/* <a href="#" className="pointer" onClick={scrollToNextSection}>
-              <div className="header-scrool-down d-none d-lg-inline-flex">
-                <span className="text">Scroll</span>
-                <span>
-                  <SouthIcon />
-                </span>
-              </div>
-            </a> */}
 
             <div className="container">
               <div className="row">
