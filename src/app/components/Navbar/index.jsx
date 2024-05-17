@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 
 //components
 import Logo from '../Logo';
@@ -29,7 +28,7 @@ const Navbar = () => {
           icon={CreateRoundedIcon}
           iconProps={{
             fontSize: 'sm'
-          }}
+          }}  
         />
         <MenuOpenRoundedIcon className='menu_icon'/>
       </div>

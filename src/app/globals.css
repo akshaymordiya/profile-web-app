@@ -328,63 +328,11 @@ button {
 .service-overlay-bg {
   position: relative;
 }
-
-.service-circle-img {
-  position: absolute;
-  top: 0;
-  right: 315px;
-}
-
-.service-circle-img .text-img {
-  display: inline-block;
-  transform: translate(10px, -70px);
-}
-
-.service-circle-img .text-img img {
-  filter: invert(100%) sepia(32%) saturate(304%) hue-rotate(200deg)
-    brightness(105%) contrast(100%);
-}
-.service-circle-img .text-img img {
-  animation: animationglob 10s cubic-bezier(1, 0.99, 0.03, 0.01) infinite;
-}
-
-.service-circle-img .shape {
-  position: absolute;
-  left: 0;
-  top: -1px;
-  left: -50%;
-  z-index: -1;
-}
-.service-circle-img .shape svg {
-  color: #f6f9ff;
-}
-
 .black-bg-2 {
-  background-color: var(--common-dark-bg);
+  background-color:var(--common-dark-bg);
 }
-.z-index-1 {
+.z-index-1{
   z-index: 1;
-}
-
-.service-shape-1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.service-shape-2 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1;
-}
-
-.service-shape-3 {
-  position: absolute;
-  top: 43%;
-  left: 35%;
-  z-index: -1;
 }
 
 .section-subtitle {

@@ -1,0 +1,25 @@
+@import '../../../styles/variables';
+@import '../../../styles/animations';
+
+.btn-brand{
+    color: $black;
+    line-height: 50px;
+    transition: .3s;
+    text-align: center;
+    padding: 15px 25px;
+    font-size: 28px;
+    border-radius: 1000px;
+    border: 1px solid rgba(2,2,30,.1);
+    font-family: $dr-font-family;
+    &:hover{
+        background-color: $black;
+        color: $white;
+    }
+}
+.brand-area{
+    background-color: #f6f9ff;
+}
+.brand-plr {
+    padding-left: 85px;
+    padding-right: 85px;
+}

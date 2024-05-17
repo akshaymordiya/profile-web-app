@@ -1,30 +1,34 @@
-@keyframes fadeIn {
-  from {
+@keyframes fadeInRight {
+  0% {
     opacity: 0;
+    transform: translateX(30px);
   }
-  to {
+  100% {
     opacity: 1;
+    transform: translateX(0px);
   }
 }
 
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
+@keyframes fadeInLeft {
+  0% {
     opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
   }
 }
 
 @keyframes upwradLinear {
   0% {
-    transform: translateY(0px); 
+    transform: translateY(0px);
   }
   50% {
-    transform: translateY(-3px); 
+    transform: translateY(-3px);
   }
   100% {
-    transform: translateY(0px); 
+    transform: translateY(0px);
   }
 }
 
@@ -52,19 +56,19 @@
 
 @keyframes circle-img {
   0% {
-  transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-   transform:  rotate(1turn);
+    transform: rotate(1turn);
   }
 }
+
 @keyframes slideInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-2000px);
+    transform: translateX(-100px);
   }
   100% {
-    opacity: 1;
     transform: translateX(0);
   }
 }
@@ -89,5 +93,13 @@
   100% {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+@keyframes animationglob {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

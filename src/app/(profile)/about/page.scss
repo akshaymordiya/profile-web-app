@@ -154,6 +154,15 @@
   transition: opacity 0.3s, transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
+.animate__animated.animate__fadeInRight {
+  --animation-duration: 0.9s;
+  --animation-delay: 0.3s;
+}
+.animate__animated.animate__fadeInRight {
+  --animation-duration: 2s;
+  --animation-delay: 0.1s;
+}
+
 .service-info-text > div > a:after {
   content: "";
   position: absolute;
@@ -163,10 +172,15 @@
   width: 100%;
   background-color: $black;
 }
+.personal-info-area {
+  background-color: #f6f9ff;
+}
+
 .personal-info-left {
   position: sticky;
   top: 0;
   height: 600px;
+  padding-top: 80px;
 }
 
 .services-capsule-wrapper {
@@ -207,6 +221,9 @@
   color: #5c5e64;
   margin-bottom: 20px;
 }
+.personal-info-right-wrap {
+  padding-top: 80px;
+}
 
 .personal-info-right-title {
   color: $black;
@@ -215,6 +232,20 @@
   line-height: 30px;
   font-family: $dr-font-family;
   margin-bottom: 5px;
+}
+.personal-info-right{
+  color: $black;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 30px;
+  font-family: $dr-font-family;
+  margin-bottom: 5px;
+}
+.personal-info-right svg{
+  color: $black;
+  font-size: 2rem;
+  margin-right: 10px;
+  transform: translateY(-5px);
 }
 
 .personal-info-right-title svg {
@@ -300,67 +331,204 @@
   line-height: 14px;
   color: #6c6f79;
 }
-.funfact-area{
-    background-color: #f6f9ff;
+
+.award-section-title {
+  font-family: $dr-font-family;
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 1;
+  letter-spacing: -.02em;
+  text-transform: uppercase;
+  color: $black;
+  margin-bottom: 15px;
 }
 
-.funfact-plr {
-    padding-left: 85px;
-    padding-right: 85px;
+.award-text-wrapper {
+  transform: translateY(40px);
 }
-.funfact-bg {
-    height: 100%;
-    width: calc(100% - 200px);
-    top: 0;
-    left: 100px;
-    position: absolute;
-    border-radius: 20px;
+ 
+.award-text-outline {
+  -webkit-text-stroke-color: hsla(0, 0%, 7%, .12);
+  // -moz-text-stroke-color: hsla(0, 0%, 7%, .12);
+  mix-blend-mode: luminosity;
+  font-size: 130px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width:1px;
+  color: transparent;
+  font-family: $arbil-font-family;
+  line-height: 1.14;
+  font-weight: 600;
+  transform: rotate(-45deg);
 }
-.funfact-bg-item {
-    position: absolute;
-    top: -35%;
-    left: 0;
-    width: 100%;
-    height: 190%;
-    background-position: 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 20px;
-}
-
-.funfact-item.space-left-1 {
-    padding-left: 100px;
-}
-.funfact-item{
-    position: relative;
+.award-text-fill {
+  font-weight: 600;
+  font-size: 160px;
+  line-height: .89;
+  color: $black;
+  font-family: $arbil-font-family;
+  mix-blend-mode: luminosity;
+  transform: rotate(-45deg) translate(-50px, -37px);
 }
 
-.funfact-number {
-    margin-bottom: 25px;
-}
-.funfact-number span {
-    height: 110px;
-    width: 110px;
-    font-weight: 500;
-    font-size: 64px;
-    letter-spacing: -.02em;
-    text-transform: uppercase;
-    background: hsla(0, 0%, 100%, .06);
-    border: 1px solid hsla(0, 0%, 100%, .09);
-    box-shadow: 0 20px 50px rgba(3, 3, 20, .4);
-    backdrop-filter: blur(5.5px);
-    border-radius: 20px;
-    display: inline-block;
-    line-height: 110px;
-    color: $white;
-    font-family: $dr-font-family;
+.award-shape-1 {
+  position: absolute;
+  bottom: -14%;
+  right: 10%;
+  filter: invert(100%) sepia(32%) saturate(304%) hue-rotate(200deg) brightness(105%) contrast(100%);
 }
 
-.funfact-title {
-    font-weight: 300;
-    font-size: 40px;
-    line-height: 1.2;
-    margin-bottom: 0;
-    color: $white;
-    font-family: $dr-font-family;
+.award-item-wrapper{
+  overflow: hidden;
+}
+
+.award-item {
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease-out;
+  
+}
+
+.award-arrow {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  transform: translateY(-50%);
+  color: $white;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.award-arrow svg {
+  transform: translateY(-2px);
+}
+
+.award-customize .award-title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1;
+  font-family: $dr-font-family;
+  color: $black;
+}
+
+.award-content p {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(37, 37, 37, 0.6);
+  margin-bottom: 15px;
+  line-height: 26px;
+  font-family: $dm-font-family;
+}
+
+.award-btn {
+  background-color: $black;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  border-radius: 50%;
+  text-align: center;
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.award-btn span {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  position: relative;
+}
+.award-btn span svg {
+  transform: translateY(-2px);
+  position: absolute;
+  bottom: -4px;
+  left: -4px;
+  transition: all 0.2s ease-out;
+}
+
+.award-item:hover .award-btn span svg:first-child {
+  transform: translate(16px, -16px);
+}
+.award-item:hover .award-btn span svg:last-child {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(13px, -13px);
+}
+.award-btn span svg:last-child {
+  left: -17px;
+  bottom: -17px;
+  transform: translate(0);
+  opacity: 0;
+}
+
+.award-item:hover {
+  padding-left: 36px;
+  z-index: 1;
+}
+.award-item:hover .award-arrow {
+  color: $black;
+}
+
+.award-item:hover .award-arrow {
+  visibility: visible;
+  opacity: 1;
+}
+.award-item:hover .hover-reveal-bg {
+  opacity: 1;
+}
+.award-item:hover:after {
+  opacity: 1;
+  width: 100%;
+}
+
+// .award-item .hover-reveal-bg {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 210px;
+//   height: 295px;
+//   opacity: 0;
+//   margin: -150px 0 0 -150px;
+//   overflow: hidden;
+//   pointer-events: none;
+//   background-position: 50%;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   transition: opacity .3s, transform .5s cubic-bezier(.215,.61,.355,1);
+//   border-radius: 10px;
+// }
+
+.hover-reveal-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 210px;
+  height: 295px;
+  opacity: 0;
+  border-radius: 10px;
+  pointer-events: none;
+  background-size: cover;
+}
+
+.award-item .award-inner-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  border: 1px solid rgba(37, 37, 37, 0.08);
+  transition: 0.3s;
+}
+.award-item:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 0;
+  background-color: $white;
+  height: 1px;
+  z-index: -1;
+  opacity: 0;
 }

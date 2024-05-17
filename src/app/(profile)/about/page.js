@@ -1,24 +1,85 @@
-import React from "react";
+"use client";
+import React, { useEffect, useRef, useState } from "react";
 import SaveAltIcon from "@mui/icons-material/SaveAlt";
 import "./page.scss";
 import DriveFileRenameOutlineIcon from "@mui/icons-material/DriveFileRenameOutline";
 import WbIncandescentIcon from "@mui/icons-material/WbIncandescent";
-//TODO:: The child page of about route
+import SubdirectoryArrowRightIcon from "@mui/icons-material/SubdirectoryArrowRight";
+import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
+import "animate.css";
+import Footer from "@/app/components/footer/Footer";
+import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
+import Counter from "@/app/components/sections/counterup/countup";
+import Navbar from "@/app/components/Navbar";
+import WOW from "wow.js";
+
+const data = [
+  {
+    id: 1,
+    title: "Awwwwards SOTD",
+    subtitle: "FOR DISPLAY 2023",
+    image: "/assets/award-5.jpg",
+  },
+  {
+    id: 2,
+    title: "Wix.Com",
+    subtitle: "INTERVIEW 2022",
+    image: "/assets/award-6.jpg",
+  },
+  {
+    id: 3,
+    title: "Awwwwards SOTD",
+    subtitle: "FOR DISPLAY 2023",
+    image: "/assets/award-10.jpg",
+  },
+  {
+    id: 4,
+    title: "Awwwwards SOTD",
+    subtitle: "FOR DISPLAY 2023",
+    image: "/assets/award-1.jpg",
+  },
+  {
+    id: 5,
+    title: "Awwwwards SOTD",
+    subtitle: "FOR DISPLAY 2023",
+    image: "/assets/award-4.jpg",
+  },
+  {
+    id: 6,
+    title: "Awwwwards SOTD",
+    subtitle: "FOR DISPLAY 2023",
+    image: "/assets/award-3.jpg",
+  },
+];
+
 const About = () => {
-  // const secondSectionRef = useRef(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
+  const followImgRef = useRef(null);
+  const handleMouseMove = (event) => {
+    const { clientX, clientY } = event;
+    if (followImgRef.current) {
+      const imgWidth = followImgRef.current.offsetWidth;
+      const imgHeight = followImgRef.current.offsetHeight;
+      const imgCenterX = clientX - imgWidth / 0.2;
+      const imgCenterY = clientY - imgHeight / 0.7;
+      followImgRef.current.style.transform = `translateX(${imgCenterX}px) translateY(${imgCenterY}px)`;
+    }
+  };
 
-  // const scrollToNextSection = () => {
-  //   if (secondSectionRef.current) {
-  //     window.scrollTo({
-  //       top: secondSectionRef.current.offsetTop,
-  //       behavior: 'smooth'
-  //     });
-  //   }
-  // };
+  useEffect(() => {
+    window.addEventListener("mousemove", handleMouseMove);
 
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, []);
+  
+  useEffect(() => {
+    new WOW().init();
+  }, []);
 
   return (
     <>
+      <Navbar />
       <div id="smooth-content">
         <main>
           <div className="services-area service-ptb z-index-1 position-relative fix">
@@ -120,7 +181,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="service-info-area" style={{ paddingBottom: "160px" }}>
+          <div className="service-info-area" style={{ paddingBottom: "80px" }}>
             <div className="container">
               <div className="row">
                 <div className="col-lg-12">
@@ -168,7 +229,10 @@ const About = () => {
             </div>
           </div>
 
-          <div className="personal-info-area black-bg-3 pb-30 tp-personal-info-pin-section">
+          <div
+            className="personal-info-area personal-info-pin-section"
+            style={{ paddingBottom: "30px" }}
+          >
             <div className="container">
               <div className="row">
                 <div className="col-xl-6 col-lg-6">
@@ -200,8 +264,9 @@ const About = () => {
                 <div className="col-xl-6 col-lg-6">
                   <div className="personal-info-right-wrap">
                     <div
-                      className="personal-info-skill wow rightToLeft"
-                      data-wow-duration=".9s" data-wow-delay=".3s"
+                      className="personal-info-skill wow fadeInUp"
+                      data-wow-duration="3s"
+                      data-wow-delay="5s"
                       style={{ marginBottom: "85px" }}
                     >
                       <h4 className="personal-info-right-title">
@@ -217,7 +282,8 @@ const About = () => {
                             <div className="progress">
                               <div
                                 className="progress-barr wow slideInLeft"
-                                data-wow-duration="2s" data-wow-delay="5s"
+                                data-wow-duration="2s"
+                                data-wow-delay="5s"
                                 style={{ width: "90%" }}
                               >
                                 <span>90%</span>
@@ -231,7 +297,8 @@ const About = () => {
                             <div className="progress">
                               <div
                                 className="progress-barr wow slideInLeft"
-                                data-wow-duration="2s" data-wow-delay="5s"
+                                data-wow-duration="2s"
+                                data-wow-delay="5s"
                                 style={{ width: "82%" }}
                               >
                                 <span>82%</span>
@@ -245,6 +312,8 @@ const About = () => {
                             <div className="progress">
                               <div
                                 className="progress-barr wow slideInLeft"
+                                data-wow-duration="2s"
+                                data-wow-delay="5s"
                                 style={{ width: "65%" }}
                               >
                                 <span>65%</span>
@@ -257,7 +326,9 @@ const About = () => {
                           <div className="progress-bar">
                             <div className="progress">
                               <div
-                                className="progress-barr wow slideInLeft"
+                                className="progress-barr wow slideInLeft "
+                                data-wow-duration="2s"
+                                data-wow-delay="5s"
                                 style={{ width: "58%" }}
                               >
                                 <span>58%</span>
@@ -268,7 +339,7 @@ const About = () => {
                       </div>
                     </div>
                     <div
-                      className="personal-info-experience rightToLeft"
+                      className="personal-info-experience animate__animated animate__fadeInLeft animate__delay-4s"
                       style={{ marginBottom: "85px" }}
                     >
                       <h4
@@ -315,15 +386,15 @@ const About = () => {
                       </div>
                     </div>
                     <div
-                      className="personal-info-education rightToLeft"
+                      className="personal-info-education animate__animated animate__fadeInRight animate__delay-5s"
                       style={{ marginBottom: "85px" }}
                     >
                       <h4
-                        className="personal-info-right-title"
+                        className="personal-info-right"
                         style={{ marginBottom: "35px" }}
                       >
                         <span>
-                          <WbIncandescentIcon />
+                          <SchoolOutlinedIcon />
                         </span>
                         Education
                       </h4>
@@ -367,78 +438,12 @@ const About = () => {
             </div>
           </div>
 
-          <div
-            className="funfact-area funfact-plr z-index-1 position-relative fix"
-            style={{ paddingTop: "110px", paddingBottom: "60px" }}
-          >
-            <div className="funfact-bg funfact-overlay">
-              <div
-                className="funfact-bg-item"
-                style={{ backgroundImage: "url(/assets/funfact-bg-1-2.jpg)" }}
-              ></div>
-            </div>
-            <div className="container">
-              <div className="row">
-                <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 mb-40">
-                  <div className="funfact-item space-left-1">
-                    <div className="funfact-number">
-                      <span className="purecounter counter-item text-center">
-                        <div className="d-flex align-items-center justify-content-center ">
-                          <strong>56</strong>
-                          <span></span>
-                        </div>
-                      </span>
-                    </div>
-                    <div className="funfact-content">
-                      <h4 className="funfact-title">
-                        Projects <br /> Completed
-                      </h4>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 mb-40">
-                  <div className="funfact-item space-left-1">
-                    <div className="funfact-number">
-                      <span className="purecounter counter-item text-center">
-                        <div className="d-flex align-items-center justify-content-center ">
-                          <strong>12</strong>
-                          <span></span>
-                        </div>
-                      </span>
-                    </div>
-                    <div className="funfact-content">
-                      <h4 className="funfact-title">
-                        Years <br /> Of Experience
-                      </h4>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 mb-40">
-                  <div className="funfact-item space-left-1">
-                    <div className="funfact-number">
-                      <span className="purecounter counter-item text-center">
-                        <div className="d-flex align-items-center justify-content-center ">
-                          <strong>34</strong>
-                          <span></span>
-                        </div>
-                      </span>
-                    </div>
-                    <div className="funfact-content">
-                      <h4 className="funfact-title">
-                        Client
-                        <br /> Satisfaction
-                      </h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Counter />
 
-          <div
+          <section
             className="award-area award-customize"
-            style={{ paddingTop: "120px", paddingBottom: "50px" }}
-          >+
+            style={{ paddingTop: "120px", paddingBottom: "0px" }}
+          >
             <div className="container">
               <div className="award-inner" style={{ paddingBottom: "80px" }}>
                 <div className="row">
@@ -450,16 +455,110 @@ const About = () => {
                       >
                         <div className="section-title-inner position-relative ">
                           <h3 className="award-section-title">
-                          Awards &  <br />  recognitions
+                            Awards & <br /> recognitions
                           </h3>
                         </div>
                       </div>
+                      <div className="award-text-wrapper posotion-relative">
+                        <h3 className="award-text-outline d-none d-xl-block">
+                          Award
+                        </h3>
+                        <h3 className="award-text-fill d-none d-xl-block">
+                          Award
+                        </h3>
+                        <div className="award-shape">
+                          <img
+                            src="/assets/award-shape-1.png"
+                            className="award-shape-1"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-xl-7">
+                    <div
+                      className="award-item-wrapper"
+                      style={{ paddingTop: "100px", paddingLeft: "70px" }}
+                    >
+                      {data.map((item, index) => {
+                        return (
+                          <div
+                            key={index}
+                            className="award-item position-relative hover-reveal-item"
+                          >
+                            <a
+                              href="#"
+                              className="d-block"
+                              onMouseEnter={() => {
+                                setIsHovered(true);
+                                setCurrentImageIndex(index);
+                              }}
+                              onMouseLeave={() => {
+                                setIsHovered(false);
+                                setCurrentImageIndex(null);
+                              }}
+                            >
+                              <div className="award-item-inner d-flex align-items-center justify-content-between flex-wrap">
+                                <div className="award-arrow">
+                                  <SubdirectoryArrowRightIcon />
+                                </div>
+                                <div className="award-content">
+                                  <h3 className="award-title">{item?.title}</h3>
+                                  <p>{item?.subtitle}</p>
+                                </div>
+                                <div className="award-btn-wrapper">
+                                  <span className="award-btn">
+                                    <span>
+                                      <ArrowOutwardIcon />
+                                      <ArrowOutwardIcon />
+                                    </span>
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                            {index === currentImageIndex && (
+                              <img
+                                src={item?.image}
+                                alt={`Image ${index + 1}`}
+                                ref={
+                                  index === currentImageIndex
+                                    ? followImgRef
+                                    : null
+                                }
+                                className="hover-reveal-bg"
+                                style={{
+                                  opacity:
+                                    isHovered && index === currentImageIndex
+                                      ? 1
+                                      : 0,
+                                  transition: "opacity 0.2s ease-in-out",
+                                }}
+                              />
+                            )}
+                            <div className="award-inner-border"></div>
+                          </div>
+                        );
+                      })}
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+          </section>
+
+          <div
+            className="brand-area brand-plr"
+            style={{ paddingBottom: "100px" }}
+          >
+            <div className="container-fluid">
+              <div className="row col-xl-6 col-lg-4 col-md-3 col-sm-2">
+                <div className="col-xl-6 mb-20">
+                  <div className="brand-item"></div>
+                </div>
+              </div>
+            </div>
           </div>
+          <Footer />
         </main>
       </div>
     </>

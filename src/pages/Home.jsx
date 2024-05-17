@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import HomeFooter from "@/components/HomeFooter";
 import React, { useRef } from "react";
 import { CgArrowLongDown } from "react-icons/cg";
@@ -11,7 +11,7 @@ const MainPage = () => {
     if (secondSectionRef.current) {
       window.scrollTo({
         top: secondSectionRef.current.offsetTop,
-        behavior: 'smooth'
+        behavior: "smooth",
       });
     }
   };
@@ -179,101 +179,20 @@ const MainPage = () => {
                 <div className="col-xl-5 col-lg-5 ">
                   <div className="stack__card">
                     <div className="service-title-box services-panel-pin">
-                      <span className="section-subtitle tp_title_anim">
-                        <div
-                          style={{
-                            display: "block",
-                            textAlign: "start",
-                            position: "relative",
-                            translate: "none",
-                            rotate: "none",
-                            scale: "none",
-                            transformOrigin: "59.9688px 10px",
-                            transform: "translate3d(0px, 0px, 0px)",
-                            opacity: "1",
-                          }}
-                        >
+                      <span className="section-subtitle">
                           OUR PROCESS
-                        </div>
                       </span>
                       <h3 className="section-title">
-                        <div
-                          style={{
-                            display: "block",
-                            textAlign: "start",
-                            position: "relative",
-                            translate: "none",
-                            rotate: "none",
-                            scale: "none",
-                            transformOrigin: "238px 40px",
-                            transform: "translate3d(0px, 0px, 0px)",
-                            opacity: "1",
-                          }}
-                        >
+                        
                           How We
-                        </div>
-                        <div
-                          style={{
-                            display: "block",
-                            textAlign: "start",
-                            position: "relative",
-                            translate: "none",
-                            rotate: "none",
-                            scale: "none",
-                            transformOrigin: "238px 40px",
-                            transform: "translate3d(0px, 0px, 0px)",
-                            opacity: "1",
-                          }}
-                        >
-                          Carry Out Our
-                        </div>
-                        <div
-                          style={{
-                            display: "block",
-                            textAlign: "start",
-                            position: "relative",
-                            translate: "none",
-                            rotate: "none",
-                            scale: "none",
-                            transformOrigin: "238px 40px",
-                            transform: "translate3d(0px, 0px, 0px)",
-                            opacity: "1",
-                          }}
-                        >
+                       <br />
+                          Carry Out Our 
+                          <br />
                           Projects
-                        </div>
                       </h3>
                       <p>
-                        <div
-                          style={{
-                            display: "block",
-                            textAlign: "start",
-                            position: "relative",
-                            translate: "none",
-                            rotate: "none",
-                            scale: "none",
-                            transformOrigin: "238px 13px",
-                            transform: "translate3d(0px, 0px, 0px)",
-                            opacity: "1",
-                          }}
-                        >
-                          We offer a range of services to help elevate
-                        </div>
-                        <div
-                          style={{
-                            display: "block",
-                            textAlign: "start",
-                            position: "relative",
-                            translate: "none",
-                            rotate: "none",
-                            scale: "none",
-                            transformOrigin: "238px 13px",
-                            transform: "translate3d(0px, 0px, 0px)",
-                            opacity: "1",
-                          }}
-                        >
+                          We offer a range of services to help elevate <br />
                           your brand & drive results.
-                        </div>
                       </p>
                     </div>
                   </div>
@@ -281,7 +200,7 @@ const MainPage = () => {
                 <div className="col-xl-7 col-lg-7">
                   <div className="service-right-wrap">
                     <div className="stack__card justify-content-md-center justify-content-start">
-                      <div className="service-item d-flex align-items-start mb-25 services-panel">
+                      <div className="service-item d-flex align-items-start services-panel" style={{marginBottom:"25px"}} >
                         <div className="service-icon">
                           <span>
                             <img src="" alt="" />

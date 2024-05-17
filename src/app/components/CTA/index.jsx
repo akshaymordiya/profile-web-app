@@ -19,12 +19,14 @@ const CTA = ({
       `}
       href={linkHref}
     >
-      <span className="text">
+     <div>
+     <span className="text">
         {linkText}
         {Icon && (
           <Icon className={`pencil ${className}`} {...iconProps} />
         )}
       </span>
+     </div>
     </Link>
   )
 }
