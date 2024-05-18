@@ -140,7 +140,7 @@ const MainPage = () => {
             </div>
           </div>
 
-          {/* <div
+          <div
           ref={secondSectionRef}
             id="service"
             className="service-area services-panel-area service-overlay-bg black-bg-2 z-index-1"
@@ -411,7 +411,7 @@ const MainPage = () => {
                 </div>
               </div>
             </div>
-          </div> */}
+          </div>
         </main>
         <HomeFooter />
       </div>

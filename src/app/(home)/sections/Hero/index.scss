@@ -184,7 +184,7 @@
     }
 
     @include respond-to('large_tablet') {
-      padding: 9rem 6rem;
+      padding: 4rem;
     }
    
     @include respond-to('small_tablet') {
@@ -203,12 +203,40 @@
     }
 
     .charactor_Wrapper {
-      font-family: $dr-font-family;
+      font-family: $bungee-font;
       font-style: normal;
-      font-weight: 600;
-      font-size: 180px;
+      font-weight: 500;
+      font-size: 110px;
       line-height: 1;
-      letter-spacing: -0.02em;
+      letter-spacing: -0.03em;
+
+      @include respond-to ('desktop'){
+        font-size: 155px;
+        order: 2;
+      }
+
+      @include respond-to('large_tablet') {
+        margin-top: 1rem;
+        font-size: 80px;
+        order: 2;
+      }
+
+      @include respond-to('small_tablet') {
+        margin-top: 1rem;
+        font-size: 70px;
+        order: 2;
+      }
+
+      @include respond-to('phone') {
+        margin-top: 1rem;
+        font-size: 50px;
+        order: 2;
+      }
+
+      @include respond-to('small_phone') {
+        font-size: 40px;
+        order: 2;
+      }
 
       .charactor_bg {
         &::selection {
@@ -217,104 +245,39 @@
         }
       }
 
-
-      &.top {
-        @include respond-to ('desktop'){
-          font-size: 155px;
-          order: 2;
-        }
-
-        @include respond-to('large_tablet') {
-          font-size: 130px;
-          order: 2;
-        }
-
-        @include respond-to('small_tablet') {
-          font-size: 110px;
-          order: 2;
-        }
-
-        @include respond-to('phone') {
-          font-size: 80px;
-          order: 2;
-        }
-
-        @include respond-to('small_phone') {
-          font-size: 55px;
-          order: 2;
-        }
+      .word_text:not(:last-child) {
+        margin-bottom: 1rem;
       }
 
-      &.bottom {
-        @include respond-to ('desktop'){
-          font-size: 155px;
-          order: 3;
-        }
-
-        @include respond-to('large_tablet') {
-          font-size: 130px;
-          order: 3;
-        }
-
-        @include respond-to('small_tablet') {
-          font-size: 110px;
-          order: 3;
-        }
-
-        @include respond-to('phone') {
-          font-size: 72px;
-          order: 3;
-
-          .first_text {
-            margin-bottom: 10px;
-          }
-        }
-
-        @include respond-to('small_phone') {
-          font-size: 55px;
-          order: 3;
-
-          .first_text {
-            margin-bottom: 10px;
-          }
+      .word_text:last-child {
+        @include respond-to('large_desktop'){
+          margin-bottom: 1rem;
         }
       }
     }
 
-    .video_animation {
-      width: 260px;
-      height: 146px;
-      display: inline-block;
-      position: relative;
-      border-radius: 100px;
-      overflow: hidden;
+    .lottie_animation {
+      width: 100%;
+      transform: translateX(-10%);
+
+      &_wrapper {
+        width: 100%;
+      }
 
       @include respond-to ('desktop'){
         order: 1;
       }
 
       @include respond-to('large_tablet') {
-        height: 100px;
         order: 1;
       }
 
       @include respond-to('small_tablet') {
-        height: 70px;
         order: 1;
       }
 
       @include respond-to('phone') {
-        height: 70px;
         order: 1;
-      }
-
-      video {
-        position: absolute;
-        top: 0;
-        right: 0;
-        margin-left: 30px;
-        transform-origin: top right;
-        transform: translateY(-1px) scale(0.15);
       }
     }
 
@@ -322,7 +285,7 @@
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      margin-top: 1rem;
+      margin-top: 1.5rem;
       padding-right: 1rem;
 
       @include respond-to ('desktop'){
@@ -356,7 +319,7 @@
       justify-content: flex-start;
       align-items: center;
       align-content: center;
-      margin-top: 1rem;
+      margin-top: 1.5rem;
       line-height: 24px;
 
       @include respond-to ('desktop'){

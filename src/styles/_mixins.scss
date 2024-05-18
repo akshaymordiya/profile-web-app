@@ -4,7 +4,7 @@
        @content; 
     }
   } @else if $breakpoint == 'phone' {
-    @media (max-width: 600px) { 
+    @media (max-width: 599px) { 
       @content; 
     }
   } @else if $breakpoint == 'tablet' {

@@ -6,8 +6,11 @@ import SocialLinks from '@/app/components/SocialLinks';
 import Scroll from '@/app/components/Scroll';
 import Grid from '@/app/components/Grid';
 import AnimatedCharactors from '@/app/components/AnimatedCharactors';
+import Animation from '@/app/components/Animation';
 
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
+
+import menWork from "../../../../../public/assets/lottie/men-work.json";
 
 import { TbArrowDownRight } from "react-icons/tb";
 
@@ -48,12 +51,27 @@ const Hero = () => {
           sm={12}
           md={12}
           lg={12} 
-          xlg={7} itemClass='charactor_Wrapper top'
+          xlg={8} itemClass='charactor_Wrapper'
         >
           <AnimatedCharactors
             charactors='creative'
             capitlized
             leftSpaceOnLastCharactor
+            wrapperClass='word_text'
+            charactorClass='charactor_bg'
+          />
+          <AnimatedCharactors
+            charactors='visual'
+            capitlized
+            leftSpaceOnLastCharactor
+            wrapperClass='word_text'
+            charactorClass='charactor_bg'
+          />
+          <AnimatedCharactors 
+            charactors='Designer'
+            capitlized
+            leftSpaceOnLastCharactor
+            wrapperClass='word_text'
             charactorClass='charactor_bg'
           />
         </Grid.Item>
@@ -62,35 +80,12 @@ const Hero = () => {
           sm={12}
           md={12}
           lg={12} 
-          xlg={5} itemClass='video_animation'>
-          <span>
-            <video
-              id="myvideo"
-              src="/assets/diego-video.mp4"
-              autoPlay
-              loop
-              playsInline
-            ></video>
-          </span>
-        </Grid.Item>
-        <Grid.Item
-          xs={12}
-          sm={12}
-          md={12}
-          lg={12}
-          xlg={12} itemClass='charactor_Wrapper bottom'>
-          <AnimatedCharactors
-            charactors='visual'
-            capitlized
-            leftSpaceOnLastCharactor
-            wrapperClass='first_text'
-            charactorClass='charactor_bg'
-          />
-          <AnimatedCharactors 
-            charactors='Designer'
-            capitlized
-            leftSpaceOnLastCharactor
-            charactorClass='charactor_bg'
+          xlg={4} itemClass='lottie_animation'>
+          <Animation 
+            animationData={menWork}
+            loop
+            autoplay
+            className='lottie_animation_wrapper'
           />
         </Grid.Item>
         <Grid.Item
