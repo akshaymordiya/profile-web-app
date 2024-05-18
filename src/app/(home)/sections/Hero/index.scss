@@ -258,10 +258,41 @@
 
     .lottie_animation {
       width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       transform: translateX(-10%);
+
+      @include respond-to ('desktop') {
+        transform: none;
+      }
+      
+      @include respond-to ('large_tablet') {
+        transform: none;
+      }
+      
+      @include respond-to ('small_tablet') {
+        transform: none;
+      }
+      
+      @include respond-to ('phone') {
+        transform: none;
+      }
 
       &_wrapper {
         width: 100%;
+
+        @include respond-to ('large_tablet') {
+          width: 60%;
+        }
+        
+        @include respond-to ('small_tablet') {
+          width: 60%;
+        }
+
+        @include respond-to ('phone') {
+          width: 70%;
+        }
       }
 
       @include respond-to ('desktop'){

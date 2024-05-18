@@ -1,10 +1,12 @@
 @import "../../../styles/animations";
+@import "../../../styles/variables";
 
 .charactor-wrapper {
   width: fit-content;
   height: auto;
   display: inline-block;
   position: relative;
+  font-family: $bungee-font;
 
   &.space-end-x {
     margin-right: 30px;
