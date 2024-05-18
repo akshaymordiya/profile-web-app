@@ -8,7 +8,8 @@ const AnimatedCharactors = ({
   lowercase = false,
   uppercase = false,
   leftSpaceOnLastCharactor = false,
-  wrapperClass = ""
+  wrapperClass = "",
+  charactorClass = ""
 }) => {
 
   let word = charactors
@@ -27,7 +28,7 @@ const AnimatedCharactors = ({
   >
     {word.split('').map((charactor, index) => (
       <div 
-        key={`${charactor}-${index}`} className="charactor"
+        key={`${charactor}-${index}`} className={`charactor ${charactorClass}`}
       >
         {charactor}
       </div>

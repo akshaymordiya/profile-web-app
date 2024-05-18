@@ -17,7 +17,7 @@ const BASE_CLASSNAME = "hero-container"
 
 const Hero = () => {
   return (
-    <div className={BASE_CLASSNAME}>
+    <section className={BASE_CLASSNAME}>
       {['top', 'bottom'].map((pos, index) => (
         <IMG 
           key={`img-${index + 3}`}
@@ -36,6 +36,7 @@ const Hero = () => {
       <Scroll
         scrollHref='#about'
         text='Scroll'
+        scrollClass='scroll_down'
         icon={KeyboardDoubleArrowDownIcon}
         iconProps={{
           className: "scroll_icon"
@@ -53,6 +54,7 @@ const Hero = () => {
             charactors='creative'
             capitlized
             leftSpaceOnLastCharactor
+            charactorClass='charactor_bg'
           />
         </Grid.Item>
         <Grid.Item
@@ -82,17 +84,19 @@ const Hero = () => {
             capitlized
             leftSpaceOnLastCharactor
             wrapperClass='first_text'
+            charactorClass='charactor_bg'
           />
           <AnimatedCharactors 
             charactors='Designer'
             capitlized
             leftSpaceOnLastCharactor
+            charactorClass='charactor_bg'
           />
         </Grid.Item>
         <Grid.Item
           xs={12}
           sm={12}
-          md={6}
+          md={12}
           lg={6}
           xlg={5}
           itemClass='cta'
@@ -103,7 +107,7 @@ const Hero = () => {
             linkClass='btn-blue'
             icon={TbArrowDownRight}
             iconProps={{
-              className: 'pencil',
+              className: 'navagation_icon',
               fontSize: 'sm'
             }}
           />
@@ -111,7 +115,7 @@ const Hero = () => {
         <Grid.Item
           xs={12}
           sm={12}
-          md={6}
+          md={12}
           lg={6}
           xlg={7} 
           itemClass='description_text'
@@ -119,7 +123,7 @@ const Hero = () => {
             Hello, I am Diego a designer from Barcelona. Specialised in creating fantastic digital experiences.!
         </Grid.Item>
       </Grid>
-    </div>
+    </section>
   )
 }
 

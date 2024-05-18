@@ -1,7 +1,10 @@
 'use client';
-import React from 'react'
+import React, { useMemo } from 'react'
 import Link from 'next/link';
+
+//hooks
 import { usePathname } from 'next/navigation'
+import useBreakpoint from '@/hooks/useBreakpoints';
 
 import menuItems from "../../../data/menu.json";
 
@@ -17,6 +20,17 @@ const Menu = ({
   useAsVerticalMenu = false
 }) => {
   const pathname = usePathname();
+  
+  const breakpoint = useBreakpoint();
+
+  const isMenuHide = useMemo(() => {
+    return hiddenOnSmallerDevices && ['xs', 'sm', 'md', 'lg'].includes(breakpoint)
+  }, [breakpoint, hiddenOnSmallerDevices]);
+
+  if(isMenuHide){
+    return
+  }
+
   return (
     <div className={`
       ${BASE_CLASSNAME} ${className}

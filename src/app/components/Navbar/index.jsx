@@ -15,7 +15,7 @@ const BASE_CLASSNAME = "header"
 
 const Navbar = () => {
   return (
-    <header className={BASE_CLASSNAME}>
+    <div className={BASE_CLASSNAME}>
       <Logo />
       <Menu 
         className={`${BASE_CLASSNAME}_menu_container`}
@@ -25,6 +25,7 @@ const Navbar = () => {
         <CTA
           linkText="Let's Talk"
           linkHref='/contact'
+          linkClass='contact_btn'
           icon={CreateRoundedIcon}
           iconProps={{
             fontSize: 'sm'
@@ -32,7 +33,7 @@ const Navbar = () => {
         />
         <MenuOpenRoundedIcon className='menu_icon'/>
       </div>
-    </header>
+    </div>
   )
 }
 

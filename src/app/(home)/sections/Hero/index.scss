@@ -14,6 +14,18 @@
   z-index: 1;
   background-color: $background_bg;
 
+  @include respond-to('small_tablet') {
+    min-height: 100vh;
+  }
+
+  @include respond-to('large_tablet') {
+    min-height: 100vh;
+  }
+
+  @include respond-to('phone') {
+    min-height: 100vh;
+  }
+
   .shape {
     position: absolute;
     z-index: -1;
@@ -49,6 +61,44 @@
       font-weight: 500;
       margin-bottom: 100px;
     }
+
+    @include respond-to('large_tablet') {
+      display: none;
+      width: 0%;
+      height: 0%;
+    }
+
+    @include respond-to('small_tablet') {
+      display: none;
+      width: 0%;
+      height: 0%;
+    }
+
+    @include respond-to('phone') {
+      display: none;
+      width: 0%;
+      height: 0%;
+    }
+  }
+
+  .scroll_down {
+    @include respond-to('large_tablet') {
+      display: none;
+      width: 0%;
+      height: 0%;
+    }
+    
+    @include respond-to('small_tablet') {
+      display: none;
+      width: 0%;
+      height: 0%;
+    }
+
+    @include respond-to('phone') {
+      display: none;
+      width: 0%;
+      height: 0%;
+    }
   }
 
   .scroll_icon {
@@ -65,20 +115,60 @@
     font-weight: 400;
     font-size: 16px;
     animation: bounce2 2s ease;
+
+    @include respond-to('small_phone') {
+      padding: 0 20px 0 33px;
+      height: 58px;
+      line-height: 58px;
+    }
   
     &::after {
       background-color: $purple;
     }
   
     .text {
-      .pencil {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      @include respond-to('large_tablet') {
+        font-size: 16px !important;
+      }
+
+      @include respond-to('small_tablet') {
+        font-size: 16px !important;
+      }
+
+      @include respond-to('phone') {
+        font-size: 16px !important;
+      }
+
+      .navagation_icon {
         margin-left: 2rem;
+        font-size: 20px !important;
+        color: $white;
       }
     }
   
     &:hover {
       &::after {
-        width: 72px;
+        width: 70px;
+
+        @include respond-to('large_tablet') {
+          width: 68px;
+        }
+
+        @include respond-to('small_tablet') {
+          width: 68px;
+        }
+
+        @include respond-to('phone') {
+          width: 68px;
+        }
+
+        @include respond-to('small_phone') {
+          width: 58px;
+        }    
       }
     }
   }
@@ -102,7 +192,14 @@
     }
 
     @include respond-to('phone') {
-      padding: 12rem 4rem;
+      padding: 3rem;
+      padding-bottom: 2rem;
+    }
+
+    @include respond-to('small_phone') {
+      padding: 3rem 2rem;
+      padding-top: 3rem;
+      padding-bottom: 2rem;
     }
 
     .charactor_Wrapper {
@@ -112,6 +209,14 @@
       font-size: 180px;
       line-height: 1;
       letter-spacing: -0.02em;
+
+      .charactor_bg {
+        &::selection {
+          background-color: $black;
+          color: $white;
+        }
+      }
+
 
       &.top {
         @include respond-to ('desktop'){
@@ -131,6 +236,11 @@
 
         @include respond-to('phone') {
           font-size: 80px;
+          order: 2;
+        }
+
+        @include respond-to('small_phone') {
+          font-size: 55px;
           order: 2;
         }
       }
@@ -153,6 +263,15 @@
 
         @include respond-to('phone') {
           font-size: 72px;
+          order: 3;
+
+          .first_text {
+            margin-bottom: 10px;
+          }
+        }
+
+        @include respond-to('small_phone') {
+          font-size: 55px;
           order: 3;
 
           .first_text {
@@ -211,6 +330,7 @@
       }
 
       @include respond-to ('large_tablet'){
+        justify-content: flex-start;
         order: 4;
       }
 
@@ -223,6 +343,12 @@
         justify-content: flex-start;
         order: 4;
       }
+
+      @include respond-to ('small_phone'){
+        margin-top: 0.6rem;
+        justify-content: flex-start;
+        order: 4;
+      }
     }
 
     .description_text {
@@ -231,6 +357,7 @@
       align-items: center;
       align-content: center;
       margin-top: 1rem;
+      line-height: 24px;
 
       @include respond-to ('desktop'){
         order: 5;
@@ -238,6 +365,7 @@
 
       @include respond-to ('large_tablet'){
         order: 5;
+        margin-top: 0.5rem;
       }
 
       @include respond-to ('small_tablet'){
@@ -248,6 +376,11 @@
       @include respond-to ('phone'){
         order: 5;
         margin-top: 0.5rem;
+      }
+
+      @include respond-to ('small_phone'){
+        order: 5;
+        margin-top: 0.4rem;
       }
     }
   }

@@ -1,13 +1,26 @@
 /* Global CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+}
+
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  width: 100%;
+  height: 100%;
 }
 body {
   margin: 0;
+  width: 100%;
+  height: 100%;
 }
 main {
   display: block;
+  margin: 0;
 }
 h1 {
   font-size: 2em;

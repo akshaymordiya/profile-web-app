@@ -37,6 +37,9 @@
   .text {
     position: relative;
     margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &::after {
       background-color: $black;
@@ -62,6 +65,8 @@
     }
 
     .text {
+      
+
       .pencil {
         color: $white;
       }

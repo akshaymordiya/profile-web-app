@@ -14,7 +14,7 @@
     position: relative;
     display: inline-block;
     opacity: 0;
-    animation: animated_charactors 1s ease forwards;
+    animation: animated_charactors 3s ease forwards;
     animation-fill-mode: forwards;
 
     @for $i from 1 through 12 {

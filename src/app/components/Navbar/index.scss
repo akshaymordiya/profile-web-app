@@ -1,4 +1,5 @@
 @import "../../../styles/variables";
+@import "../../../styles/mixins";
 
 .header {
   width: 100%;
@@ -13,9 +14,25 @@
   align-items: center;
   z-index: 5;
 
+  @include respond-to('small_tablet') {
+    padding: 1.8rem 3rem;
+  }
+
+  @include respond-to('phone') {
+    padding: 1.8rem 2rem;
+  }
+
   &_contact-container {
     display: flex;
     gap: 1.2rem;
     align-items: center;
+
+    .contact_btn {
+      @include respond-to('small_phone'){
+        display: none;
+        width: 0px;
+        height: 0px;
+      }
+    }
   }
 }

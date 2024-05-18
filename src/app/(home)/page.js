@@ -1,8 +1,6 @@
 
 import React from "react";
 
-import 'bootstrap/dist/css/bootstrap.min.css'
-
 //sections
 import Hero from "@/app/(home)/sections/Hero";
 
@@ -14,7 +12,7 @@ export default function Home() {
         <main>
           <Hero />
         </main>
-        <HomeFooter />
+        {/* <HomeFooter /> */}
       </div>
   );
 }
