@@ -103,8 +103,6 @@
 
   .scroll_icon {
     font-size: 32px;
-    filter: invert(100%) sepia(32%) saturate(304%) hue-rotate(200deg)
-    brightness(105%) contrast(100%);
     animation: scroll_down 3s infinite;
   }
 
@@ -318,6 +316,7 @@
       align-items: center;
       margin-top: 1.5rem;
       padding-right: 1rem;
+      z-index: 10;
 
       @include respond-to ('desktop'){
         order: 4;

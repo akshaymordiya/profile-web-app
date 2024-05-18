@@ -20,7 +20,8 @@ Grid.Item = ({
   md = undefined,
   lg = undefined,
   xlg = undefined,
-  itemClass = ""
+  itemClass = "",
+  ...props
 }) => {
   const getClassNames = () => {
     const breakpoints = {
@@ -41,7 +42,7 @@ Grid.Item = ({
   }
 
   return (
-    <div className={`grid-item ${getClassNames()} ${itemClass}`}>
+    <div className={`grid-item ${getClassNames()} ${itemClass}`} {...props}>
       {children}
     </div>
   );

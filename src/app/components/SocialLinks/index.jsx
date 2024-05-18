@@ -12,6 +12,7 @@ const SocialLinks = ({
     <div className={`social-wrap ${wrapperClasses}`}>
       {SocialLinksData.map(link => (
         <Link
+          key={link.name}
           target='_blank'
           href={link.link}
           className={`link ${linkClasses}`}
