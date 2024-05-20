@@ -1,24 +1,34 @@
+"use client";
 import React from 'react';
 
+import IMG from '@/app/components/IMG';
+import Grid from '@/app/components/Grid';
+
 import "./index.scss";
+
+const BASE_CLASSNAME = "services_container";
 
 const Services = () => {
   return (
     <section
         id="services"
-        className="service-area services-panel-area service-overlay-bg black-bg-2 z-index-1"
-        style={{ paddingTop: "150px", paddingBottom: "125px" }}
+        className={`${BASE_CLASSNAME}`}
       >
-      <div className="service-circle-img">
-        <span className="text-img">
-          <img src="/assets/footer-circle-img.png" alt="" />
-        </span>
-        <div className="shape d-none d-lg-block">
+      <div className={`${BASE_CLASSNAME}_service_shape_cirlce`}>
+        <IMG
+          src='/assets/footer-circle-img.png'
+          alt='circle_shape-img'
+          useContainer
+          useRawImgTag
+          containerClasses="img_container"
+          imageClasses='circle_img'
+        />
+        <div className="half-circle-svg_container">
           <svg
             width="260"
             height="70"
             viewBox="0 0 260 70"
-            fill="none"
+            fill="#ffffff"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -28,116 +38,95 @@ const Services = () => {
           </svg>
         </div>
       </div>
-      <div className="service-shape-1">
-        <img src="/assets/service-shape-1.png" alt="" />
-      </div>
-      <div className="service-shape-2 d-none d-lg-block">
-        <img src="/assets/service-shape-2.png" alt="" />
-      </div>
-      <div className="service-shape-3">
-        <img src="/assets/star.png" alt="" />
-      </div>
-      <div className="container position-sticky">
-        <div className="row">
-          <div className="col-xl-5 col-lg-5 ">
-            <div className="stack__card">
-              <div className="service-title-box services-panel-pin">
-                <span className="section-subtitle">
-                    OUR PROCESS
+      <IMG
+        src='/assets/service-shape-1.png'
+        alt='services-shape-1'
+        useContainer
+        useRawImgTag
+        containerClasses={`${BASE_CLASSNAME}_services-shape_1`}
+        imageClasses='image_shape_1'
+      />
+      <IMG
+        src='/assets/service-shape-2.png'
+        alt='services-shape-2'
+        useContainer
+        useRawImgTag
+        containerClasses={`${BASE_CLASSNAME}_services-shape_2`}
+        imageClasses='image_shape_2'      
+      />
+      <IMG
+        src='/assets/star.png'
+        alt='services-shape-3'
+        useContainer
+        useRawImgTag
+        containerClasses={`${BASE_CLASSNAME}_services-shape_3`}  
+        imageClasses='image_shape_3'      
+      />
+      
+        <Grid classNames={`${BASE_CLASSNAME}_grid_wrapper`}>
+          <Grid.Item
+            xs={12}
+            sm={12}
+            md={12}
+            lg={6}
+            xlg={6}
+          >
+            <div className={`${BASE_CLASSNAME}_grid_wrapper_col-left`}>              
+              <div className='sticky-wrapper'>
+                <span className="pre-title">
+                  OUR PROCESS
                 </span>
-                <h3 className="section-title">
-                  
-                    How We
+                <h3 className="title">
+                  How We
                   <br />
-                    Carry Out Our 
-                    <br />
-                    Projects
+                  Carry Out Our 
+                  <br />
+                  Projects
                 </h3>
-                <p>
-                    We offer a range of services to help elevate <br />
-                    your brand & drive results.
+                <p className="excert">
+                  We offer a range of services to help elevate <br />
+                  your brand & drive results.
                 </p>
               </div>
             </div>
-          </div>
-          <div className="col-xl-7 col-lg-7">
-            <div className="service-right-wrap">
-              <div className="stack__card justify-content-md-center justify-content-start">
-                <div className="service-item d-flex align-items-start services-panel" style={{marginBottom:"25px"}} >
-                  <div className="service-icon">
-                    <span>
-                      <img src="" alt="" />
-                    </span>
-                    <div className="service-content">
-                      <h3 className="service-content-title">
-                        Design <br /> Strategy
-                      </h3>
-                      <p>
-                        We always ensure that it combines a clean <br />
-                        and beautiful visual design.
-                      </p>
-                      <div className="service-content-tag">
-                        <span className="me-2">UI/UX Audit</span>
-                        <span>Workshops</span>
-                      </div>
+          </Grid.Item>
+          <Grid.Item
+            xs={12}
+            sm={12}
+            md={12}
+            lg={6}
+            xlg={6}
+          >
+            <div className={`${BASE_CLASSNAME}_grid_wrapper_col-right`}>
+              {[1,2,3].map(i => (
+                <div className="service_card">
+                  <span>
+                    <img src="" alt="" />
+                  </span>
+                  <div className="service_card_content">
+                    <h3 className="service_card_content_title">
+                      Design <br /> Strategy
+                    </h3>
+                    <p className='service_card_content_description'>
+                      We always ensure that it combines a clean <br />
+                      and beautiful visual design.
+                    </p>
+                    <div className="service_card_content_tag">
+                      <span className="me-2">UI/UX Audit</span>
+                      <span>Workshops</span>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="stack__card justify-content-md-center justify-content-start">
-                <div className="service-item d-flex align-items-start mb-25 services-panel">
-                  <div className="service-icon">
-                    <span>
-                      <img src="" alt="" />
-                    </span>
-                    <div className="service-content">
-                      <h3 className="service-content-title">
-                        Design <br /> Strategy
-                      </h3>
-                      <p>
-                        We always ensure that it combines a clean <br />
-                        and beautiful visual design.
-                      </p>
-                      <div className="service-content-tag">
-                        <span className="me-2">UI/UX Audit</span>
-                        <span>Workshops</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="stack__card justify-content-md-center justify-content-start">
-                <div className="service-item d-flex align-items-start mb-25 services-panel">
-                  <div className="service-icon">
-                    <span>
-                      <img src="" alt="" />
-                    </span>
-                    <div className="service-content">
-                      <h3 className="service-content-title">
-                        Design <br /> Strategy
-                      </h3>
-                      <p>
-                        We always ensure that it combines a clean <br />
-                        and beautiful visual design.
-                      </p>
-                      <div className="service-content-tag">
-                        <span className="me-2">UI/UX Audit</span>
-                        <span>Workshops</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="service-btn-box">
+              ))}              
+              <div className="service-contact_btn">
                 <a href="#">
                   Call me to get more extra service
                   <span>Call Now</span>
                 </a>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
+          </Grid.Item>
+        </Grid>
     </section>
   )
 }

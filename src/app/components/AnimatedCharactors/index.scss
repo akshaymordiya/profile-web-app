@@ -17,12 +17,12 @@
     display: inline-block;
     opacity: 0;
     transition: 0.3s all ease-in-out;
-    animation: animated_charactors 3s ease forwards;
+    animation: move 3s ease-in-out infinite, animated_charactors 3s ease forwards;
     animation-fill-mode: forwards;
 
     @for $i from 1 through 12 {
       &:nth-child(#{$i}) {
-        animation-delay: 0.1s * ($i - 1);
+        animation-delay:  #{0.5s * ($i - 1)}, #{0.1s * ($i - 1)};
       }
     }
 

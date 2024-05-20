@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Bungee+Shade&display=swap');
+@import "./fonts";
 
 //colors
 $white: #FFFFFF;
@@ -7,11 +7,20 @@ $purple-dark:#192553;
 $purple:#4c40f7;
 $dark-bg: #162251;
 $background_bg: #f6f9ff;
+$text-body:hsla(0, 0%, 100%, .7);
+$light-grey: hsla(0, 0%, 100%, .1);
+$off-white: #f6f9ff;
+$box-bg-type-one:#2d3866;
+$shadow-type-one: #172351;
+
+//fonts
+$rondal-font: 'Rondal', sans-serif;
+$bungee-font: 'BungeeShade', cursive;
+$dm-font-family: 'DMSans', sans-serif;
 
 $dr-font-family: "Didone right", serif;
-$bungee-font: "Bungee Shade", sans-serif;
-$dm-font-family: "DM Sans", sans-serif;
 $arbil-font-family : "Abril Fatface", 'cursive';
 
 //shadows
 $shadow-light: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+$box-shadow-one: 0 -8px 0 0 $shadow-type-one;

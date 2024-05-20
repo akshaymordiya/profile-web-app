@@ -1,4 +1,4 @@
-
+"use client";
 import React from "react";
 
 //sections
@@ -9,12 +9,12 @@ import HomeFooter from "@/components/HomeFooter";
 
 export default function Home() {
   return (
-    <div id="home-content">
+     <div id="home-content">
         <main>
           <Hero />
           <Services />
         </main>
-        <HomeFooter />
+        {/* <HomeFooter /> */}
       </div>
   );
 }
