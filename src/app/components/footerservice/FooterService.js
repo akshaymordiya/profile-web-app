@@ -41,7 +41,7 @@ const FooterService = () => {
                     <CTA
                       linkClass="btn-black-xl w-100"
                       linkHref="/contact"
-                      linkText="Write a Message"
+                      linkText="Discuss Project"
                     />
                   </div>
                 </div>

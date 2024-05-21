@@ -152,23 +152,23 @@
       color: $white;
       background-color: $black;
       font-family: $dm-font-family;
-    }
-    a div {
-      line-height: 1;
-      display: inline-block;
-      overflow: hidden;
-      transform: translateY(7px);
-      height: 32px;
-      span {
-        display: block;
-        transition: transform 0.2s ease-out;
-        text-shadow: 0 30px 0 $white;
+      div {
+        line-height: 1;
+        display: inline-block;
+        overflow: hidden;
+        transform: translateY(7px);
+        height: 32px;
+        span {
+          display: block;
+          transition: transform 0.2s ease-out;
+          text-shadow: 0 30px 0 $white;
+        }
+      }
+      &:hover div span {
+        transform: translateY(-112%);
       }
     }
-    a:hover div span {
-      transform: translateY(-112%);
-    }
-    .btnblack-xl {
+    .btn-grey-xl {
       height: 120px;
       line-height: 120px;
       border-radius: 100px;
@@ -183,21 +183,21 @@
       color: $black;
       background-color: $white;
       font-family: $dm-font-family;
-    }
-    a div {
-      line-height: 1;
-      display: inline-block;
-      overflow: hidden;
-      transform: translateY(7px);
-      height: 32px;
-      span {
-        display: block;
-        transition: transform 0.2s ease-out;
-        text-shadow: 0 30px 0 $white;
+      div {
+        line-height: 1;
+        display: inline-block;
+        overflow: hidden;
+        transform: translateY(7px);
+        height: 32px;
+        span {
+          display: block;
+          transition: transform 0.2s ease-out;
+          text-shadow: 0 30px 0 $white;
+        }
       }
-    }
-    a:hover div span {
-      transform: translateY(-112%);
+      &:hover div span {
+        transform: translateY(-112%);
+      }
     }
   }
 }

@@ -30,7 +30,7 @@ const Footerasocial = () => {
             <div key={index} className="col-xl-4 col-lg-4 col-md-6">
               <div className="footer-social-item d-flex align-items-center justify-content-between">
                 <span className="footer-anim-border"></span>
-                <div class="footer-social-text z-index-1 position-relative">
+                <div className="footer-social-text z-index-1 position-relative">
                   <span className="child-1">{item?.title}</span>
                   <span className="child-2">{item?.subtitle}</span>
                 </div>
