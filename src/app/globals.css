@@ -32,7 +32,6 @@ body {
   color: var(--pw-text-body);
   line-height: 26px;
   background-color: var(--bs-body-bg);
-  cursor: pointer;
 }
 
 a,
