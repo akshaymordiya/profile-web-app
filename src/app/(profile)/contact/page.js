@@ -6,12 +6,13 @@ import FlowerImg from "../../../../public/assets/contact-flower.png";
 import FlowerText from "../../../../public/assets/contact-flower-text.png";
 import Navbar from "@/app/components/Navbar";
 import ContactCategory from "@/app/components/contactCategory/ContactCategory";
-import Contactform from "@/app/components/Form/Contactform";
 import FooterService from "@/app/components/footerservice/FooterService";
 import Col from "react-bootstrap/Col";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
+import ContactBuget from "@/app/components/contactbuget/ContactBuget";
+import CTA from "@/app/components/CTA";
 
 //TODO:: The child page of contact route
 const Contact = () => {
@@ -137,25 +138,44 @@ const Contact = () => {
             <ContactCategory />
 
             <form>
-              <Row className="g-4">
+              <h4 className="contact-category-title">Request A Quote</h4>
+              <Row className="g-4 mb-5">
                 <Col md>
                   <FloatingLabel
                     controlId="floatingInputGrid"
-                    label="Email address"
+                    label="Enter Name"
                   >
-                    <Form.Control type="text" placeholder="name@example.com" />
+                    <Form.Control type="text" placeholder="Jinkal" />
                   </FloatingLabel>
                 </Col>
                 <Col md>
-                  <FloatingLabel
-                    controlId="floatingInputGrid"
-                    label="Email address"
-                  >
-                    <Form.Control type="email" placeholder="name@example.com" />
+                  <FloatingLabel controlId="floatingInputGrid" label="Company">
+                    <Form.Control type="email" placeholder="ArithBird" />
                   </FloatingLabel>
                 </Col>
               </Row>
+              <Row className="mb-5">
+                <Col md>
+                  <FloatingLabel
+                    controlId="floatingInputGrid"
+                    label="Enter Email"
+                  >
+                    <Form.Control type="text" placeholder="abc@gmail.com" />
+                  </FloatingLabel>
+                </Col>
+              </Row>
+              <Row className="mb-5">
+                <FloatingLabel controlId="floatingTextarea2" label="Comments">
+                  <Form.Control
+                    as="textarea"
+                    placeholder="Leave a comment here"
+                    style={{ height: "150px" }}
+                  />
+                </FloatingLabel>
+              </Row>
             </form>
+
+            <ContactBuget />
           </div>
         </div>
       </div>

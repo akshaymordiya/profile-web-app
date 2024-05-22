@@ -2,10 +2,10 @@
 import React, { useState } from "react";
 import "./category.scss";
 
-const ContactBrand = ({ label, labelText, labelClass }) => {
+const ContactBrand = ({ label, labelText, labelClass, onClick}) => {
   return (
     <>
-    <label htmlFor={label} className={labelClass}>
+    <label htmlFor={label} className={labelClass} onClick={onClick} >
       {labelText}
     </label>
     <input type="checkbox" id={label} value={labelText} />
@@ -14,11 +14,19 @@ const ContactBrand = ({ label, labelText, labelClass }) => {
 };
 
 const ContactCategory = () => {
-  const [activeIndex, setActiveIndex] = useState(null); 
+  const [activeIndex, setActiveIndex] = useState([]); 
 
   const handleClick = (index) => {
-    setActiveIndex(index);
+    // setActiveIndex(index);
+    const newActiveIndices = [...activeIndex]; // Copy the current state
+    if (activeIndex.includes(index)) { // Check if already active
+      newActiveIndices.splice(activeIndex.indexOf(index), 1); // Remove
+    } else {
+      newActiveIndices.push(index); // Add
+    }
+    setActiveIndex(newActiveIndices); 
   };
+ 
 
   const data = [
     {
@@ -78,8 +86,8 @@ const ContactCategory = () => {
             key={index}
             label={item.label}
             labelText={item.value}
-            labelClass={`contact-category-btn ${activeIndex === index ? 'active' : ''}`}
-            onClick={() => handleClick(index)}
+            labelClass={`contact-category-btn ${activeIndex.includes(index) ? 'active' : ''}`}
+            onClick={()=> handleClick(index)}
           />
         ))}
       </div>

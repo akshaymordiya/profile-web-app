@@ -12,6 +12,7 @@ import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
 import Counter from "@/app/components/sections/counterup/countup";
 import Navbar from "@/app/components/Navbar";
 import WOW from "wow.js";
+import BrandButton from "@/app/components/Brand/BrandButton";
 
 const data = [
   {
@@ -550,6 +551,7 @@ const About = () => {
               </div>
             </div>
           </div>
+          <BrandButton />
           <Footer />
         </main>
       </div>
