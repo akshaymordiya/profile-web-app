@@ -1,8 +1,8 @@
-"use client";
 import React from 'react';
 
 import IMG from '@/app/components/IMG';
 import Grid from '@/app/components/Grid';
+import ServiceBox from '@/app/(home)/sections/Services/Client/ServiceBox';
 
 import "./index.scss";
 
@@ -62,6 +62,22 @@ const Services = () => {
         containerClasses={`${BASE_CLASSNAME}_services-shape_3`}  
         imageClasses='image_shape_3'      
       />
+      <IMG
+        src='/assets/service-shape-1.png'
+        alt='services-shape-4'
+        useContainer
+        useRawImgTag
+        containerClasses={`${BASE_CLASSNAME}_services-shape_4`}
+        imageClasses='image_shape_4'
+      />
+      <IMG
+        src='/assets/service-shape-2.png'
+        alt='services-shape-5'
+        useContainer
+        useRawImgTag
+        containerClasses={`${BASE_CLASSNAME}_services-shape_5`}
+        imageClasses='image_shape_5'      
+      />
       
         <Grid classNames={`${BASE_CLASSNAME}_grid_wrapper`}>
           <Grid.Item
@@ -97,34 +113,7 @@ const Services = () => {
             lg={6}
             xlg={6}
           >
-            <div className={`${BASE_CLASSNAME}_grid_wrapper_col-right`}>
-              {[1,2,3].map(i => (
-                <div className="service_card">
-                  <span>
-                    <img src="" alt="" />
-                  </span>
-                  <div className="service_card_content">
-                    <h3 className="service_card_content_title">
-                      Design <br /> Strategy
-                    </h3>
-                    <p className='service_card_content_description'>
-                      We always ensure that it combines a clean <br />
-                      and beautiful visual design.
-                    </p>
-                    <div className="service_card_content_tag">
-                      <span className="me-2">UI/UX Audit</span>
-                      <span>Workshops</span>
-                    </div>
-                  </div>
-                </div>
-              ))}              
-              <div className="service-contact_btn">
-                <a href="#">
-                  Call me to get more extra service
-                  <span>Call Now</span>
-                </a>
-              </div>
-            </div>
+           <ServiceBox />
           </Grid.Item>
         </Grid>
     </section>
