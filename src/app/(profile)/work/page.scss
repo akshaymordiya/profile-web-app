@@ -1,5 +1,8 @@
 @import "../../../styles/variables";
 
+.gx-90 {
+  --bs-gutter-x: 90px;
+}
 .porfolio-slider-area {
   background-color: $background_bg;
   .porfolio-overlay {
@@ -109,7 +112,7 @@
     .portfolio-meta-arrow {
       display: inline-block;
       width: 20px;
-      height: 15px;
+      height: 12px;
       background-color: transparent;
       margin-right: 9px;
       position: relative;
@@ -126,7 +129,7 @@
       }
       svg {
         position: absolute;
-        top: -4px;
+        top: -6px;
         left: 0;
         visibility: hidden;
         opacity: 0;
@@ -162,7 +165,7 @@
       transform: scale(1.2);
     }
     .portfolio-meta-arrow {
-      width: 43px;
+      width: 25px;
     }
     .portfolio-meta-arrow:before {
       visibility: hidden;

@@ -325,41 +325,14 @@ button {
 }
 
 /* service  CSS */
-.service-overlay-bg {
+/* .service-overlay-bg {
   position: relative;
-}
-.black-bg-2 {
-  background-color:var(--common-dark-bg);
-}
+} */
+  
 .z-index-1{
   z-index: 1;
 }
 
-.section-subtitle {
-  font-size: 20px;
-  padding-bottom: 10px;
-  font-weight: 500;
-  line-height: 1;
-  color: var(--common-white);
-  font-family: var(--text-Didone-right);
-  display: inline-block;
-}
-.service-title-box p {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 26px;
-  color: hsla(0, 0%, 100%, 0.7);
-}
-
-.section-title {
-  font-weight: 500;
-  font-size: 80px;
-  line-height: 1;
-  letter-spacing: -0.02em;
-  color: var(--common-white);
-  font-family: var(--text-Didone-right);
-  margin-bottom: 25px;
-}
 
 img {
   max-width: 100%;

@@ -5,6 +5,7 @@ import WorkSilder from "@/app/components/WorkSlider/WorSlider";
 import WorkItem from "@/app/components/WorkItem/WorkItem";
 import BrandButton from "@/app/components/Brand/BrandButton";
 import FooterService from "@/app/components/footerservice/FooterService";
+import CustomCursor from "@/app/components/MouseCursor/MouseCursor";
 
 //TODO:: The child page of work route
 const Work = () => {
@@ -43,6 +44,7 @@ const Work = () => {
       <WorkItem />
       <BrandButton />
       <FooterService />
+      <CustomCursor />
     </>
   );
 };

@@ -3,7 +3,7 @@
 .service-area {
   background-color: $dark-bg;
   z-index: 1;
-  position: relative;
+  // position: relative;
   .stack_card {
     display: flex;
     justify-content: center;
@@ -21,9 +21,9 @@
       font-family: $dr-font-family;
       display: inline-block;
     }
-    h3 {
+    h4 {
       font-weight: 500;
-      font-size: 80px;
+      font-size: 92px;
       line-height: 1;
       letter-spacing: -0.02em;
       color: $white;
@@ -34,6 +34,7 @@
       font-weight: 400;
       font-size: 18px;
       line-height: 26px;
+      width: 425px;
       color: hsla(0, 0%, 100%, 0.7);
     }
   }

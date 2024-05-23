@@ -1,35 +1,40 @@
 import React from "react";
-import Shape1 from "../shape1/Shape1";
-import './panalarea.scss'
+import Shapes from "../shape1/Shape1";
+import "./panalarea.scss";
 import ServiceCard from "../servicecard/ServiceCard";
+import Aos from "../AOS/aos";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 const ServicePanalArea = () => {
   return (
     <>
+      <Aos />
       <div
-        // ref={secondSectionRef}
         id="service"
-        className="service-area services-panel-area service-overlay-bg black-bg-2 z-index-1"
+        className="service-area services-panel-area service-overlay-bg black-bg-2 position-relative z-index-1"
         style={{ paddingTop: "150px", paddingBottom: "125px" }}
       >
-        <Shape1 />
+        <Shapes />
         <div className="container position-sticky">
           <div className="row">
             <div className="col-xl-5 col-lg-5 ">
               <div className="stack_card">
                 <div className="service-title-box services-panel-pin">
-                  <span className="section-subtitle">OUR PROCESS</span>
-                  <h3 className="section-title">
-                    How We
-                    <br />
-                    Carry Out Our
-                    <br />
-                    Projects
-                  </h3>
-                  <p>
-                    We offer a range of services to help elevate <br />
-                    your brand & drive results.
-                  </p>
+                  <span
+                    className="section-subtitle"
+                    data-aos="flip-up"
+                    data-aos-duration="800"
+                  >
+                    OUR PROCESS
+                  </span>
+                  <SectionTitle
+                    interClass="section-title"
+                    title="How We Carry Out Our Projects"
+                    para="We offer a range of services to help elevate your brand & drive results."
+                    data-aos="flip-up"
+                    data-aos-duration="1000"
+                    className="para-with-newline"
+                  />
                 </div>
               </div>
             </div>

@@ -5,7 +5,7 @@ import shape1 from "../../../../public/assets/service-shape-1.png";
 import shape2 from "../../../../public/assets/service-shape-2.png";
 import star from "../../../../public/assets/star.png";
 
-const Shape1 = () => {
+const Shapes = () => {
   return (
     <>
       <div className="service-circle-img">
@@ -40,4 +40,4 @@ const Shape1 = () => {
   );
 };
 
-export default Shape1;
+export default Shapes;

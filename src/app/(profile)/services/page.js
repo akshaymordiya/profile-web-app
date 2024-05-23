@@ -15,15 +15,26 @@ import SlideNav from "@/app/components/Slidernav/SlideNav";
 import BrandButton from "@/app/components/Brand/BrandButton";
 import ServicePrice from "@/app/components/ServicePrice/ServicePrice";
 import ServiceCategory from "@/app/components/servicecategory/ServiceCategory";
-import Footerasocial from "@/app/components/footerservice/footerasocial";
 import FooterService from "@/app/components/footerservice/FooterService";
+import CustomCursor from "@/app/components/MouseCursor/MouseCursor";
+import Aos from "@/app/components/AOS/aos";
+import Grid from "@/app/components/Grid";
 
 //TODO:: The child page of Services route
 function Services() {
+  const BASE_CLASSNAME = ""
   return (
     <>
+      <Aos />
       <Navbar />
       <main>
+
+        <Grid >
+          <Grid.Item >
+
+          </Grid.Item>
+        </Grid>
+
         <div className="inner-slider-area inner-slider-plr">
           <div className="container-fluid">
             <div className="row align-items-center">
@@ -31,18 +42,34 @@ function Services() {
                 <div className="inner-slider-content-main d-flex justify-content-xl-end justify-content-start">
                   <div className="inner-slider-content-wrap">
                     <div className="inner-slider-title-box">
-                      <h4 className="inner-slider-title">
+                      <h4
+                        className="inner-slider-title"
+                        data-aos="flip-up"
+                        data-aos-duration="1200"
+                      >
                         High Quality <br /> Projects
                       </h4>
                     </div>
                     <div className="inner-service-list-wrap">
-                      <div className="inner-service-list list-1 wow tpfadeUp">
+                      <div
+                        className="inner-service-list list-1 "
+                        data-aos="fade-right"
+                        data-aos-duration="800"
+                      >
                         <span>Over 40 Websites Built With Envato</span>
                       </div>
-                      <div className="inner-service-list list-2 wow tpfadeUp">
+                      <div
+                        className="inner-service-list list-2"
+                        data-aos="fade-right"
+                        data-aos-duration="1000"
+                      >
                         <span>Visual Designer for 10+ years</span>
                       </div>
-                      <div className="inner-service-list list-3 wow tpfadeUp">
+                      <div
+                        className="inner-service-list list-3"
+                        data-aos="fade-right"
+                        data-aos-duration="1200"
+                      >
                         <span>UI/UX Designer, Envato</span>
                       </div>
                     </div>
@@ -69,7 +96,11 @@ function Services() {
                   className="inner-info-title-box"
                   style={{ marginBottom: "90px" }}
                 >
-                  <h4 className="inner-info-title">
+                  <h4
+                    className="inner-info-title"
+                    data-aos="flip-up"
+                    data-aos-duration="2000"
+                  >
                     Refined branding and web design <br />
                     strategically created to tell your story, make <br />
                     a connection and establish a cutting-edge <br />
@@ -176,8 +207,16 @@ function Services() {
             <div className="row">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div className="inner-price-title-box text-center">
-                  <h4 className="inner-section-title">Services & Pricing</h4>
-                  <p>No surprises. No hassles. Just right.</p>
+                  <h4
+                    className="inner-section-title"
+                    data-aos="flip-up"
+                    data-aos-duration="1200"
+                  >
+                    Services & Pricing
+                  </h4>
+                  <p data-aos="flip-up" data-aos-duration="1400">
+                    No surprises. No hassles. Just right.
+                  </p>
                 </div>
               </div>
             </div>
@@ -188,6 +227,7 @@ function Services() {
         <BrandButton />
         <FooterService />
       </main>
+      <CustomCursor />
     </>
   );
 }

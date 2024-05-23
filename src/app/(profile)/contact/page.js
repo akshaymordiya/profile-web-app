@@ -13,6 +13,7 @@ import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import ContactBuget from "@/app/components/contactbuget/ContactBuget";
 import CTA from "@/app/components/CTA";
+import CustomCursor from "@/app/components/MouseCursor/MouseCursor";
 
 //TODO:: The child page of contact route
 const Contact = () => {
@@ -180,6 +181,7 @@ const Contact = () => {
         </div>
       </div>
       <FooterService />
+      <CustomCursor />
     </>
   );
 };
