@@ -30,14 +30,13 @@ const About = () => {
       <Navbar />
       <div id="smooth-content">
         <main>
-          <div className="services-area service-ptb z-index-1 position-relative fix">
+          <div className="services-area">
             <IMG
               src={ServiceShape}
               useContainer={true}
               containerClasses={"services-shape-1"}
               alt="service_shape"
             />
-
             <div className="container">
               <Grid classNames={`${BASE_CLASSNAME}_grid`}>
                 <Grid.Item

@@ -6,7 +6,8 @@
   background-color: #f6f9ff;
   padding-top: 175px;
   padding-bottom: 140px;
-  overflow: hidden;
+  overflow: hidden;z-index: 1;
+  position: relative;
   .services-shape-1 {
     position: absolute;
     top: 0;

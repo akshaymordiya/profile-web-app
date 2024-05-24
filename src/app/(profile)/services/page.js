@@ -1,8 +1,9 @@
 import React from "react";
 import "./page.scss";
+import Image from "next/image";
 import Navbar from "@/app/components/Navbar";
 import ResponsiveSlider from "@/app/components/slider/Slider";
-import ServicePanalArea from "@/app/components/servicePanalarea/ServicePanalArea";
+// import ServicePanalArea from "@/app/components/servicePanalarea/ServicePanalArea";
 import ArrowOutwardOutlinedIcon from "@mui/icons-material/ArrowOutwardOutlined";
 import ViewQuiltOutlinedIcon from "@mui/icons-material/ViewQuiltOutlined";
 import VerticalSplitOutlinedIcon from "@mui/icons-material/VerticalSplitOutlined";
@@ -19,72 +20,136 @@ import FooterService from "@/app/components/footerservice/FooterService";
 import CustomCursor from "@/app/components/MouseCursor/MouseCursor";
 import Aos from "@/app/components/AOS/aos";
 import Grid from "@/app/components/Grid";
+import InnerServiceList from "@/app/components/inner_service_list/InnerServiceList";
+import SectionTitle from "@/app/components/SectionTitle/SectionTitle";
+import ServiceCard from "@/app/components/servicecard/ServiceCard";
 
 //TODO:: The child page of Services route
 function Services() {
-  const BASE_CLASSNAME = ""
+  const BASE_CLASSNAME = "services-container";
+
   return (
     <>
       <Aos />
       <Navbar />
       <main>
-
-        <Grid >
-          <Grid.Item >
-
+        <Grid classNames={`${BASE_CLASSNAME} inner-slider-area`}>
+          <Grid.Item
+            xs={12}
+            sm={12}
+            md={12}
+            lg={6}
+            xlg={6}
+            itemClass="inner-slider-content-main"
+            data-speed="0.5"
+          >
+            <div className="inner-slider-content-wrap">
+              <SectionTitle
+                interClass="inner-slider-title"
+                title="High Quality Projects"
+              />
+              <InnerServiceList
+                listclass="inner-service-list list-1"
+                listName="Over 40 Websites Built With Envato"
+              />
+              <InnerServiceList
+                listclass="inner-service-list list-2"
+                listName="Visual Designer for 10+ years"
+              />
+              <InnerServiceList
+                listclass="inner-service-list list-3"
+                listName="UI/UX Designer, Envato"
+              />
+            </div>
+          </Grid.Item>
+          <Grid.Item
+            xs={12}
+            sm={12}
+            md={12}
+            lg={6}
+            xlg={6}
+            itemClass="inner-slider-main"
+            data-speed="0.5"
+          >
+            <ResponsiveSlider />
           </Grid.Item>
         </Grid>
 
-        <div className="inner-slider-area inner-slider-plr">
-          <div className="container-fluid">
-            <div className="row align-items-center">
-              <div className="col-lg-6 col-xl-6">
-                <div className="inner-slider-content-main d-flex justify-content-xl-end justify-content-start">
-                  <div className="inner-slider-content-wrap">
-                    <div className="inner-slider-title-box">
-                      <h4
-                        className="inner-slider-title"
-                        data-aos="flip-up"
-                        data-aos-duration="1200"
-                      >
-                        High Quality <br /> Projects
-                      </h4>
-                    </div>
-                    <div className="inner-service-list-wrap">
-                      <div
-                        className="inner-service-list list-1 "
-                        data-aos="fade-right"
-                        data-aos-duration="800"
-                      >
-                        <span>Over 40 Websites Built With Envato</span>
-                      </div>
-                      <div
-                        className="inner-service-list list-2"
-                        data-aos="fade-right"
-                        data-aos-duration="1000"
-                      >
-                        <span>Visual Designer for 10+ years</span>
-                      </div>
-                      <div
-                        className="inner-service-list list-3"
-                        data-aos="fade-right"
-                        data-aos-duration="1200"
-                      >
-                        <span>UI/UX Designer, Envato</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6 col-xl-6">
-                <div className="inner-slider-main">
-                  <ResponsiveSlider />
-                </div>
-              </div>
+        <div className="service-area">
+          <div className="service-circle-img">
+            <span className="text-img">
+              <img src="/assets/footer-circle-img.png" alt="" />
+            </span>
+            <div className="shape d-none d-lg-block">
+              <svg
+                width="260"
+                height="70"
+                viewBox="0 0 260 70"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M68.7285 34.1352C48.3941 10.6976 13.8796 0.514191 0 0.514191C93.4783 0.514191 276.081 -0.642708 258.863 0.514191C236.79 1.99739 217.224 6.94161 191.137 34.1352C140.468 93.9609 98.3272 68.2507 68.7285 34.1352Z"
+                  fill="currentcolor"
+                ></path>
+              </svg>
             </div>
           </div>
+          {/* <Image
+          src='/assets/service-shape-1.png'
+          alt='circle_shape-img'
+          useContainer
+          containerClasses="service-shape-1"
+        />
+          <Image
+          src='/assets/service-shape-2.png'
+          alt='circle_shape-img'
+          useContainer
+          containerClasses="service-shape-2"
+        />
+          <Image
+          src='/assets/star.png'
+          alt='circle_shape-img'
+          useContainer
+          containerClasses="service-shape-3"
+        /> */}
+          <Grid classNames={`${BASE_CLASSNAME}_grid container`}>
+            <Grid.Item xs={12} sm={12} md={12} lg={6} xlg={5} data-speed="0.5">
+              <div className="stack_card">
+                <div className="service-title-box services-panel-pin">
+                  <span
+                    className="section-subtitle"
+                    data-aos="flip-up"
+                    data-aos-duration="800"
+                  >
+                    OUR PROCESS
+                  </span>
+                  {/* <SectionTitle
+                    interClass="section-title"
+                    title="How WeCarry Out Our Projects"
+                    para="We offer a range of services to help elevate your brand & drive results."
+                    data-aos="flip-up"
+                    data-aos-duration="1000"
+                  /> */}
+                  <h3 className="section-title">
+                    How We
+                    <br />
+                    Carry Out Our
+                    <br />
+                    Projects
+                  </h3>
+                  <p>
+                    We offer a range of services to help elevate <br />
+                    your brand & drive results.
+                  </p>
+                </div>
+              </div>
+            </Grid.Item>
+            <Grid.Item xs={12} sm={12} md={12} lg={6} xlg={7} data-speed="0.5">
+              <ServiceCard />
+            </Grid.Item>
+          </Grid>
         </div>
-        <ServicePanalArea />
         <div
           className="inner-info-area"
           style={{ paddingTop: "120px", paddingBottom: "90px" }}
