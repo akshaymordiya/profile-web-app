@@ -66,7 +66,7 @@ const ContactBuget = () => {
         </div>
       </div>
       <div>
-        <div className="footer-btn">
+        <div className="footer-btn" style={{marginBottom:"50px"}}>
           <CTA
             linkClass="btn-black-xl"
             linkHref="/contact"

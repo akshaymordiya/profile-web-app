@@ -1,25 +1,34 @@
 import React from "react";
 import "./footer.scss";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import whitelogo from "../../../../public/assets/logo-white.png";
+import footershape from "../../../../public/assets/footer-shape-2.png";
 import LanguageIcon from "@mui/icons-material/Language";
 import SubscriptionsOutlinedIcon from "@mui/icons-material/SubscriptionsOutlined";
 import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardOutlined";
+import IMG from "../IMG";
 const Footer = () => {
   return (
     <>
       <footer>
         <div className="footer-main-wrapper position-relative z-index-1 fix">
           <div className="footer-area" style={{ padding: "80px 0px 60px 0px" }}>
-            <div className="footer-shape">
-              <img src="/assets/footer-shape-2.png" />
-            </div>
+            <IMG
+              src={footershape}
+              alt="Logo-white"
+              useContainer
+              containerClasses="footer-shape"
+            />
             <div className="container">
               <div className="row">
                 <div className="col-xl-4 col-lg-4 col-md-8 mb-40">
                   <div className="footer-widget">
-                    <div className="footer-logo">
-                      <img src="/assets/logo-white.png" />
-                    </div>
+                    <IMG
+                      src={whitelogo}
+                      alt="Logo-white"
+                      useContainer
+                      containerClasses="footer-logo"
+                    />
                     <div className="footer-content">
                       <p>Feel free to reach out with questions or inquiries.</p>
                     </div>

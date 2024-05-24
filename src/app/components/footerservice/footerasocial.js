@@ -1,5 +1,6 @@
 import React from "react";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import Grid from "../Grid";
 
 const Footerasocial = () => {
   const data = [
@@ -24,24 +25,30 @@ const Footerasocial = () => {
   ];
   return (
     <>
-      <div className="row">
+      <Grid>
         {data.map((item, index) => {
           return (
-            <div key={index} className="col-xl-4 col-lg-4 col-md-6">
-              <div className="footer-social-item d-flex align-items-center justify-content-between">
-                <span className="footer-anim-border"></span>
-                <div className="footer-social-text z-index-1 position-relative">
-                  <span className="child-1">{item?.title}</span>
-                  <span className="child-2">{item?.subtitle}</span>
-                </div>
-                <div className="footer-social-icon z-index-1 position-relative">
-                  <span>{item?.icon}</span>
-                </div>
+            <Grid.Item
+              key={index}
+              xs={12}
+              sm={12}
+              md={6}
+              lg={4}
+              xl={4}
+              itemClass="footer-social-item"
+            >
+              <span className="footer-anim-border"></span>
+              <div className="footer-social-text z-index-1 position-relative">
+                <span className="child-1">{item?.title}</span>
+                <span className="child-2">{item?.subtitle}</span>
               </div>
-            </div>
+              <div className="footer-social-icon z-index-1 position-relative">
+                <span>{item?.icon}</span>
+              </div>
+            </Grid.Item>
           );
         })}
-      </div>
+        </Grid>
     </>
   );
 };

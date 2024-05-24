@@ -6,9 +6,11 @@ import WorkItem from "@/app/components/WorkItem/WorkItem";
 import BrandButton from "@/app/components/Brand/BrandButton";
 import FooterService from "@/app/components/footerservice/FooterService";
 import CustomCursor from "@/app/components/MouseCursor/MouseCursor";
+import Grid from "@/app/components/Grid";
 
 //TODO:: The child page of work route
 const Work = () => {
+  const BASE_CLASSNAME = "porfolio-area";
   return (
     <>
       <Navbar />
@@ -29,18 +31,20 @@ const Work = () => {
           </div>
         </div>
       </div>
-      <div
-        className="porfolio-wrapper portfolio-effect portfolio-list-scroll-text-animation position-relative fix"
-        style={{ paddingTop: "80px", paddingBottom: "50px" }}
-      >
-        <div
-          className="portfolio-list-text text-end d-flex align-items-center"
-          style={{ paddingBottom: "80px" }}
+      <Grid classNames={`${BASE_CLASSNAME}-wrapper`}>
+        <Grid.Item
+          xs={12}
+          sm={12}
+          lg={12}
+          md={12}
+          xlg={12}
+          itemClass="portfolio-list-text"
+          data-speed="0.5"
         >
           <p>Latest Project</p>
           <p>Latest Project</p>
-        </div>
-      </div>
+        </Grid.Item>
+      </Grid>
       <WorkItem />
       <BrandButton />
       <FooterService />

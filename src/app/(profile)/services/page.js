@@ -1,8 +1,10 @@
 import React from "react";
 import "./page.scss";
-import Image from "next/image";
 import Navbar from "@/app/components/Navbar";
 import ResponsiveSlider from "@/app/components/slider/Slider";
+import shapeImage from "../../../../public/assets/service-shape-1.png";
+import shapeImagecircle from "../../../../public/assets/service-shape-2.png";
+import starImage from "../../../../public/assets/star.png";
 // import ServicePanalArea from "@/app/components/servicePanalarea/ServicePanalArea";
 import ArrowOutwardOutlinedIcon from "@mui/icons-material/ArrowOutwardOutlined";
 import ViewQuiltOutlinedIcon from "@mui/icons-material/ViewQuiltOutlined";
@@ -23,10 +25,48 @@ import Grid from "@/app/components/Grid";
 import InnerServiceList from "@/app/components/inner_service_list/InnerServiceList";
 import SectionTitle from "@/app/components/SectionTitle/SectionTitle";
 import ServiceCard from "@/app/components/servicecard/ServiceCard";
+import IMG from "@/app/components/IMG";
 
 //TODO:: The child page of Services route
 function Services() {
   const BASE_CLASSNAME = "services-container";
+
+  const desingData = [
+    {
+      title: "Web Design",
+      iconleft: <ViewQuiltOutlinedIcon />,
+    },
+    {
+      title: "UI/UX Design",
+      iconleft: <VerticalSplitOutlinedIcon />,
+    },
+    {
+      title: "Mobile App Design",
+      iconleft: <AodOutlinedIcon />,
+    },
+    {
+      title: "Branding",
+      iconleft: <AndroidOutlinedIcon />,
+    },
+  ];
+  const devData = [
+    {
+      title: "Web Development",
+      iconleft: <AutoAwesomeMotionOutlinedIcon />,
+    },
+    {
+      title: "Software Development",
+      iconleft: <CoronavirusOutlinedIcon />,
+    },
+    {
+      title: "CMS Development",
+      iconleft: <AodOutlinedIcon />,
+    },
+    {
+      title: "Front-End Development",
+      iconleft: <AndroidOutlinedIcon />,
+    },
+  ];
 
   return (
     <>
@@ -95,26 +135,34 @@ function Services() {
               </svg>
             </div>
           </div>
-          {/* <Image
-          src='/assets/service-shape-1.png'
-          alt='circle_shape-img'
-          useContainer
-          containerClasses="service-shape-1"
-        />
-          <Image
-          src='/assets/service-shape-2.png'
-          alt='circle_shape-img'
-          useContainer
-          containerClasses="service-shape-2"
-        />
-          <Image
-          src='/assets/star.png'
-          alt='circle_shape-img'
-          useContainer
-          containerClasses="service-shape-3"
-        /> */}
+          <IMG
+            src={shapeImage}
+            containerClasses="service-shape-1"
+            alt="shape-img"
+            useContainer
+          />
+          <IMG
+            src={shapeImagecircle}
+            alt="circle_shape-img"
+            useContainer
+            containerClasses="service-shape-2"
+          />
+          <IMG
+            src={starImage}
+            alt="star-img"
+            useContainer
+            containerClasses="service-shape-3"
+          />
           <Grid classNames={`${BASE_CLASSNAME}_grid container`}>
-            <Grid.Item xs={12} sm={12} md={12} lg={6} xlg={5} data-speed="0.5">
+            <Grid.Item
+              xs={12}
+              sm={12}
+              md={12}
+              lg={6}
+              xlg={5}
+              itemClass="service-card"
+              data-speed="0.5"
+            >
               <div className="stack_card">
                 <div className="service-title-box services-panel-pin">
                   <span
@@ -150,145 +198,138 @@ function Services() {
             </Grid.Item>
           </Grid>
         </div>
-        <div
-          className="inner-info-area"
-          style={{ paddingTop: "120px", paddingBottom: "90px" }}
-        >
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-xl-9">
-                <div
-                  className="inner-info-title-box"
-                  style={{ marginBottom: "90px" }}
-                >
-                  <h4
-                    className="inner-info-title"
-                    data-aos="flip-up"
-                    data-aos-duration="2000"
+        <div className="inner-info-area">
+          <Grid classNames={`${BASE_CLASSNAME}_grid container`}>
+            <Grid.Item
+              xs={12}
+              sm={12}
+              md={12}
+              lg={9}
+              xlg={9}
+              itemClass="inner-info-title-box container"
+            >
+              <SectionTitle
+                interClass="inner-info-title"
+                title="Refined branding and web design 
+                      strategically created to tell your story, make
+                      a connection and establish a cutting-edge 
+                      online and offline presence."
+                data-aos="flip-up"
+                data-aos-duration="2000"
+              />
+            </Grid.Item>
+          </Grid>
+            <Grid classNames={`${BASE_CLASSNAME}_wrapper container`}>
+              <Grid.Item xs={12} sm={12} md={12} lg={12} xlg={12} itemClass="testinominal-slide">
+                <Grid>
+                  <Grid.Item
+                    xs={12}
+                    sm={12}
+                    md={6}
+                    lg={4}
+                    xlg={4}
+                    itemClass="inner-info-service"
+                    data-speed="0.5"
+                    style={{ marginBottom: "100px" }}
                   >
-                    Refined branding and web design <br />
-                    strategically created to tell your story, make <br />
-                    a connection and establish a cutting-edge <br />
-                    online and offline presence.
-                  </h4>
-                </div>
-              </div>
-            </div>
-            <div className="row justify-content-center">
-              <div className="col-xl-9">
-                <div className="row" style={{ marginBottom: "100px" }}>
-                  <div className="col-xl-4">
-                    <div className="inner-info-service">
-                      <h4 className="inner-left-title">
-                        <span>
-                          <StarIcon />
-                        </span>
-                        Design
-                      </h4>
-                    </div>
-                  </div>
-                  <div className="col-xl-8">
-                    <div className="inner-service-category-wrap">
-                      <ServiceCategory
-                        serviceTitle="Web Design"
-                        serviceIconLeft={<ViewQuiltOutlinedIcon />}
-                        serviceIconRight={<ArrowOutwardOutlinedIcon />}
-                      />
-                      <ServiceCategory
-                        serviceTitle="UI/UX Design"
-                        serviceIconLeft={<VerticalSplitOutlinedIcon />}
-                        serviceIconRight={<ArrowOutwardOutlinedIcon />}
-                      />
-                      <ServiceCategory
-                        serviceTitle="Mobile App Design"
-                        serviceIconLeft={<AodOutlinedIcon />}
-                        serviceIconRight={<ArrowOutwardOutlinedIcon />}
-                      />
-                      <ServiceCategory
-                        serviceTitle="Branding"
-                        serviceIconLeft={<AndroidOutlinedIcon />}
-                        serviceIconRight={<ArrowOutwardOutlinedIcon />}
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="row justify-content-center">
-              <div className="col-xl-9">
-                <div className="row">
-                  <div className="col-xl-4">
-                    <div className="inner-info-service">
-                      <h4 className="inner-left-title">
-                        <span>
-                          <StarIcon />
-                        </span>
-                        Development
-                      </h4>
-                    </div>
-                  </div>
-                  <div className="col-xl-8">
-                    <div className="inner-service-category-wrap">
-                      <ServiceCategory
-                        serviceTitle="Web Development"
-                        serviceIconLeft={<AutoAwesomeMotionOutlinedIcon />}
-                        serviceIconRight={<ArrowOutwardOutlinedIcon />}
-                      />
-                      <ServiceCategory
-                        serviceTitle="Software Development"
-                        serviceIconLeft={<CoronavirusOutlinedIcon />}
-                        serviceIconRight={<ArrowOutwardOutlinedIcon />}
-                      />
-                      <ServiceCategory
-                        serviceTitle="CMS Development"
-                        serviceIconLeft={<AodOutlinedIcon />}
-                        serviceIconRight={<ArrowOutwardOutlinedIcon />}
-                      />
-                      <ServiceCategory
-                        serviceTitle="Front-End Development"
-                        serviceIconLeft={<AndroidOutlinedIcon />}
-                        serviceIconRight={<ArrowOutwardOutlinedIcon />}
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+                    <SectionTitle
+                      title="Design"
+                      Icon={<StarIcon />}
+                      interClass="inner-left-title"
+                    />
+                  </Grid.Item>
+                  <Grid.Item
+                    xs={12}
+                    sm={12}
+                    md={12}
+                    lg={8}
+                    xlg={8}
+                    itemClass="inner-service-category-wrap"
+                    data-speed="0.5"
+                  >
+                    {desingData.map((item) => {
+                      return (
+                        <ServiceCategory
+                          serviceTitle={item?.title}
+                          serviceIconLeft={item?.iconleft}
+                          serviceIconRight={<ArrowOutwardOutlinedIcon />}
+                        />
+                      );
+                    })}
+                  </Grid.Item>
+                </Grid>
+                <Grid>
+                  <Grid.Item
+                    xs={12}
+                    sm={12}
+                    md={6}
+                    lg={4}
+                    xlg={4}
+                    itemClass="inner-info-service"
+                    data-speed="0.5"
+                    style={{ marginBottom: "100px" }}
+                  >
+                    <SectionTitle
+                      title="Development"
+                      Icon={<StarIcon />}
+                      interClass="inner-left-title"
+                    />
+                  </Grid.Item>
+                  <Grid.Item
+                    xs={12}
+                    sm={12}
+                    md={12}
+                    lg={8}
+                    xlg={8}
+                    itemClass="inner-service-category-wrap"
+                    data-speed="0.5"
+                  >
+                    {devData.map((item) => {
+                      return (
+                        <ServiceCategory
+                          serviceTitle={item?.title}
+                          serviceIconLeft={item?.iconleft}
+                          serviceIconRight={<ArrowOutwardOutlinedIcon />}
+                        />
+                      );
+                    })}
+                  </Grid.Item>
+                </Grid>
+              </Grid.Item>
+            </Grid>
         </div>
-        <section
-          className="testimonial-area inner-customize"
-          style={{ paddingBottom: "160px", paddingTop: "25px" }}
-        >
-          <div className="container">
-            <SlideNav />
-          </div>
+
+        <section className="testimonial-area">
+          <Grid classNames="container">
+            <Grid.Item xs={12} sm={12} md={12} lg={12} xlg={12}>
+              <SlideNav />
+            </Grid.Item>
+          </Grid>
         </section>
-        <section
-          className="inner-price-area inner-price-customize"
-          style={{ paddingBottom: "70px" }}
-        >
+
+        <section className="inner-price-area">
+          <Grid>
+            <Grid.Item
+              xs={12}
+              sm={12}
+              md={12}
+              lg={12}
+              xlg={12}
+              itemClass="inner-price-title-box"
+            >
+              <SectionTitle
+                interClass="inner-section-title"
+                title="Services & Pricing"
+                para="No surprises. No hassles. Just right."
+                data-aos="flip-up"
+                data-aos-duration="1200"
+              />
+            </Grid.Item>
+          </Grid>
           <div className="container">
-            <div className="row">
-              <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div className="inner-price-title-box text-center">
-                  <h4
-                    className="inner-section-title"
-                    data-aos="flip-up"
-                    data-aos-duration="1200"
-                  >
-                    Services & Pricing
-                  </h4>
-                  <p data-aos="flip-up" data-aos-duration="1400">
-                    No surprises. No hassles. Just right.
-                  </p>
-                </div>
-              </div>
-            </div>
             <ServicePrice />
           </div>
         </section>
-
         <BrandButton />
         <FooterService />
       </main>

@@ -1,6 +1,7 @@
 import React from "react";
 import CTA from "../CTA";
 import "./price.scss";
+import Grid from "../Grid";
 
 const ServicePrice = () => {
   const data = [
@@ -24,7 +25,7 @@ const ServicePrice = () => {
       id: 3,
       head_title: "Not sure?",
       head_des: "Check the skill",
-      price_text:"You can order \n 1 free task",
+      price_text: "You can order \n 1 free task",
       body_des: "-",
       body_title: "-",
       button_title: "Free Skill Check",
@@ -33,45 +34,44 @@ const ServicePrice = () => {
 
   return (
     <>
-      <div className="row">
+      <Grid>
         {data.map((item, index) => {
           return (
-            <div
-              className="col-md-4 col-sm-6 col-xs-12"
+            <Grid.Item
+              xs={12}
+              sm={6}
+              md={4}
+              lg={4}
+              xlg={4}
+              itemClass="price-item"
               key={index}
-              style={{ marginBottom: "70px" }}
             >
-              <div className="price-item position-relative">
-                <div
-                  className="price-head text-center"
-                  style={{ marginBottom: "100px" }}
-                >
-                  <h4 className="price-head-title">{item?.head_title}</h4>
-                  <span>{item?.head_des}</span>
-                </div>
-                <div
-                  className="price-body text-center"
-                  style={{ marginBottom: "25px" }}
-                >
-                  {item?.price_text ? <div className="price-text">{item?.price_text}</div> : (
-                    <>
-                      <span>{item?.body_des}</span>
-                      <h4 className="price-body-title">{item?.body_title}</h4>
-                    </>
-                  )}
-                </div>
-                <div className="price-btn-box text-center">
-                  <CTA
-                    linkText={item?.button_title}
-                    linkClass="btn-price-white"
-                    linkHref="/contact"
-                  />
-                </div>
+              <div className="price-head">
+                <h4>{item?.head_title}</h4>
+                <span>{item?.head_des}</span>
               </div>
-            </div>
+              <div className="price-body">
+                {item?.price_text ? (
+                  <div className="price-text">{item?.price_text}</div>
+                ) : (
+                  <>
+                    <span>{item?.body_des}</span>
+                    <h4>{item?.body_title}</h4>
+                  </>
+                )}
+              </div>
+              <div className="price-btn-box text-center">
+                <CTA
+                  btn_color="btn-price-white"
+                  linkText={item?.button_title}
+                  linkClass="btn-price-white"
+                  linkHref="/contact"
+                />
+              </div>
+            </Grid.Item>
           );
         })}
-      </div>
+      </Grid>
     </>
   );
 };
