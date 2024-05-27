@@ -11,7 +11,6 @@ const BrandButton = () => {
       <Aos />
       <Grid
         classNames="brand-area"
-        style={{ paddingBottom: "100px", paddingTop: "100px" }}
       >
         {snowfleck.map((index) => {
               return (

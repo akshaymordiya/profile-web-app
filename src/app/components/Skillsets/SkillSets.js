@@ -4,6 +4,8 @@ import WbIncandescentIcon from "@mui/icons-material/WbIncandescent";
 import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
 import ProgressBar from "../Progressbar/ProgressBar";
 import Experience from "../Experience/Experience";
+import Aos from "../AOS/aos";
+import 'aos/dist/aos.css';
 
 const data = [
   {
@@ -67,6 +69,7 @@ const educationdata = [
 const SkillSets = () => {
   return (
     <>
+    <Aos />
       <div className="personal-info-skill" style={{ marginBottom: "85px" }}>
         <SectionTitle
           title="Skillsets"
@@ -76,6 +79,7 @@ const SkillSets = () => {
         {data.map((item, index) => {
           return (
             <ProgressBar
+            data-aos="fade-left"
               key={index}
               label={item?.skillslabel}
               ProgressValue={item?.Value}
@@ -86,7 +90,7 @@ const SkillSets = () => {
       </div>
       <div
         className="personal-info-experience"
-        style={{ marginBottom: "85px" }}
+        data-aos="fade-left"
       >
         <SectionTitle
           title="Experience"
@@ -106,7 +110,7 @@ const SkillSets = () => {
       </div>
       <div
         className="personal-info-education"
-        style={{ marginBottom: "85px" }}
+        data-aos="fade-right"
       >
         <SectionTitle
           title="Education"

@@ -10,7 +10,7 @@ const SectionTitle = ({
 }) => {
   return (
     <>
-      <h4 className={interClass}>
+      <h4 className={interClass} >
         <span>{Icon}</span>
         {title}
       </h4>

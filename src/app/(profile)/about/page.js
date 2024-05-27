@@ -21,12 +21,15 @@ import ServiceShape from "../../../../public/assets/hero-shape-2-1.png";
 import SectionTitle from "@/app/components/SectionTitle/SectionTitle";
 import SkillSets from "@/app/components/Skillsets/SkillSets";
 import Awards from "@/app/components/Award/Awards";
+import Aos from "@/app/components/AOS/aos";
+import "aos/dist/aos.css";
 
 const About = () => {
   const BASE_CLASSNAME = "grid-container";
 
   return (
     <>
+      <Aos />
       <Navbar />
       <div id="smooth-content">
         <main>
@@ -108,7 +111,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="service-info-area" style={{ paddingBottom: "80px" }}>
+          <div className="service-info-area">
             <div className="container">
               <Grid classNames={`${BASE_CLASSNAME}_grid`}>
                 <Grid.Item
@@ -148,9 +151,7 @@ const About = () => {
           </div>
 
           <div
-            className="personal-info-area personal-info-pin-section"
-            style={{ paddingBottom: "30px" }}
-          >
+            className="personal-info-area personal-info-pin-section">
             <div className="container">
               <Grid classNames={`${BASE_CLASSNAME}_grid`}>
                 <Grid.Item
@@ -191,7 +192,7 @@ const About = () => {
             </div>
           </div>
           <div
-            className="funfact-area funfact-plr z-index-1 position-relative fix"
+            className="funfact-area"
             style={{ paddingTop: "110px", paddingBottom: "60px" }}
           >
             <div className="container">
@@ -217,6 +218,7 @@ const About = () => {
                   style={{ marginBottom: "30px" }}
                 >
                   <SectionTitle
+                    data-aos="flip-up"
                     interClass="award-section-title"
                     title="Awards & recognitions"
                   />

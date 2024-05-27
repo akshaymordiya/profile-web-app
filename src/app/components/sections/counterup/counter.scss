@@ -2,8 +2,7 @@
 @import "../../../../styles/animations";
 .funfact-area {
   background-color: #f6f9ff;
-  padding-left: 85px;
-  padding-right: 85px;
+  padding: 110px 85px 60px 85px;
   background-image: url(/assets/funfact-bg-1-2.jpg);
   width: calc(100% - 200px);
   top: 0;
@@ -14,6 +13,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 20px;
+  position: relative;
   .funfact-item {
     position: relative;
     &.space-left-1 {

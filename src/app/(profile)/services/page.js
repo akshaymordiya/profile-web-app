@@ -5,7 +5,6 @@ import ResponsiveSlider from "@/app/components/slider/Slider";
 import shapeImage from "../../../../public/assets/service-shape-1.png";
 import shapeImagecircle from "../../../../public/assets/service-shape-2.png";
 import starImage from "../../../../public/assets/star.png";
-// import ServicePanalArea from "@/app/components/servicePanalarea/ServicePanalArea";
 import ArrowOutwardOutlinedIcon from "@mui/icons-material/ArrowOutwardOutlined";
 import ViewQuiltOutlinedIcon from "@mui/icons-material/ViewQuiltOutlined";
 import VerticalSplitOutlinedIcon from "@mui/icons-material/VerticalSplitOutlined";
@@ -85,18 +84,30 @@ function Services() {
           >
             <div className="inner-slider-content-wrap">
               <SectionTitle
+                data-aos="flip-up"
+                data-aos-duration="2000"
+                data-aos-delay="300"
                 interClass="inner-slider-title"
                 title="High Quality Projects"
               />
               <InnerServiceList
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                data-aos-delay="300"
                 listclass="inner-service-list list-1"
                 listName="Over 40 Websites Built With Envato"
               />
               <InnerServiceList
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                data-aos-delay="500"
                 listclass="inner-service-list list-2"
                 listName="Visual Designer for 10+ years"
               />
               <InnerServiceList
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                data-aos-delay="700"
                 listclass="inner-service-list list-3"
                 listName="UI/UX Designer, Envato"
               />
@@ -168,7 +179,7 @@ function Services() {
                   <span
                     className="section-subtitle"
                     data-aos="flip-up"
-                    data-aos-duration="800"
+                    data-aos-duration="1200"
                   >
                     OUR PROCESS
                   </span>
@@ -179,14 +190,23 @@ function Services() {
                     data-aos="flip-up"
                     data-aos-duration="1000"
                   /> */}
-                  <h3 className="section-title">
+                  <h3
+                    className="section-title"
+                    data-aos="flip-up"
+                    data-aos-duration="2000"
+                    data-aos-delay="300"
+                  >
                     How We
                     <br />
                     Carry Out Our
                     <br />
                     Projects
                   </h3>
-                  <p>
+                  <p
+                    data-aos="flip-up"
+                    data-aos-duration="2000"
+                    data-aos-delay="300"
+                  >
                     We offer a range of services to help elevate <br />
                     your brand & drive results.
                   </p>
@@ -214,89 +234,97 @@ function Services() {
                       strategically created to tell your story, make
                       a connection and establish a cutting-edge 
                       online and offline presence."
-                data-aos="flip-up"
-                data-aos-duration="2000"
+                      data-aos="flip-up"
+                      data-aos-duration="2000"
+                      data-aos-delay="300"
               />
             </Grid.Item>
           </Grid>
-            <Grid classNames={`${BASE_CLASSNAME}_wrapper container`}>
-              <Grid.Item xs={12} sm={12} md={12} lg={12} xlg={12} itemClass="testinominal-slide">
-                <Grid>
-                  <Grid.Item
-                    xs={12}
-                    sm={12}
-                    md={6}
-                    lg={4}
-                    xlg={4}
-                    itemClass="inner-info-service"
-                    data-speed="0.5"
-                    style={{ marginBottom: "100px" }}
-                  >
-                    <SectionTitle
-                      title="Design"
-                      Icon={<StarIcon />}
-                      interClass="inner-left-title"
-                    />
-                  </Grid.Item>
-                  <Grid.Item
-                    xs={12}
-                    sm={12}
-                    md={12}
-                    lg={8}
-                    xlg={8}
-                    itemClass="inner-service-category-wrap"
-                    data-speed="0.5"
-                  >
-                    {desingData.map((item) => {
-                      return (
-                        <ServiceCategory
-                          serviceTitle={item?.title}
-                          serviceIconLeft={item?.iconleft}
-                          serviceIconRight={<ArrowOutwardOutlinedIcon />}
-                        />
-                      );
-                    })}
-                  </Grid.Item>
-                </Grid>
-                <Grid>
-                  <Grid.Item
-                    xs={12}
-                    sm={12}
-                    md={6}
-                    lg={4}
-                    xlg={4}
-                    itemClass="inner-info-service"
-                    data-speed="0.5"
-                    style={{ marginBottom: "100px" }}
-                  >
-                    <SectionTitle
-                      title="Development"
-                      Icon={<StarIcon />}
-                      interClass="inner-left-title"
-                    />
-                  </Grid.Item>
-                  <Grid.Item
-                    xs={12}
-                    sm={12}
-                    md={12}
-                    lg={8}
-                    xlg={8}
-                    itemClass="inner-service-category-wrap"
-                    data-speed="0.5"
-                  >
-                    {devData.map((item) => {
-                      return (
-                        <ServiceCategory
-                          serviceTitle={item?.title}
-                          serviceIconLeft={item?.iconleft}
-                          serviceIconRight={<ArrowOutwardOutlinedIcon />}
-                        />
-                      );
-                    })}
-                  </Grid.Item>
-                </Grid>
-              </Grid.Item>
-            </Grid>
+          <Grid classNames={`${BASE_CLASSNAME}_wrapper container`}>
+            <Grid.Item
+              xs={12}
+              sm={12}
+              md={12}
+              lg={12}
+              xlg={12}
+              itemClass="testinominal-slide"
+            >
+              <Grid>
+                <Grid.Item
+                  xs={12}
+                  sm={12}
+                  md={6}
+                  lg={4}
+                  xlg={4}
+                  itemClass="inner-info-service"
+                  data-speed="0.5"
+                  style={{ marginBottom: "100px" }}
+                >
+                  <SectionTitle
+                    title="Design"
+                    Icon={<StarIcon />}
+                    interClass="inner-left-title"
+                  />
+                </Grid.Item>
+                <Grid.Item
+                  xs={12}
+                  sm={12}
+                  md={12}
+                  lg={8}
+                  xlg={8}
+                  itemClass="inner-service-category-wrap"
+                  data-speed="0.5"
+                >
+                  {desingData.map((item) => {
+                    return (
+                      <ServiceCategory
+                        serviceTitle={item?.title}
+                        serviceIconLeft={item?.iconleft}
+                        serviceIconRight={<ArrowOutwardOutlinedIcon />}
+                      />
+                    );
+                  })}
+                </Grid.Item>
+              </Grid>
+              <Grid>
+                <Grid.Item
+                  xs={12}
+                  sm={12}
+                  md={6}
+                  lg={4}
+                  xlg={4}
+                  itemClass="inner-info-service"
+                  data-speed="0.5"
+                  style={{ marginBottom: "100px" }}
+                >
+                  <SectionTitle
+                    title="Development"
+                    Icon={<StarIcon />}
+                    interClass="inner-left-title"
+                  />
+                </Grid.Item>
+                <Grid.Item
+                  xs={12}
+                  sm={12}
+                  md={12}
+                  lg={8}
+                  xlg={8}
+                  itemClass="inner-service-category-wrap"
+                  data-speed="0.5"
+                >
+                  {devData.map((item) => {
+                    return (
+                      <ServiceCategory
+                        serviceTitle={item?.title}
+                        serviceIconLeft={item?.iconleft}
+                        serviceIconRight={<ArrowOutwardOutlinedIcon />}
+                      />
+                    );
+                  })}
+                </Grid.Item>
+              </Grid>
+            </Grid.Item>
+          </Grid>
         </div>
 
         <section className="testimonial-area">
@@ -322,7 +350,7 @@ function Services() {
                 title="Services & Pricing"
                 para="No surprises. No hassles. Just right."
                 data-aos="flip-up"
-                data-aos-duration="1200"
+                data-aos-duration="3000"
               />
             </Grid.Item>
           </Grid>

@@ -12,7 +12,7 @@ export default function Home() {
      <div id="home-content">
         <main>
           <Hero />
-          {/* <Services /> */}
+          <Services />
         </main>
        
         {/* <HomeFooter /> */}
