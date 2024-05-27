@@ -1,6 +1,5 @@
 import React from 'react';
 import SocialLinksData from "../../../data/socialLinks.json";
-
 import "./index.scss";
 import Link from 'next/link';
 

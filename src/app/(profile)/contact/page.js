@@ -4,17 +4,19 @@ import "./page.scss";
 import FlowerImg from "../../../../public/assets/contact-flower.png";
 import FlowerText from "../../../../public/assets/contact-flower-text.png";
 import Navbar from "@/app/components/Navbar";
-import ContactCategory from "@/app/components/contactCategory/ContactCategory";
-import FooterService from "@/app/components/footerservice/FooterService";
+import ContactCategory from "@/app/components/contactCategory";
+import FooterService from "@/app/components/Footerservice";
 import Col from "react-bootstrap/Col";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
-import ContactBuget from "@/app/components/contactbuget/ContactBuget";
-import CustomCursor from "@/app/components/MouseCursor/MouseCursor";
+import ContactBuget from "@/app/components/ContactBuget";
+import CustomCursor from "@/app/components/MouseCursor";
 import Grid from "@/app/components/Grid";
 import AnimatedCharactors from "@/app/components/AnimatedCharactors";
 import IMG from "@/app/components/IMG";
+import CTA from "@/app/components/CTA";
+import SectionTitle from "@/app/components/SectionTitle";
 
 //TODO:: The child page of contact route
 const Contact = () => {
@@ -130,7 +132,20 @@ const Contact = () => {
               </FloatingLabel>
             </Row>
           </form>
-          <ContactBuget />
+          <div className="contact-category" style={{ marginBottom: "45px" }}>
+            <SectionTitle
+              title="Project budget (USD)"
+              interClass="contact-category-title"
+            />
+            <ContactBuget />
+          </div>
+          <div className="footer-btn" style={{ marginBottom: "100px" }}>
+            <CTA
+              linkClass="btn-black-xl"
+              linkHref="/contact"
+              linkText="Discuss Project"
+            />
+          </div>
         </div>
         <FooterService />
       </div>

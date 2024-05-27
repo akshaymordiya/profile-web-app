@@ -1,6 +1,6 @@
 @import "../../../styles/variables";
 @import "../../../styles/animations";
-
+@import "../../../styles/mixins";
 .contact-area {
   background-color: $background_bg;
   padding-top: 230px;
@@ -24,106 +24,121 @@
       margin-left: 10px;
     }
   }
-  .contact-area_wrapper{
+  .contact-area_wrapper {
     padding-top: 40px;
-  padding-bottom: 150px;
- 
-  .contact-title {
-    font-weight: 500;
-    font-size: 70px;
-    line-height: 1;
-    letter-spacing: -0.01em;
-    color: var(--tp-common-white);
-    font-family: var(--tp-ff-didoneright);
-    .animated-letter {
-      position: relative;
-      display: inline-block;
-      animation: slideRightToLeft 1s ease forwards;
-      opacity: 0;
-      animation-fill-mode: forwards; /* Keeps the last frame of the animation */
-    }
-   .contact-img {
-      border-radius: 100px;
-      transform: translateY(-9px);
-    }
-  }
-  .contactShape{
-   display: none;
-   text-align: end;
-    .contactshape1 {
-      margin-right: -100px;
-      position: relative;
-      top: 0;
-      right: 0;
-      text-align:end;
-      display: inline-block;
-      filter: invert(100%) sepia(32%) saturate(304%) hue-rotate(200deg)
-        brightness(105%) contrast(100%);
-      animation: rotate_img 10s linear infinite;
-      .flower-img {
-        position: absolute;
-        top: 51%;
-        left: 52%;
-        transform: translate(-50%, -50%);
-        animation: rotate_img 10s linear infinite;
+    padding-bottom: 150px;
+    .contact-title {
+      font-weight: 500;
+      font-size: 70px;
+      line-height: 1;
+      letter-spacing: -0.01em;
+      color: $black;
+      font-family:$dr-font-family;
+      @include respond-to("desktop") {
+        font-size: 50px;
       }
-    }
-  }
-  .contact-mail-box {
-    .contact-mail-info {
-      span {
-        display: block;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 1;
-        color: rgba(2, 11, 24, 0.4);
-        margin-bottom: 15px;
+      @include respond-to("large_tablet") {
+        font-size: 60px;
       }
-      a {
-        font-weight: 500;
-        font-size: 36px;
-        line-height: 18px;
-        background: linear-gradient(
-          90deg,
-          #a248ed,
-          #ff5075 44.98%,
-          #ffa14d 97.77%
-        );
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        font-family: $dr-font-family;
+      @include respond-to("small_tablet") {
+        font-size: 40px;
+      }
+      @include respond-to("phone") {
+        font-size: 40px;
+      }
+
+      .animated-letter {
         position: relative;
-        &:after {
+        display: inline-block;
+        animation: slideRightToLeft 1s ease forwards;
+        opacity: 0;
+        animation-fill-mode: forwards; /* Keeps the last frame of the animation */
+      }
+      .contact-img {
+        border-radius: 100px;
+        transform: translateY(-9px);
+        @include respond-to("phone") {
+          transform: translateY(2px);
+        }
+      }
+    }
+    .contactShape {
+      display: none;
+      text-align: end;
+      .contactshape1 {
+        margin-right: -100px;
+        position: relative;
+        top: 0;
+        right: 0;
+        text-align: end;
+        display: inline-block;
+        filter: invert(100%) sepia(32%) saturate(304%) hue-rotate(200deg)
+          brightness(105%) contrast(100%);
+        animation: rotate_img 10s linear infinite;
+        .flower-img {
           position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 50%;
-          height: 2px;
-          content: "";
+          top: 51%;
+          left: 52%;
+          transform: translate(-50%, -50%);
+          animation: rotate_img 10s linear infinite;
+        }
+      }
+    }
+    .contact-mail-box {
+      .contact-mail-info {
+        span {
+          display: block;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 1;
+          color: rgba(2, 11, 24, 0.4);
+          margin-bottom: 15px;
+        }
+        a {
+          font-weight: 500;
+          font-size: 36px;
+          line-height: 18px;
           background: linear-gradient(
             90deg,
             #a248ed,
             #ff5075 44.98%,
             #ffa14d 97.77%
           );
-          z-index: 99;
-          transition: 0.4s;
-        }
-        &:hover:after {
-          width: 100%;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          font-family: $dr-font-family;
+          position: relative;
+          &:after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50%;
+            height: 2px;
+            content: "";
+            background: linear-gradient(
+              90deg,
+              #a248ed,
+              #ff5075 44.98%,
+              #ffa14d 97.77%
+            );
+            z-index: 99;
+            transition: 0.4s;
+          }
+          &:hover:after {
+            width: 100%;
+          }
         }
       }
-    }
-    p {
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 26px;
-      color: #56585f;
-      margin-bottom: 0;
-      padding-left: 30px;
+      p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        color: #56585f;
+        margin-bottom: 0;
+        padding-left: 30px;
+      }
     }
   }
-}
 }
 
 .contact-mail-box {

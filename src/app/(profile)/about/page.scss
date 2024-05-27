@@ -1,6 +1,7 @@
 @import "../../../styles/variables";
 @import "../../../styles/animations";
 @import "../../../styles/global.scss";
+@import '../../../styles/mixins';
 
 .services-area {
   background-color: #f6f9ff;
@@ -29,10 +30,23 @@
     color: $black;
     font-family: $dr-font-family;
     margin-bottom: 40px;
+    @include respond-to("desktop") {
+      font-size: 100px;
+    }
+    @include respond-to("large_tablet") {
+      font-size: 75px;
+    }
+    @include respond-to("small_tablet") {
+      font-size: 50px;
+    }
+    @include respond-to("phone") {
+      font-size:50px;
+    }
     .btn-border-sm {
       height: 50px;
       line-height: 48px;
       border-radius: 100px;
+      margin-top: 40px;
       padding: 0 30px;
       font-weight: 400;
       font-size: 16px;
@@ -61,6 +75,9 @@
       position: absolute;
       bottom: 70px;
       left: -69px;
+      @include respond-to("phone") {
+        left: 0px;
+      }
     }
     .servicecircle-img {
       position: absolute;
@@ -69,6 +86,10 @@
       border: 10px solid #f6f9ff;
       border-radius: 50%;
       animation: circle-img 10s linear infinite;
+      @include respond-to("phone") {
+        right: -19px;
+      }
+
       img {
         filter: invert(100%) sepia(32%) saturate(304%) hue-rotate(200deg)
           brightness(105%) contrast(100%);
@@ -107,6 +128,24 @@
     color: $black;
     font-family: $dr-font-family;
     padding-right: 130px;
+    @include respond-to("desktop") {
+      font-size: 50px;
+      padding-right: 0px;
+    }
+    @include respond-to("large_tablet") {
+      font-size: 40px;
+      padding-right: 0px;
+    }
+    @include respond-to("small_tablet") {
+      font-size: 30px;
+      padding-right: 0px;
+      line-height: 45px;
+    }
+    @include respond-to("phone") {
+      font-size:30px;
+      padding-right: 0px;
+      line-height: 45px;
+    }
     span.line {
       height: 2px;
       width: 100px;
@@ -160,9 +199,18 @@
   .personal-info-left {
     position: sticky;
     top: 0;
-    height: 600px !important;
+    height: 400px !important;
     padding-top: 80px;
     place-content: start !important;
+    @include respond-to("large_tablet") {
+      position: relative;
+    }
+    @include respond-to("small_tablet") {
+    position: relative;
+    }
+    @include respond-to("phone") {
+      position: relative;
+    }
     .personal-info-left-title {
       font-weight: 500;
       font-size: 40px;
@@ -289,7 +337,7 @@
           .personal-info-exprience-title {
             font-weight: 500;
             font-size: 26px;
-            line-height: 20px;
+            line-height: 26px;
             color: $black;
             font-family: $dr-font-family;
           }

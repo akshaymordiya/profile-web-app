@@ -1,4 +1,5 @@
 @import "../../../styles/variables";
+@import "../../../styles/mixins";
 
 .gx-90 {
   --bs-gutter-x: 90px;
@@ -38,12 +39,28 @@
         color: $black;
         font-family: $dr-font-family;
         margin-bottom: 0;
+        @include respond-to("desktop") {
+          font-size: 50px;
+        }
+        @include respond-to("large_tablet") {
+          font-size: 75px;
+        }
+        @include respond-to("small_tablet") {
+          font-size: 65px;
+        }
+        @include respond-to("phone") {
+          font-size:65px;
+        }
       }
     }
-    .porfolio-thumb img {
+    .porfolio-thumb{
+      width: 100%;
+    img {
       opacity: 0.4;
       mix-blend-mode: normal;
     }
+  }
+      
   }
 }
 .porfolio-area-wrapper {
@@ -76,6 +93,10 @@
   background-color: $background_bg;
   .portfolio-gap {
     grid-gap: 45px !important;
+    @include respond-to("phone") {
+      display: flex !important;
+      flex-wrap: wrap ;
+    }
     .portfolio-item-wrapper {
       place-content: start;
       .portfolio-item {
@@ -89,6 +110,9 @@
           overflow: hidden;
           position: relative;
           transition: all 0.6s ease-out;
+          @include respond-to("phone") {
+           height: 460px !important;
+          }
           .portfolio-thumb-img {
             position: absolute;
             top: 0;
@@ -98,6 +122,9 @@
             transition: all 0.6s ease-out;
             border-radius: 12px;
             display: inline-block;
+            @include respond-to("phone") {
+              position: inherit;
+            }
             img {
               border-radius: 12px;
               width: 100%;

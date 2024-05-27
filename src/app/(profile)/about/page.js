@@ -1,14 +1,13 @@
-"use client";
+
 import React from "react";
 import SaveAltIcon from "@mui/icons-material/SaveAlt";
 import "./page.scss";
 import DriveFileRenameOutlineIcon from "@mui/icons-material/DriveFileRenameOutline";
-import "animate.css";
-import Footer from "@/app/components/footer/Footer";
-import Counter from "@/app/components/sections/counterup/countup";
+import Footer from "@/app/components/Footer";
+import Counter from "@/app/components/CounterUp";
 import Navbar from "@/app/components/Navbar";
-import BrandButton from "@/app/components/Brand/BrandButton";
-import CustomCursor from "@/app/components/MouseCursor/MouseCursor";
+import BrandButton from "@/app/components/Brand";
+import CustomCursor from "@/app/components/MouseCursor";
 import Grid from "@/app/components/Grid";
 import AnimatedCharactors from "@/app/components/AnimatedCharactors";
 import CTA from "@/app/components/CTA";
@@ -16,12 +15,12 @@ import IMG from "@/app/components/IMG";
 import Signature from "../../../../public/assets/service-signature.png";
 import CircleImg from "../../../../public/assets/service-circle-img.png";
 import ServiceImg from "../../../../public/assets/service-hero-1.webp";
-import Services from "@/app/components/services/Services";
+import Services from "@/app/components/services/index";
 import ServiceShape from "../../../../public/assets/hero-shape-2-1.png";
-import SectionTitle from "@/app/components/SectionTitle/SectionTitle";
-import SkillSets from "@/app/components/Skillsets/SkillSets";
-import Awards from "@/app/components/Award/Awards";
-import Aos from "@/app/components/AOS/aos";
+import SectionTitle from "@/app/components/SectionTitle";
+import SkillSets from "@/app/components/Skillsets";
+import Awards from "@/app/components/Award";
+import Aos from "@/app/components/AOS";
 import "aos/dist/aos.css";
 
 const About = () => {
@@ -45,25 +44,28 @@ const About = () => {
                 <Grid.Item
                   xs={12}
                   sm={12}
-                  md={6}
+                  md={12}
                   lg={6}
                   xlg={6}
                   itemClass="service__title"
                   data-speed="0.5"
                 >
                   <AnimatedCharactors
+                  leftSpaceOnLastCharactor
                     charactors="I'm"
                     wrapperClass="animated-letter"
                   />
                   <AnimatedCharactors
+                  leftSpaceOnLastCharactor
                     charactors="Diego"
                     wrapperClass="animated-letter"
                   />
                   <AnimatedCharactors
+                  leftSpaceOnLastCharactor
                     charactors="luna"
                     wrapperClass="animated-letter"
                   />
-
+<br />
                   <CTA
                     btn_color="btn-border-sm"
                     linkText="Download CV"
@@ -76,7 +78,7 @@ const About = () => {
                 <Grid.Item
                   xs={12}
                   sm={12}
-                  md={6}
+                  md={12}
                   lg={6}
                   xlg={6}
                   itemClass="service-right-box"

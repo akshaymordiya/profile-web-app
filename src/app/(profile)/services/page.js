@@ -1,7 +1,7 @@
 import React from "react";
 import "./page.scss";
 import Navbar from "@/app/components/Navbar";
-import ResponsiveSlider from "@/app/components/slider/Slider";
+import ResponsiveSlider from "@/app/components/Slider";
 import shapeImage from "../../../../public/assets/service-shape-1.png";
 import shapeImagecircle from "../../../../public/assets/service-shape-2.png";
 import starImage from "../../../../public/assets/star.png";
@@ -13,17 +13,17 @@ import AndroidOutlinedIcon from "@mui/icons-material/AndroidOutlined";
 import CoronavirusOutlinedIcon from "@mui/icons-material/CoronavirusOutlined";
 import AutoAwesomeMotionOutlinedIcon from "@mui/icons-material/AutoAwesomeMotionOutlined";
 import StarIcon from "@mui/icons-material/Star";
-import SlideNav from "@/app/components/Slidernav/SlideNav";
-import BrandButton from "@/app/components/Brand/BrandButton";
-import ServicePrice from "@/app/components/ServicePrice/ServicePrice";
-import ServiceCategory from "@/app/components/servicecategory/ServiceCategory";
-import FooterService from "@/app/components/footerservice/FooterService";
-import CustomCursor from "@/app/components/MouseCursor/MouseCursor";
-import Aos from "@/app/components/AOS/aos";
+import SlideNav from "@/app/components/Slidernav";
+import BrandButton from "@/app/components/Brand";
+import ServicePrice from "@/app/components/ServicePrice";
+import ServiceCategory from "@/app/components/ServiceCategory";
+import FooterService from "@/app/components/FooterService";
+import CustomCursor from "@/app/components/MouseCursor";
+import Aos from "@/app/components/AOS";
 import Grid from "@/app/components/Grid";
-import InnerServiceList from "@/app/components/inner_service_list/InnerServiceList";
-import SectionTitle from "@/app/components/SectionTitle/SectionTitle";
-import ServiceCard from "@/app/components/servicecard/ServiceCard";
+import InnerServiceList from "@/app/components/InnerServiceList";
+import SectionTitle from "@/app/components/SectionTitle";
+import ServiceCard from "@/app/components/ServiceCard";
 import IMG from "@/app/components/IMG";
 
 //TODO:: The child page of Services route
