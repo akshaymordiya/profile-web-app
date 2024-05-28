@@ -33,10 +33,10 @@ const ServiceCard = () => {
             return (
               <div
                 key={index}
-                className="stack__card d-flex justify-content-md-center justify-content-start"
+                className="stack__card"
               >
                 <div
-                  className="service-item d-flex align-items-start services-panel"
+                  className="service-item services-panel"
                   style={{ marginBottom: "25px" }}
                 >
                   <div className="service-icon">

@@ -4,67 +4,9 @@ import WbIncandescentIcon from "@mui/icons-material/WbIncandescent";
 import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
 import ProgressBar from "../Progressbar";
 import Experience from "../Experience";
+import about from '../../../data/about.page.json'
 import Aos from "../AOS";
 import 'aos/dist/aos.css';
-
-const data = [
-  {
-    skillslabel: "Figma",
-    Value: "90%",
-    valueMax: "90%",
-  },
-  {
-    skillslabel: "Sketch",
-    Value: "82%",
-    valueMax: "82%",
-  },
-  {
-    skillslabel: "Photoshop",
-    Value: "65%",
-    valueMax: "65%",
-  },
-  {
-    skillslabel: "Invision",
-    Value: "58%",
-    valueMax: "58%",
-  },
-];
-
-const expdata = [
-  {
-    expskillslabel: "UI/UX Lead Designer",
-    expyearlength: "2022 - Present",
-    expcompany:"Amazon INC"
-  },
-  {
-    expskillslabel: "Product Lead Designer",
-    expyearlength: "2018 - 2022",
-    expcompany:"Amazon INC"
-  },
-  {
-    expskillslabel: "Graphic Designer",
-    expyearlength: "2016 - 2018",
-    expcompany:"Amazon INC"
-  },
-];
-
-const educationdata = [
-  {
-    expskillslabel: " Stanford University",
-    expyearlength: "2014 - 2016",
-    univercity: "of California.",
-  },
-  {
-    expskillslabel: "Specialization Course.",
-    expyearlength: "2012 - 2014",
-    univercity: "MIT University",
-  },
-  {
-    expskillslabel: "Level High School.",
-    expyearlength: "2009 - 2012",
-    univercity: "San Fransisco",
-  },
-];
 
 const SkillSets = () => {
   return (
@@ -72,11 +14,11 @@ const SkillSets = () => {
     <Aos />
       <div className="personal-info-skill" style={{ marginBottom: "85px" }}>
         <SectionTitle
-          title="Skillsets"
+          title={about.personalinfo.skills.title}
           interClass="personal-info-right-title"
           Icon={<WbIncandescentIcon />}
         />
-        {data.map((item, index) => {
+        {about.personalinfo.skills.skillsets.map((item, index) => {
           return (
             <ProgressBar
             data-aos="fade-left"
@@ -93,11 +35,11 @@ const SkillSets = () => {
         data-aos="fade-left"
       >
         <SectionTitle
-          title="Experience"
+          title={about.personalinfo.expdata.title}
           interClass="personal-info-right-title"
           Icon={<WbIncandescentIcon />}
         />
-        {expdata.map((item, index) => {
+        {about.personalinfo.expdata.experience.map((item, index) => {
           return (
             <Experience
               key={index}
@@ -113,11 +55,11 @@ const SkillSets = () => {
         data-aos="fade-right"
       >
         <SectionTitle
-          title="Education"
+          title={about.personalinfo.edudata.title}
           interClass="personal-info-right-title"
           Icon={<SchoolOutlinedIcon />}
         />
-        {educationdata.map((item, index) => {
+        {about.personalinfo.edudata.education.map((item, index) => {
           return (
             <Experience
               key={index}

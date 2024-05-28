@@ -7,14 +7,17 @@ const SectionTitle = ({
   title = "",
   Icon = "",
   para = "",
+  animationName="",
+  animationduration="",
+  animationdelay=""
 }) => {
   return (
     <>
-      <h4 className={interClass} >
+      <h4 className={interClass} data-aos={animationName} data-aos-duration={animationduration} data-aos-delay={animationdelay}>
         <span>{Icon}</span>
         {title}
       </h4>
-      <p>{para}</p>
+      <p data-aos={animationName} data-aos-duration={animationduration} data-aos-delay={animationdelay}>{para}</p>
     </>
   );
 };

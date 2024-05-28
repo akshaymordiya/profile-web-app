@@ -17,12 +17,13 @@ const BrandButton = () => {
         <Grid.Item
           xs={12}
           sm={12}
-          md={2}
-          lg={2}
+          md={6}
+          lg={4}
           xlg={2}
           itemClass="btn-brand"
           data-aos="fade-up"
           data-aos-duration="2000"
+          data-aos-delay="200"
         >
           <span>Snowflake</span>
         </Grid.Item>

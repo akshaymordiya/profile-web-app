@@ -129,11 +129,11 @@
     font-family: $dr-font-family;
     padding-right: 130px;
     @include respond-to("desktop") {
-      font-size: 50px;
+      font-size: 35px;
       padding-right: 0px;
     }
     @include respond-to("large_tablet") {
-      font-size: 40px;
+      font-size: 35px;
       padding-right: 0px;
     }
     @include respond-to("small_tablet") {
@@ -368,9 +368,17 @@
       text-transform: uppercase;
       color: $black;
       margin-bottom: 15px;
+      width: 355px;
+      @include respond-to("tablet") {
+        font-size: 45px;
+       }
+      @include respond-to("phone") {
+        font-size: 45px;
+      }
     }
     .award-text-wrapper {
       transform: translateY(40px);
+      
       .award-text-outline {
         -webkit-text-stroke-color: hsla(0, 0%, 7%, 0.12);
         // -moz-text-stroke-color: hsla(0, 0%, 7%, .12);
@@ -383,6 +391,21 @@
         line-height: 1.14;
         font-weight: 600;
         transform: rotate(-45deg);
+        @include respond-to("desktop") {
+          display: none;
+         }
+        @include respond-to("large_tablet") {
+          display: none;
+        }
+        @include respond-to("small_tablet") {
+          display: none;
+        }
+        @include respond-to("tablet") {
+          display: none;
+         }
+        @include respond-to("phone") {
+          display: none;
+        }
       }
       .award-text-fill {
         font-weight: 600;
@@ -392,6 +415,21 @@
         font-family: $arbil-font-family;
         mix-blend-mode: luminosity;
         transform: rotate(-45deg) translate(-50px, -37px);
+        @include respond-to("desktop") {
+          display: none;
+         }
+        @include respond-to("large_tablet") {
+          display: none;
+        }
+        @include respond-to("small_tablet") {
+          display: none;
+        }
+        @include respond-to("tablet") {
+          display: none;
+         }
+        @include respond-to("phone") {
+          display: none;
+        }
       }
       .award-shape-1 {
         position: absolute;
@@ -406,7 +444,28 @@
     overflow: hidden;
     padding-top: 100px;
     padding-bottom: 70px;
-    // place-content: flex-start !important;
+    padding-left: 70px;
+    place-content: flex-start !important;
+    @include respond-to("desktop") {
+      padding-left: 20px;
+      padding-top: 0px;
+    }
+    @include respond-to("tablet") {
+      padding-left: 20px;
+      padding-top: 0px;
+    }
+    @include respond-to("large_tablet") {
+      padding-left: 20px;
+      padding-top: 0px;
+    }
+    @include respond-to("small_tablet") {
+      padding-left: 20px;
+      padding-top: 0px;
+    }
+    @include respond-to("phone") {
+      padding-left: 20px;
+      padding-top: 0px;
+    }
     .award-item {
       position: relative;
       padding-bottom: 15px;

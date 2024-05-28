@@ -40,7 +40,7 @@ const ServicePrice = () => {
             <Grid.Item
               xs={12}
               sm={6}
-              md={4}
+              md={6}
               lg={4}
               xlg={4}
               itemClass="price-item"

@@ -1,0 +1,138 @@
+{
+  "hero": {
+    "name": ["I'm", "Diego", "luna"],
+    "images": [
+      {
+        "src": "/assets/service-signature.png",
+        "containerclass": "service-signature",
+        "alt": "signature-img"
+      },
+      {
+        "src": "/assets/service-circle-img.png",
+        "containerclass": "servicecircle-img",
+        "alt": "circle-img"
+      },
+      {
+        "src": "/assets/service-hero-1.webp",
+        "containerclass": "service-img",
+        "alt": "service-img"
+      }
+    ]
+  },
+  "personalinfo": {
+    "para": {
+      "title": "I'm Diego a self though & self learned designer based in USA. I started as a financial planner & social media marketer, but now I do mix of everything from",
+      "product": [
+        {
+          "name": "Product Design,",
+          "image": "/assets/ab-1.png"
+        },
+        {
+          "name": "Photography,",
+          "image": "/assets/ab-2.png"
+        },
+        {
+          "name": "Web Design,",
+          "image": "/assets/ab-3.png"
+        },
+        {
+          "name": "Graphic Design,",
+          "image": "/assets/ab-4.png"
+        }
+      ]
+    },
+    "info": {
+      "title": "Personal Info",
+      "para": " Perceived end knowledge certainly day sweetness why cordially.",
+      "email": "example@gmail.com",
+      "icon": "DriveFileRenameOutlineIcon",
+      "image": "/assets/whatsap.png",
+      "number": "+491 234 5678"
+    },
+    "skills": {
+      "title": "Skillsets",
+      "skillsets": [
+        {
+          "skillslabel": "Figma",
+          "Value": "90%",
+          "valueMax": "90%"
+        },
+        {
+          "skillslabel": "Sketch",
+          "Value": "82%",
+          "valueMax": "82%"
+        },
+        {
+          "skillslabel": "Photoshop",
+          "Value": "65%",
+          "valueMax": "65%"
+        },
+        {
+          "skillslabel": "Invision",
+          "Value": "58%",
+          "valueMax": "58%"
+        }
+      ]
+    },
+    "expdata": {
+      "title": "Experience",
+      "experience": [
+        {
+          "expskillslabel": "UI/UX Lead Designer",
+          "expyearlength": "2022 - Present",
+          "expcompany": "Amazon INC"
+        },
+        {
+          "expskillslabel": "Product Lead Designer",
+          "expyearlength": "2018 - 2022",
+          "expcompany": "Amazon INC"
+        },
+        {
+          "expskillslabel": "Graphic Designer",
+          "expyearlength": "2016 - 2018",
+          "expcompany": "Amazon INC"
+        }
+      ]
+    },
+    "edudata": {
+      "title": "Education",
+      "education": [
+        {
+          "expskillslabel": " Stanford University",
+          "expyearlength": "2014 - 2016",
+          "univercity": "of California."
+        },
+        {
+          "expskillslabel": "Specialization Course.",
+          "expyearlength": "2012 - 2014",
+          "univercity": "MIT University"
+        },
+        {
+          "expskillslabel": "Level High School.",
+          "expyearlength": "2009 - 2012",
+          "univercity": "San Fransisco"
+        }
+      ]
+    }
+  },
+  "counter": [
+    {
+      "countnumber": "56",
+      "countext": " Projects Completed"
+    },
+    {
+      "countnumber": "12",
+      "countext": "Years Of Experience"
+    },
+    {
+      "countnumber": "34",
+      "countext": "Client Satisfaction"
+    }
+  ],
+  "awards":{
+    "title": "Awards & recognitions",
+    "textoutline" :"Award",
+    "textfill":"Award",
+    "image": "/assets/award-shape-1.png"
+  }
+}

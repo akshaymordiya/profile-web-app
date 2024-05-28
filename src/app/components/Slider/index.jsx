@@ -24,7 +24,7 @@ const ResponsiveSlider = () => {
         <Grid.Item
           xs={12}
           sm={12}
-          md={12}
+          md={6}
           lg={6}
           xlg={6}
           itemClass="inner-slider-active-1"
@@ -42,7 +42,7 @@ const ResponsiveSlider = () => {
         <Grid.Item
           xs={12}
           sm={12}
-          md={12}
+          md={6}
           lg={6}
           xlg={6}
           itemClass="inner-slider-active-2"

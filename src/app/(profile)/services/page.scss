@@ -1,23 +1,88 @@
 @import "../../../styles/variables";
+@import "../../../styles/mixins";
 
 .inner-slider-area {
   background-color: #f6f9ff;
   padding: 0 85px;
-
+  @include respond-to("desktop") {
+    padding: 140px 20px;
+  }
+  @include respond-to("large_tablet") {
+    padding: 140px 20px;
+  }
+  @include respond-to("small_tablet") {
+    padding: 140px 20px;
+  }
+  @include respond-to("tablet") {
+    padding: 140px 20px;
+  }
+  @include respond-to("phone") {
+    padding: 140px 20px;
+  }
   .inner-slider-content-main {
     display: flex;
     justify-content: flex-end !important;
     align-items: center;
+    @include respond-to("desktop") {
+      justify-content: flex-start !important;
+    }
+    @include respond-to("large_tablet") {
+      justify-content: flex-start !important;
+    }
+    @include respond-to("small_tablet") {
+      justify-content: flex-start !important;
+    }
+    @include respond-to("tablet") {
+      justify-content: flex-start !important;
+    }
+    @include respond-to("phone") {
+      justify-content: flex-start !important;
+    }
+
     .inner-slider-content-wrap {
       width: 520px;
+      @include respond-to("small_tablet") {
+        width: 380px;
+      }
+      @include respond-to("phone") {      
+        width: 360px;
+      }
+      @include respond-to("small_phone") {      
+        width: 300px;
+      }
       .inner-slider-title {
         font-size: 100px;
         line-height: 1;
         letter-spacing: -0.01em;
         margin-bottom: 40px;
-        font-weight: 500;
+        font-weight: 600;
         color: $black;
         font-family: $dr-font-family;
+        width: 550px;
+        @include respond-to("desktop") {
+          font-size: 60px;
+          width: 460px;
+        }
+        @include respond-to("tablet") {
+          font-size: 55px;
+          width: 460px;
+        }
+        @include respond-to("large_tablet") {
+          font-size: 55px;
+          width: 460px;
+        }
+        @include respond-to("small_tablet") {
+          font-size: 55px;
+          width: 460px;
+        }
+        @include respond-to("phone") {
+          font-size: 55px;
+          width: 309px;
+        }
+        @include respond-to("small_phone") {
+          font-size:40px;
+          width: 280px;
+        }
       }
       .inner-service-list {
         &.list-1 span {
@@ -56,6 +121,39 @@
   margin-bottom: 120px;
   position: relative;
   margin-left: 90px;
+  @include respond-to("tablet") {
+    margin-top: 100px;
+    margin-left: 0px;
+  }
+  @include respond-to("large_tablet") {
+    margin-top: 100px;
+    margin-left: 0px;
+  }
+  @include respond-to("small_tablet") {
+    margin-top: 100px;
+    margin-left: 0px;
+  }
+  @include respond-to("phone") {
+    margin-top: 100px;
+    margin-left: 0px;
+  }
+  .inner-slider-active-1 .slick-list,
+  .inner-slider-active-2 .slick-list {
+    height: 650px !important;
+    overflow: hidden;
+    .slick-slide img {
+      display: block;
+      @include respond-to("large_tablet") {
+        width: 100%;
+      }
+      @include respond-to("small_tablet") {
+        width: 100%;
+      }
+      @include respond-to("phone") {
+        width: 100%;
+      }
+    }
+  }
   &:after {
     position: absolute;
     content: "";
@@ -70,6 +168,11 @@
       hsla(0, 0%, 85%, 0) 68.54%,
       #f6f9ff 98.06%
     );
+    .slick-slide img {
+      @include respond-to("phone") {
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -90,7 +193,15 @@
   position: absolute;
   top: 0;
   right: 315px;
-
+  @include respond-to("large_tablet") {
+    right: 30px;
+  }
+  @include respond-to("small_tablet") {
+    right: 30px;
+  }
+  @include respond-to("phone") {
+    right: 30px;
+  }
   .text-img {
     display: inline-block;
     transform: translate(10px, -70px);
@@ -140,13 +251,26 @@
   .services-container_grid {
     .service-card {
       place-content: start !important;
+
       .stack_card {
         display: flex;
         justify-content: center;
         width: 100%;
         position: sticky;
         top: 100px;
-
+        margin-bottom: 40px;
+        @include respond-to("desktop") {
+          justify-content: start;
+        }
+        @include respond-to("large_tablet") {
+          justify-content: start;
+        }
+        @include respond-to("small_tablet") {
+          justify-content: start;
+        }
+        @include respond-to("phone") {
+          justify-content: start;
+        }
         .service-title-box {
           span {
             font-size: 20px;
@@ -165,6 +289,18 @@
             color: $white;
             font-family: $dr-font-family;
             margin-bottom: 25px;
+            @include respond-to("desktop") {
+              font-size: 60px;
+            }
+            @include respond-to("large_tablet") {
+              font-size: 50px;
+            }
+            @include respond-to("small_tablet") {
+              font-size: 40px;
+            }
+            @include respond-to("phone") {
+              font-size: 40px;
+            }
           }
           p {
             font-weight: 400;
@@ -172,15 +308,17 @@
             line-height: 26px;
             width: 425px;
             color: hsla(0, 0%, 100%, 0.7);
+            @include respond-to("small_tablet") {
+              width: 220px;
+            }
+            @include respond-to("phone") {
+              width: 250px;
+            }
           }
         }
       }
     }
   }
-}
-
-.testinominal-slide {
-  margin: 0px 135px;
 }
 
 .inner-info-area {
@@ -190,6 +328,31 @@
     margin-bottom: 90px;
     margin-left: 70px;
     margin-right: 70px;
+    @include respond-to("desktop") {
+      margin-left: 0px;
+      margin-right: 0px;
+      position: relative;
+    }
+    @include respond-to("large_tablet") {
+      margin-left: 0px;
+      margin-right: 0px;
+      position: relative;
+    }
+    @include respond-to("small_tablet") {
+      margin-left: 0px;
+      margin-right: 0px;
+      position: relative;
+    }
+    @include respond-to("tablet") {
+      margin-left: 0px;
+      margin-right: 0px;
+      position: relative;
+    }
+    @include respond-to("phone") {
+      margin-left: 0px;
+      margin-right: 0px;
+      position: relative;
+    }
     .inner-info-title {
       font-weight: 300;
       font-size: 48px;
@@ -197,29 +360,76 @@
       letter-spacing: -0.01em;
       color: $black;
       font-family: $dr-font-family;
+      @include respond-to("large_tablet") {
+        font-size: 29px;
+        line-height: 40px;
+      }
+      @include respond-to("small_tablet") {
+        font-size: 29px;
+        line-height: 40px;
+      }
+      @include respond-to("tablet") {
+        font-size: 29px;
+        line-height: 40px;
+      }
+      @include respond-to("phone") {
+        font-size: 29px;
+        line-height: 40px;
+      }
     }
   }
   .services-container_wrapper {
     justify-content: center;
-    .inner-info-service {
-      place-content: flex-start !important;
-      .inner-left-title {
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 14px;
-        letter-spacing: 0.02em;
-        text-transform: uppercase;
-        color: $black;
-        font-family: $dm-font-family;
-        margin-bottom: 0;
-        margin-top: 30px;
-        // border-bottom: 2px solid rgba(37, 37, 37, 0.08);
-        span {
-          transform: translateY(-2px);
-          color: $black;
+    .testinominal-slide {
+      margin: 0px 135px;
+      @include respond-to("desktop") {
+        margin: 0px 0px;
+      }
+      @include respond-to("large_tablet") {
+        margin: 0px;
+      }
+      @include respond-to("small_tablet") {
+        margin: 0px;
+      }
+      @include respond-to("tablet") {
+        margin: 0px;
+      }
+      @include respond-to("phone") {
+        margin: 0px;
+      }
+      .inner-info-service {
+        place-content: flex-start !important;
+        margin-bottom: 100px;
+        @include respond-to("large_tablet") {
+          margin-bottom: 0px;
         }
-        svg {
-          font-size: 20px;
+        @include respond-to("small_tablet") {
+          margin-bottom: 0px;
+        }
+        @include respond-to("tablet") {
+          margin-bottom: 0px;
+        }
+        @include respond-to("phone") {
+          margin-bottom: 0px;
+        }
+        .inner-left-title {
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 14px;
+          letter-spacing: 0.02em;
+          text-transform: uppercase;
+          color: $black;
+          font-family: $dm-font-family;
+          margin-bottom: 0;
+          // margin-top: 30px;
+          // border-bottom: 2px solid rgba(37, 37, 37, 0.08);
+          span {
+            transform: translateY(-2px);
+            color: $black;
+          }
+          svg {
+            font-size: 20px;
+          }
         }
       }
     }
@@ -232,12 +442,42 @@
   padding-top: 25px;
   .testimonial-slider {
     margin: 0px 70px;
+    @include respond-to("desktop") {
+      margin: 0px;
+    }
+    @include respond-to("large_tablet") {
+      margin: 0px;
+    }
+    @include respond-to("small_tablet") {
+      margin: 0px;
+    }
+    @include respond-to("tablet") {
+      margin: 0px;
+    }
+    @include respond-to("phone") {
+      margin: 0px;
+    }
     .testimonial-item {
       position: relative;
       z-index: 1;
       border-radius: 10px;
       padding: 70px 210px 75px 70px;
       background-color: #f0f2e8;
+      @include respond-to("large_tablet") {
+        padding-right: 75px;
+      }
+      @include respond-to("large_tablet") {
+        padding-right: 75px;
+      }
+      @include respond-to("small_tablet") {
+        padding: 30px;
+      }
+      @include respond-to("tablet") {
+        padding: 30px;
+      }
+      @include respond-to("phone") {
+        padding: 30px;
+      }
       .testimonial-quote {
         position: absolute;
         top: 75px;
@@ -273,6 +513,18 @@
         letter-spacing: -0.01em;
         color: $black;
         font-family: $dm-font-family;
+        @include respond-to("large_tablet") {
+          font-size: 18px;
+        }
+        @include respond-to("small_tablet") {
+          font-size: 18px;
+        }
+        @include respond-to("tablet") {
+          font-size: 18px;
+        }
+        @include respond-to("phone") {
+          font-size: 18px;
+        }
       }
     }
     .testimonial-user-item {
@@ -334,6 +586,18 @@
       color: $black;
       font-family: $dr-font-family;
       margin-bottom: 25px;
+      @include respond-to("large_tablet") {
+        font-size: 50px;
+      }
+      @include respond-to("small_tablet") {
+        font-size: 50px;
+      }
+      @include respond-to("tablet") {
+        font-size: 40px;
+      }
+      @include respond-to("phone") {
+        font-size: 40px;
+      }
     }
     p {
       font-weight: 300;

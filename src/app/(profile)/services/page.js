@@ -84,30 +84,30 @@ function Services() {
           >
             <div className="inner-slider-content-wrap">
               <SectionTitle
-                data-aos="flip-up"
-                data-aos-duration="2000"
-                data-aos-delay="300"
+                animationName="flip-up"
+                animationduration="2000"
+                animationdelay="300"
                 interClass="inner-slider-title"
                 title="High Quality Projects"
               />
               <InnerServiceList
-                data-aos="fade-up"
-                data-aos-duration="2000"
-                data-aos-delay="300"
+                animationName="fade-up"
+                animationduration="2000"
+                animationdelay="300"
                 listclass="inner-service-list list-1"
                 listName="Over 40 Websites Built With Envato"
               />
               <InnerServiceList
-                data-aos="fade-up"
-                data-aos-duration="2000"
-                data-aos-delay="500"
+                animationName="fade-up"
+                animationduration="2000"
+                animationdelay="500"
                 listclass="inner-service-list list-2"
                 listName="Visual Designer for 10+ years"
               />
               <InnerServiceList
-                data-aos="fade-up"
-                data-aos-duration="2000"
-                data-aos-delay="700"
+                animationName="fade-up"
+                animationduration="2000"
+                animationdelay="700"
                 listclass="inner-service-list list-3"
                 listName="UI/UX Designer, Envato"
               />
@@ -183,13 +183,6 @@ function Services() {
                   >
                     OUR PROCESS
                   </span>
-                  {/* <SectionTitle
-                    interClass="section-title"
-                    title="How WeCarry Out Our Projects"
-                    para="We offer a range of services to help elevate your brand & drive results."
-                    data-aos="flip-up"
-                    data-aos-duration="1000"
-                  /> */}
                   <h3
                     className="section-title"
                     data-aos="flip-up"
@@ -234,9 +227,9 @@ function Services() {
                       strategically created to tell your story, make
                       a connection and establish a cutting-edge 
                       online and offline presence."
-                      data-aos="flip-up"
-                      data-aos-duration="2000"
-                      data-aos-delay="300"
+                animationName="flip-up"
+                animationduration="2000"
+                animationdelay="300"
               />
             </Grid.Item>
           </Grid>
@@ -258,7 +251,6 @@ function Services() {
                   xlg={4}
                   itemClass="inner-info-service"
                   data-speed="0.5"
-                  style={{ marginBottom: "100px" }}
                 >
                   <SectionTitle
                     title="Design"
@@ -295,7 +287,6 @@ function Services() {
                   xlg={4}
                   itemClass="inner-info-service"
                   data-speed="0.5"
-                  style={{ marginBottom: "100px" }}
                 >
                   <SectionTitle
                     title="Development"
@@ -349,8 +340,9 @@ function Services() {
                 interClass="inner-section-title"
                 title="Services & Pricing"
                 para="No surprises. No hassles. Just right."
-                data-aos="flip-up"
-                data-aos-duration="3000"
+                animationName="flip-up"
+                animationduration="2000"
+                animationdelay="200"
               />
             </Grid.Item>
           </Grid>

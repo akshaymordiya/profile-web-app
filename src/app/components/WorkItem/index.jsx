@@ -42,8 +42,6 @@ const data = [
   },
 ];
 
-const BASE_CLASSNAME = "porfolio-area";
-
 const WorkItem = () => {
   const innerimage = (item, index, ImageHeight) => {
     const count = String(index + 1).padStart(2, "0");

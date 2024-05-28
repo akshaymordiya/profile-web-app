@@ -35,11 +35,15 @@
     position: inherit;
     width: 100%;
     border-radius: 0px;
+    padding: 110px 30px 60px ;
   }
   .funfact-item {
     position: relative;
     &.space-left-1 {
       padding-left: 100px;
+      @include respond-to("phone") {
+        padding-left: 0px;
+      }
       .funfact-number {
         margin-bottom: 25px;
         span {
@@ -56,8 +60,14 @@
           border-radius: 20px;
           display: inline-block;
           line-height: 110px;
+          text-align: center;
           color: $white;
           font-family: $dr-font-family;
+          .counter-item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
         }
       }
     }

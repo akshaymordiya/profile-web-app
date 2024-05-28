@@ -1,42 +1,87 @@
 @import "../../../styles/variables";
+@import "../../../styles/mixins";
 
 .service-right-wrap {
   padding-left: 70px;
+  @include respond-to("desktop") {
+    padding-left: 0px;
+  }
+  @include respond-to("large_tablet") {
+    padding-left: 0px;
+  }
+  @include respond-to("small_tablet") {
+    padding-left: 0px;
+  }
+  @include respond-to("phone") {
+    padding-left: 0px;
+  }
   .stack__card {
     display: flex;
-    /* justify-content: center; */
+    justify-content: start;
     align-items: center;
     height: 380px;
     width: 606px;
     position: sticky;
     top: 100px;
-  
-  .service-item {
-    background: #2d3866;
-    border-radius: 30px;
-    display: inline-flex;
-    padding: 60px 70px;
-    box-shadow: 0 -8px 0 0 #172351;
-  }
-  .service-icon span {
-    margin-right: 50px;
-    display: inline-block;
-    svg {
-      font-size: 100px;
-      color: $white;
+    @include respond-to("desktop") {
+      width: 464px;
     }
-  }
-  .service-content {
-    h3 {
-      font-weight: 500;
-      font-size: 34px;
-      line-height: 1.1;
-      color: $white;
-      margin-bottom: 16px;
-      font-family: $dr-font-family;
-      width: 200px;
+    @include respond-to("large_tablet") {
+      width:100%;
     }
-    p {
+    @include respond-to("small_tablet") {
+      width: 100%;
+    }
+    @include respond-to("tablet") {
+      width: 100%;
+    }
+    @include respond-to("phone") {
+      width: 100%;
+    }
+
+    .service-item {
+      background: #2d3866;
+      border-radius: 30px;
+      display:flex;
+      align-items: start;
+      padding: 60px 70px;
+      box-shadow: 0 -8px 0 0 #172351;
+      @include respond-to("desktop") {
+        padding: 55px 22px;
+      }
+      @include respond-to("large_tablet") {
+        padding: 55px 22px;
+      }
+      @include respond-to("small_tablet") {
+        padding: 60px 70px;
+      }
+      @include respond-to("tablet") {
+        padding: 60px 70px;
+      }
+      @include respond-to("phone") {
+        padding: 60px 40px;
+        flex-wrap: wrap;
+      }
+    }
+    .service-icon span {
+      margin-right: 50px;
+      display: inline-block;
+      svg {
+        font-size: 100px;
+        color: $white;
+      }
+    }
+    .service-content {
+      h3 {
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.1;
+        color: $white;
+        margin-bottom: 16px;
+        font-family: $dr-font-family;
+        width: 200px;
+      }
+      p {
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
@@ -54,8 +99,8 @@
         font-size: 13px;
         color: $white;
       }
+    }
   }
-}
   .service-btn-box a {
     height: 56px;
     line-height: 56px;
@@ -68,13 +113,27 @@
     font-weight: 400;
     font-size: 18px;
     color: hsla(0, 0%, 100%, 0.7);
+    @include respond-to("desktop") {
+      width: 464px;
+    }
+    @include respond-to("large_tablet") {
+      width: 100%;
+    }
+    @include respond-to("small_tablet") {
+      width: 100%;
+    }
+    @include respond-to("tablet") {
+      width: 100%;
+    }
+    @include respond-to("phone") {
+     width: 100%;
+    }
+
     span {
-        font-weight: 500;
-        font-size: 18px;
-        color: $white;
-        text-decoration: underline;
-      }
+      font-weight: 500;
+      font-size: 18px;
+      color: $white;
+      text-decoration: underline;
+    }
   }
-
 }
-
