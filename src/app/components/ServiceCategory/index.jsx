@@ -1,5 +1,3 @@
-'use client'
-
 import Link from "next/link";
 import React from "react";
 import './index.scss'
@@ -12,7 +10,7 @@ const ServiceCategory = ({
 }) => {
   return (
     <>
-      <div className="inner-service-category">
+      <div className="inner-service-category" >
         <Link
           className="d-flex align-items-center justify-content-between"
           href={serviceHref}

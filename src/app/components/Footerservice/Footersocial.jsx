@@ -1,32 +1,14 @@
 import React from "react";
-import InstagramIcon from "@mui/icons-material/Instagram";
 import Grid from "../Grid";
+import footer from '../../../data/footerservice.json'
+import { getIcon } from "@/Icons";
 
 const Footerasocial = () => {
-  const data = [
-    {
-      id: 1,
-      title: "Behance",
-      subtitle: "@diego_des",
-      icon: <InstagramIcon />,
-    },
-    {
-      id: 2,
-      title: "Google",
-      subtitle: "@diego_des",
-      icon: <InstagramIcon />,
-    },
-    {
-      id: 3,
-      title: "Instagram",
-      subtitle: "@diego_des",
-      icon: <InstagramIcon />,
-    },
-  ];
+  const {InstaIcon} = getIcon(["InstaIcon"])
   return (
     <>
       <Grid>
-        {data.map((item, index) => {
+        {footer.footers.socialmedia.map((item, index) => {
           return (
             <Grid.Item
               key={index}
@@ -43,7 +25,7 @@ const Footerasocial = () => {
                 <span className="child-2">{item?.subtitle}</span>
               </div>
               <div className="footer-social-icon z-index-1 position-relative">
-                <span>{item?.icon}</span>
+                <span>{<InstaIcon />}</span>
               </div>
             </Grid.Item>
           );

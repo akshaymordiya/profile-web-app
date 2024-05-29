@@ -1,7 +1,8 @@
-"use client";
+'use client'
 import React from "react";
 import Slider from "react-slick";
-import Grid from "../Grid";
+import Grid from "../../components/Grid";
+// import IMG from "../IMG";
 
 const ResponsiveSlider = () => {
   const settings = {
@@ -31,6 +32,9 @@ const ResponsiveSlider = () => {
           data-speed="0.5"
         >
           <Slider {...settings}>
+            {/* <IMG 
+            src="/assets/services-slider-1.jpg"
+            /> */}
             <div>
               <img src="/assets/services-slider-1.jpg" />
             </div>

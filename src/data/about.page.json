@@ -1,6 +1,10 @@
 {
   "hero": {
     "name": ["I'm", "Diego", "luna"],
+    "icon": "Fname",
+    "icons": {
+      "download": "Download"
+    },
     "images": [
       {
         "src": "/assets/service-signature.png",
@@ -51,23 +55,24 @@
     },
     "skills": {
       "title": "Skillsets",
+      "icon": "IncadescentIcon",
       "skillsets": [
-        {
+        {"id":"1",
           "skillslabel": "Figma",
           "Value": "90%",
           "valueMax": "90%"
         },
-        {
+        {"id":"2",
           "skillslabel": "Sketch",
           "Value": "82%",
           "valueMax": "82%"
         },
-        {
+        {"id":"3",
           "skillslabel": "Photoshop",
           "Value": "65%",
           "valueMax": "65%"
         },
-        {
+        {"id":"4",
           "skillslabel": "Invision",
           "Value": "58%",
           "valueMax": "58%"
@@ -76,18 +81,19 @@
     },
     "expdata": {
       "title": "Experience",
+      "icon": "WbIncandescentIcon",
       "experience": [
-        {
+        {"id":"1",
           "expskillslabel": "UI/UX Lead Designer",
           "expyearlength": "2022 - Present",
           "expcompany": "Amazon INC"
         },
-        {
+        {"id":"2",
           "expskillslabel": "Product Lead Designer",
           "expyearlength": "2018 - 2022",
           "expcompany": "Amazon INC"
         },
-        {
+        {"id":"3",
           "expskillslabel": "Graphic Designer",
           "expyearlength": "2016 - 2018",
           "expcompany": "Amazon INC"
@@ -96,18 +102,19 @@
     },
     "edudata": {
       "title": "Education",
+      "icon": "SchoolOutlinedIcon",
       "education": [
-        {
+        {"id":"1",
           "expskillslabel": " Stanford University",
           "expyearlength": "2014 - 2016",
           "univercity": "of California."
         },
-        {
+        {"id":"2",
           "expskillslabel": "Specialization Course.",
           "expyearlength": "2012 - 2014",
           "univercity": "MIT University"
         },
-        {
+        {"id":"",
           "expskillslabel": "Level High School.",
           "expyearlength": "2009 - 2012",
           "univercity": "San Fransisco"
@@ -117,22 +124,124 @@
   },
   "counter": [
     {
+      "id":"1",
       "countnumber": "56",
       "countext": " Projects Completed"
     },
-    {
+    {"id":"2",
       "countnumber": "12",
       "countext": "Years Of Experience"
     },
-    {
+    {"id":"3",
       "countnumber": "34",
       "countext": "Client Satisfaction"
     }
   ],
-  "awards":{
+  "awards": {
     "title": "Awards & recognitions",
-    "textoutline" :"Award",
-    "textfill":"Award",
-    "image": "/assets/award-shape-1.png"
+    "textoutline": "Award",
+    "textfill": "Award",
+    "image": "/assets/award-shape-1.png",
+    "awarditem": [
+      {"id":"1",
+        "title": "Awwwwards SOTD",
+        "subtitle": "FOR DISPLAY 2023",
+        "image": "/assets/award-5.jpg",
+        "righticon": "SubdirectoryArrowRightIcon",
+        "arroward": "ArrowOutwardIcon"
+      },
+      {"id":"2",
+        "title": "Wix.Com",
+        "subtitle": "INTERVIEW 2022",
+        "image": "/assets/award-6.jpg",
+        "righticon": "SubdirectoryArrowRightIcon",
+        "arroward": "ArrowOutwardIcon"
+      },
+      {"id":"3",
+        "title": "CSS Awards",
+        "subtitle": "FEATURE 2021",
+        "image": "/assets/award-10.jpg",
+        "righticon": "SubdirectoryArrowRightIcon",
+        "arroward": "ArrowOutwardIcon"
+      },
+      {"id":"4",
+        "title": "Muzli",
+        "subtitle": "FEATURE 2020",
+        "image": "/assets/award-1.jpg",
+        "righticon": "SubdirectoryArrowRightIcon",
+        "arroward": "ArrowOutwardIcon"
+      },
+      {"id":"5",
+        "title": "Awwwwards",
+        "subtitle": "FOR MUTEZA 2019",
+        "image": "/assets/award-4.jpg",
+        "righticon": "SubdirectoryArrowRightIcon",
+        "arroward": "ArrowOutwardIcon"
+      },
+      {"id":"6",
+        "title": "Chapers Studio",
+        "subtitle": "FOR DISPLAY 2018",
+        "image": "/assets/award-3.jpg",
+        "righticon": "SubdirectoryArrowRightIcon",
+        "arroward": "ArrowOutwardIcon"
+      }
+    ]
+  },
+  "footer": {
+    "footerImg": "/assets/footer-shape-2.png",
+    "whitelogo": "/assets/logo-white.png",
+    "paragraph": "Feel free to reach out with questions or inquiries.",
+    "socialmedia": [
+      {
+        "icon": "MailOutlineIcon"
+      },
+      {
+        "icon": "LanguageIcon"  
+      },
+      {
+        "icon": "MailOutlineIcon"
+      },
+      {
+        "icon": "SubscriptionsOutlinedIcon"
+      }
+    ],
+    "explore":{
+      "title":"Explore",
+      "exploredata":[
+        {
+          "icon": "ArrowForwardOutlinedIcon",
+          "title": "About"
+        },
+        {
+          "icon": "ArrowForwardOutlinedIcon",
+          "title": "Services"
+        },
+        {
+          "icon": "ArrowForwardOutlinedIcon",
+          "title": "Portfolio"
+        },
+        {
+          "icon": "ArrowForwardOutlinedIcon",
+          "title": "Contact"
+        }
+      ]
+    },
+    "address":{
+      "title": "Address",
+       "subtitle":"California",
+       "paragraph":" 987 Design Blvd, Suite 543, Beverly Hills, CA 902"
+    },
+    "contact":{
+      "title":"Say Hello",
+      "email":"hello@youremail.com",
+      "number":"+1(789) 8001234"
+    },
+    "copyright":{
+      "title":"ThemePure @ 2024. All Rights Reserved."
+    }
+
   }
+  
 }
+
+

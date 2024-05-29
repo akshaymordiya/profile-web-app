@@ -1,7 +1,7 @@
 @import "../../../styles/variables";
 @import "../../../styles/animations";
 @import "../../../styles/global.scss";
-@import '../../../styles/mixins';
+@import "../../../styles/mixins";
 
 .services-area {
   background-color: #f6f9ff;
@@ -40,7 +40,7 @@
       font-size: 50px;
     }
     @include respond-to("phone") {
-      font-size:50px;
+      font-size: 50px;
     }
     .btn-border-sm {
       height: 50px;
@@ -142,7 +142,7 @@
       line-height: 45px;
     }
     @include respond-to("phone") {
-      font-size:30px;
+      font-size: 30px;
       padding-right: 0px;
       line-height: 45px;
     }
@@ -206,7 +206,7 @@
       position: relative;
     }
     @include respond-to("small_tablet") {
-    position: relative;
+      position: relative;
     }
     @include respond-to("phone") {
       position: relative;
@@ -356,7 +356,7 @@
 .award-area {
   background-color: $background_bg;
   padding-top: 120px;
-  .award-wrapper{
+  .award-wrapper {
     place-content: flex-start !important;
     padding-bottom: 30px;
     .award-section-title {
@@ -371,14 +371,14 @@
       width: 355px;
       @include respond-to("tablet") {
         font-size: 45px;
-       }
+      }
       @include respond-to("phone") {
         font-size: 45px;
       }
     }
     .award-text-wrapper {
       transform: translateY(40px);
-      
+
       .award-text-outline {
         -webkit-text-stroke-color: hsla(0, 0%, 7%, 0.12);
         // -moz-text-stroke-color: hsla(0, 0%, 7%, .12);
@@ -393,7 +393,7 @@
         transform: rotate(-45deg);
         @include respond-to("desktop") {
           display: none;
-         }
+        }
         @include respond-to("large_tablet") {
           display: none;
         }
@@ -402,7 +402,7 @@
         }
         @include respond-to("tablet") {
           display: none;
-         }
+        }
         @include respond-to("phone") {
           display: none;
         }
@@ -417,7 +417,7 @@
         transform: rotate(-45deg) translate(-50px, -37px);
         @include respond-to("desktop") {
           display: none;
-         }
+        }
         @include respond-to("large_tablet") {
           display: none;
         }
@@ -426,7 +426,7 @@
         }
         @include respond-to("tablet") {
           display: none;
-         }
+        }
         @include respond-to("phone") {
           display: none;
         }
@@ -471,122 +471,128 @@
       padding-bottom: 15px;
       margin-bottom: 30px;
       transition: all 0.3s ease-out;
-      .award-arrow {
-        position: absolute;
-        top: 35px;
-        left: 0;
-        transform: translateY(-50%);
-        color: $white;
-        visibility: hidden;
-        opacity: 0;
-        svg {
-          transform: translateY(-2px);
-        }
-      }
-      .award-content {
-        .award-title {
-          font-weight: 500;
-          font-size: 30px;
-          line-height: 1;
-          font-family: $dr-font-family;
-          color: $black;
-        }
-        p {
-          font-size: 13px;
-          font-weight: 500;
-          color: rgba(37, 37, 37, 0.6);
-          margin-bottom: 15px;
-          line-height: 26px;
-          font-family: $dm-font-family;
-        }
-      }
-      .award-btn {
-        background-color: $black;
-        width: 44px;
-        height: 44px;
-        line-height: 44px;
-        border-radius: 50%;
-        text-align: center;
-        color: $white;
+      .award-item-inner {
         display: flex;
         align-items: center;
-        justify-content: center;
-        position: relative;
-        span {
-          width: 16px;
-          height: 16px;
-          overflow: hidden;
-          position: relative;
-        }
-        svg {
-          transform: translateY(-2px);
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .award-arrow {
           position: absolute;
-          bottom: -4px;
-          left: -4px;
-          transition: all 0.2s ease-out;
-          &:last-child {
-            left: -17px;
-            bottom: -17px;
-            transform: translate(0);
-            opacity: 0;
+          top: 35px;
+          left: 0;
+          transform: translateY(-50%);
+          color: $white;
+          visibility: hidden;
+          opacity: 0;
+          svg {
+            transform: translateY(-2px);
+          }
+        }
+        .award-content {
+          .award-title {
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 1;
+            font-family: $dr-font-family;
+            color: $black;
+          }
+          p {
+            font-size: 13px;
+            font-weight: 500;
+            color: rgba(37, 37, 37, 0.6);
+            margin-bottom: 15px;
+            line-height: 26px;
+            font-family: $dm-font-family;
+          }
+        }
+        .award-btn {
+          background-color: $black;
+          width: 44px;
+          height: 44px;
+          line-height: 44px;
+          border-radius: 50%;
+          text-align: center;
+          color: $white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          span {
+            width: 16px;
+            height: 16px;
+            overflow: hidden;
+            position: relative;
+          }
+          svg {
+            transform: translateY(-2px);
+            position: absolute;
+            bottom: -4px;
+            left: -4px;
+            transition: all 0.2s ease-out;
+            &:last-child {
+              left: -17px;
+              bottom: -17px;
+              transform: translate(0);
+              opacity: 0;
+            }
           }
         }
       }
-      &:hover {
-        padding-left: 36px;
-        z-index: 1;
-        .award-btn span svg:first-child {
-          transform: translate(16px, -16px);
+        &:hover {
+          padding-left: 36px;
+          z-index: 1;
+          .award-btn span svg:first-child {
+            transform: translate(16px, -16px);
+          }
+          .award-btn span svg:last-child {
+            opacity: 1;
+            visibility: visible;
+            transform: translate(13px, -13px);
+          }
+          .award-arrow {
+            color: $black;
+            visibility: visible;
+            opacity: 1;
+          }
+          .hover-reveal-bg {
+            opacity: 1;
+          }
+          &:after {
+            opacity: 1;
+            width: 100%;
+          }
         }
-        .award-btn span svg:last-child {
-          opacity: 1;
-          visibility: visible;
-          transform: translate(13px, -13px);
-        }
-        .award-arrow {
-          color: $black;
-          visibility: visible;
-          opacity: 1;
+        :after {
+          position: absolute;
+          content: "";
+          left: 0;
+          bottom: 0;
+          width: 0;
+          background-color: $white;
+          height: 1px;
+          z-index: -1;
+          opacity: 0;
         }
         .hover-reveal-bg {
-          opacity: 1;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 210px;
+          height: 295px;
+          opacity: 0;
+          border-radius: 10px;
+          pointer-events: none;
+          background-size: cover;
         }
-        &:after {
-          opacity: 1;
+        .award-inner-border {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 1px;
           width: 100%;
+          border: 1px solid rgba(37, 37, 37, 0.08);
+          transition: 0.3s;
         }
-      }
-      :after {
-        position: absolute;
-        content: "";
-        left: 0;
-        bottom: 0;
-        width: 0;
-        background-color: $white;
-        height: 1px;
-        z-index: -1;
-        opacity: 0;
-      }
-      .hover-reveal-bg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 210px;
-        height: 295px;
-        opacity: 0;
-        border-radius: 10px;
-        pointer-events: none;
-        background-size: cover;
-      }
-      .award-inner-border {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        height: 1px;
-        width: 100%;
-        border: 1px solid rgba(37, 37, 37, 0.08);
-        transition: 0.3s;
       }
     }
   }
-}

@@ -1,0 +1,34 @@
+{
+  "footers": {
+    "title": "Let's talk about the next big thing",
+    "button": {
+      "black_btn": "Discuss Project",
+      "white_btn": "Write A Message"
+    },
+    "socialmedia": [
+      {
+        "id": 1,
+        "title": "Behance",
+        "subtitle": "@diego_des",
+        "icon": "InstagramIcon"
+      },
+      {
+        "id": 2,
+        "title": "Google",
+        "subtitle": "@diego_des",
+        "icon": "InstagramIcon"
+      },
+      {
+        "id": 3,
+        "title": "Instagram",
+        "subtitle": "@diego_des",
+        "icon": "InstagramIcon"
+      }
+    ],
+    "copyright":{
+        "title":" © 2024 Diego, All Rights Reserved •",
+        "subtitle":"Credit",
+        "text":"2024 Portfolio"
+    }
+  }
+}

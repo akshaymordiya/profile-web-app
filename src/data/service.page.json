@@ -1,0 +1,237 @@
+{
+  "hero": {
+    "title": "High Quality Projects",
+    "servicelist": [
+      {
+        "id": "1",
+        "animationdelay": "300",
+        "listclass": "inner-service-list list-1",
+        "listName": "Over 40 Websites Built With Envato"
+      },
+      {
+        "id": "2",
+        "animationdelay": "500",
+        "listclass": "inner-service-list list-2",
+        "listName": "Visual Designer for 10+ years"
+      },
+      {
+        "id": "3",
+        "animationdelay": "700",
+        "listclass": "inner-service-list list-3",
+        "listName": "UI/UX Designer, Envato"
+      }
+    ]
+  },
+  "services": {
+    "circleImg": "/assets/footer-circle-img.png",
+    "innerImg": [
+      {
+        "id": "1",
+        "img": "/assets/service-shape-1.png",
+        "class": "service-shape-1",
+        "alt": "shape-img"
+      },
+      {
+        "id": "2",
+        "img": "/assets/service-shape-2.png",
+        "class": "service-shape-2",
+        "alt": "circle_shape-img"
+      },
+      {
+        "id": "3",
+        "img": "/assets/star.png",
+        "class": "service-shape-3",
+        "alt": "star-img"
+      }
+    ],
+    "servicecard": {
+      "subitle": "OUR PROCESS",
+      "title": " How We Carry Out Our Projects",
+      "paragraph": " We offer a range of services to help elevate your brand & drive results.",
+      "rightsideservice": [
+        {
+          "id": "1",
+          "title": "Design Strategy",
+          "desc": " We always ensure that it combines a clean and beautiful visual design.",
+          "icon": "AutoModeIcon",
+          "tag1": "UI/UX Audit",
+          "tag2": "Workshops"
+        },
+        {
+          "id": "2",
+          "title": "Product Leadership",
+          "desc": " We always ensure that it combines a clean and beautiful visual design.",
+          "icon": "AutoModeIcon",
+          "tag1": "UI/UX Audit",
+          "tag2": "Workshops"
+        },
+        {
+          "id": "3",
+          "title": "Front-End Development",
+          "desc": " We always ensure that it combines a clean and beautiful visual design.",
+          "icon": "AutoModeIcon",
+          "tag1": "UI/UX Audit",
+          "tag2": "Workshops"
+        }
+      ],
+      "servicetext": "Call me to get more extra service ",
+      "lightbtn": "Call Now"
+    },
+    "paragraph": "Refined branding and web design strategically created to tell your story, make a connection and establish a cutting-edge online and offline presence.",
+    "skill": {
+      "title": "Design",
+      "icon": "StarIcon",
+      "designskill": [
+        {
+          "title": "Web Design",
+          "iconleft": "ViewQuiltOutlinedIcon",
+          "iconright": "ArrowOutwardOutlinedIcon"
+        },
+        {
+          "title": "UI/UX Design",
+          "iconleft": "VerticalSplitOutlinedIcon",
+          "iconright": "ArrowOutwardOutlinedIcon"
+        },
+        {
+          "title": "Mobile App Design",
+          "iconleft": "AodOutlinedIcon",
+          "iconright": "ArrowOutwardOutlinedIcon"
+        },
+        {
+          "title": "Branding",
+          "iconleft": "AndroidOutlinedIcon",
+          "iconright": "ArrowOutwardOutlinedIcon"
+        }
+      ]
+    },
+    "skilldev": {
+      "title": "Development",
+      "icon": "StarIcon",
+      "development": [
+        {
+          "title": "Web Development",
+          "iconleft": "VerticalSplitOutlinedIcon",
+          "iconright": "AutoAwesomeMotionOutlinedIcon"
+        },
+        {
+          "title": "Software Development",
+          "iconleft": "VerticalSplitOutlinedIcon",
+          "iconright": "AutoAwesomeMotionOutlinedIcon"
+        },
+        {
+          "title": "CMS Development",
+          "iconleft": "VerticalSplitOutlinedIcon",
+          "iconright": "AutoAwesomeMotionOutlinedIcon"
+        },
+        {
+          "title": "Front-End Development",
+          "iconleft": "VerticalSplitOutlinedIcon",
+          "iconright": "AutoAwesomeMotionOutlinedIcon"
+        }
+      ]
+    }
+  },
+  "testimonial": [
+    {
+      "id": 1,
+      "title": "Rudra Ghosh",
+      "position": "Founder & CEO at",
+      "passion": " Dulalix",
+      "image": "/assets/avata-1.png"
+    },
+    {
+      "id": 2,
+      "title": "Albert Flores",
+      "position": "Marketing Officer at",
+      "passion": " Google Inc",
+      "image": "/assets/avata-2.png"
+    },
+    {
+      "id": 3,
+      "title": "Robert Henricks",
+      "position": "UI/UX Designer",
+      "passion": " Webflow",
+      "image": "/assets/avata-3.png"
+    },
+    {
+      "id": 4,
+      "title": "Flores Flores",
+      "position": "Founder & CEO at",
+      "passion": "Dribblr",
+      "image": "/assets/user-1.jpg"
+    }
+  ],
+  "testimonilafeedback": [
+    {
+      "id": 1,
+      "img": "/assets/quote.svg",
+      "Rating": {
+        "max": "5",
+        "min": "5"
+      },
+      "feedback": "5.0 Rating",
+      "description": "Will gave our website and brand whole new life while staying true to who we are. We would never have thought of going in the direction he pitched but we couldn't be happier."
+    },
+    {
+        "id": 2,
+        "img": "/assets/quote.svg",
+        "Rating": {
+          "max": "5",
+          "min": "5"
+        },
+        "feedback": "5.0 Rating",
+        "description":"Will gave our website and brand whole new life while staying true to who we are. We would never have thought of going in the direction he pitched but we couldn't be happier."
+    },
+    {
+        "id":3,
+        "img": "/assets/quote.svg",
+        "Rating": {
+          "max": "5",
+          "min": "5"
+        },
+        "feedback": "5.0 Rating",
+        "description":"Will gave our website and brand whole new life while staying true to who we are. We would never have thought of going in the direction he pitched but we couldn't be happier."
+    },
+    {
+        "id": 4,
+        "img": "/assets/quote.svg",
+        "Rating": {
+          "max": "5",
+          "min": "5"
+        },
+        "feedback": "5.0 Rating",
+        "description":"Will gave our website and brand whole new life while staying true to who we are. We would never have thought of going in the direction he pitched but we couldn't be happier."
+    }
+  ],
+  "price":{
+    "title":"Services & Pricing",
+    "paragraph":"No surprises. No hassles. Just right.",
+    "serviceprice":[
+        {
+          "id": 1,
+          "head_title": "1 month",
+          "head_des": "Paid monthly",
+          "body_des": "Cancel anytime",
+          "body_title": "$1300/mo",
+          "button_title": "Get started"
+        },
+        {
+          "id": 2,
+          "head_title": "3 month",
+          "head_des": "Paid monthly",
+          "body_des": "Save $800",
+          "body_title": "$4200/mo",
+          "button_title": "Get started"
+        },
+        {
+          "id": 3,
+          "head_title": "Not sure?",
+          "head_des": "Check the skill",
+          "price_text": "You can order 1 free task",
+          "body_des": "-",
+          "body_title": "-",
+          "button_title": "Free Skill Check"
+        }
+      ]
+  }
+}
