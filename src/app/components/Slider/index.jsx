@@ -1,8 +1,8 @@
-'use client'
+"use client";
 import React from "react";
 import Slider from "react-slick";
-import Grid from "../../components/Grid";
-// import IMG from "../IMG";
+import Grid from "../Grid";
+import service from "../../../data/service.page.json";
 
 const ResponsiveSlider = () => {
   const settings = {
@@ -32,15 +32,9 @@ const ResponsiveSlider = () => {
           data-speed="0.5"
         >
           <Slider {...settings}>
-            {/* <IMG 
-            src="/assets/services-slider-1.jpg"
-            /> */}
-            <div>
-              <img src="/assets/services-slider-1.jpg" />
-            </div>
-            <div>
-              <img src="/assets/services-slider-2.jpg" />
-            </div>
+            {service.hero.slider.slider1.map((item) => (
+              <img src={item?.slide} useRawImgTag />
+            ))}
           </Slider>
         </Grid.Item>
         <Grid.Item
@@ -53,12 +47,9 @@ const ResponsiveSlider = () => {
           data-speed="0.5"
         >
           <Slider {...settings}>
-            <div>
-              <img src="/assets/services-slider-3.jpg" />
-            </div>
-            <div>
-              <img src="/assets/services-slider-4.jpg" />
-            </div>
+            {service.hero.slider.slider2.map((item) => (
+              <img src={item?.slide} useRawImgTag />
+            ))}
           </Slider>
         </Grid.Item>
       </Grid>

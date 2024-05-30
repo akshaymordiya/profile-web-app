@@ -6,6 +6,9 @@
 }
 .porfolio-slider-area {
   background-color: $background_bg;
+  position: relative;
+  overflow: hidden;
+  padding-top: 140px;
   .porfolio-overlay {
     position: relative;
     &:after {
@@ -38,29 +41,37 @@
         letter-spacing: -0.03em;
         color: $black;
         font-family: $dr-font-family;
-        margin-bottom: 0;
+        margin: 0 auto;
+        width: 950px;
         @include respond-to("desktop") {
           font-size: 50px;
+          width: 550px;
         }
         @include respond-to("large_tablet") {
-          font-size: 75px;
+          font-size: 50px;
+          width: 550px;
         }
         @include respond-to("small_tablet") {
-          font-size: 65px;
+          font-size: 50px;
+          width: 550px;
         }
         @include respond-to("phone") {
-          font-size:65px;
+          font-size: 40px;
+          width: 380px;
+        }
+        @include respond-to("small_phone") {
+          font-size: 40px;
+          width: 250px;
         }
       }
     }
-    .porfolio-thumb{
+    .porfolio-thumb {
       width: 100%;
-    img {
-      opacity: 0.4;
-      mix-blend-mode: normal;
+      img {
+        opacity: 0.4;
+        mix-blend-mode: normal;
+      }
     }
-  }
-      
   }
 }
 .porfolio-area-wrapper {
@@ -95,7 +106,7 @@
     grid-gap: 45px !important;
     @include respond-to("phone") {
       display: flex !important;
-      flex-wrap: wrap ;
+      flex-wrap: wrap;
     }
     .portfolio-item-wrapper {
       place-content: start;
@@ -103,6 +114,7 @@
         a {
           text-decoration: none;
         }
+        margin-bottom: 30px;
         .portfolio-thumb {
           width: 100%;
           margin-bottom: 20px;
@@ -111,7 +123,7 @@
           position: relative;
           transition: all 0.6s ease-out;
           @include respond-to("phone") {
-           height: 460px !important;
+            height: 460px !important;
           }
           .portfolio-thumb-img {
             position: absolute;
@@ -142,37 +154,41 @@
             margin-bottom: 0;
             font-weight: 700;
           }
-          .portfolio-count {
-            font-size: 14px;
-            font-weight: 500;
-            color: rgba(37, 37, 37, 0.7);
-            display: inline-block;
-            margin-right: 9px;
-          }
-          .portfolio-meta-arrow {
-            display: inline-block;
-            width: 20px;
-            height: 12px;
-            background-color: transparent;
-            margin-right: 9px;
-            position: relative;
-            overflow: hidden;
-            transition: all 0.3s ease-out;
-            &:before {
-              position: absolute;
-              content: "";
-              top: 6px;
-              background: rgba(37, 37, 37, 0.7);
-              height: 1px;
-              width: 20px;
-              left: 0;
+          .portfolio-counter {
+            display: flex;
+            align-items: center;
+            .portfolio-count {
+              font-size: 14px;
+              font-weight: 500;
+              color: rgba(37, 37, 37, 0.7);
+              display: inline-block;
+              margin-right: 9px;
             }
-            svg {
-              position: absolute;
-              top: -6px;
-              left: 0;
-              visibility: hidden;
-              opacity: 0;
+            .portfolio-meta-arrow {
+              display: inline-block;
+              width: 20px;
+              height: 12px;
+              background-color: transparent;
+              margin-right: 9px;
+              position: relative;
+              overflow: hidden;
+              transition: all 0.3s ease-out;
+              &:before {
+                position: absolute;
+                content: "";
+                top: 6px;
+                background: rgba(37, 37, 37, 0.7);
+                height: 1px;
+                width: 20px;
+                left: 0;
+              }
+              svg {
+                position: absolute;
+                top: -6px;
+                left: 0;
+                visibility: hidden;
+                opacity: 0;
+              }
             }
           }
         }

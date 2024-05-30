@@ -86,7 +86,7 @@ const Servicees = () => {
             </div>
           </Grid.Item>
           <Grid.Item xs={12} sm={12} md={12} lg={6} xlg={7} data-speed="0.5">
-            {/* <ServiceCard /> */}
+            <ServiceCard />
           </Grid.Item>
         </Grid>
       </div>

@@ -5,13 +5,10 @@ import Experience from "../../../components/Experience";
 import about from "../../../../data/about.page.json";
 import Aos from "../../../components/AOS";
 import "aos/dist/aos.css";
-import { getIcon } from "@/Icons";
+import { renderIconComponent } from "@/Icons";
 
 const SkillSets = () => {
-  const { IncadescentIcon, SchoolIcon } = getIcon([
-    "IncadescentIcon",
-    "SchoolIcon",
-  ]);
+
   return (
     <>
       <Aos />
@@ -19,7 +16,8 @@ const SkillSets = () => {
         <SectionTitle
           title={about.personalinfo.skills.title}
           interClass="personal-info-right-title"
-          Icon={<IncadescentIcon />}
+          // Icon={<IncadescentIcon />}
+          Icon={renderIconComponent(about.personalinfo.skills.icon)}
         />
         {about.personalinfo.skills.skillsets.map((item, index) => {
           return (
@@ -37,7 +35,7 @@ const SkillSets = () => {
         <SectionTitle
           title={about.personalinfo.expdata.title}
           interClass="personal-info-right-title"
-          Icon={<IncadescentIcon />}
+          Icon={renderIconComponent(about.personalinfo.skills.icon)}
         />
         {about.personalinfo.expdata.experience.map((item, index) => {
           return (
@@ -54,7 +52,7 @@ const SkillSets = () => {
         <SectionTitle
           title={about.personalinfo.edudata.title}
           interClass="personal-info-right-title"
-          Icon={<SchoolIcon />}
+          Icon={renderIconComponent(about.personalinfo.edudata.icon)}
         />
         {about.personalinfo.edudata.education.map((item, index) => {
           return (

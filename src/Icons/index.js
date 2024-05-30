@@ -8,9 +8,9 @@ import LanguageIcon from "@mui/icons-material/Language";
 import SubscriptionsOutlinedIcon from "@mui/icons-material/SubscriptionsOutlined";
 import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardOutlined";
 import SaveAltIcon from "@mui/icons-material/SaveAlt";
-// import FlipToFrontIcon from '@mui/icons-material/FlipToFront';
+import FlipToFrontIcon from '@mui/icons-material/FlipToFront';
 import AutoModeIcon from '@mui/icons-material/AutoMode';
-// import PhonelinkIcon from '@mui/icons-material/Phonelink';
+import PhonelinkIcon from '@mui/icons-material/Phonelink';
 import StarIcon from "@mui/icons-material/Star";
 import ArrowOutwardOutlinedIcon from "@mui/icons-material/ArrowOutwardOutlined";
 import VerticalSplitOutlinedIcon from "@mui/icons-material/VerticalSplitOutlined";
@@ -20,6 +20,8 @@ import AodOutlinedIcon from "@mui/icons-material/AodOutlined";
 import AndroidOutlinedIcon from "@mui/icons-material/AndroidOutlined";
 import CoronavirusOutlinedIcon from "@mui/icons-material/CoronavirusOutlined";
 import AutoAwesomeMotionOutlinedIcon from "@mui/icons-material/AutoAwesomeMotionOutlined";
+import EastIcon from "@mui/icons-material/East";
+import CurrencyBitcoinIcon from '@mui/icons-material/CurrencyBitcoin';
 
 const Icons = {
     "Fname": DriveFileRenameOutlineIcon,
@@ -33,14 +35,19 @@ const Icons = {
     "Arrowforward" : ArrowForwardOutlinedIcon,
     "Download": SaveAltIcon,
     "AutoIcon": AutoModeIcon,
+    "Flipfront": FlipToFrontIcon,
+    "PhonelinkIcon": PhonelinkIcon,
     "Star": StarIcon,
     "Arrowoutline": ArrowOutwardOutlinedIcon,
     "VerticalSplit": VerticalSplitOutlinedIcon,
     "AutomotionIcon" : AutoAwesomeMotionOutlinedIcon,
     "InstaIcon": InstagramIcon,
+    "BitcoinIcon": CurrencyBitcoinIcon,
     "AodIcon": AodOutlinedIcon,
     "AndroidIcon": AndroidOutlinedIcon,
-    "Viewoutline": ViewQuiltOutlinedIcon
+    "Viewoutline": ViewQuiltOutlinedIcon,
+    "CoronaIcon": CoronavirusOutlinedIcon,
+    "Arrowicon": EastIcon
 }
 
 export const getIcon = (keys = []) => {

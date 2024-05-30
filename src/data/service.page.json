@@ -20,7 +20,25 @@
         "listclass": "inner-service-list list-3",
         "listName": "UI/UX Designer, Envato"
       }
-    ]
+    ],
+    "slider":{
+      "slider1":[
+        {
+          "slide":"/assets/services-slider-1.jpg"
+        },
+        {
+          "slide":"/assets/services-slider-2.jpg"
+        }
+      ],
+      "slider2":[
+        {
+          "slide":"/assets/services-slider-3.jpg"
+        },
+        {
+          "slide":"/assets/services-slider-4.jpg"
+        }
+      ]
+    }
   },
   "services": {
     "circleImg": "/assets/footer-circle-img.png",
@@ -53,7 +71,7 @@
           "id": "1",
           "title": "Design Strategy",
           "desc": " We always ensure that it combines a clean and beautiful visual design.",
-          "icon": "AutoModeIcon",
+          "icon": "AutoIcon",
           "tag1": "UI/UX Audit",
           "tag2": "Workshops"
         },
@@ -61,7 +79,7 @@
           "id": "2",
           "title": "Product Leadership",
           "desc": " We always ensure that it combines a clean and beautiful visual design.",
-          "icon": "AutoModeIcon",
+          "icon": "Flipfront",
           "tag1": "UI/UX Audit",
           "tag2": "Workshops"
         },
@@ -69,7 +87,7 @@
           "id": "3",
           "title": "Front-End Development",
           "desc": " We always ensure that it combines a clean and beautiful visual design.",
-          "icon": "AutoModeIcon",
+          "icon": "PhonelinkIcon",
           "tag1": "UI/UX Audit",
           "tag2": "Workshops"
         }
@@ -80,53 +98,53 @@
     "paragraph": "Refined branding and web design strategically created to tell your story, make a connection and establish a cutting-edge online and offline presence.",
     "skill": {
       "title": "Design",
-      "icon": "StarIcon",
+      "icon": "Star",
       "designskill": [
         {
           "title": "Web Design",
-          "iconleft": "ViewQuiltOutlinedIcon",
-          "iconright": "ArrowOutwardOutlinedIcon"
+          "iconleft": "Viewoutline",
+          "iconright": "Arrowoutline"
         },
         {
           "title": "UI/UX Design",
-          "iconleft": "VerticalSplitOutlinedIcon",
-          "iconright": "ArrowOutwardOutlinedIcon"
+          "iconleft": "VerticalSplit",
+          "iconright": "Arrowoutline"
         },
         {
           "title": "Mobile App Design",
-          "iconleft": "AodOutlinedIcon",
-          "iconright": "ArrowOutwardOutlinedIcon"
+          "iconleft": "AodIcon",
+          "iconright": "Arrowoutline"
         },
         {
           "title": "Branding",
-          "iconleft": "AndroidOutlinedIcon",
-          "iconright": "ArrowOutwardOutlinedIcon"
+          "iconleft": "AndroidIcon",
+          "iconright": "Arrowoutline"
         }
       ]
     },
     "skilldev": {
       "title": "Development",
-      "icon": "StarIcon",
+      "icon": "Star",
       "development": [
         {
           "title": "Web Development",
-          "iconleft": "VerticalSplitOutlinedIcon",
-          "iconright": "AutoAwesomeMotionOutlinedIcon"
+          "iconleft": "AutomotionIcon",
+          "iconright": "Arrowoutline"
         },
         {
           "title": "Software Development",
-          "iconleft": "VerticalSplitOutlinedIcon",
-          "iconright": "AutoAwesomeMotionOutlinedIcon"
+          "iconleft": "CoronaIcon",
+          "iconright": "Arrowoutline"
         },
         {
           "title": "CMS Development",
-          "iconleft": "VerticalSplitOutlinedIcon",
-          "iconright": "AutoAwesomeMotionOutlinedIcon"
+          "iconleft": "AodIcon",
+          "iconright": "Arrowoutline"
         },
         {
           "title": "Front-End Development",
-          "iconleft": "VerticalSplitOutlinedIcon",
-          "iconright": "AutoAwesomeMotionOutlinedIcon"
+          "iconleft": "AndroidIcon",
+          "iconright": "Arrowoutline"
         }
       ]
     }

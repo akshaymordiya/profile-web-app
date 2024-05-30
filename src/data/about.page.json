@@ -25,7 +25,7 @@
   },
   "personalinfo": {
     "para": {
-      "title": "I'm Diego a self though & self learned designer based in USA. I started as a financial planner & social media marketer, but now I do mix of everything from",
+      "title": "I'm Diego _____ a self though & self learned designer based in USA. I started as a financial planner & social media marketer, but now I do mix of everything from",
       "product": [
         {
           "name": "Product Design,",
@@ -102,7 +102,7 @@
     },
     "edudata": {
       "title": "Education",
-      "icon": "SchoolOutlinedIcon",
+      "icon": "SchoolIcon",
       "education": [
         {"id":"1",
           "expskillslabel": " Stanford University",
@@ -148,42 +148,48 @@
         "subtitle": "FOR DISPLAY 2023",
         "image": "/assets/award-5.jpg",
         "righticon": "SubdirectoryArrowRightIcon",
-        "arroward": "ArrowOutwardIcon"
+        "arroward": "Arrowoutward",
+        "leftIcon":"RightIcon"
       },
       {"id":"2",
         "title": "Wix.Com",
         "subtitle": "INTERVIEW 2022",
         "image": "/assets/award-6.jpg",
         "righticon": "SubdirectoryArrowRightIcon",
-        "arroward": "ArrowOutwardIcon"
+        "arroward": "Arrowoutward",
+        "leftIcon":"RightIcon"
       },
       {"id":"3",
         "title": "CSS Awards",
         "subtitle": "FEATURE 2021",
         "image": "/assets/award-10.jpg",
         "righticon": "SubdirectoryArrowRightIcon",
-        "arroward": "ArrowOutwardIcon"
+        "arroward": "Arrowoutward",
+        "leftIcon":"RightIcon"
       },
       {"id":"4",
         "title": "Muzli",
         "subtitle": "FEATURE 2020",
         "image": "/assets/award-1.jpg",
         "righticon": "SubdirectoryArrowRightIcon",
-        "arroward": "ArrowOutwardIcon"
+        "arroward": "Arrowoutward",
+        "leftIcon":"RightIcon"
       },
       {"id":"5",
         "title": "Awwwwards",
         "subtitle": "FOR MUTEZA 2019",
         "image": "/assets/award-4.jpg",
         "righticon": "SubdirectoryArrowRightIcon",
-        "arroward": "ArrowOutwardIcon"
+        "arroward": "Arrowoutward",
+        "leftIcon":"RightIcon"
       },
       {"id":"6",
         "title": "Chapers Studio",
         "subtitle": "FOR DISPLAY 2018",
         "image": "/assets/award-3.jpg",
         "righticon": "SubdirectoryArrowRightIcon",
-        "arroward": "ArrowOutwardIcon"
+        "arroward": "Arrowoutward",
+        "leftIcon":"RightIcon"
       }
     ]
   },
@@ -193,16 +199,16 @@
     "paragraph": "Feel free to reach out with questions or inquiries.",
     "socialmedia": [
       {
-        "icon": "MailOutlineIcon"
+        "icon": "MailIcon"
       },
       {
-        "icon": "LanguageIcon"  
+        "icon": "LangIcon"  
       },
       {
-        "icon": "MailOutlineIcon"
+        "icon": "MailIcon"
       },
       {
-        "icon": "SubscriptionsOutlinedIcon"
+        "icon": "SubscribIcon"
       }
     ],
     "explore":{

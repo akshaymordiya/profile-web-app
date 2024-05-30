@@ -489,6 +489,8 @@
       }
       .testimonial-item-top {
         margin-bottom: 20px;
+        display: flex;
+        align-items: center;
         .testimonial-rating {
           margin-right: 8px;
           span svg {

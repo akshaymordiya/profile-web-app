@@ -3,7 +3,7 @@ import SectionTitle from "@/app/components/SectionTitle";
 import ServiceCategory from "@/app/components/ServiceCategory";
 import React from "react";
 import service from "../../../../data/service.page.json";
-import { getIcon } from "@/Icons";
+import { getIcon, renderIconComponent } from "@/Icons";
 
 const Skills = () => {
   const BASE_CLASSNAME = "services-container";
@@ -55,7 +55,7 @@ const Skills = () => {
               >
                 <SectionTitle
                   title={service.services.skill.title}
-                  Icon={<Star />}
+                  Icon={renderIconComponent(service.services.skill.icon)}
                   interClass="inner-left-title"
                 />
               </Grid.Item>
@@ -73,8 +73,8 @@ const Skills = () => {
                     <ServiceCategory
                       key={index}
                       serviceTitle={item?.title}
-                      serviceIconLeft={<VerticalSplit />}
-                      serviceIconRight={<Arrowoutline />}
+                      serviceIconLeft={renderIconComponent(item?.iconleft)}
+                      serviceIconRight={renderIconComponent(item?.iconright)}
                     />
                   );
                 })}
@@ -92,7 +92,7 @@ const Skills = () => {
               >
                 <SectionTitle
                   title={service.services.skilldev.title}
-                  Icon={<Star />}
+                  Icon={renderIconComponent(service.services.skill.icon)}
                   interClass="inner-left-title"
                 />
               </Grid.Item>
@@ -110,8 +110,8 @@ const Skills = () => {
                     <ServiceCategory
                       key={index}
                       serviceTitle={item?.title}
-                      serviceIconLeft={<AutomotionIcon />}
-                      serviceIconRight={<Arrowoutline />}
+                      serviceIconLeft={renderIconComponent(item?.iconleft)}
+                      serviceIconRight={renderIconComponent(item?.iconright)}
                     />
                   );
                 })}

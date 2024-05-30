@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import "./index.scss";
+import contact from "../../../../../../data/contact.page.json";
 
 const ContactBrand = ({ label, labelText, labelClass, onClick }) => {
   return (
@@ -20,38 +20,10 @@ const ContactBuget = () => {
     setActiveIndex(index);
   };
 
-  const data = [
-    {
-      id: 1,
-      label: "10_20k",
-      value: "10-20k",
-    },
-    {
-      id: 2,
-      label: "30_40k",
-      value: "30-40k",
-    },
-    {
-      id: 3,
-      label: "40_50k",
-      value: "40-50K",
-    },
-    {
-      id: 4,
-      label: "50_100K",
-      value: "50-100K",
-    },
-    {
-      id: 5,
-      label: ">_100K",
-      value: "> 100K",
-    },
-  ];
-
   return (
     <>
       <div className="contact-category-wrapper">
-        {data.map((item, index) => (
+        {contact.contactbuget.options.map((item, index) => (
           <ContactBrand
             key={index}
             label={item.label}

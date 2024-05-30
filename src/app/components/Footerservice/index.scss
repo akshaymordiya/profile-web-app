@@ -99,30 +99,38 @@
       height: 1px;
       background-color: $black;
     }
-    .footer-social-text span {
-      font-weight: 500;
-      font-size: 26px;
-      letter-spacing: -0.01em;
-      color: $black;
-      display: block;
-      font-family: $dm-font-family;
-      transition: 0.3s;
-      &.child-2 {
+    .footer-social-text {
+      z-index: 1;
+      position: relative;
+      span {
         font-weight: 500;
-        font-size: 14px;
+        font-size: 26px;
+        letter-spacing: -0.01em;
+        color: $black;
+        display: block;
         font-family: $dm-font-family;
+        transition: 0.3s;
+        &.child-2 {
+          font-weight: 500;
+          font-size: 14px;
+          font-family: $dm-font-family;
+        }
       }
     }
-    .footer-social-icon span {
-      height: 46px;
-      width: 46px;
-      display: inline-block;
-      border-radius: 50%;
-      text-align: center;
-      line-height: 43px;
-      background-color: $black;
-      color: $white;
-      transition: 0.3s;
+    .footer-social-icon {
+      z-index: 1;
+      position: relative;
+      span {
+        height: 46px;
+        width: 46px;
+        display: inline-block;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 43px;
+        background-color: $black;
+        color: $white;
+        transition: 0.3s;
+      }
     }
     &:hover {
       border-color: $white;

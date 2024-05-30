@@ -1,7 +1,9 @@
 
-@import "../../../styles/variables";
+@import "../../../../../styles/variables";
 
 .contact-category {
+  padding-bottom: 80px;
+  background-color: $background_bg;
   &-title {
     font-weight: 500;
     font-size: 24px;
@@ -40,11 +42,7 @@
 .contact-category-wrapper input {
   display: none;
 }
-.contact-category-btn.active {
-  /* Add your desired styles here, e.g., background color, text color, border, etc. */
-  background-color: #007bff; /* Example blue background */
-  color: white;
-}
+
 .contact-category a.active,
 .contact-category a:hover,
 .contact-category button.active,

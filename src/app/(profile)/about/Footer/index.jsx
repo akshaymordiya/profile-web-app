@@ -5,7 +5,7 @@ import Grid from "../../../components/Grid";
 import SectionTitle from "../../../components/SectionTitle";
 import FooterwidgetTitle from "../Footer/FooterWidgetitle";
 import about from "../../../../data/about.page.json";
-import { getIcon } from "@/Icons";
+import { getIcon, renderIconComponent } from "@/Icons";
 
 const Footer = () => {
   const { Arrowforward, MailIcon, LangIcon, SubscribIcon } = getIcon([
@@ -49,18 +49,13 @@ const Footer = () => {
                     <p>{about.footer.paragraph}</p>
                   </div>
                   <div className="footer-social">
-                    <a href="#" target="_blank">
-                      <span>{<MailIcon />}</span>
+                    {
+                      about.footer.socialmedia.map((item)=> (
+                        <a href="#" target="_blank">
+                      <span>{renderIconComponent(item?.icon)}</span>
                     </a>
-                    <a href="#" target="_blank">
-                      <span>{<LangIcon />}</span>
-                    </a>
-                    <a href="#" target="_blank">
-                      <span>{<MailIcon />}</span>
-                    </a>
-                    <a href="#" target="_blank">
-                      <span>{<SubscribIcon />}</span>
-                    </a>
+                      ))
+                    }
                   </div>
                 </Grid.Item>
                 <Grid.Item
@@ -130,9 +125,7 @@ const Footer = () => {
               </Grid>
             </div>
           </div>
-          <Grid
-            classNames="copyright-bdr-top container"
-          >
+          <Grid classNames="copyright-bdr-top container">
             <Grid.Item
               sm={12}
               xs={12}

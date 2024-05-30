@@ -28,7 +28,7 @@ const Hero = () => {
               animationduration="2000"
               animationdelay="300"
               interClass="inner-slider-title"
-              title="High Quality Projects"
+              title={service.hero.title}
             />
             {service.hero.servicelist.map((item, index) => (
               <InnerServiceList

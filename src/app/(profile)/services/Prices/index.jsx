@@ -56,7 +56,7 @@ const Prices = () => {
                       </>
                     )}
                   </div>
-                  <div className="price-btn-box text-center">
+                  <div className="price-btn-box">
                     <CTA
                       btn_color="btn-price-white"
                       linkText={item?.button_title}

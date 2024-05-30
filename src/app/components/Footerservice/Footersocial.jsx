@@ -1,10 +1,9 @@
 import React from "react";
 import Grid from "../Grid";
 import footer from '../../../data/footerservice.json'
-import { getIcon } from "@/Icons";
+import { renderIconComponent } from "@/Icons";
 
 const Footerasocial = () => {
-  const {InstaIcon} = getIcon(["InstaIcon"])
   return (
     <>
       <Grid>
@@ -20,12 +19,12 @@ const Footerasocial = () => {
               itemClass="footer-social-item"
             >
               <span className="footer-anim-border"></span>
-              <div className="footer-social-text z-index-1 position-relative">
+              <div className="footer-social-text">
                 <span className="child-1">{item?.title}</span>
                 <span className="child-2">{item?.subtitle}</span>
               </div>
-              <div className="footer-social-icon z-index-1 position-relative">
-                <span>{<InstaIcon />}</span>
+              <div className="footer-social-icon">
+                <span>{renderIconComponent(item?.icon)}</span>
               </div>
             </Grid.Item>
           );

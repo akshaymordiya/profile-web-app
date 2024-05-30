@@ -10,19 +10,19 @@
         "id": 1,
         "title": "Behance",
         "subtitle": "@diego_des",
-        "icon": "InstagramIcon"
+        "icon": "BitcoinIcon"
       },
       {
         "id": 2,
         "title": "Google",
         "subtitle": "@diego_des",
-        "icon": "InstagramIcon"
+        "icon": "LangIcon"
       },
       {
         "id": 3,
         "title": "Instagram",
         "subtitle": "@diego_des",
-        "icon": "InstagramIcon"
+        "icon": "InstaIcon"
       }
     ],
     "copyright":{

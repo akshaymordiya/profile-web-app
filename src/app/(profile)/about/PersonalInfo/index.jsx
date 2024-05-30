@@ -1,11 +1,11 @@
 import React from "react";
-import Grid from "../../../components/Grid";
 import Services from "../Services";
-import SectionTitle from "../../../components/SectionTitle";
 import about from "../../../../data/about.page.json";
 import SkillSets from "../Skillsets";
-import IMG from "../../../components/IMG";
 import { renderIconComponent } from "@/Icons";
+import Grid from "@/app/components/Grid";
+import IMG from "@/app/components/IMG";
+import SectionTitle from "@/app/components/SectionTitle";
 
 const PersonalInfo = () => {
   const BASE_CLASSNAME = "grid-container";
@@ -25,9 +25,7 @@ const PersonalInfo = () => {
               data-speed="0.5"
             >
               <div>
-                I'm Diego <span className="line"></span> a self though & self
-                learned designer based in USA. I started as a financial planner
-                & social media marketer, but now I do mix of everything from
+                {about.personalinfo.para.title}
                 &nbsp;
                 {(about.personalinfo.para.product ?? []).map(
                   (service, index) => (

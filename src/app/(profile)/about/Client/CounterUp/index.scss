@@ -6,7 +6,7 @@
   background-color: #f6f9ff;
   padding: 110px 85px 60px 85px;
   background-image: url(/assets/funfact-bg-1-2.jpg);
-  width: calc(100% - 200px);
+  width: calc(100% - 200px) !important; 
   top: 0;
   left: 100px;
   border-radius: 20px;

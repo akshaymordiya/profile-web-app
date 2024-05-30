@@ -2,8 +2,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import Rating from "@mui/material/Rating";
 import Slider from "react-slick";
-import Grid from "../../../../../components/Grid";
 import service from '../../../../../../data/service.page.json'
+import Grid from "@/app/components/Grid";
 
 const SlideNav = () => {
   const [nav1, setNav1] = useState(null);
@@ -52,39 +52,6 @@ const SlideNav = () => {
     ]
   }
 
-  // const repetitions = 4;
-  // const sliderepest = Array(repetitions).fill(null);
-
-  // const data = [
-  //   {
-  //     id: 1,
-  //     title: "Rudra Ghosh",
-  //     position: "Founder & CEO at",
-  //     passion: " Dulalix",
-  //     image: "/assets/avata-1.png",
-  //   },
-  //   {
-  //     id: 2,
-  //     title: "Albert Flores",
-  //     position: "Marketing Officer at",
-  //     passion: " Google Inc",
-  //     image: "/assets/avata-2.png",
-  //   },
-  //   {
-  //     id: 3,
-  //     title: "Robert Henricks",
-  //     position: "UI/UX Designer",
-  //     passion: " Webflow",
-  //     image: "/assets/avata-3.png",
-  //   },
-  //   {
-  //     id: 4,
-  //     title: "Flores Flores",
-  //     position: "Founder & CEO at",
-  //     passion: "Dribblr",
-  //     image: "/assets/user-1.jpg",
-  //   },
-  // ];
   return (
     <>
       <Grid>
@@ -104,7 +71,7 @@ const SlideNav = () => {
                   <div className="testimonial-quote">
                     <img src={item?.img} />
                   </div>
-                  <div className="testimonial-item-top d-flex align-items-center">
+                  <div className="testimonial-item-top">
                     <div className="testimonial-rating">
                       <Rating
                         name="half-rating-read"
@@ -136,7 +103,7 @@ const SlideNav = () => {
               return (
                 <div
                   key={index}
-                  className="testimonial-user-item d-flex justify-content-center align-items-center"
+                  className="testimonial-user-item"
                 >
                   <div className="testimonial-user-thumb">
                     <img src={item?.image} alt="avtar-image" />

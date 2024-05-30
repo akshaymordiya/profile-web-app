@@ -81,7 +81,7 @@ const FooterService = () => {
             >
               <p>
                 {footer.footers.copyright.title}
-                <span> {footer.footers.copyright.subtitle}</span>
+                <span>{footer.footers.copyright.subtitle}</span>
               </p>
             </Grid.Item>
             <Grid.Item

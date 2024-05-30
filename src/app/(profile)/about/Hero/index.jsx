@@ -5,7 +5,6 @@ import AnimatedCharactors from "../../../components/AnimatedCharactors";
 import CTA from "../../../components/CTA";
 import about from '../../../../data/about.page.json';
 import { renderIconComponent } from "@/Icons";
-import { SaveAlt } from "@mui/icons-material";
 
 const Hero = () => {
   const BASE_CLASSNAME = "grid-container";

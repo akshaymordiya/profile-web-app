@@ -1,11 +1,10 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import { getIcon } from "@/Icons";
-
+import { getIcon, renderIconComponent } from "@/Icons";
 import about from "../../../../../../data/about.page.json";
 
 const Awards = () => {
-  const { RightIcon, Arrowoutward } = getIcon(["RightIcon","Arrowoutward"]);
+  const { RightIcon, Arrowoutward } = getIcon(["RightIcon", "Arrowoutward"]);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
   const followImgRef = useRef(null);
@@ -35,16 +34,17 @@ const Awards = () => {
             onMouseEnter={() => {
               setIsHovered(true);
               setCurrentImageIndex(index);
-            } }
+            }}
             onMouseLeave={() => {
               setIsHovered(false);
               setCurrentImageIndex(null);
-            } }
+            }}
           >
             <div className="award-item-inner">
               <div className="award-arrow">
-             {<RightIcon />}
-              </div>
+                {/* {item?.RightIcon} */}
+                {renderIconComponent(item?.leftIcon)}
+                </div>
               <div className="award-content">
                 <h3 className="award-title">{item?.title}</h3>
                 <p>{item?.subtitle}</p>
@@ -52,8 +52,8 @@ const Awards = () => {
               <div className="award-btn-wrapper">
                 <span className="award-btn">
                   <span>
-                    {<Arrowoutward />}
-                   { <Arrowoutward />}
+                    {renderIconComponent(item?.arroward)}
+                    {renderIconComponent(item?.arroward)}
                   </span>
                 </span>
               </div>
@@ -68,7 +68,8 @@ const Awards = () => {
               style={{
                 opacity: isHovered && index === currentImageIndex ? 1 : 0,
                 transition: "opacity 0.2s ease-in-out",
-              }} />
+              }}
+            />
           )}
           <div className="award-inner-border"></div>
         </div>

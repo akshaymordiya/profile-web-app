@@ -1,9 +1,9 @@
 import React from "react";
-import Grid from "../../../components/Grid";
 import SectionTitle from "../../../components/SectionTitle";
-import IMG from "../../../components/IMG";
 import Awards from "../AwardArea/Client/Award";
 import about from "../../../../data/about.page.json";
+import Grid from "@/app/components/Grid";
+import IMG from "@/app/components/IMG";
 
 const AwardArea = () => {
   const BASE_CLASSNAME = "grid-container";

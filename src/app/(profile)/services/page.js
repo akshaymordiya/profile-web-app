@@ -12,45 +12,6 @@ import Prices from "./Prices";
 import FooterService from "@/app/components/Footerservice";
 
 function Services() {
-  // const BASE_CLASSNAME = "services-container";
-
-  // const desingData = [
-  //   {
-  //     title: "Web Design",
-  //     iconleft: <ViewQuiltOutlinedIcon />,
-  //   },
-  //   {
-  //     title: "UI/UX Design",
-  //     iconleft: <VerticalSplitOutlinedIcon />,
-  //   },
-  //   {
-  //     title: "Mobile App Design",
-  //     iconleft: <AodOutlinedIcon />,
-  //   },
-  //   {
-  //     title: "Branding",
-  //     iconleft: <AndroidOutlinedIcon />,
-  //   },
-  // ];
-  // const devData = [
-  //   {
-  //     title: "Web Development",
-  //     iconleft: <AutoAwesomeMotionOutlinedIcon />,
-  //   },
-  //   {
-  //     title: "Software Development",
-  //     iconleft: <CoronavirusOutlinedIcon />,
-  //   },
-  //   {
-  //     title: "CMS Development",
-  //     iconleft: <AodOutlinedIcon />,
-  //   },
-  //   {
-  //     title: "Front-End Development",
-  //     iconleft: <AndroidOutlinedIcon />,
-  //   },
-  // ];
-
   return (
     <>
       <Aos />

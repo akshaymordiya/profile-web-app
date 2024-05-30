@@ -1,10 +1,10 @@
-"use client"
+"use client";
 import React, { useEffect } from "react";
 import { CountUp } from "countup.js";
 import "./index.scss";
-import Aos from "../../../../components/AOS";
 import "aos/dist/aos.css";
-import about from '../../../../../data/about.page.json'
+import about from "../../../../../data/about.page.json";
+import Grid from "@/app/components/Grid";
 
 const Counter = () => {
   useEffect(() => {
@@ -23,40 +23,39 @@ const Counter = () => {
 
   return (
     <>
-      <Aos />
-      <div className="funfact-area">
-        <div className="container">
-          <div className="row">
-            {about.counter.map((item, index) => {
-              return (
-                <div
-                  key={index}
-                  className="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-4"
-                  data-aos="fade-up"
-                  data-aos-duration="2000"
-                  data-aos-delay="300"
-                >
-                  <div className="funfact-item space-left-1">
-                    <div className="funfact-number">
-                      <span>
-                        <div className="counter-item">
-                          <strong id={`count${index + 1}`}>
-                            {item?.countnumber}
-                          </strong>
-                          <span></span>
-                        </div>
-                      </span>
+      <Grid classNames="funfact-area">
+        {about.counter.map((item, index) => {
+          return (
+            <Grid.Item
+              xs={12}
+              sm={6}
+              md={6}
+              lg={4}
+              xlg={4}
+              key={index}
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-aos-delay="300"
+            >
+              <div className="funfact-item space-left-1">
+                <div className="funfact-number">
+                  <span>
+                    <div className="counter-item">
+                      <strong id={`count${index + 1}`}>
+                        {item?.countnumber}
+                      </strong>
+                      <span></span>
                     </div>
-                    <div className="funfact-content">
-                      <h4 className="funfact-title">{item?.countext}</h4>
-                    </div>
-                  </div>
+                  </span>
                 </div>
-              );
-            })}
-          </div>
-        </div>
-      </div>
+                <div className="funfact-content">
+                  <h4 className="funfact-title">{item?.countext}</h4>
+                </div>
+              </div>
+            </Grid.Item>
+          );
+        })}
+      </Grid>
     </>
   );
 };
