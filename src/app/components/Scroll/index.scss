@@ -1,0 +1,24 @@
+@import "../../../styles/variables";
+@import "../../../styles/animations";
+
+.scroll_pointer {
+  position: absolute;
+  bottom: 80px;
+  left: 100px;
+  transition: margin-top 2s ease-in-out;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  cursor: pointer;
+
+  .text {
+    color: $black;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    margin-bottom: 30px;
+  }
+}

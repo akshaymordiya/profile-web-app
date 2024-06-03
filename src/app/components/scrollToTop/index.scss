@@ -1,0 +1,43 @@
+
+@import "./../../../styles/variables";
+@import "./../../../styles/animations";
+
+.scroll_to_top {
+  position: fixed;
+  z-index: 3;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 0.5rem;
+  background-color: $white;
+  display: grid;
+  place-content: center;
+  transition: 0.3s all ease-in-out;
+  visibility: hidden;
+  box-shadow: $shadow-light;
+  animation: fadeIn 0.3s ease-in forwards;
+  transition: all 0.3s all ease-in-out;
+
+  &.visible {
+    visibility: visible;
+
+    .up_arrow {
+      transition: 0.3s all ease-in-out;
+    }
+
+    &:hover {
+      transform: scale(1.2,1.2);
+      border: 1px solid black;
+
+      .up_arrow {
+        animation: upwradLinear 1.2s ease-in-out infinite;
+      }
+    }
+  }
+
+  &.hidden {
+    animation: fadeOut 0.3s ease-out forwards;
+  }
+}

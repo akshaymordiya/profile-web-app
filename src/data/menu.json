@@ -1,0 +1,22 @@
+[
+  {
+    "page": "/",
+    "title": "Home"
+  },
+  {
+    "page": "/about",
+    "title": "About"
+  },
+  {
+    "page": "/services",
+    "title": "Services"
+  },
+  {
+    "page": "/work",
+    "title": "Work"
+  },
+  {
+    "page": "/contact",
+    "title": "Contact"
+  }
+]

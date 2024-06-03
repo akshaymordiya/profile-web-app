@@ -1,0 +1,211 @@
+{
+  "hero": {
+    "title": "Award-Winning Projects Design & Dev.",
+    "slider": [
+      {
+        "slide": "/assets/port-inner-1.jpg"
+      },
+      {
+        "slide": "/assets/port-inner-2.jpg"
+      },
+      {
+        "slide": "/assets/port-inner-3.jpg"
+      }
+    ]
+  },
+  "projectTitle": "Latest Project",
+  "projectList": [
+    {
+      "id": 1,
+      "image": "/assets/port-inner-up-1.jpg",
+      "title": "Space Needle",
+      "brand": "Branding",
+      "date":"12 April, 2022",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores. Sunt vitae ea magni libero voluptatibus voluptates ad debitis iste itaque laborum vero odit, maiores qui iure animi id at.",
+      "view": "View Project",
+      "easticon": "Arrowicon",
+      "srcset": [
+        {
+          "img": "/assets/port-inner-up-2.jpg",
+          "thumbnail": "/assets/port-inner-up-2.jpg"
+        },
+        {
+          "img": "/assets/port-inner-up-3.jpg",
+          "thumbnail": "/assets/port-inner-up-3.jpg"
+        },
+        {
+          "img": "/assets/port-inner-up-4.jpg",
+          "thumbnail": "/assets/port-inner-up-4.jpg"
+        },
+        {
+          "img": "/assets/port-inner-up-5.jpg",
+          "thumbnail": "/assets/port-inner-up-5.jpg"
+        },
+        {
+          "img": "/assets/port-inner-up-6.jpg",
+          "thumbnail": "/assets/port-inner-up-6.jpg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "image": "/assets/port-inner-up-2.jpg",
+      "title": "Crisis Cleanup",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores. Sunt vitae ea magni libero voluptatibus voluptates ad debitis iste itaque laborum vero odit, maiores qui iure animi id at.",
+      "brand": "Branding",
+      "date":"23 Jan, 2024",
+      "view": "View Project",
+      "easticon": "Arrowicon",
+      "srcset": [
+        {
+          "img": "/assets/port-inner-up-1.jpg",
+          "thumbnail": "/assets/port-inner-up-1.jpg"
+        },
+        {
+          "img": "/assets/port-inner-up-3.jpg",
+          "thumbnail": "/assets/port-inner-up-3.jpg"
+        },
+        {
+          "img": "/assets/port-inner-up-4.jpg",
+          "thumbnail": "/assets/port-inner-up-4.jpg"
+        },
+        {
+          "img": "/assets/port-inner-up-5.jpg",
+          "thumbnail": "/assets/port-inner-up-5.jpg"
+        },
+        {
+          "img": "/assets/port-inner-up-6.jpg",
+          "thumbnail": "/assets/port-inner-up-6.jpg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "image": "/assets/port-inner-up-3.jpg",
+      "title": "Space Needle",
+      "brand": "Branding",
+      "date":"01 Jun, 2023",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores. Sunt vitae ea magni libero voluptatibus voluptates ad debitis iste itaque laborum vero odit, maiores qui iure animi id at.",
+      "view": "View Project",
+      "easticon": "Arrowicon",
+      "srcset": [
+        {
+          "img": "/assets/port-inner-up-1.jpg",
+          "thumbnail": "/assets/port-inner-up-1.jpg"
+        },
+        {
+          "img": "/assets/port-inner-up-2.jpg",
+          "thumbnail": "/assets/port-inner-up-2.jpg"
+        },
+        {
+          "img": "/assets/port-inner-up-4.jpg",
+          "thumbnail": "/assets/port-inner-up-4.jpg"
+        },
+        {
+          "img": "/assets/port-inner-up-5.jpg",
+          "thumbnail": "/assets/port-inner-up-5.jpg"
+        },
+        {
+          "img": "/assets/port-inner-up-6.jpg",
+          "thumbnail": "/assets/port-inner-up-6.jpg"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "image": "/assets/port-inner-up-4.jpg",
+      "title": "Space Needle",
+      "brand": "Space Needle",
+      "date":"10 Oct, 2021",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores. Sunt vitae ea magni libero voluptatibus voluptates ad debitis iste itaque laborum vero odit, maiores qui iure animi id at.",
+      "view": "View Project",
+      "easticon": "Arrowicon",
+      "srcset": [
+        {
+          "img": "/assets/port-inner-up-1.jpg",
+          "thumbnail": "/assets/port-inner-up-1.jpg"
+        },
+        {
+          "img": "/assets/port-inner-up-2.jpg",
+          "thumbnail": "/assets/port-inner-up-2.jpg"
+        },
+        {
+          "img": "/assets/port-inner-up-3.jpg",
+          "thumbnail": "/assets/port-inner-up-3.jpg"
+        },
+        {
+          "img": "/assets/port-inner-up-5.jpg",
+          "thumbnail": "/assets/port-inner-up-5.jpg"
+        },
+        {
+          "img": "/assets/port-inner-up-6.jpg",
+          "thumbnail": "/assets/port-inner-up-6.jpg"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "image": "/assets/port-inner-up-5.jpg",
+      "title": "Crisis Cleanup",
+      "brand": "Crisis Cleanup",
+      "date":"09 Nov, 2023",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores. Sunt vitae ea magni libero voluptatibus voluptates ad debitis iste itaque laborum vero odit, maiores qui iure animi id at.",
+      "view": "View Project",
+      "easticon": "Arrowicon",
+      "srcset": [
+        {
+          "img": "/assets/port-inner-up-1.jpg",
+          "thumbnail": "/assets/port-inner-up-1.jpg"
+        },
+        {
+          "img": "/assets/port-inner-up-2.jpg",
+          "thumbnail": "/assets/port-inner-up-2.jpg"
+        },
+        {
+          "img": "/assets/port-inner-up-3.jpg",
+          "thumbnail": "/assets/port-inner-up-3.jpg"
+        },
+        {
+          "img": "/assets/port-inner-up-4.jpg",
+          "thumbnail": "/assets/port-inner-up-4.jpg"
+        },
+        {
+          "img": "/assets/port-inner-up-6.jpg",
+          "thumbnail": "/assets/port-inner-up-6.jpg"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "image": "/assets/port-inner-up-6.jpg",
+      "title": "Space Needle",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores. Sunt vitae ea magni libero voluptatibus voluptates ad debitis iste itaque laborum vero odit, maiores qui iure animi id at.",
+      "brand": "Space Needle",
+      "date":"17 Feb, 2024",
+      "view": "View Project",
+      "easticon": "Arrowicon",
+      "srcset": [
+        {
+          "img": "/assets/port-inner-up-1.jpg",
+          "thumbnail": "/assets/port-inner-up-1.jpg"
+        },
+        {
+          "img": "/assets/port-inner-up-2.jpg",
+          "thumbnail": "/assets/port-inner-up-2.jpg"
+        },
+        {
+          "img": "/assets/port-inner-up-3.jpg",
+          "thumbnail": "/assets/port-inner-up-3.jpg"
+        },
+        {
+          "img": "/assets/port-inner-up-4.jpg",
+          "thumbnail": "/assets/port-inner-up-4.jpg"
+        },
+        {
+          "img": "/assets/port-inner-up-5.jpg",
+          "thumbnail": "/assets/port-inner-up-5.jpg"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.gx-90 {
+  --bs-gutter-x: 90px;
+}
+.porfolio-slider-area {
+  background-color: $background_bg;
+  position: relative;
+  overflow: hidden;
+  padding-top: 140px;
+  .porfolio-overlay {
+    position: relative;
+    &:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(
+        100% 1330.1% at 0 52.65%,
+        #f6f9ff 0,
+        hsla(0, 0%, 100%, 0.77) 52.08%,
+        #f6f9ff 100%
+      );
+      content: "";
+    }
+    .porfolio-text-1 {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      right: 0;
+      z-index: 1;
+      text-align: center;
+      .porfolio-slider-title {
+        font-weight: 500;
+        font-size: 100px;
+        line-height: 1;
+        text-align: center;
+        letter-spacing: -0.03em;
+        color: $black;
+        font-family: $dr-font-family;
+        margin: 0 auto;
+        width: 950px;
+        @include respond-to("desktop") {
+          font-size: 50px;
+          width: 550px;
+        }
+        @include respond-to("large_tablet") {
+          font-size: 50px;
+          width: 550px;
+        }
+        @include respond-to("small_tablet") {
+          font-size: 50px;
+          width: 550px;
+        }
+        @include respond-to("phone") {
+          font-size: 40px;
+          width: 380px;
+        }
+        @include respond-to("small_phone") {
+          font-size: 40px;
+          width: 250px;
+        }
+      }
+    }
+    .porfolio-thumb {
+      width: 100%;
+      img {
+        opacity: 0.4;
+        mix-blend-mode: normal;
+      }
+    }
+  }
+}
+.porfolio-area-wrapper {
+  background-color: $background_bg;
+  margin-top: 30px;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  .portfolio-list-text {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    text-align: end;
+    padding-bottom: 80px;
+    p {
+      font-weight: 500;
+      font-size: 220px;
+      line-height: 1;
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+      color: #eceff5;
+      mix-blend-mode: luminosity;
+      font-family: $dr-font-family;
+      margin-bottom: 0;
+      flex: 0 0 auto;
+      margin-right: 80px;
+    }
+  }
+}
+.Portfolio-area {
+  background-color: $background_bg;
+  .portfolio-gap {
+    grid-gap: 45px !important;
+    @include respond-to("phone") {
+      display: flex !important;
+      flex-wrap: wrap;
+    }
+    .portfolio-item-wrapper {
+      place-content: start;
+      .portfolio-item {
+        a {
+          text-decoration: none;
+        }
+        margin-bottom: 30px;
+        .portfolio-thumb {
+          width: 100%;
+          margin-bottom: 20px;
+          border-radius: 12px;
+          overflow: hidden;
+          position: relative;
+          transition: all 0.6s ease-out;
+          @include respond-to("phone") {
+            height: 460px !important;
+          }
+          @include respond-to("small_phone") {
+            height: 280px !important;
+          }
+          .portfolio-thumb-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: all 0.6s ease-out;
+            border-radius: 12px;
+            display: inline-block;
+            @include respond-to("phone") {
+              position: inherit;
+            }
+            img {
+              border-radius: 12px;
+              width: 100%;
+              background-attachment: fixed;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+          }
+        }
+        .portfolio-content {
+          .portfolio-title {
+            font-size: 30px;
+            color: $black;
+            margin-bottom: 0;
+            font-weight: 700;
+          }
+          .portfolio-counter {
+            display: flex;
+            align-items: center;
+            .portfolio-count {
+              font-size: 14px;
+              font-weight: 500;
+              color: rgba(37, 37, 37, 0.7);
+              display: inline-block;
+              margin-right: 9px;
+            }
+            .portfolio-meta-arrow {
+              display: inline-block;
+              width: 20px;
+              height: 12px;
+              background-color: transparent;
+              margin-right: 9px;
+              position: relative;
+              overflow: hidden;
+              transition: all 0.3s ease-out;
+              &:before {
+                position: absolute;
+                content: "";
+                top: 6px;
+                background: rgba(37, 37, 37, 0.7);
+                height: 1px;
+                width: 20px;
+                left: 0;
+              }
+              svg {
+                position: absolute;
+                top: -6px;
+                left: 0;
+                visibility: hidden;
+                opacity: 0;
+              }
+            }
+          }
+        }
+        .portfolio-meta-hover {
+          position: relative;
+          span {
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 500;
+            color: rgba(37, 37, 37, 0.7);
+            position: relative;
+            padding-right: 27px;
+            margin-right: 6px;
+            transition: transform 0.4s, opacity 0.2s, color 0.4s;
+            &.portfolio-meta-link {
+              position: absolute;
+              left: 0;
+              top: 0;
+              padding: 0;
+              margin: 0;
+              opacity: 0;
+            }
+          }
+        }
+        &:hover {
+          .portfolio-thumb {
+            transform: scale(0.95);
+          }
+          .portfolio-thumb-img {
+            transform: scale(1.2);
+          }
+          .portfolio-meta-arrow {
+            width: 25px;
+          }
+          .portfolio-meta-arrow:before {
+            visibility: hidden;
+            opacity: 0;
+            width: 40px;
+            color: $white;
+          }
+          .portfolio-meta-arrow svg {
+            visibility: visible;
+            opacity: 1;
+            color: rgba(37, 37, 37, 0.7);
+          }
+          .portfolio-meta-hover span {
+            color: $black;
+          }
+          .portfolio-meta-hover span:not(.portfolio-meta-link) {
+            transform: translateX(20px);
+            opacity: 0;
+          }
+          .portfolio-meta-hover span {
+            color: $black;
+          }
+          .portfolio-meta-hover .portfolio-meta-link {
+            transform: translateX(1px);
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

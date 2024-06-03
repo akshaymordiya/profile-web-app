@@ -1,0 +1,66 @@
+
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.menu_container {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 4.5rem;
+
+  &.hidden-on-small {
+    @include respond-to('small_devices') {
+      visibility: hidden;
+      width: 0%;
+      height: 0%;
+    }
+  }
+
+  &.vertical {
+    flex-direction: column;
+  }
+
+  &_link {
+    position: relative;
+    text-decoration: none;
+    width: fit-content;
+    padding: 0 0.2rem;
+    color: $black;
+    display: grid;
+    place-items: center;
+    font-weight: 500;
+    transition: 0.3s all ease-in-out;
+    
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      height: 2px;
+      background-color: $black;
+      border-radius: 10%;
+      animation: rightToLeft 0.3s forwards;
+      width: 100%;
+    }
+
+    &:not(.active) {
+      &::after {
+        content: "";
+        width: 0%;
+      }
+    }
+    
+    &:hover {
+      &::after {
+        animation: leftToRight 0.3s forwards;
+        width: 100%;
+      }
+    }
+    
+    &.active {
+      &::after {
+        animation: leftToRight 0.3s forwards;
+      }
+    }
+  }
+}

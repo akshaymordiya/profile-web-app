@@ -1,0 +1,19 @@
+@import "../../../styles/variables";
+
+.social-wrap {
+  width: fit-content;
+  height: auto;
+  display: flex;
+
+  .link {
+    color: $black;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 10px;
+    display: inline-block;
+
+    &:hover {
+      color: $purple;
+    }
+  }
+}
