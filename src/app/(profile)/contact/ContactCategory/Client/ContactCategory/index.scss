@@ -1,8 +1,8 @@
 
-@import "../../../../../styles/variables";
+@import "../../../../../../styles/variables";
 
 .contact-category {
-  padding-bottom: 80px;
+  padding-bottom: 40px;
   background-color: $background_bg;
   &-title {
     font-weight: 500;
@@ -29,7 +29,7 @@
   line-height: 60px;
   padding: 0 40px;
   display: inline-block;
-  border: 1px solid rgba(2, 11, 24, 0.1);
+  border: 1px solid rgba(2, 11, 24, 0.1) !important;
   border-radius: 30px;
   font-weight: 400;
   font-size: 18px;

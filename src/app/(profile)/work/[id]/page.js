@@ -13,9 +13,7 @@ function WorkDetailsPage({ params }) {
 export default WorkDetailsPage;
 
 export async function generateStaticParams() {
-
-//   const posts = await fetch("/workImageInfo.json").then((res) => res.json());
-
+  
   return (workData.projectList ?? []).map((post) => ({
     id: `${post.id}`,
   }));

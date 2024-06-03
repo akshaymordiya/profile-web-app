@@ -20,8 +20,8 @@ const Item = ({
 
   return (
     <div key={index} className="portfolio-item">
-      <Link href={`/work/${item.id}`}>
-        <div
+      <Link href={`/work/${item.id}`} >
+        <div  
           className="portfolio-thumb img-1"
           style={{ height: imageHeight }}
         >
@@ -34,7 +34,7 @@ const Item = ({
           <div className="portfolio-counter">
             <span className="portfolio-count">{count}</span>
             <span className="portfolio-meta-arrow">
-              {<Icon />}
+              {/* {<Icon />} */}
             </span>
             <div className="portfolio-meta-hover">
               <span>{item?.brand}</span>
@@ -57,6 +57,8 @@ const WorkItem = () => {
         <div className="container">
           <Grid classNames="portfolio-gap">
             <Grid.Item
+            xs={12}
+            sm={12}
               md={12}
               lg={6}
               xlg={6}
@@ -71,6 +73,8 @@ const WorkItem = () => {
               ))}
             </Grid.Item>
             <Grid.Item
+            xs={12}
+            sm={12}
               md={12}
               lg={6}
               xlg={6}

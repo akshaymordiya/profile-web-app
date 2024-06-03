@@ -11,13 +11,13 @@
     padding: 140px 20px;
   }
   @include respond-to("small_tablet") {
-    padding: 140px 20px;
+    padding: 140px 20px 80px;
   }
   @include respond-to("tablet") {
-    padding: 140px 20px;
+    padding: 140px 20px 80px;
   }
   @include respond-to("phone") {
-    padding: 140px 20px;
+    padding: 140px 20px 80px;
   }
   .inner-slider-content-main {
     display: flex;
@@ -121,6 +121,10 @@
   margin-bottom: 120px;
   position: relative;
   margin-left: 90px;
+  @include respond-to("desktop") {
+    margin-top: 70px;
+    margin-left: 0px;
+  }
   @include respond-to("tablet") {
     margin-top: 100px;
     margin-left: 0px;
@@ -141,6 +145,18 @@
   .inner-slider-active-2 .slick-list {
     height: 650px !important;
     overflow: hidden;
+    @include respond-to("desktop") {
+      height: 450px !important;
+    }
+    @include respond-to("large_tablet") {
+      height: 450px !important;
+    }
+    @include respond-to("small_tablet") {
+      height: 450px !important;
+    }
+    @include respond-to("phone") {
+      height: 450px !important;
+    }
     .slick-slide img {
       display: block;
       @include respond-to("large_tablet") {

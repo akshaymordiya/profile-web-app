@@ -30,13 +30,14 @@ const Hero = () => {
                       charactors={item}
                       leftSpaceOnLastCharactor
                     />
-                  ))}
+                  ))} 
                   <IMG
                     src={contact.getIntouch.image}
                     alt="contactImg"
                     useRawImgTag
                     imageClasses="contact-img"
                   />
+                  <br />
                   {contact.getIntouch.Subname.map((item, index) => (
                     <AnimatedCharactors
                       key={index}
@@ -47,6 +48,7 @@ const Hero = () => {
                     />
                   ))}
                 </Grid.Item>
+                
                 <Grid.Item
                   xs={12}
                   sm={12}

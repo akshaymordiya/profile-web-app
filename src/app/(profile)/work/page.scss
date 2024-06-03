@@ -125,6 +125,9 @@
           @include respond-to("phone") {
             height: 460px !important;
           }
+          @include respond-to("small_phone") {
+            height: 280px !important;
+          }
           .portfolio-thumb-img {
             position: absolute;
             top: 0;

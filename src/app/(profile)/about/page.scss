@@ -207,9 +207,11 @@
     }
     @include respond-to("small_tablet") {
       position: relative;
+      height: 245px !important;
     }
     @include respond-to("phone") {
       position: relative;
+      height: 245px !important;
     }
     .personal-info-left-title {
       font-weight: 500;

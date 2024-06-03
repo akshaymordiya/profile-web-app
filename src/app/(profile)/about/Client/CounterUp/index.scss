@@ -20,22 +20,26 @@
     position: inherit;
     width: 100%;
     border-radius: 0px;
+    width: 100% !important;
     }
   @include respond-to("large_tablet") {
     position: inherit;
     width: 100%;
     border-radius: 0px;
+    width: 100% !important;
   }
   @include respond-to("small_tablet") {
   position: inherit;
   width: 100%;
   border-radius: 0px;
+  width: 100% !important;
   }
   @include respond-to("phone") {
     position: inherit;
     width: 100%;
     border-radius: 0px;
     padding: 110px 30px 60px ;
+    width: 100% !important;
   }
   .funfact-item {
     position: relative;

@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import "./index.scss";
-import contact from "../../../../../data/contact.page.json";
+import contact from "../../../../../../data/contact.page.json";
 
 const ContactBrand = ({ label, labelText, labelClass, onClick }) => {
   return (
