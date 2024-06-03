@@ -6,6 +6,9 @@ import Hero from "@/app/(home)/sections/Hero";
 import Services from "@/app/(home)/sections/Services";
 
 import HomeFooter from "@/components/HomeFooter";
+import Projects from "./sections/Projects";
+
+import "../globals.css";
 
 export default function Home() {
   return (
@@ -13,8 +16,9 @@ export default function Home() {
         <main>
           <Hero />
           <Services />
+          <Projects />
         </main>
-        {/* <HomeFooter /> */}
+        <HomeFooter />
       </div>
   );
 }

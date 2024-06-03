@@ -100,7 +100,7 @@
     border-radius: 30px;
     font-weight: 400;
     font-size: 17px;
-    transition: transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     
     a {
       color: $text-body;
@@ -110,6 +110,20 @@
         margin-left: 0.5rem;
         text-decoration: underline;
         color: $white;
+      }
+    }
+
+    &:hover {
+      background: $white;
+
+      a {
+        color: $black;
+
+        span {
+          transition: 0.3s all ease-in-out;
+          color: #4c40f7;
+          font-weight: 600;
+        }
       }
     }
   }

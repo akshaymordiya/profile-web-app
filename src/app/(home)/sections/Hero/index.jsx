@@ -56,7 +56,8 @@ const Hero = () => {
             sm={12}
             md={12}
             lg={12} 
-            xlg={8} itemClass='charactor_Wrapper'
+            xlg={8} 
+            itemClass='charactor_Wrapper'
             data-speed="0.5"
           >
             <AnimatedCharactors
