@@ -9,12 +9,13 @@ const CTA = ({
   linkHref = "/",
   icon: Icon,
   iconProps = {},
+  btn_color = 'btn-white',
 }) => {
   const { className = "" } = iconProps;
   return (
     <Link
       className={`
-        btn-white
+        ${btn_color}
         ${linkClass}
       `}
       href={linkHref}

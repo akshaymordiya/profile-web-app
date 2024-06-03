@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import React from 'react'
 
@@ -8,8 +10,8 @@ const BASE_CLASSNAME = 'image'
 const IMG = ({
   src = "",
   alt = "",
-  width = "100",
-  height = "100",
+  width = "",
+  height = "",
   imageClasses = "",
   useContainer = false,
   useRawImgTag = false,

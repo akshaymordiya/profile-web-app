@@ -1,0 +1,33 @@
+@import "../../../../../../styles/variables";
+.work-details-wrapper {
+  background-color: $background_bg;
+  padding-top: 120px;
+  padding-bottom: 80px;
+  height: 100vh;
+  position: relative;
+  .imgcontent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .portfolio-thumb {
+      width: 100%;
+      .portfolio-thumb-img img {
+        // height: 50   0px;
+        width: 100%;
+        border-radius: 12px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+.portfoliocounter{
+  display:flex;
+  align-items: center;
+  .portfoliometahover{
+    margin-bottom: 10px;
+  }
+}
