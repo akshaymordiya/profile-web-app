@@ -1,6 +1,5 @@
 "use client";
 import React from 'react';
-
 import CTA from '@/app/components/CTA';
 import IMG from '@/app/components/IMG';
 import SocialLinks from '@/app/components/SocialLinks';
@@ -9,15 +8,14 @@ import Grid from '@/app/components/Grid';
 import AnimatedCharactors from '@/app/components/AnimatedCharactors';
 import Animation from '@/app/components/Animation';
 import ParallaxScroll from '@/app/components/ParallaxScroll';
-
-//icons
+import homeData from '../../../../data/home.page.json';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import CallMadeIcon from '@mui/icons-material/CallMade';
-
 //lottie animations
 import menWork from "../../../../../public/assets/lottie/men-work.json";
 
 import "./index.scss";
+import { renderIconComponent } from '@/Icons';
 
 const BASE_CLASSNAME = "hero-container"
 
@@ -60,27 +58,17 @@ const Hero = () => {
             itemClass='charactor_Wrapper'
             data-speed="0.5"
           >
-            <AnimatedCharactors
-              charactors='creative'
-              capitlized
-              leftSpaceOnLastCharactor
-              wrapperClass='word_text'
-              charactorClass='charactor_bg'
-            />
-            <AnimatedCharactors
-              charactors='visual'
-              capitlized
-              leftSpaceOnLastCharactor
-              wrapperClass='word_text'
-              charactorClass='charactor_bg'
-            />
-            <AnimatedCharactors 
-              charactors='Designer'
-              capitlized
-              leftSpaceOnLastCharactor
-              wrapperClass='word_text'
-              charactorClass='charactor_bg'
-            />
+            {
+              homeData.hero.name.map((hero)=>(
+                <AnimatedCharactors
+                charactors={hero}
+                capitlized
+                leftSpaceOnLastCharactor
+                wrapperClass='word_text'
+                charactorClass='charactor_bg'
+              />
+              ))
+            }
           </Grid.Item>
           <Grid.Item
             xs={12}
@@ -107,10 +95,11 @@ const Hero = () => {
             data-speed="0.8"
           >
             <CTA 
-              linkText='View Our Work'
+              linkText={homeData.hero.button.title}
               linkHref='/work'
               linkClass='btn-blue'
               icon={CallMadeIcon}
+              // icon={renderIconComponent(homeData.hero.button.icon)}
               iconProps={{
                 className: 'navagation_icon',
                 fontSize: 'sm'
@@ -126,7 +115,7 @@ const Hero = () => {
             itemClass='description_text'
             data-speed="0.8"
           >
-              Hello, I am Diego a designer from Barcelona. Specialised in creating fantastic digital experiences.!
+             {homeData.hero.description}
           </Grid.Item>
         </Grid>
       </ParallaxScroll>

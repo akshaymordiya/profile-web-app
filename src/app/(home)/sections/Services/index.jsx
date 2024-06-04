@@ -1,27 +1,26 @@
-import React from 'react';
+import React from "react";
 
-import IMG from '@/app/components/IMG';
-import Grid from '@/app/components/Grid';
-import ServiceBox from '@/app/(home)/sections/Services/Client/ServiceBox';
+import IMG from "@/app/components/IMG";
+import Grid from "@/app/components/Grid";
+import ServiceBox from "@/app/(home)/sections/Services/Client/ServiceBox";
+import homeData from "../../../../data/home.page.json";
 
 import "./index.scss";
+import SectionTitle from "@/app/components/SectionTitle";
 
 const BASE_CLASSNAME = "services_container";
 
 const Services = () => {
   return (
-    <section
-        id="services"
-        className={`${BASE_CLASSNAME}`}
-      >
+    <section id="services" className={`${BASE_CLASSNAME}`}>
       <div className={`${BASE_CLASSNAME}_service_shape_cirlce`}>
         <IMG
-          src='/assets/footer-circle-img.png'
-          alt='circle_shape-img'
+          src={homeData.service.circleimg}
+          alt="circle_shape-img"
           useContainer
           useRawImgTag
           containerClasses="img_container"
-          imageClasses='circle_img'
+          imageClasses="circle_img"
         />
         <div className="half-circle-svg_container">
           <svg
@@ -38,86 +37,42 @@ const Services = () => {
           </svg>
         </div>
       </div>
-      <IMG
-        src='/assets/service-shape-1.png'
-        alt='services-shape-1'
-        useContainer
-        useRawImgTag
-        containerClasses={`${BASE_CLASSNAME}_services-shape_1`}
-        imageClasses='image_shape_1'
-      />
-      <IMG
-        src='/assets/service-shape-2.png'
-        alt='services-shape-2'
-        useContainer
-        useRawImgTag
-        containerClasses={`${BASE_CLASSNAME}_services-shape_2`}
-        imageClasses='image_shape_2'      
-      />
-      <IMG
-        src='/assets/star.png'
-        alt='services-shape-3'
-        useContainer
-        useRawImgTag
-        containerClasses={`${BASE_CLASSNAME}_services-shape_3`}  
-        imageClasses='image_shape_3'      
-      />
-      <IMG
-        src='/assets/service-shape-1.png'
-        alt='services-shape-4'
-        useContainer
-        useRawImgTag
-        containerClasses={`${BASE_CLASSNAME}_services-shape_4`}
-        imageClasses='image_shape_4'
-      />
-      <IMG
-        src='/assets/service-shape-2.png'
-        alt='services-shape-5'
-        useContainer
-        useRawImgTag
-        containerClasses={`${BASE_CLASSNAME}_services-shape_5`}
-        imageClasses='image_shape_5'      
-      />
-      
-        <Grid classNames={`${BASE_CLASSNAME}_grid_wrapper`}>
-          <Grid.Item
-            xs={12}
-            sm={12}
-            md={12}
-            lg={6}
-            xlg={6}
-          >
-            <div className={`${BASE_CLASSNAME}_grid_wrapper_col-left`}>              
-              <div className='sticky-wrapper'>
-                <span className="pre-title">
-                  OUR PROCESS
-                </span>
-                <h3 className="title">
-                  How We
-                  <br />
-                  Carry Out Our 
-                  <br />
-                  Projects
-                </h3>
-                <p className="excert">
-                  We offer a range of services to help elevate <br />
-                  your brand & drive results.
-                </p>
-              </div>
-            </div>
-          </Grid.Item>
-          <Grid.Item
-            xs={12}
-            sm={12}
-            md={12}
-            lg={6}
-            xlg={6}
-          >
-           <ServiceBox />
-          </Grid.Item>
-        </Grid>
-    </section>
-  )
-}
 
-export default Services
+      {homeData.service.images.map((item, index) => (
+        <IMG
+          key={index}
+          src={item?.image}
+          alt={item?.alt}
+          useContainer
+          useRawImgTag
+          containerClasses={item?.containerclass}
+          imageClasses={item?.imageclass}
+        />
+      ))}
+      <Grid classNames={`${BASE_CLASSNAME}_grid_wrapper`}>
+        <Grid.Item xs={12} sm={12} md={12} lg={6} xlg={6}>
+          <div className={`${BASE_CLASSNAME}_grid_wrapper_col-left`}>
+            <div className="sticky-wrapper">
+              <span className="pre-title" data-aos="flip-up">
+                {homeData.service.title}
+              </span>
+              <SectionTitle
+                animationName="flip-up"
+                animationduration="2000"
+                animationdelay="200"
+                interClass="title"
+                title="How We Carry Out Our Projects"
+                para="We offer a range of services to help elevate your brand & drive results."
+              />
+            </div>
+          </div>
+        </Grid.Item>
+        <Grid.Item xs={12} sm={12} md={12} lg={6} xlg={6}>
+          <ServiceBox />
+        </Grid.Item>
+      </Grid>
+    </section>
+  );
+};
+
+export default Services;

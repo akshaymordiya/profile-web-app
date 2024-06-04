@@ -10,7 +10,7 @@
   scroll-behavior: smooth;
 
   @include respond-to('large_tablet'){
-    margin-top: 14rem;
+    margin-top: 6rem;
   }
 
   .service_card {
@@ -37,6 +37,18 @@
     border: 0.5px solid $white;
 
     $tops: ("1":120px, "2":160px, "3":250px);
+    @include respond-to('large_tablet'){
+      padding: 4rem;
+    }
+    @include respond-to('small_tablet'){
+      padding: 4rem;
+    }
+    @include respond-to('phone'){
+      padding: 2rem;
+    }
+    @include respond-to('small_phone'){
+      padding: 2rem;
+    }
 
     @each $index, $top in $tops {
       &:nth-child(#{$index}){
@@ -51,6 +63,7 @@
         line-height: 1.1;
         color: $white;
         margin-bottom: 16px;
+        width: 180px;
       }
       
 

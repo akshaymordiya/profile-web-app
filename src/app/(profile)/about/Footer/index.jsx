@@ -5,15 +5,9 @@ import Grid from "../../../components/Grid";
 import SectionTitle from "../../../components/SectionTitle";
 import FooterwidgetTitle from "../Footer/FooterWidgetitle";
 import about from "../../../../data/about.page.json";
-import { getIcon, renderIconComponent } from "@/Icons";
+import { renderIconComponent } from "@/Icons";
 
 const Footer = () => {
-  const { Arrowforward, MailIcon, LangIcon, SubscribIcon } = getIcon([
-    "Arrowforward",
-    "MailIcon",
-    "LangIcon",
-    "SubscribIcon",
-  ]);
 
   const BASE_CLASSNAME = "footer-container";
   return (
@@ -75,7 +69,7 @@ const Footer = () => {
                       return (
                         <li key={i}>
                           <a href="#">
-                            <Arrowforward />
+                            {/* <Arrowforward /> */}
                             {item?.title}
                           </a>
                         </li>
