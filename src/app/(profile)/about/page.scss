@@ -97,6 +97,7 @@
     }
     .service-img img {
       border-radius: 20px;
+      width: 100%;
     }
   }
 }
@@ -375,7 +376,7 @@
         font-size: 45px;
       }
       @include respond-to("phone") {
-        font-size: 45px;
+        font-size: 35px;
       }
     }
     .award-text-wrapper {

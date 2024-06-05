@@ -7,6 +7,11 @@
     "flowerImg": "/assets/contact-flower.png",
     "flowerText": "/assets/contact-flower-text.png"
   },
+  "mailinfo":{
+    "title":"Email Me:",
+    "text":"hello@diego.com",
+    "para":"Interested in working with me? Submit your project inquiry using the form below."
+  },
   "category": {
     "title": "I'm interested in...",
     "categories": [

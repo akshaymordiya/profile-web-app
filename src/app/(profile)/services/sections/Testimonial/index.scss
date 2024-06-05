@@ -1,0 +1,16 @@
+@import "../../../../../styles//mixins";
+
+.testimonial-area {
+    background-color: #f6f9ff;
+    padding: 100px 2rem 100px;
+    display: grid;
+    place-items: center;
+
+    .testimonial-container {
+        width: 100%;
+
+        @include respond-to("extra_large_desktop") {
+          max-width: 1320px;
+        }
+    }
+}

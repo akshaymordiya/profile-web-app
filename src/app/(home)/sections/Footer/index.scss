@@ -19,6 +19,16 @@
     right: 160px;
     z-index: 1;
     mix-blend-mode: luminosity;
+   
+    @include respond-to("small_tablet") {
+      display: none;
+    }
+    @include respond-to("phone") {
+      display: none;
+    }
+    @include respond-to("small_phone") {
+      display: none;
+    }
   }
   .footer_wrapper_grid {
     padding: 6rem 6rem;
@@ -50,12 +60,19 @@
       }
       @include respond-to("large_tablet") {
         padding-left: 0px;
+        margin-bottom: 50px;
       }
       @include respond-to("small_tablet") {
         padding-left: 0px;
+        margin-bottom: 0px;
       }
       @include respond-to("phone") {
         padding-left: 0px;
+        margin-bottom: 0px;
+      }
+      @include respond-to("small_phone") {
+        padding-left: 0px;
+        margin-bottom: 80px;
       }
       .footer-subtitle {
         font-weight: 500;
@@ -72,6 +89,29 @@
         font-family: $dr-font-family;
         width: 450px;
         margin-bottom: 60px;
+        @include respond-to("desktop") {
+          font-size:60px;
+        }
+        @include respond-to("large_tablet") {
+          font-size: 60px;
+          width: 500px;
+          margin-bottom: 30px;
+        }
+        @include respond-to("small_tablet") {
+          font-size: 40px;
+          width: 500px;
+          margin-bottom: 30px;
+        }
+        @include respond-to("phone") {
+          font-size: 40px;
+          width: 500px;
+          margin-bottom: 30px;
+        }
+        @include respond-to("small_phone") {
+          font-size: 40px;
+          width: 250px;
+          margin-bottom: 30px;
+        }
       }
       .footer-widget {
         padding-right: 70px;
@@ -124,6 +164,18 @@
       }
     }
     .footer-link {
+      @include respond-to("large_tablet") {
+        display: none;
+      }
+      @include respond-to("small_tablet") {
+        display: none;
+      }
+      @include respond-to("phone") {
+        display: none;
+      }
+      @include respond-to("small_phone") {
+        display: none;
+      }
       a {
         position: relative;
         display: inline-block;
@@ -153,10 +205,40 @@
     }
   }
   .copyright-area {
-    padding: 0 13rem;
+    padding: 0 8rem;
     background-color: $dark-bg;
+    @include respond-to("desktop_large") {
+      padding: 0px 8rem;
+    }
+    @include respond-to("desktop") {
+      padding: 20px 3rem;
+    }
+    @include respond-to("large_tablet") {
+      padding: 20px 3rem;
+    }
+    @include respond-to("small_tablet") {
+      padding: 20px 2rem;
+    }
+    @include respond-to("phone") {
+      padding: 20px 1rem;
+    }
     .copyright-border-top {
       border-top: 1px solid hsla(0, 0%, 100%, 0.1);
+      @include respond-to("desktop_large") {
+        padding-top: 20px;
+      }
+      @include respond-to("desktop") {
+        padding-top: 20px;
+      }
+      @include respond-to("large_tablet") {
+        padding-top: 20px;
+      }
+      @include respond-to("small_tablet") {
+        padding-top: 20px;
+      }
+      @include respond-to("phone") {
+        padding-top: 20px;
+      }
       .copyright-left p {
         margin-bottom: 0;
         font-weight: 500;
@@ -189,6 +271,22 @@
             }
           }
         }
+        @include respond-to("desktop") {
+        display: none;
+        }
+        @include respond-to("large_tablet") {
+          display: none;
+        }
+        @include respond-to("small_tablet") {
+          display: none;
+        }
+        @include respond-to("phone") {
+          display: none;
+        }
+        @include respond-to("small_phone") {
+          display: none;
+        }
+        
       }
     }
   }

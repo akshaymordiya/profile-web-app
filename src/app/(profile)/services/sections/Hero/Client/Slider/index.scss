@@ -1,0 +1,45 @@
+@import "../../../../../../../styles/variables";
+@import "../../../../../../../styles/mixins";
+
+.inner-slider-active-1 .slick-list,
+.inner-slider-active-2 .slick-list {
+  height: 650px !important;
+  overflow: hidden;
+  @include respond-to("desktop") {
+    height: 450px !important;
+  }
+  @include respond-to("large_tablet") {
+    height: 450px !important;
+  }
+  @include respond-to("small_tablet") {
+    height: 450px !important;
+  }
+  @include respond-to("phone") {
+    height: 450px !important;
+  }
+  .slick-slide img {
+    display: block;
+    @include respond-to("large_tablet") {
+      width: 100%;
+    }
+    @include respond-to("small_tablet") {
+      width: 100%;
+    }
+    @include respond-to("phone") {
+      width: 100%;
+    }
+  }
+}
+
+.inner-slider-active-1 .slick-slide,
+.inner-slider-active-2 .slick-slide {
+  margin-bottom: 20px;
+}
+
+.inner-slider-active-2,
+.inner-slider-active-2 .slick-slide img {
+  transform: rotate(180deg);
+}
+.inner-slider-active-2 {
+  overflow: hidden;
+}

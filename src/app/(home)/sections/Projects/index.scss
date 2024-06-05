@@ -55,14 +55,15 @@
       line-height: 1;
       letter-spacing: -0.02em;
       color: $black;
+      text-align: center;
       font-family: $dr-font-family;
       margin-bottom: 25px;
-      // width: 350px;
       @include respond-to("desktop") {
-        font-size: 40px;
+        font-size:60px;
       }
       @include respond-to("large_tablet") {
-        font-size: 40px;
+        font-size: 60px;
+        
       }
       @include respond-to("small_tablet") {
         font-size: 40px;
@@ -168,15 +169,6 @@
       line-height: 1;
       color: #4e4e53;
      
-      // &:last-child {
-      //   margin-left: 175px;
-      //   @include respond-to("small_tablet") {
-      //     margin-left: 100px;
-      //   }
-      //   @include respond-to("phone") {
-      //     margin-left: 100px;
-      //   }
-      // }
     }
     }
   }
