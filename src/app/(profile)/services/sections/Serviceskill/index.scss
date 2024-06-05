@@ -7,10 +7,13 @@
   display: grid;
   place-items: center;
   .services-container_grid{
-    width: 100%;
+    // width: 100%;
     padding: 0 70px;
     @include respond-to("extra_large_desktop") {
       max-width: 1320px;
+    }
+    @include respond-to("small_phone") {
+      padding: 0 20px;
     }
   
   .inner-info-title-box {
@@ -77,6 +80,9 @@
     padding: 0 70px;
     @include respond-to("extra_large_desktop") {
       max-width: 1320px;
+    }
+    @include respond-to("small_phone") {
+     padding: 20px;
     }
     .testinominal-slide {
       .inner-info-service {

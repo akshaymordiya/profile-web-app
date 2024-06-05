@@ -1,6 +1,5 @@
 import React from "react";
 import BrandButton from "@/app/components/Brand";
-import "aos/dist/aos.css";
 import Hero from "./sections/Hero";
 import WorkItem from "./sections/WorkItems/Client/WorkItem";
 
@@ -9,7 +8,7 @@ const Work = () => {
   return (
     <>
       <Hero />
-      <WorkItem />
+      <WorkItem/>
       <BrandButton />
     </>
   );

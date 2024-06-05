@@ -39,4 +39,9 @@
       grid-column: span #{$i};
     }  
   }
+  @include respond-to('extra_large_desktop') {
+    .xlg-#{$i} {
+      grid-column: span #{$i};
+    }  
+  }
 }

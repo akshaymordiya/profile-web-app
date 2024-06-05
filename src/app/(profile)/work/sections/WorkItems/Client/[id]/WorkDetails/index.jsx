@@ -7,7 +7,7 @@ import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 //data json
-import workData from "../../../../../../../data/work.page.json";
+import workData from "../../../../../../../../data/work.page.json";
 //style scss
 import "./index.scss";
 
@@ -60,6 +60,7 @@ const WorkDetails = ({ id }) => {
     <>
       {isLoading && <p>Loading portfolio item...</p>}
       {error && <p>Error: {error}</p>}
+      {/* <h1>Hello jinkal</h1> */}
       {data && (
         <>
           <div className={`${BASE_CLASSNAME}`}>
@@ -92,9 +93,7 @@ const WorkDetails = ({ id }) => {
               </Grid.Item>
               <Grid.Item xs={12} sm={12} md={12} lg={6} xlg={6}>
                 <div className="portfolio-content">
-                  {/* <span className="portfolio-count"></span> */}
                   <h3 className="portfolio-title">
-                    {/* {count} */}
                     {data?.title}
                   </h3>
                   <div className="portfoliocounter">

@@ -1,6 +1,5 @@
-
-import workData from "../../../../../data/work.page.json";
-import WorkDetails from "./client/WorkDetails";
+import workData from "../../../../../../../data/work.page.json";
+import WorkDetails from "./WorkDetails";
 
 function WorkDetailsPage({ params }) {
   const postId = params.id;

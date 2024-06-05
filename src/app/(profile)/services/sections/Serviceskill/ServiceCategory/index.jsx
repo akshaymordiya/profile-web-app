@@ -11,9 +11,9 @@ const ServiceCategory = ({
 }) => {
   return (
     <>
-      <div className="inner-service-category" >
+      <div className="inner-service-category">
         <Link
-          className="d-flex align-items-center justify-content-between"
+          className="inner-service-content"
           href={serviceHref}
         >
           <div className="inner-service-category-content">

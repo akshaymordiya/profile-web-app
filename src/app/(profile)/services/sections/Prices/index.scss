@@ -44,6 +44,9 @@ place-items: center;
     @include respond-to("extra_large_desktop") {
       max-width: 1320px;
     }
+    @include respond-to("small_phone") {
+      padding: 50px 15px 70px;
+    }
     .price-item {
       position: relative;
       margin-bottom: 20px;
