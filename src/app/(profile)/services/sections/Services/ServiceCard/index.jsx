@@ -5,6 +5,7 @@ import "./index.scss";
 import service from "../../../../../../data/service.page.json";
 // render icons
 import { renderIconComponent } from "@/Icons";
+import Link from "next/link";
 
 const ServiceCard = () => {
   return (
@@ -31,10 +32,10 @@ const ServiceCard = () => {
           </div>
         ))}
         <div className="service-btn-box">
-          <a href="#">
+          <Link href="#">
             {service.services.servicecard.servicetext}
             <span>{service.services.servicecard.lightbtn}</span>
-          </a>
+          </Link>
         </div>
       </div>
     </>

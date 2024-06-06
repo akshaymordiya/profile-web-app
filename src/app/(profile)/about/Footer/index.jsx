@@ -6,6 +6,7 @@ import SectionTitle from "../../../components/SectionTitle";
 import FooterwidgetTitle from "../Footer/FooterWidgetitle";
 import about from "../../../../data/about.page.json";
 import { renderIconComponent } from "@/Icons";
+import Link from "next/link";
 
 const Footer = () => {
 
@@ -45,9 +46,9 @@ const Footer = () => {
                   <div className="footer-social">
                     {
                       about.footer.socialmedia.map((item)=> (
-                        <a href="#" target="_blank">
+                        <Link href="/" target="_blank">
                       <span>{renderIconComponent(item?.icon)}</span>
-                    </a>
+                    </Link>
                       ))
                     }
                   </div>
@@ -68,10 +69,10 @@ const Footer = () => {
                     {about.footer.explore.exploredata.map((item, i) => {
                       return (
                         <li key={i}>
-                          <a href="#">
+                          <Link href='/'>
                             {/* <Arrowforward /> */}
                             {item?.title}
-                          </a>
+                          </Link>
                         </li>
                       );
                     })}

@@ -4,6 +4,7 @@ import IMG from "@/app/components/IMG";
 import React from "react";
 import "./index.scss";
 import contact from "../../../../../data/contact.page.json";
+import Link from "next/link";
 
 const Hero = () => {
   const BASE_CLASSNAME = "contact-area";
@@ -83,7 +84,7 @@ const Hero = () => {
                 itemClass="contact-mail-info"
               >
                 <span>{contact.mailinfo.title}</span>
-                <a href="mailto:abc@gmail.com">{contact.mailinfo.text}</a>
+                <Link href="mailto:abc@gmail.com">{contact.mailinfo.text}</Link>
               </Grid.Item>
               <Grid.Item
                 sm={12}

@@ -7,9 +7,10 @@ import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 //data json
-import workData from "../../../../../../../../data/work.page.json";
+import workData from "../../../../../data/work.page.json";
 //style scss
 import "./index.scss";
+import Link from "next/link";
 
 const WorkDetails = ({ id }) => {
   const BASE_CLASSNAME = "work-details-wrapper";
@@ -60,11 +61,10 @@ const WorkDetails = ({ id }) => {
     <>
       {isLoading && <p>Loading portfolio item...</p>}
       {error && <p>Error: {error}</p>}
-      {/* <h1>Hello jinkal</h1> */}
       {data && (
         <>
           <div className={`${BASE_CLASSNAME}`}>
-            <Grid classNames="container" key={data.id}>
+            <Grid classNames={`${BASE_CLASSNAME}_content`} key={data.id}>
               <Grid.Item
                 xs={12}
                 sm={12}
@@ -74,7 +74,7 @@ const WorkDetails = ({ id }) => {
                 itemClass="imgcontent"
               >
                 <div className="portfolio-thumb img-1">
-                  <a onClick={() => setOpen(true)}>
+                  <Link href="" onClick={() => setOpen(true)}>
                     <IMG
                       src={data?.image}
                       useRawImgTag
@@ -82,7 +82,7 @@ const WorkDetails = ({ id }) => {
                       useContainer
                       onClick={({ index: current }) => setIndex(current)}
                     />
-                  </a>
+                  </Link>
                   <Lightbox
                     open={open}
                     close={() => setOpen(false)}
@@ -93,9 +93,7 @@ const WorkDetails = ({ id }) => {
               </Grid.Item>
               <Grid.Item xs={12} sm={12} md={12} lg={6} xlg={6}>
                 <div className="portfolio-content">
-                  <h3 className="portfolio-title">
-                    {data?.title}
-                  </h3>
+                  <h3 className="portfolio-title">{data?.title}</h3>
                   <div className="portfoliocounter">
                     <div className="portfoliometahover">
                       <span>{data?.brand}, &nbsp; </span>
@@ -105,6 +103,16 @@ const WorkDetails = ({ id }) => {
                     </div>
                   </div>
                   <p>{data?.description}</p>
+                  <div className="portfolio-tags">
+                    <h3>{data?.tagname}</h3>
+                      <Grid>
+                        {data?.tags?.map((Item, index) => (
+                          <Grid.Item xs={12} sm={6} md={4} lg={4} xlg={4} itemClass="portfolio-tagsname">
+                            <div key={index}> {Item?.tag}</div>
+                          </Grid.Item>
+                        ))}
+                      </Grid>
+                  </div>
                 </div>
               </Grid.Item>
             </Grid>

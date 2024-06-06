@@ -64,7 +64,7 @@
       }
       .contact-img {
         border-radius: 100px;
-        transform: translateY(-9px);
+        transform: translateY(10px);
         margin-right: 30px;
         @include respond-to("phone") {
           transform: translateY(2px);

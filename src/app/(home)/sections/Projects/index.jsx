@@ -30,7 +30,7 @@ const Projects = () => {
             />
           </Grid.Item>
         </Grid>
-        <Grid classNames={`${BASE_CLASSNAME}_grid`}>
+        <Grid classNames={`${BASE_CLASSNAME}_content`}>
           {homeData.projects.workproject.map((item) => (
             <Grid.Item
               xs={12}

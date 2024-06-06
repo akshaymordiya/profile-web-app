@@ -62,7 +62,7 @@
         width: 100%;
       }
       @include respond-to("phone") {
-        padding: 60px 40px;
+        padding: 32px 20px;
         width: 100%;
         flex-wrap: wrap;
       }
@@ -73,6 +73,9 @@
       svg {
         font-size: 100px;
         color: $white;
+        @include respond-to("phone") {
+          font-size: 75px;
+        }
       }
     }
     .service-content {
@@ -84,6 +87,9 @@
         margin-bottom: 16px;
         font-family: $dr-font-family;
         width: 200px;
+        @include respond-to("phone") {
+          font-size: 30px;
+        }
       }
       p {
         font-weight: 400;

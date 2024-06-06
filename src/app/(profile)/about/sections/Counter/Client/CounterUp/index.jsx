@@ -1,10 +1,11 @@
 "use client";
 import React, { useEffect } from "react";
 import { CountUp } from "countup.js";
-import "./index.scss";
-import "aos/dist/aos.css";
-import about from "../../../../../data/about.page.json";
+//Data JSON
+import about from "../../../../../../../data/about.page.json";
 import Grid from "@/app/components/Grid";
+// style scss
+import "./index.scss";
 
 const Counter = () => {
   useEffect(() => {
@@ -23,6 +24,7 @@ const Counter = () => {
 
   return (
     <>
+    <div className="counter-wrapper">
       <Grid classNames="funfact-area">
         {about.counter.map((item, index) => {
           return (
@@ -56,6 +58,7 @@ const Counter = () => {
           );
         })}
       </Grid>
+      </div>
     </>
   );
 };

@@ -12,6 +12,9 @@
     @include respond-to("extra_large_desktop") {
       max-width: 1320px;
     }
+    @include respond-to("phone") {
+      padding: 0 20px;
+    }
     @include respond-to("small_phone") {
       padding: 0 20px;
     }

@@ -1,0 +1,153 @@
+@import "../../../../../styles/variables";
+@import "../../../../../styles/mixins";
+
+.service-info-area {
+  background-color: #f6f9ff;
+  display: grid;
+  place-items: center;
+  .grid-container_grid {
+    width: 100%;
+    padding: 0px 30px 50px;
+    @include respond-to("extra_large_desktop") {
+      max-width: 1320px;
+    }
+    .service-info-text div {
+      font-weight: 300;
+      font-size: 50px;
+      line-height: 60px;
+      letter-spacing: -0.01em;
+      color: $black;
+      font-family: $dr-font-family;
+      padding-right: 130px;
+      @include respond-to("desktop") {
+        font-size: 35px;
+        padding-right: 0px;
+      }
+      @include respond-to("large_tablet") {
+        font-size: 35px;
+        padding-right: 0px;
+      }
+      @include respond-to("small_tablet") {
+        font-size: 30px;
+        padding-right: 0px;
+        line-height: 45px;
+      }
+      @include respond-to("phone") {
+        font-size: 25px;
+        padding-right: 0px;
+        line-height: 45px;
+      }
+      span.line {
+        height: 2px;
+        width: 100px;
+        background-color: $black;
+        display: inline-block;
+        margin: 0 10px;
+        transform: translateY(-10px);
+      }
+      a {
+        position: relative;
+        display: inline-block;
+        z-index: 11;
+        color: $black;
+        margin-right: 15px;
+        .service-hover-bg {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          width: 280px;
+          height: 180px;
+          opacity: 0;
+          margin: -100px 0 0 -100px;
+          overflow: hidden;
+          pointer-events: none;
+          background-position: 50%;
+          background-size: cover;
+          background-repeat: no-repeat;
+          transition: opacity 0.3s,
+            transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+        &:hover .service-hover-bg {
+          opacity: 1;
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: 5px;
+          left: 0;
+          height: 2px;
+          width: 100%;
+          background-color: $black;
+        }
+      }
+    }
+  }
+}
+.personal-info-area {
+    background-color: #f6f9ff;
+    padding-bottom: 30px;
+    display: grid;
+    place-items: center;
+    .grid-container_wrapper {
+      width: 100%;
+      padding: 40px 30px 50px;
+      @include respond-to("extra_large_desktop") {
+        max-width: 1320px;
+      }
+      .personal-info-left {
+        position: sticky;
+        top: 0;
+        height: 400px !important;
+        padding-top: 80px;
+        place-content: start !important;
+        @include respond-to("large_tablet") {
+          position: relative;
+        }
+        @include respond-to("small_tablet") {
+          position: relative;
+          height: 245px !important;
+        }
+        @include respond-to("phone") {
+          position: relative;
+          height: 300px !important;
+        }
+        .personal-info-left-title {
+          font-weight: 500;
+          font-size: 40px;
+          line-height: 30px;
+          text-transform: uppercase;
+          color: $black;
+          font-family: $dr-font-family;
+          margin-bottom: 15px;
+          @include respond-to("phone") {
+            font-size: 30px;
+          }
+          svg {
+            transform: translateY(-5px);
+            margin-right: 10px;
+            color: $black;
+            font-size: 2rem;
+          }
+        }
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: #5c5e64;
+          margin-bottom: 30px;
+        }
+        a {
+          display: block;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 1;
+          color: #5c5e64;
+          margin-bottom: 20px;
+        }
+      }
+      .personal-info-right-wrap {
+        padding-top: 80px;
+      }
+    }
+  }

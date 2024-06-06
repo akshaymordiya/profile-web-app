@@ -1,0 +1,136 @@
+@import "../../../../../../styles/variables";
+@import "../../../../../../styles/mixins";
+
+.personal-info-skill {
+    .personal-info-right-title {
+      color: $black;
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 30px;
+      font-family: $dr-font-family;
+      margin-bottom: 5px;
+      svg {
+        transform: translateY(-5px) rotate(180deg);
+        color: $black;
+        font-size: 2rem;
+        margin-right: 10px;
+      }
+    }
+    .progress-bar-item {
+      padding: 25px 0 5px;
+      label {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1;
+        color: $black;
+        margin-bottom: 12px;
+        display: inline-block;
+      }
+      .progress-bar {
+        flex-direction: column;
+        justify-content: center;
+        color: $white;
+        text-align: center;
+        transition: width 0.6s ease;
+        overflow: visible;
+        .progress {
+          overflow: visible;
+          border-radius: 3px;
+          background: rgba(0, 19, 47, 0.1);
+          height: 1px;
+          .progress-barr {
+            background-color: $black;
+            position: relative;
+            overflow: visible;
+            height: 3px;
+            border-radius: 10px;
+            top: -1px;
+            display: flex;
+            span {
+              position: absolute;
+              right: 0;
+              top: -15px;
+              transform: translateY(-50%);
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 1;
+              color: $black;
+            }
+          }
+        }
+      }
+    }
+  }
+  .personal-info-experience,
+  .personal-info-education {
+    margin-bottom: 85px;
+    .personal-info-right-title {
+      color: $black;
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 30px;
+      font-family: $dr-font-family;
+      margin-bottom: 5px;
+      svg {
+        transform: translateY(0px);
+        color: $black;
+        font-size: 2rem;
+        margin-right: 10px;
+      }
+    }
+    .personal-info-gap{
+      margin-top: 25px;
+      .personal-info-exprience-box {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-top: 1px solid rgba(0, 19, 47, 0.1);
+        display: flex;
+        align-items: center;
+        @include respond-to("phone") {
+          flex-wrap: wrap;
+        }
+        .personal-info-exprience-length {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 15px;
+          text-transform: uppercase;
+          color: #6c6f79;
+          margin-right: 95px;
+          @include respond-to("desktop") {
+            margin-right: 95px;
+          }
+          @include respond-to("large_tablet") {
+            margin-right: 65px;
+          }
+          @include respond-to("small_tablet") {
+            margin-right: 50px;
+          }
+          @include respond-to("phone") {
+            margin-right: 100px;
+          }
+        }
+        .personal-info-exprience-content {
+          .personal-info-exprience-title {
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 26px;
+            color: $black;
+            font-family: $dr-font-family;
+            margin-bottom: 5px  ;
+            @include respond-to("small_tablet") {
+              font-size: 26px;
+            }
+            @include respond-to("phone") {
+              font-size: 20px;
+            }
+          }
+          span {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 14px;
+            color: #6c6f79;
+          }
+        }
+      }
+    }
+  }

@@ -7,6 +7,7 @@ import Grid from "@/app/components/Grid";
 import service from '../../../../../../../data/service.page.json'
 //style  scss
 import './index.scss';
+import Link from "next/link";
 
 const SlideNav = () => {
   const [nav1, setNav1] = useState(null);
@@ -115,7 +116,7 @@ const SlideNav = () => {
                     <h3 className="testimonial-user-title">{item?.title}</h3>
                     <span className="testimonial-user-designation">
                       {item?.position}
-                      <a href="#">{item?.passion}</a>
+                      <Link href="#">{item?.passion}</Link>
                     </span>
                   </div>
                   <div

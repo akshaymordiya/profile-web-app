@@ -1,9 +1,13 @@
 @import '../../../styles/variables';
 @import '../../../styles/animations';
+@import '../../../styles/mixins';
 
 .brand-area{
     background-color: #f6f9ff;
     padding: 70px 85px 120px;
+    @include respond-to("small_phone") {
+        padding: 70px 25px 120px;
+      }
     .btn-brand{
         color: $black;
         line-height: 50px;

@@ -7,6 +7,7 @@ import IMG from "@/app/components/IMG";
 import Grid from "@/app/components/Grid";
 import SectionTitle from "@/app/components/SectionTitle";
 import { renderIconComponent } from "@/Icons";
+import Link from "next/link";
 
 const Footer = () => {
   const BASE_CLASSNAME = "footer_wrapper";
@@ -64,7 +65,7 @@ const Footer = () => {
                       <ul>
                         {menu.map((item) => (
                           <li>
-                            <a href="#">{item?.title}</a>
+                            <Link href='/'>{item?.title}</Link>
                           </li>
                         ))}
                       </ul>
@@ -81,10 +82,10 @@ const Footer = () => {
               xlg={5}
               itemClass="footer-link"
             >
-              <a>
+              <Link href="/">
                 <img src={homeData.footerArea.cirlceImg} alt="" />
                 <span>{renderIconComponent(homeData.footerArea.icon)}</span>
-              </a>
+              </Link>
             </Grid.Item>
           </Grid>
 
@@ -111,49 +112,15 @@ const Footer = () => {
                 <ul>
                   {sociallink.map((item) => (
                     <li>
-                      <a href={item?.link} target="_blank">
+                      <Link href={item?.link} target="_blank">
                         {item?.name}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
               </Grid.Item>
             </Grid>
-            {/* <div className="container">
-              <div className="row align-items-center">
-                <div className="col-xl-3 col-lg-3 col-md-3">
-                  <div className="copyright-left text-center text-md-start">
-                    <p>© 2024 Themepure.</p>
-                  </div>
-                </div>
-                <div className="col-xl-9 col-lg-9 col-md-9 d-none d-md-block">
-                  <div className="copyright-social text-end">
-                    <ul>
-                      <li>
-                        <a href="#" target="_blank">
-                          <FaFacebookF /> Facebook
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" target="_blank">
-                          <FaTwitter /> Twitter
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" target="_blank">
-                          <FaDribbble /> Dribble
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" target="_blank">
-                          <FaInstagram /> Instagram
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div> */}
+            
           </div>
         </div>
       </footer>

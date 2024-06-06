@@ -1,10 +1,14 @@
 import React from "react";
-import IMG from "../../../components/IMG";
-import Grid from "../../../components/Grid";
-import AnimatedCharactors from "../../../components/AnimatedCharactors";
-import CTA from "../../../components/CTA";
-import about from '../../../../data/about.page.json';
+import AnimatedCharactors from "@/app/components/AnimatedCharactors";
+import CTA from "@/app/components/CTA";
+import IMG from "@/app/components/IMG";
+import Grid from "@/app/components/Grid";
+//Data JSON
+import about from '../../../../../data/about.page.json';
+//Render Icon
 import { renderIconComponent } from "@/Icons";
+//style scss
+import './index.scss';
 
 const Hero = () => {
   const BASE_CLASSNAME = "grid-container";
@@ -18,7 +22,7 @@ const Hero = () => {
           alt="service_shape"
           useRawImgTag
         />
-        <div className="container">
+        <div className="about-content-wrapper">
           <Grid classNames={`${BASE_CLASSNAME}_grid`}>
             <Grid.Item
               xs={12}

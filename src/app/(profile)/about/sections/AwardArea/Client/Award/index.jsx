@@ -1,10 +1,15 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import { getIcon, renderIconComponent } from "@/Icons";
-import about from "../../../../../../data/about.page.json";
+import Link from "next/link";
+//Render Icon
+import { renderIconComponent } from "@/Icons";
+// Data JSON
+import about from "../../../../../../../data/about.page.json";
+//style scss
+import './index.scss';
+
 
 const Awards = () => {
-  const { RightIcon, Arrowoutward } = getIcon(["RightIcon", "Arrowoutward"]);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
   const followImgRef = useRef(null);
@@ -28,8 +33,8 @@ const Awards = () => {
     <>
       {about.awards.awarditem.map((item, index) => (
         <div key={index} className="award-item">
-          <a
-            href="#"
+          <Link
+           href="/"
             className="d-block"
             onMouseEnter={() => {
               setIsHovered(true);
@@ -42,7 +47,6 @@ const Awards = () => {
           >
             <div className="award-item-inner">
               <div className="award-arrow">
-                {/* {item?.RightIcon} */}
                 {renderIconComponent(item?.leftIcon)}
                 </div>
               <div className="award-content">
@@ -58,7 +62,7 @@ const Awards = () => {
                 </span>
               </div>
             </div>
-          </a>
+          </Link>
           {index === currentImageIndex && (
             <img
               src={item?.image}

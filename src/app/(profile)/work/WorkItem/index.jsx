@@ -2,7 +2,7 @@
 import React, { useMemo } from "react";
 import Grid from "@/app/components/Grid";
 //data json
-import work from "../../../../../../../data/work.page.json";
+import work from "../../../../data/work.page.json";
 //render icon
 import { renderIconComponent } from "@/Icons";
 //style css

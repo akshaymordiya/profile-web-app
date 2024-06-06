@@ -14,18 +14,6 @@
   z-index: 1;
   background-color: $background_bg;
 
-  @include respond-to('small_tablet') {
-    min-height: 100vh;
-  }
-
-  @include respond-to('large_tablet') {
-    min-height: 100vh;
-  }
-
-  @include respond-to('phone') {
-    min-height: 100vh;
-  }
-
   .shape {
     position: absolute;
     z-index: -1;

@@ -18,7 +18,6 @@
     height: 450px !important;
   }
   .slick-slide img {
-    display: block;
     @include respond-to("large_tablet") {
       width: 100%;
     }

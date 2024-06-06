@@ -1,24 +1,20 @@
 import React from "react";
-import "./page.scss";
-import Counter from "./Client/CounterUp";
-import AwardArea from "./AwardArea";
-import PersonalInfo from "./PersonalInfo";
-import Footer from "./Footer";
+import AwardArea from "./sections/AwardArea";
+import PersonalInfo from "./sections/PersonalInfo";
 import BrandButton from "@/app/components/Brand";
-import Hero from "./Hero";
+import Hero from "./sections/Hero";
+import Counter from "./sections/Counter/Client/CounterUp";
 
 const About = () => {
   return (
     <>
-        <main>
-          <Hero />
-          <PersonalInfo />
-          <Counter />
-          <AwardArea />
-          <BrandButton />
-          <Footer/>
-        </main>
-      
+      <main>
+        <Hero />
+        <PersonalInfo />
+        <Counter />
+        <AwardArea />
+        <BrandButton />
+      </main>
     </>
   );
 };

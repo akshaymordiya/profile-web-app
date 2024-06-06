@@ -1,4 +1,5 @@
 
+import Link from "next/link";
 import React from "react";
 
 const Services = ({
@@ -8,13 +9,13 @@ const Services = ({
 
   return (
     <>
-      <a className="service-hover-item">
+      <Link href='/' className="service-hover-item">
         {ServiceName} <span></span>
         <div
           className="service-hover-bg"
           style={{ backgroundImage: `url(${ServiceImage})` }}
         ></div>
-      </a>
+      </Link>
     </>
   );
 };

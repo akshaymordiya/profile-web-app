@@ -3,6 +3,7 @@ import React, { useRef, useEffect } from 'react';
 import homeData  from '../../../../../../data/home.page.json';
 
 import "./index.scss";
+import Link from 'next/link';
 
 function calculateScale(input) {
   // Define the minimum and maximum output values
@@ -109,10 +110,10 @@ const ServiceBox = () => {
       <div
         ref={contactBtnRef}
         className="service-contact_btn">
-        <a href="#">
+        <Link href="/">
         {homeData.service.servicebox.callpara}
           <span>{homeData.service.servicebox.callnow}</span>
-        </a>
+        </Link>
       </div>
     </div>
   )

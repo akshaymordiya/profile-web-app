@@ -8,7 +8,7 @@ const Experience = ({
     
   return (
     <>
-      <div className="personal-info-exprience-box d-flex align-items-start ">
+      <div className="personal-info-exprience-box">
         <span className="personal-info-exprience-length">{year}</span>
         <div className="personal-info-exprience-content">
           <h4 className="personal-info-exprience-title">{title}</h4>
