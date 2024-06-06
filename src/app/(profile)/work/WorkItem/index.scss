@@ -26,7 +26,10 @@
         a {
           text-decoration: none;
         }
-        margin-bottom: 30px;
+        margin-bottom: 70px;
+        @include respond-to("phone") {
+          margin-bottom: 30px;
+        }
         .portfolio-thumb {
           width: 100%;
           margin-bottom: 20px;

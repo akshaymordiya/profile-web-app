@@ -1,15 +1,17 @@
 import React from "react";
-import "./index.scss";
-import IMG from "../../../components/IMG";
-import Grid from "../../../components/Grid";
-import SectionTitle from "../../../components/SectionTitle";
-import FooterwidgetTitle from "../Footer/FooterWidgetitle";
-import about from "../../../../data/about.page.json";
-import { renderIconComponent } from "@/Icons";
 import Link from "next/link";
+import IMG from "../IMG";
+import Grid from "../Grid";
+import SectionTitle from "../SectionTitle";
+import FooterwidgetTitle from "./FooterWidgetitle";
+// Data json
+import footerData from "../../../data/footer.json";
+//Render Icon
+import { renderIconComponent } from "@/Icons";
+//style scss
+import "./index.scss";
 
 const Footer = () => {
-
   const BASE_CLASSNAME = "footer-container";
   return (
     <>
@@ -17,13 +19,13 @@ const Footer = () => {
         <div className="footer-main-wrapper">
           <div className="footer-area">
             <IMG
-              src={about.footer.footerImg}
+              src={footerData.footer.footerImg}
               useRawImgTag
               alt="footer-img"
               useContainer
               containerClasses="footer-shape"
             />
-            <div className="container">
+            <div className={`${BASE_CLASSNAME}_grid`}>
               <Grid classNames={`${BASE_CLASSNAME}`}>
                 <Grid.Item
                   xs={12}
@@ -34,23 +36,21 @@ const Footer = () => {
                   itemClass="footer-widget"
                 >
                   <IMG
-                    src={about.footer.whitelogo}
+                    src={footerData.footer.whitelogo}
                     useRawImgTag
                     alt="Logo-white"
                     useContainer
                     containerClasses="footer-logo"
                   />
                   <div className="footer-content">
-                    <p>{about.footer.paragraph}</p>
+                    <p>{footerData.footer.paragraph}</p>
                   </div>
                   <div className="footer-social">
-                    {
-                      about.footer.socialmedia.map((item)=> (
-                        <Link href="/" target="_blank">
-                      <span>{renderIconComponent(item?.icon)}</span>
-                    </Link>
-                      ))
-                    }
+                    {footerData.footer.socialmedia.map((item) => (
+                      <Link href="/" target="_blank">
+                        <span>{renderIconComponent(item?.icon)}</span>
+                      </Link>
+                    ))}
                   </div>
                 </Grid.Item>
                 <Grid.Item
@@ -63,13 +63,13 @@ const Footer = () => {
                 >
                   <SectionTitle
                     interClass="footer-widget-title"
-                    title={about.footer.explore.title}
+                    title={footerData.footer.explore.title}
                   />
                   <ul>
-                    {about.footer.explore.exploredata.map((item, i) => {
+                    {footerData.footer.explore.exploredata.map((item, i) => {
                       return (
                         <li key={i}>
-                          <Link href='/'>
+                          <Link href="/">
                             {/* <Arrowforward /> */}
                             {item?.title}
                           </Link>
@@ -88,12 +88,12 @@ const Footer = () => {
                 >
                   <SectionTitle
                     interClass="footer-widget-title"
-                    title={about.footer.address.title}
+                    title={footerData.footer.address.title}
                   />
                   <FooterwidgetTitle
                     parentclass="footer-widget-address"
-                    title={about.footer.address.subtitle}
-                    parag={about.footer.address.paragraph}
+                    title={footerData.footer.address.subtitle}
+                    parag={footerData.footer.address.paragraph}
                   />
                 </Grid.Item>
                 <Grid.Item
@@ -106,21 +106,22 @@ const Footer = () => {
                 >
                   <SectionTitle
                     interClass="footer-widget-title"
-                    title={about.footer.contact.title}
+                    title={footerData.footer.contact.title}
                   />
                   <FooterwidgetTitle
                     parentclass="footer-widget-mail"
-                    title={about.footer.contact.email}
+                    title={footerData.footer.contact.email}
                   />
                   <FooterwidgetTitle
                     parentclass="footer-widget-mail"
-                    title={about.footer.contact.number}
+                    title={footerData.footer.contact.number}
                   />
                 </Grid.Item>
               </Grid>
             </div>
           </div>
-          <Grid classNames="copyright-bdr-top container">
+          <div className="copyright-container">
+          <Grid classNames="copyright-bdr-top">
             <Grid.Item
               sm={12}
               xs={12}
@@ -130,9 +131,10 @@ const Footer = () => {
               itemClass="copyright-text"
               data-speed="0.5"
             >
-              <span>{about.footer.copyright.title}</span>
+              <span>{footerData.footer.copyright.title}</span>
             </Grid.Item>
           </Grid>
+          </div>
         </div>
       </footer>
     </>

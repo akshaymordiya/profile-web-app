@@ -7,6 +7,7 @@ import Navbar from "../components/Navbar";
 import CustomCursor from "../components/MouseCursor";
 import Aos from "../components/AOS";
 import "aos/dist/aos.css";
+import Footer from "../components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
         <Aos />
         <Navbar />
         {children}
+        <Footer />
         <CustomCursor />
       </body>
     </html>
