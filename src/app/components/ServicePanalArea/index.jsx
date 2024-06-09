@@ -3,7 +3,7 @@ import Shapes from "../Shapes";
 import "./index.scss";
 import ServiceCard from "../ServiceCard";
 import Aos from "../AOS/aos";
-import SectionTitle from "../SectionTitle";
+import SectionBox from "../SectionBox";
 
 const ServicePanalArea = () => {
   return (
@@ -27,14 +27,12 @@ const ServicePanalArea = () => {
                   >
                     OUR PROCESS
                   </span>
-                  <SectionTitle
-                    interClass="section-title"
+                  <SectionBox
+                    containerClass="section-title"
                     title="How We Carry Out Our Projects"
-                    para="We offer a range of services to help elevate your brand & drive results."
-                    data-aos="flip-up"
-                    data-aos-duration="1000"
-                    className="para-with-newline"
-                  />
+                  >
+                    <p>We offer a range of services to help elevate your brand & drive results.</p>
+                  </SectionBox>
                 </div>
               </div>
             </div>

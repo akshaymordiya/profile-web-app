@@ -16,14 +16,7 @@
       line-height: 0px;
       letter-spacing: 0.02em;
       color: $black;
-      font-family: $dr-font-family;
-      @include respond-to("phone") {
-        font-size: 20px;
-      }
-      @include respond-to("small_phone") {
-        font-size: 20px;
-      }
-    
+      font-family: $primary-fonts;
       svg {
         margin-right: 13px;
       }

@@ -110,7 +110,7 @@
             font-weight: 500;
             line-height: 1;
             color: $white;
-            font-family: $dr-font-family;
+            font-family: $primary-fonts;
             display: inline-block;
           }
           h3 {
@@ -119,7 +119,7 @@
             line-height: 1;
             letter-spacing: -0.02em;
             color: $white;
-            font-family: $dr-font-family;
+            font-family: $primary-fonts;
             margin-bottom: 25px;
             @include respond-to("desktop") {
               font-size: 60px;

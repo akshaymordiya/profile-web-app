@@ -4,20 +4,22 @@
 
 .brand-area{
     background-color: #f6f9ff;
-    padding: 70px 85px 120px;
-    @include respond-to("small_phone") {
-        padding: 70px 25px 120px;
-      }
+    margin-bottom: 5rem;
+    padding: 0.5rem 6rem;
+    transition: 0.3s all ease-in-out;
+    
     .btn-brand{
         color: $black;
+        background-color: #f9f9ff;
         line-height: 50px;
-        transition: .3s;
         text-align: center;
         padding: 15px 25px;
         font-size: 28px;
         border-radius: 1000px;
         border: 1px solid rgba(2,2,30,.1);
-        font-family: $dr-font-family;
+        font-family: $primary-fonts;
+        transition: 0.4s all ease-in-out;
+        
         &:hover{
             background-color: $black;
             color: $white;

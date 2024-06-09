@@ -1,0 +1,32 @@
+@import "../../../styles/variables";
+
+.section_boxes {
+  display: block;
+  width: 100%;
+
+  &_title {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+    color: $black;
+    font-weight: 500;
+    font-size: 34px;
+    // line-height: 26px;
+    font-family: $primary-fonts;
+    margin-bottom: 2rem;
+    
+    h4{
+      font-size: 30px;
+      align-content: center;
+    }
+
+    svg {
+      color: $black;
+      font-size: 2rem;
+    }
+  }
+
+  &_content{
+    width: 100%;
+  }
+}

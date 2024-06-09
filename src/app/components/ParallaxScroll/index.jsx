@@ -1,18 +1,19 @@
-"use-client";
+"use client";
 import React, { useEffect, useRef } from 'react';
 import './index.scss';
 
 const ParallaxScroll = ({ 
   speed = 0.5, 
   children, 
-  className
+  className 
 }) => {
   const parallaxRef = useRef();
 
   const handleScroll = () => {
     if (parallaxRef.current) {
-      const offset = window.scrollY;
-      parallaxRef.current.style.transform = `translateY(${offset * speed}px)`;
+      const parallaxTop = parallaxRef.current.getBoundingClientRect().top;
+      parallaxRef.current.style.transform = `translateY(${parallaxTop * speed}px)`;
+      // }
     }
   };
 

@@ -3,7 +3,7 @@ import React from "react";
 import "./index.scss";
 // import "../../../globals.css";
 import Grid from "@/app/components/Grid";
-import SectionTitle from "@/app/components/SectionTitle";
+import SectionBox from "@/app/components/SectionBox";
 import CTA from "@/app/components/CTA";
 import CreateRoundedIcon from "@mui/icons-material/CreateRounded";
 import IMG from "@/app/components/IMG";
@@ -23,10 +23,9 @@ const Projects = () => {
             xlg={8}
             itemClass="project-title-box"
           >
-            <SectionTitle
-            animationName="flip-up"
+            <SectionBox
               title={homeData.projects.title}
-              interClass="section-title"
+              containerClass="section-title"
             />
           </Grid.Item>
         </Grid>
@@ -52,9 +51,9 @@ const Projects = () => {
                 <div className="project-category">
                   <span>{item?.brand}</span>
                 </div>
-                <SectionTitle
+                <SectionBox
                   title={item?.title}
-                  interClass="project-content-title"
+                  containerClass="project-content-title"
                 />
                 <div className="project-brand">
                   <div className="project-meta">

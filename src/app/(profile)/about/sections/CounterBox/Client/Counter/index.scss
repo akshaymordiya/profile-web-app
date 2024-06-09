@@ -1,0 +1,71 @@
+@import "../../../../../../../styles/variables";
+@import "../../../../../../../styles/mixins";
+
+.counter_box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  place-content: center;
+  border: 1px solid $progress-bar-placeholder;
+  padding: 0.9rem 2.5rem;
+  padding-top: 1.5rem;
+  border-radius: 20px;
+  box-shadow: $box-shadow-three;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+  &_count {
+    width: 100%;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+      width: fit-content;
+      height: fit-content;
+      font-weight: 700;
+      font-size: 42px;
+      display: inline-block;
+      color: $black;
+      font-family: $dm-font-family;
+
+      .counter-item{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        width: fit-content;
+        height: fit-content;
+
+        span {
+          font-size: 30px;
+          font-weight: 700;
+        }
+      }
+    }
+
+    &_img {
+      width: 90px;
+      height: auto;
+    }
+  }
+  
+  &_title {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    
+    h4 {      
+      font-size: 26px;
+      line-height: 1.2;
+      color: $dark-bg;
+      font-family: $primary-fonts;
+      font-weight: 500;
+    }
+    
+    p {
+      font-size: 16px;
+      color: $text-para;
+    }
+  }
+}

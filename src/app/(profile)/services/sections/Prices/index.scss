@@ -14,7 +14,7 @@ place-items: center;
       line-height: 1;
       letter-spacing: -0.02em;
       color: $black;
-      font-family: $dr-font-family;
+      font-family: $primary-fonts;
       margin-bottom: 25px;
       @include respond-to("large_tablet") {
         font-size: 50px;
@@ -34,7 +34,7 @@ place-items: center;
       font-size: 24px;
       line-height: 1;
       color: $black;
-      font-family: $dr-font-family;
+      font-family: $primary-fonts;
       margin-bottom: 0;
     }
   }
@@ -59,7 +59,7 @@ place-items: center;
           line-height: 40px;
           letter-spacing: -0.02em;
           color: $black;
-          font-family: $dr-font-family;
+          font-family: $primary-fonts;
         }
         span {
           font-weight: 500;
@@ -84,7 +84,7 @@ place-items: center;
           line-height: 20px;
           letter-spacing: -0.02em;
           color: $black;
-          font-family: $dr-font-family;
+          font-family: $primary-fonts;
         }
         .price-text {
           font-weight: 500;

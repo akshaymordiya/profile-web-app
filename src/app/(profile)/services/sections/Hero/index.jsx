@@ -1,7 +1,7 @@
 
 import React from "react";
 import Grid from "@/app/components/Grid";
-import SectionTitle from "@/app/components/SectionTitle";
+import SectionBox from "@/app/components/SectionBox";
 import InnerServiceList from "./InnerServiceList";
 import ResponsiveSlider from "./Client/Slider";
 // data json
@@ -30,11 +30,8 @@ const Hero = () => {
           data-speed="0.5"
         >
           <div className="inner-slider-content-wrap">
-            <SectionTitle
-              animationName="flip-up"
-              animationduration="2000"
-              animationdelay="300"
-              interClass="inner-slider-title"
+            <SectionBox
+              containerClass="inner-slider-title"
               title={service.hero.title}
             />
             {service.hero.servicelist.map((item, index) => (

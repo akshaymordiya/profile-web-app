@@ -1,0 +1,47 @@
+@import "../../../../../styles/mixins";
+@import "../../../../../styles/variables";
+
+.about_text {
+  background-color: #f6f9ff;
+  padding-bottom: 80px;
+
+  &_grid {
+    padding: 0 9rem;
+
+    &-col-1 {
+      font-weight: 300;
+      font-size: 50px;
+      line-height: 60px;
+      letter-spacing: -0.01em;
+      color: $black;
+      font-family: $primary-fonts;
+      padding-right: 130px;
+      @include respond-to("desktop") {
+        font-size: 35px;
+        padding-right: 0px;
+      }
+      @include respond-to("large_tablet") {
+        font-size: 35px;
+        padding-right: 0px;
+      }
+      @include respond-to("small_tablet") {
+        font-size: 30px;
+        padding-right: 0px;
+        line-height: 45px;
+      }
+      @include respond-to("phone") {
+        font-size: 30px;
+        padding-right: 0px;
+        line-height: 45px;
+      }
+      span.line {
+        height: 2px;
+        width: 100px;
+        background-color: $black;
+        display: inline-block;
+        margin: 0 10px;
+        transform: translateY(-10px);
+      }
+    }
+  }
+}

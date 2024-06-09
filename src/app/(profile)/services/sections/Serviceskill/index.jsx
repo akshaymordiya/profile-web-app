@@ -1,14 +1,9 @@
 import React from "react";
 import Grid from "@/app/components/Grid";
-import SectionTitle from "@/app/components/SectionTitle";
+import SectionBox from "@/app/components/SectionBox";
 import ServiceCategory from "./ServiceCategory";
-// data json
 import service from "../../../../../data/service.page.json";
-//style  scss
-import './index.scss';
-// render icon
-import { renderIconComponent } from "@/Icons";
-
+import { getIcon, renderIconComponent } from "@/Icons";
 
 const Skills = () => {
   const BASE_CLASSNAME ="services-container";
@@ -25,12 +20,9 @@ const Skills = () => {
             xlg={9}
             itemClass="inner-info-title-box"
           >
-            <SectionTitle
-              interClass="inner-info-title"
+            <SectionBox
+              containerClass="inner-info-title"
               title={service.services.paragraph}
-              animationName="flip-up"
-              animationduration="2000"
-              animationdelay="300"
             />
           </Grid.Item>
         </Grid>
@@ -53,10 +45,10 @@ const Skills = () => {
                 itemClass="inner-info-service"
                 data-speed="0.5"
               >
-                <SectionTitle
+                <SectionBox
                   title={service.services.skill.title}
-                  Icon={renderIconComponent(service.services.skill.icon)}
-                  interClass="inner-left-title"
+                  icon={services.skill.icon}
+                  containerClass="inner-left-title"
                 />
               </Grid.Item>
               <Grid.Item
@@ -90,10 +82,10 @@ const Skills = () => {
                 itemClass="inner-info-service"
                 data-speed="0.5"
               >
-                <SectionTitle
+                <SectionBox
                   title={service.services.skilldev.title}
-                  Icon={renderIconComponent(service.services.skill.icon)}
-                  interClass="inner-left-title"
+                  icon={service.services.skill.icon}
+                  containerClass="inner-left-title"
                 />
               </Grid.Item>
               <Grid.Item

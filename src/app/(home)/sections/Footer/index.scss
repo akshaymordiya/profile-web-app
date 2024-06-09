@@ -86,7 +86,7 @@
         font-size: 103px;
         line-height: 1;
         color: $white;
-        font-family: $dr-font-family;
+        font-family: $primary-fonts;
         width: 450px;
         margin-bottom: 60px;
         @include respond-to("desktop") {

@@ -1,15 +1,17 @@
 import React from "react";
-import '../../styles/global.scss';
-import { Inter } from "next/font/google";
+
+import "../globals.css";
+import "../../styles/global.scss";
+import "aos/dist/aos.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Navbar from "../components/Navbar";
-import CustomCursor from "../components/MouseCursor";
-import Aos from "../components/AOS";
-import "aos/dist/aos.css";
-import Footer from "../components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+import Navbar from "@/app/components/Navbar";
+import CustomCursor from "@/app/components/MouseCursor";
+import Aos from "@/app/components/AOS";
+import Footer from "@/app/components/Footer";
+import ScrollToTop from "@/app/components/scrollToTop";
 
 export const metadata = {
   title: "Personal",
@@ -19,12 +21,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <Aos />
         <Navbar />
-        {children}
-        <Footer />
+        <div id="smooth-content">
+          <main>
+            {children}
+          </main>
+        </div>
+        <Footer/>
         <CustomCursor />
+        <ScrollToTop />
       </body>
     </html>
   );

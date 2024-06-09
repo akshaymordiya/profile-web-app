@@ -1,32 +1,38 @@
 {
   "hero": {
-    "name": ["I'm", "Diego", "luna"],
-    "icon": "Fname",
+    "words": ["I'm", "Diego", "luna"],
     "icons": {
       "download": "Download"
     },
     "images": [
       {
         "src": "/assets/service-signature.png",
-        "containerclass": "service-signature",
+        "class": "service-signature",
         "alt": "signature-img"
       },
       {
         "src": "/assets/service-circle-img.png",
-        "containerclass": "servicecircle-img",
+        "class": "servicecircle-img",
         "alt": "circle-img"
       },
       {
         "src": "/assets/service-hero-1.webp",
-        "containerclass": "service-img",
+        "class": "service-img",
         "alt": "service-img"
       }
-    ]
+    ],
+    "shapes": {
+      "one": {
+        "src": "/assets/hero-shape-2-1.png",
+        "alt": "service_shape",
+        "class": "shape_1"
+      }
+    }
   },
-  "personalinfo": {
-    "para": {
+  "aboutMe": {
+    "paragraph": {
       "title": "I'm Diego _____ a self though & self learned designer based in USA. I started as a financial planner & social media marketer, but now I do mix of everything from",
-      "product": [
+      "services": [
         {
           "name": "Product Design,",
           "image": "/assets/ab-1.png"
@@ -47,152 +53,222 @@
     },
     "info": {
       "title": "Personal Info",
-      "para": " Perceived end knowledge certainly day sweetness why cordially.",
+      "description": " Perceived end knowledge certainly day sweetness why cordially.",
       "email": "example@gmail.com",
       "icon": "DriveFileRenameOutlineIcon",
       "image": "/assets/whatsap.png",
       "number": "+491 234 5678"
     },
-    "skills": {
-      "title": "Skillsets",
-      "icon": "IncadescentIcon",
-      "skillsets": [
-        {"id":"1",
-          "skillslabel": "Figma",
-          "Value": "90%",
-          "valueMax": "90%"
-        },
-        {"id":"2",
-          "skillslabel": "Sketch",
-          "Value": "82%",
-          "valueMax": "82%"
-        },
-        {"id":"3",
-          "skillslabel": "Photoshop",
-          "Value": "65%",
-          "valueMax": "65%"
-        },
-        {"id":"4",
-          "skillslabel": "Invision",
-          "Value": "58%",
-          "valueMax": "58%"
-        }
-      ]
-    },
-    "expdata": {
-      "title": "Experience",
-      "icon": "WbIncandescentIcon",
-      "experience": [
-        {"id":"1",
-          "expskillslabel": "UI/UX Lead Designer",
-          "expyearlength": "2022 - Present",
-          "expcompany": "Amazon INC"
-        },
-        {"id":"2",
-          "expskillslabel": "Product Lead Designer",
-          "expyearlength": "2018 - 2022",
-          "expcompany": "Amazon INC"
-        },
-        {"id":"3",
-          "expskillslabel": "Graphic Designer",
-          "expyearlength": "2016 - 2018",
-          "expcompany": "Amazon INC"
-        }
-      ]
-    },
-    "edudata": {
-      "title": "Education",
-      "icon": "SchoolIcon",
-      "education": [
-        {"id":"1",
-          "expskillslabel": " Stanford University",
-          "expyearlength": "2014 - 2016",
-          "univercity": "of California."
-        },
-        {"id":"2",
-          "expskillslabel": "Specialization Course.",
-          "expyearlength": "2012 - 2014",
-          "univercity": "MIT University"
-        },
-        {"id":"",
-          "expskillslabel": "Level High School.",
-          "expyearlength": "2009 - 2012",
-          "univercity": "San Fransisco"
-        }
-      ]
+    "content": {
+      "skills": {
+        "title": "Skillsets",
+        "icon": "IncadescentIcon",
+        "skillsets": [
+          { "id": "1", "skillslabel": "Figma", "Value": "90" },
+          { "id": "2", "skillslabel": "Sketch", "Value": "82" },
+          { "id": "3", "skillslabel": "Photoshop", "Value": "65" },
+          { "id": "4", "skillslabel": "Invision", "Value": "58" }
+        ]
+      },
+      "experiences": {
+        "title": "Experience",
+        "icon": "IncadescentIcon",
+        "data": [
+          {
+            "id": "1",
+            "label": "UI/UX Lead Designer",
+            "timeline": "2022 - Present",
+            "value": "Amazon INC"
+          },
+          {
+            "id": "2",
+            "label": "Product Lead Designer",
+            "timeline": "2018 - 2022",
+            "value": "Amazon INC"
+          },
+          {
+            "id": "3",
+            "label": "Graphic Designer",
+            "timeline": "2016 - 2018",
+            "value": "Amazon INC"
+          }
+        ]
+      },
+      "educations": {
+        "title": "Education",
+        "icon": "SchoolIcon",
+        "data": [
+          {
+            "id": "1",
+            "label": " Stanford University",
+            "timeline": "2014 - 2016",
+            "value": "of California."
+          },
+          {
+            "id": "2",
+            "label": "Specialization Course.",
+            "timeline": "2012 - 2014",
+            "value": "MIT University"
+          },
+          {
+            "id": "",
+            "label": "Level High School.",
+            "timeline": "2009 - 2012",
+            "value": "San Fransisco"
+          }
+        ]
+      }
     }
   },
-  "counter": [
-    {
-      "id":"1",
-      "countnumber": "56",
-      "countext": " Projects Completed"
-    },
-    {"id":"2",
-      "countnumber": "12",
-      "countext": "Years Of Experience"
-    },
-    {"id":"3",
-      "countnumber": "34",
-      "countext": "Client Satisfaction"
-    }
-  ],
+  "counter": {
+    "title": "Achivements",
+    "paragraph": "Over the years, I have successfully delivered innovative solutions that have driven significant business growth. My dedication to excellence has earned me multiple accolades and recognitions within the industry.",
+    "data": [
+      {
+        "id": "1",
+        "countnumber": "56",
+        "countext": " Projects Completed",
+        "image": "/assets/counter/project.png",
+        "text": "Delivered over 100 successful projects on time and within budget."
+      },
+      { 
+        "id": "2", 
+        "countnumber": "12", 
+        "countext": "Years Of Experience", 
+        "image": "/assets/counter/experience.png",
+        "text": "5+ years of hands-on experience in full-stack web development."
+      },
+      { 
+        "id": "3", 
+        "countnumber": "34", 
+        "countext": "Client Satisfaction",
+        "image": "/assets/counter/client.png",
+        "text": "Consistently achieved a 95% client satisfaction rate."
+      }
+    ]
+  },
   "awards": {
     "title": "Awards & recognitions",
+    "paragraph": "Honored with multiple industry awards for excellence in design and innovation. Recognized globally for outstanding contributions to advancing technology and creativity.",
     "textoutline": "Award",
     "textfill": "Award",
     "image": "/assets/award-shape-1.png",
-    "awarditem": [
-      {"id":"1",
+    "awardItems": [
+      {
+        "id": "1",
         "title": "Awwwwards SOTD",
         "subtitle": "FOR DISPLAY 2023",
         "image": "/assets/award-5.jpg",
         "righticon": "SubdirectoryArrowRightIcon",
         "arroward": "Arrowoutward",
-        "leftIcon":"RightIcon"
+        "leftIcon": "RightIcon"
       },
-      {"id":"2",
+      {
+        "id": "2",
         "title": "Wix.Com",
         "subtitle": "INTERVIEW 2022",
         "image": "/assets/award-6.jpg",
         "righticon": "SubdirectoryArrowRightIcon",
         "arroward": "Arrowoutward",
-        "leftIcon":"RightIcon"
+        "leftIcon": "RightIcon"
       },
-      {"id":"3",
+      {
+        "id": "3",
         "title": "CSS Awards",
         "subtitle": "FEATURE 2021",
         "image": "/assets/award-10.jpg",
         "righticon": "SubdirectoryArrowRightIcon",
         "arroward": "Arrowoutward",
-        "leftIcon":"RightIcon"
+        "leftIcon": "RightIcon"
       },
-      {"id":"4",
+      {
+        "id": "4",
         "title": "Muzli",
         "subtitle": "FEATURE 2020",
         "image": "/assets/award-1.jpg",
         "righticon": "SubdirectoryArrowRightIcon",
         "arroward": "Arrowoutward",
-        "leftIcon":"RightIcon"
+        "leftIcon": "RightIcon"
       },
-      {"id":"5",
+      {
+        "id": "5",
         "title": "Awwwwards",
         "subtitle": "FOR MUTEZA 2019",
         "image": "/assets/award-4.jpg",
         "righticon": "SubdirectoryArrowRightIcon",
         "arroward": "Arrowoutward",
-        "leftIcon":"RightIcon"
+        "leftIcon": "RightIcon"
       },
-      {"id":"6",
+      {
+        "id": "6",
         "title": "Chapers Studio",
         "subtitle": "FOR DISPLAY 2018",
         "image": "/assets/award-3.jpg",
         "righticon": "SubdirectoryArrowRightIcon",
         "arroward": "Arrowoutward",
-        "leftIcon":"RightIcon"
+        "leftIcon": "RightIcon"
       }
     ]
+  },
+  "technologies": [
+    "Snowflake",
+    "Snowflake",
+    "Snowflake",
+    "Snowflake",
+    "Snowflake",
+    "Snowflake"
+  ],
+  "footer": {
+    "footerImg": "/assets/footer-shape-2.png",
+    "whitelogo": "/assets/logo-white.png",
+    "paragraph": "Feel free to reach out with questions or inquiries.",
+    "socialmedia": [
+      {
+        "icon": "MailIcon"
+      },
+      {
+        "icon": "LangIcon"
+      },
+      {
+        "icon": "MailIcon"
+      },
+      {
+        "icon": "SubscribIcon"
+      }
+    ],
+    "explore": {
+      "title": "Explore",
+      "exploredata": [
+        {
+          "icon": "ArrowForwardOutlinedIcon",
+          "title": "About"
+        },
+        {
+          "icon": "ArrowForwardOutlinedIcon",
+          "title": "Services"
+        },
+        {
+          "icon": "ArrowForwardOutlinedIcon",
+          "title": "Portfolio"
+        },
+        {
+          "icon": "ArrowForwardOutlinedIcon",
+          "title": "Contact"
+        }
+      ]
+    },
+    "address": {
+      "title": "Address",
+      "subtitle": "California",
+      "paragraph": " 987 Design Blvd, Suite 543, Beverly Hills, CA 902"
+    },
+    "contact": {
+      "title": "Say Hello",
+      "email": "hello@youremail.com",
+      "number": "+1(789) 8001234"
+    },
+    "copyright": {
+      "title": "ThemePure @ 2024. All Rights Reserved."
+    }
   }
 }
-
-
