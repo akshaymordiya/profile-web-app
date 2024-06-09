@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { BiSolidPencil } from "react-icons/bi";
 import { IoReorderTwoOutline } from "react-icons/io5";
@@ -39,12 +40,12 @@ const Header = () => {
               <div className="col-xl-6 col-lg-6 col-md-6 col-6">
                 <div className="d-flex align-items-center justify-content-end">
                   <div className="header-btn d-none d-md-block">
-                    <a className="btn-white" href="/contact">
+                    <Link className="btn-white" href="/contact">
                       <span className="text">Let's Talk</span>
                       <span>
                         <BiSolidPencil />
                       </span>
-                    </a>
+                    </Link>
                   </div>
                   <div className="header-bar">
                     <button className="bar-btn">

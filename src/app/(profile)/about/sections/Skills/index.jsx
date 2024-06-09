@@ -23,7 +23,7 @@ const Skills = ({
   } = data
 
   return (
-    <div className={`${BASE_CLASSNAME}personal-info-pin-section`}>
+    <div className={`${BASE_CLASSNAME} personal-info-pin-section`}>
       <Grid classNames={`${BASE_CLASSNAME}_grid`}>
         <Grid.Item
           xs={12}

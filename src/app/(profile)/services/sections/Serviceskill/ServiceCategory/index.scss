@@ -1,0 +1,33 @@
+@import "../../../../../../styles/variables";
+@import "../../../../../../styles/mixins";
+
+  .inner-service-category {
+    padding: 25px 0 20px;
+    border-bottom: 1px solid rgba(2, 11, 24, 0.1);
+    transition: 0.3s;
+    a {
+      text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .inner-service-category-content span {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 0px;
+      letter-spacing: 0.02em;
+      color: $black;
+      font-family: $primary-fonts;
+      svg {
+        margin-right: 13px;
+      }
+    }
+    .inner-service-category-link span {
+      color: $black;
+    }
+    &:hover {
+      padding: 25px 25px 20px;
+      background: rgba(2, 11, 24, 0.04);
+    }
+  }
+}
+

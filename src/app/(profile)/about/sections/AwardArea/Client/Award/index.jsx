@@ -14,7 +14,7 @@ const Awards = ({
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
   const followImgRef = useRef(null);
-  
+
   const handleMouseMove = (event) => {
     const { clientX, clientY } = event;
     if (followImgRef.current) {
@@ -25,7 +25,7 @@ const Awards = ({
       followImgRef.current.style.transform = `translateX(${imgCenterX}px) translateY(${imgCenterY}px)`;
     }
   };
-  
+
   useEffect(() => {
     window.addEventListener("mousemove", handleMouseMove);
 

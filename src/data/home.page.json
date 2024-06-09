@@ -1,0 +1,122 @@
+{
+  "hero": {
+    "name": ["creative", "visual", "Designer"],
+    "button": {
+      "title": "View Our Work",
+      "icon": "CallIcon"
+    },
+    "description": "Hello, I am Diego a designer from Barcelona. Specialised in creating fantastic digital experiences.!"
+  },
+  "service": {
+    "circleimg": "/assets/footer-circle-img.png",
+    "images": [
+      {
+        "image": "/assets/service-shape-1.png",
+        "imageclass": "image_shape_1",
+        "alt": "image_shape_1",
+        "containerclass": "services_container_services-shape_1"
+      },
+      {
+        "image": "/assets/service-shape-2.png",
+        "imageclass": "image_shape_2",
+        "containerclass": "services_container_services-shape_2",
+        "alt": "image_shape_2"
+      },
+      {
+        "image": "/assets/star.png",
+        "imageclass": "image_shape_3",
+        "alt": "image_shape_3",
+        "containerclass": "services_container_services-shape_3"
+      },
+      {
+        "image": "/assets/service-shape-1.png",
+        "imageclass": "image_shape_4",
+        "alt": "image_shape_4",
+        "containerclass": "services_container_services-shape_4"
+      },
+      {
+        "image": "/assets/service-shape-2.png",
+        "imageclass": "image_shape_5",
+        "alt": "image_shape_5",
+        "containerclass": "services_container_services-shape_5"
+      }
+    ],
+    "title": "OUR PROCESS",
+    "subtitle": " How We Carry Out Our Projects",
+    "description": " We offer a range of services to help elevate  your brand & drive results.",
+    "servicebox": {
+      "title": " Design Strategy",
+      "description": "We always ensure that it combines a clean and beautiful visual design.",
+      "tag1": "UI/UX Audit",
+      "tag2": "Workshops",
+      "callpara": " Call me to get more extra service",
+      "callnow": "Call Now"
+    }
+  },
+  "projects": {
+    "title": "Articles & Publications",
+    "workproject": [
+      {
+        "image": "/assets/blog-3-1.jpg",
+        "brand": "Branding",
+        "title": "16 witty tips to get six-figure clients on Dribbble",
+        "date": "October 3, 2024",
+        "time": "7 min read"
+      },
+      {
+        "image": "/assets/blog-3-2.jpg",
+        "brand": "Branding",
+        "title": "Bluwalk redesign: sign-up rate increased twice and counting",
+        "date": "November 4, 2024",
+        "time": "7 min read"
+      },
+      {
+        "image": "/assets/blog-3-2.jpg",
+        "brand": "Branding",
+        "title": "16 witty tips to get six-figure clients on Dribbble",
+        "date": "October 3, 2024",
+        "time": "7 min read"
+      },
+      {
+        "image": "/assets/blog-3-1.jpg",
+        "brand": "Branding",
+        "title": "Bluwalk redesign: sign-up rate increased twice and counting",
+        "date": "November 4, 2024",
+        "time": "7 min read"
+      },
+      {
+        "image": "/assets/blog-3-1.jpg",
+        "brand": "Branding",
+        "title": "16 witty tips to get six-figure clients on Dribbble",
+        "date": "October 3, 2024",
+        "time": "7 min read"
+      },
+      {
+        "image": "/assets/blog-3-2.jpg",
+        "brand": "Branding",
+        "title": "Bluwalk redesign: sign-up rate increased twice and counting",
+        "date": "November 4, 2024",
+        "time": "7 min read"
+      }
+    ]
+  },
+  "footer": [
+    {
+      "footerclass": "footer-shape-1",
+      "footerimg": "/assets/footer-shape.png"
+    },
+    {
+      "footerclass": "footer-img",
+      "footerimg": "/assets/footer-3-1.png"
+    }
+  ],
+  "footerArea": {
+    "subtitle": "Contact Me___",
+    "title": "Let's work Together",
+    "image": "/assets/logo-white.png",
+    "paragraph": "A template made for professional designers, photographers and all people who work with creativity and those who don't, this template is yours, use it as you want happy.",
+    "cirlceImg": "/assets/foooter-btn.png",
+    "icon": "Arrowoutward",
+    "copyright":"© 2024 Themepure."
+  }
+}

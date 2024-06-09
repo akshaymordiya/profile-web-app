@@ -1,0 +1,137 @@
+@import "../../../../../../../styles/variables";
+@import "../../../../../../../styles/mixins";
+
+.testimonial-slider {
+    padding: 0px 70px;
+    @include respond-to("desktop") {
+      padding: 0px;
+    }
+    @include respond-to("large_tablet") {
+      padding: 0px;
+    }
+    @include respond-to("small_tablet") {
+      padding: 0px;
+    }
+    @include respond-to("tablet") {
+      padding: 0px;
+    }
+    @include respond-to("phone") {
+      padding: 0px;
+    }
+    .testimonial-item {
+      position: relative;
+      z-index: 1;
+      border-radius: 10px;
+      padding: 70px 210px 75px 70px;
+      background-color: #f0f2e8;
+      @include respond-to("large_tablet") {
+        padding-right: 75px;
+      }
+      @include respond-to("large_tablet") {
+        padding-right: 75px;
+      }
+      @include respond-to("small_tablet") {
+        padding: 30px;
+      }
+      @include respond-to("tablet") {
+        padding: 30px;
+      }
+      @include respond-to("phone") {
+        padding: 30px;
+      }
+      .testimonial-quote {
+        position: absolute;
+        top: 75px;
+        right: 60px;
+        opacity: 0.2;
+        z-index: -1;
+        filter: invert(100%) sepia(32%) saturate(304%) hue-rotate(200deg)
+          brightness(105%) contrast(100%);
+      }
+      .testimonial-item-top {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        .testimonial-rating {
+          margin-right: 8px;
+          span svg {
+            transform: translateY(3px);
+            height: 17px;
+            width: 17px;
+          }
+        }
+        p {
+          font-size: 14px;
+          color: $black;
+          margin-bottom: 0;
+          line-height: 1;
+          transform: translateY(1px);
+          font-family: $dm-font-family;
+        }
+      }
+      .testimonial-content p {
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 1.38;
+        letter-spacing: -0.01em;
+        color: $black;
+        font-family: $dm-font-family;
+        @include respond-to("large_tablet") {
+          font-size: 18px;
+        }
+        @include respond-to("small_tablet") {
+          font-size: 18px;
+        }
+        @include respond-to("tablet") {
+          font-size: 18px;
+        }
+        @include respond-to("phone") {
+          font-size: 18px;
+        }
+      }
+    }
+    .testimonial-user-item {
+      padding: 38px 20px;
+      transition: 0.4s;
+      position: relative;
+      display: flex !important;
+      
+      justify-content: center;
+      align-items: center;
+      .testimonial-user-thumb {
+        margin-right: 20px;
+        img {
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
+        }
+      }
+      .testimonial-user-content {
+        h3 {
+          font-weight: 700;
+          font-size: 18px;
+          color: $black;
+          margin-bottom: 1px;
+          line-height: 1;
+        }
+        span {
+          font-size: 14px;
+          font-weight: 500;
+          margin-bottom: 0;
+          color: #8a8c90;
+          a {
+            color: $black;
+            text-decoration: none;
+          }
+        }
+      }
+      .testimonial-user-border {
+        border: 2px solid rgba(37, 37, 37, 0.08);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+      }
+    }
+  }

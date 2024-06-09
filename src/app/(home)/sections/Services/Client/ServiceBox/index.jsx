@@ -1,7 +1,9 @@
 "use client";
 import React, { useRef, useEffect } from 'react';
+import homeData  from '../../../../../../data/home.page.json';
 
 import "./index.scss";
+import Link from 'next/link';
 
 function calculateScale(input) {
   // Define the minimum and maximum output values
@@ -93,15 +95,14 @@ const ServiceBox = () => {
           </span>
           <div className="service_card_content">
             <h3 className="service_card_content_title">
-              Design <br /> Strategy
+              {homeData.service.servicebox.title}
             </h3>
             <p className='service_card_content_description'>
-              We always ensure that it combines a clean <br />
-              and beautiful visual design.
+            {homeData.service.servicebox.description}
             </p>
             <div className="service_card_content_tag">
-              <span className="me-2">UI/UX Audit</span>
-              <span>Workshops</span>
+              <span className="me-2">{homeData.service.servicebox.tag1}</span>
+              <span>{homeData.service.servicebox.tag2}</span>
             </div>
           </div>
         </div>
@@ -109,10 +110,10 @@ const ServiceBox = () => {
       <div
         ref={contactBtnRef}
         className="service-contact_btn">
-        <a href="#">
-          Call me to get more extra service
-          <span>Call Now</span>
-        </a>
+        <Link href="/">
+        {homeData.service.servicebox.callpara}
+          <span>{homeData.service.servicebox.callnow}</span>
+        </Link>
       </div>
     </div>
   )

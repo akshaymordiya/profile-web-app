@@ -1,0 +1,154 @@
+@import "../../../../../styles/variables";
+@import "../../../../../styles/mixins";
+.services_wrapper {
+  background-color: $dark-bg;
+  z-index: 1;
+  padding-top: 135px;
+  padding-bottom: 50px;
+  position: relative;
+  .service-circle-img {
+    position: absolute;
+    top: 0;
+    right: 315px;
+    @include respond-to("large_tablet") {
+      right: 30px;
+    }
+    @include respond-to("small_tablet") {
+      right: 30px;
+    }
+    @include respond-to("phone") {
+      right: 30px;
+    }
+    .text-img {
+      display: inline-block;
+      transform: translate(10px, -70px);
+
+      img {
+        filter: invert(100%) sepia(32%) saturate(304%) hue-rotate(200deg)
+          brightness(105%) contrast(100%);
+        animation: animationglob 10s cubic-bezier(1, 0.99, 0.03, 0.01) infinite;
+      }
+    }
+    .shape {
+      position: absolute;
+      left: 0;
+      top: -1px;
+      left: -50%;
+      z-index: -1;
+      @include respond-to("large_tablet") {
+        display: none;
+      }
+      @include respond-to("small_tablet") {
+        display: none;
+      }
+      @include respond-to("phone") {
+        display: none;
+      }
+      @include respond-to("small_phone") {
+        display: none;
+      }
+      svg {
+        color: #f6f9ff;
+      }
+    }
+  }
+
+  .service-shape-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    img{
+      width: 100%;
+    }
+  }
+  .service-shape-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    img{
+      width: 100%;
+    }
+  }
+  .service-shape-3 {
+    position: absolute;
+    top: 43%;
+    left: 35%;
+    z-index: -1;
+    img{
+      width: 100%;
+    }
+  }
+  &_grid {
+    padding: 0px 2rem;
+    .service-card {
+      place-content: start !important;
+      .stack_card {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: sticky;
+        top: 100px;
+        margin-bottom: 40px;
+        @include respond-to("desktop") {
+          justify-content: start;
+        }
+        @include respond-to("large_tablet") {
+          justify-content: start;
+        }
+        @include respond-to("small_tablet") {
+          justify-content: start;
+        }
+        @include respond-to("phone") {
+          justify-content: start;
+        }
+        .service-title-box {
+          span {
+            font-size: 20px;
+            padding-bottom: 10px;
+            font-weight: 500;
+            line-height: 1;
+            color: $white;
+            font-family: $dr-font-family;
+            display: inline-block;
+          }
+          h3 {
+            font-weight: 500;
+            font-size: 80px;
+            line-height: 1;
+            letter-spacing: -0.02em;
+            color: $white;
+            font-family: $dr-font-family;
+            margin-bottom: 25px;
+            @include respond-to("desktop") {
+              font-size: 60px;
+            }
+            @include respond-to("large_tablet") {
+              font-size: 50px;
+            }
+            @include respond-to("small_tablet") {
+              font-size: 40px;
+            }
+            @include respond-to("phone") {
+              font-size: 40px;
+            }
+          }
+          p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            width: 425px;
+            color: hsla(0, 0%, 100%, 0.7);
+            @include respond-to("small_tablet") {
+              width: 220px;
+            }
+            @include respond-to("phone") {
+              width: 250px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

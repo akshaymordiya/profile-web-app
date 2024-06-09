@@ -1,0 +1,297 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/mixins";
+@import "../../../../styles/animations";
+
+.footer_wrapper {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  .footer-shape-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .footer-img {
+    position: absolute;
+    bottom: 0;
+    right: 160px;
+    z-index: 1;
+    mix-blend-mode: luminosity;
+   
+    @include respond-to("small_tablet") {
+      display: none;
+    }
+    @include respond-to("phone") {
+      display: none;
+    }
+    @include respond-to("small_phone") {
+      display: none;
+    }
+  }
+  .footer_wrapper_grid {
+    padding: 6rem 6rem;
+    background-color: $dark-bg;
+    @include respond-to("desktop_large") {
+        padding: 80px 8rem 50px;
+      }
+      @include respond-to("desktop") {
+        padding: 80px 3rem 50px;
+      }
+      @include respond-to("large_tablet") {
+        padding: 50px 3rem 50px;
+      }
+      @include respond-to("small_tablet") {
+        padding: 50px 2rem 50px;
+      }
+      @include respond-to("phone") {
+        padding: 50px 1rem 50px;
+      }
+    .footer-title-box {
+      padding-left: 120px;
+      position: relative;
+      margin-bottom: 150px;
+      @include respond-to("desktop_large") {
+        padding-left: 0px;
+      }
+      @include respond-to("desktop") {
+        padding-left: 0px;
+      }
+      @include respond-to("large_tablet") {
+        padding-left: 0px;
+        margin-bottom: 50px;
+      }
+      @include respond-to("small_tablet") {
+        padding-left: 0px;
+        margin-bottom: 0px;
+      }
+      @include respond-to("phone") {
+        padding-left: 0px;
+        margin-bottom: 0px;
+      }
+      @include respond-to("small_phone") {
+        padding-left: 0px;
+        margin-bottom: 80px;
+      }
+      .footer-subtitle {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 1;
+        text-transform: uppercase;
+        color: #e7ecff;
+      }
+      .footer-title {
+        font-weight: 500;
+        font-size: 103px;
+        line-height: 1;
+        color: $white;
+        font-family: $dr-font-family;
+        width: 450px;
+        margin-bottom: 60px;
+        @include respond-to("desktop") {
+          font-size:60px;
+        }
+        @include respond-to("large_tablet") {
+          font-size: 60px;
+          width: 500px;
+          margin-bottom: 30px;
+        }
+        @include respond-to("small_tablet") {
+          font-size: 40px;
+          width: 500px;
+          margin-bottom: 30px;
+        }
+        @include respond-to("phone") {
+          font-size: 40px;
+          width: 500px;
+          margin-bottom: 30px;
+        }
+        @include respond-to("small_phone") {
+          font-size: 40px;
+          width: 250px;
+          margin-bottom: 30px;
+        }
+      }
+      .footer-widget {
+        padding-right: 70px;
+        .footer-widget-top {
+          padding-bottom: 40px;
+          .footer-content {
+            margin-bottom: 20px;
+            .footer-text p {
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 24px;
+              letter-spacing: -0.01em;
+              color: rgba(231, 236, 255, 0.4);
+              margin-bottom: 0;
+            }
+          }
+          .footer-menu {
+            ul li {
+              display: inline-block;
+              list-style-type: none;
+              padding-left: 50px;
+              a {
+                display: inline-block;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 1;
+                color: #e7ecff;
+                position: relative;
+                text-decoration: none;
+                :after {
+                  position: absolute;
+                  content: "";
+                  left: 0;
+                  bottom: -4px;
+                  width: 0;
+                  height: 1px;
+                  background-color: var(--common-white);
+                  transition: all 0.3s ease-out;
+                }
+                &:hover {
+                  color: var(--common-white);
+                  :after {
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .footer-link {
+      @include respond-to("large_tablet") {
+        display: none;
+      }
+      @include respond-to("small_tablet") {
+        display: none;
+      }
+      @include respond-to("phone") {
+        display: none;
+      }
+      @include respond-to("small_phone") {
+        display: none;
+      }
+      a {
+        position: relative;
+        display: inline-block;
+        img {
+          animation: animationglob 10s cubic-bezier(1, 0.99, 0.03, 0.01)
+            infinite;
+        }
+        span {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          height: 16px;
+          width: 16px;
+          line-height: 16px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+          color: $white;
+          font-size: 20px;
+          svg {
+            transition: all 0.4s;
+          }
+        }
+      }
+    }
+  }
+  .copyright-area {
+    padding: 0 8rem;
+    background-color: $dark-bg;
+    @include respond-to("desktop_large") {
+      padding: 0px 8rem;
+    }
+    @include respond-to("desktop") {
+      padding: 20px 3rem;
+    }
+    @include respond-to("large_tablet") {
+      padding: 20px 3rem;
+    }
+    @include respond-to("small_tablet") {
+      padding: 20px 2rem;
+    }
+    @include respond-to("phone") {
+      padding: 20px 1rem;
+    }
+    .copyright-border-top {
+      border-top: 1px solid hsla(0, 0%, 100%, 0.1);
+      @include respond-to("desktop_large") {
+        padding-top: 20px;
+      }
+      @include respond-to("desktop") {
+        padding-top: 20px;
+      }
+      @include respond-to("large_tablet") {
+        padding-top: 20px;
+      }
+      @include respond-to("small_tablet") {
+        padding-top: 20px;
+      }
+      @include respond-to("phone") {
+        padding-top: 20px;
+      }
+      .copyright-left p {
+        margin-bottom: 0;
+        font-weight: 500;
+        font-size: 14px;
+        color: rgba(231, 236, 255, 0.8);
+      }
+      .copyright-social {
+        ul {
+          margin-bottom: 0px;
+          li {
+            display: inline-block;
+            margin: 0 -2px;
+            a {
+              font-weight: 500;
+              font-size: 16px;
+              color: rgba(231, 236, 255, 0.6);
+              padding: 0 35px;
+              height: 70px;
+              line-height: 73px;
+              display: inline-block;
+              border-left: 1px solid hsla(0, 0%, 100%, 0.1);
+              text-decoration: none;
+              display: flex;
+              align-items: center;
+            }
+            &:hover a {
+              background-color: rgba(231, 236, 255, 0.1);
+              border-left: 1px solid rgba(231, 236, 255, 0.1);
+              color: $white;
+            }
+          }
+        }
+        @include respond-to("desktop") {
+        display: none;
+        }
+        @include respond-to("large_tablet") {
+          display: none;
+        }
+        @include respond-to("small_tablet") {
+          display: none;
+        }
+        @include respond-to("phone") {
+          display: none;
+        }
+        @include respond-to("small_phone") {
+          display: none;
+        }
+        
+      }
+    }
+  }
+}
+
+.footer-link a .footer-link a span .footer-link a:hover span svg:first-child {
+  transform: translate(20px, -20px);
+}

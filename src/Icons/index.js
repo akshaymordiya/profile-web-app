@@ -22,6 +22,8 @@ import CoronavirusOutlinedIcon from "@mui/icons-material/CoronavirusOutlined";
 import AutoAwesomeMotionOutlinedIcon from "@mui/icons-material/AutoAwesomeMotionOutlined";
 import EastIcon from "@mui/icons-material/East";
 import CurrencyBitcoinIcon from '@mui/icons-material/CurrencyBitcoin';
+import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
+import CallMadeIcon from '@mui/icons-material/CallMade';
 
 const Icons = {
     "Fname": DriveFileRenameOutlineIcon,
@@ -47,7 +49,9 @@ const Icons = {
     "AndroidIcon": AndroidOutlinedIcon,
     "Viewoutline": ViewQuiltOutlinedIcon,
     "CoronaIcon": CoronavirusOutlinedIcon,
-    "Arrowicon": EastIcon
+    "Arrowicon": EastIcon,
+    "KeyboardArrow": KeyboardDoubleArrowDownIcon,
+    "CallIcon": CallMadeIcon
 }
 
 export const getIcon = (keys = []) => {
