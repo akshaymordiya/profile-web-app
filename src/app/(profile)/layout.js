@@ -2,7 +2,7 @@ import React from "react";
 
 import "../globals.css";
 import "../../styles/global.scss";
-import "aos/dist/aos.css";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
