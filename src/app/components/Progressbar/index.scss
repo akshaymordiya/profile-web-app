@@ -1,0 +1,51 @@
+@import "../../../styles/variables";
+
+.progress-bar_container {
+  margin-bottom: 2rem;
+  width: 100%;
+  // border: 1px solid red;
+  display: block;
+
+  @for $i from 1 through 100 {
+    &_label-#{$i} {
+      display: flex;
+      width: percentage($i / 100);
+      justify-content: space-between;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: $black;
+      margin-bottom: 12px;
+    }
+  }
+
+  &_progress-line {
+    display: flex;
+    width: 100%;
+    color: $black;
+    transition: width 0.6s ease;
+    height: 2px;
+    border-radius: 4px;
+    background: $progress-bar-placeholder;
+
+    @for $i from 1 through 100 {
+      &-value-#{$i} {
+        width: percentage($i / 100);
+        border-radius: 4px;
+        height: 4px;
+        background: $black;
+        transform: translateY(-1px);
+        animation: progressValue 2.3s linear 2s forwards;
+
+        @keyframes progressValue {
+          0% {
+            width: 0%;
+          }
+          100% {
+            width: percentage($i / 100);
+          }
+        }
+      }
+    }
+  }
+}

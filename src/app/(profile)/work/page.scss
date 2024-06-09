@@ -40,7 +40,7 @@
         text-align: center;
         letter-spacing: -0.03em;
         color: $black;
-        font-family: $dr-font-family;
+        font-family: $primary-fonts;
         margin: 0 auto;
         width: 950px;
         @include respond-to("desktop") {
@@ -93,7 +93,7 @@
       text-transform: uppercase;
       color: #eceff5;
       mix-blend-mode: luminosity;
-      font-family: $dr-font-family;
+      font-family: $primary-fonts;
       margin-bottom: 0;
       flex: 0 0 auto;
       margin-right: 80px;

@@ -1,0 +1,29 @@
+@import "../../../../../styles/variables";
+@import "../../../../../styles/mixins";
+
+
+.personal-info {
+  width: 100%;
+
+  @include respond-to("desktop"){
+    width: 70%;
+  }
+
+  @include respond-to("desktop_large"){
+    width: 60%;
+  }
+
+  &-skill {
+    &.mb {
+      margin-bottom: 85px;
+    }
+  }
+
+  &-experience,
+  &-education {
+
+    &.mb {
+      margin-bottom: 85px;
+    }
+  }
+}

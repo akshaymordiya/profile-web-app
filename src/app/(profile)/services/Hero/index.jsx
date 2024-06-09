@@ -1,5 +1,5 @@
 import Grid from "@/app/components/Grid";
-import SectionTitle from "@/app/components/SectionTitle";
+import SectionTitle from "@/app/components/SectionBox";
 import React from "react";
 import InnerServiceList from "./InnerServiceList";
 import service from "../../../../data/service.page.json";

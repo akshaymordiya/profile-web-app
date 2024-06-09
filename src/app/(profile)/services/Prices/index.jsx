@@ -1,6 +1,6 @@
 import CTA from "@/app/components/CTA";
 import Grid from "@/app/components/Grid";
-import SectionTitle from "@/app/components/SectionTitle";
+import SectionTitle from "@/app/components/SectionBox";
 import React from "react";
 import './index.scss';
 import service from '../../../../data/service.page.json';

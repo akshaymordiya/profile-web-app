@@ -1,0 +1,36 @@
+@import "../../../styles/variables";
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Prata&display=swap');
+
+.experience_box {
+  width: 100%;
+  border-top: 1px solid $progress-bar-placeholder;
+
+  &_grid{
+    padding: 1.5rem 0;
+    margin-bottom: 0.5rem;
+
+    &-col-1 {
+      display: flex;
+      justify-content: flex-start;
+
+      span {
+        font-family: $dm-font-family;
+        text-transform: uppercase;
+      }
+    }
+
+    &-col-2 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 0.6rem;
+
+      h4 {
+        font-family: $primary-fonts;
+        color: $black;
+        font-weight: 600;
+      }
+    }
+  }
+}

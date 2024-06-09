@@ -1,0 +1,35 @@
+@import '../../../../../styles/variables';
+@import "../../../../../styles/animations";
+@import '../../../../../styles/mixins';
+
+.counter_boxes_container_grid {
+  border-radius: 20px;
+  height: 190%;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  color: $black;
+  gap: 2rem;
+
+  @include respond-to("desktop") {
+    position: inherit;
+    border-radius: 0px;
+  }
+
+  @include respond-to("large_tablet") {
+    position: inherit;
+    border-radius: 0px;
+  }
+
+  @include respond-to("small_tablet") {
+    position: inherit;
+    border-radius: 0px;
+  }
+
+  @include respond-to("phone") {
+    position: inherit;
+    width: 100%;
+    border-radius: 0px;
+  }
+}

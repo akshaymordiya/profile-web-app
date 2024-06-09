@@ -1,33 +1,32 @@
 import React from "react";
-import "./page.scss";
-import Navbar from "@/app/components/Navbar";
-import CustomCursor from "@/app/components/MouseCursor";
-import Aos from "@/app/components/AOS";
-import "aos/dist/aos.css";
-import Counter from "./Client/CounterUp";
-import AwardArea from "./AwardArea";
-import PersonalInfo from "./PersonalInfo";
-import Footer from "./Footer";
+
 import BrandButton from "@/app/components/Brand";
-import Hero from "./Hero";
+//sections
+import Hero from "./sections/Hero";
+import Text from "./sections/Text";
+import Skills from "./sections/Skills";
+import CounterBox from "./sections/CounterBox";
+import AwardArea from "./sections/AwardArea";
+
+import aboutData from "../../../data/about.page.json";
 
 const About = () => {
+  const {
+    hero,
+    aboutMe,
+    counter,
+    awards,
+    technologies
+  } = aboutData
   return (
-    <>
-      <Aos />
-      <Navbar />
-      <div id="smooth-content">
-        <main>
-          <Hero />
-          <PersonalInfo />
-          <Counter />
-          <AwardArea />
-          <BrandButton />
-          <Footer/>
-        </main>
-      </div>
-      <CustomCursor />
-    </>
+    <React.Fragment>
+      <Hero data={hero} />
+      <Text data={aboutMe} />
+      <Skills data={aboutMe} />
+      <CounterBox data={counter} />
+      <AwardArea data={awards} />
+      <BrandButton data={technologies} />
+    </ React.Fragment>
   );
 };
 

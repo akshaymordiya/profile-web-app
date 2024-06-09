@@ -1,0 +1,142 @@
+@import "../../../../../../../styles/variables";
+@import "../../../../../../../styles/mixins";
+
+.award_item {
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease-out;
+
+  &_link {
+   text-decoration: none;
+   display: block;
+  }
+  
+  .award-item-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    .award-arrow {
+      position: absolute;
+      top: 35px;
+      left: 0;
+      transform: translateY(-50%);
+      color: $white;
+      visibility: hidden;
+      opacity: 0;
+      svg {
+        transform: translateY(-2px);
+      }
+    }
+    .award-content {
+      .award-title {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 1;
+        font-family: $primary-fonts;
+        color: $black;
+      }
+      p {
+        font-size: 13px;
+        font-weight: 500;
+        color: rgba(37, 37, 37, 0.6);
+        margin-bottom: 15px;
+        line-height: 26px;
+        font-family: $dm-font-family;
+      }
+    }
+    .award-btn {
+      background-color: $black;
+      width: 44px;
+      height: 44px;
+      line-height: 44px;
+      border-radius: 50%;
+      text-align: center;
+      color: $white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      span {
+        width: 16px;
+        height: 16px;
+        overflow: hidden;
+        position: relative;
+      }
+      svg {
+        transform: translateY(-2px);
+        position: absolute;
+        bottom: -4px;
+        left: -4px;
+        transition: all 0.2s ease-out;
+        &:last-child {
+          left: -17px;
+          bottom: -17px;
+          transform: translate(0);
+          opacity: 0;
+        }
+      }
+    }
+  }
+  
+  &:hover {
+    padding-left: 36px;
+    z-index: 1;
+    .award-btn span svg:first-child {
+      transform: translate(16px, -16px);
+    }
+    .award-btn span svg:last-child {
+      opacity: 1;
+      visibility: visible;
+      transform: translate(13px, -13px);
+    }
+    .award-arrow {
+      color: $black;
+      visibility: visible;
+      opacity: 1;
+    }
+    .hover-reveal-bg {
+      opacity: 1;
+    }
+    &:after {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+  
+  :after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background-color: $white;
+    height: 1px;
+    z-index: -1;
+    opacity: 0;
+  }
+  
+  .hover-reveal-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 210px;
+    height: 295px;
+    opacity: 0;
+    border-radius: 10px;
+    pointer-events: none;
+    background-size: cover;
+  }
+  
+  .award-inner-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    border: 1px solid rgba(37, 37, 37, 0.08);
+    transition: 0.3s;
+  }
+}

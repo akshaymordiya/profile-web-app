@@ -1,5 +1,5 @@
 import React from "react";
-import SectionTitle from "@/app/components/SectionTitle";
+import SectionTitle from "@/app/components/SectionBox";
 import WorkSilder from "./Client/WorkSlider";
 import work from '../../../../data/work.page.json'
 import Grid from "@/app/components/Grid";

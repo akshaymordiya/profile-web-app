@@ -1,0 +1,120 @@
+@import "../../../../../styles/mixins";
+@import "../../../../../styles/variables";
+@import "../../../../../styles/animations";
+
+.hero_container {
+  background-color: #f6f9ff;
+  padding-top: 175px;
+  padding-bottom: 140px;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+
+  .shape_1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    filter: invert(100%) sepia(32%) saturate(304%) hue-rotate(200deg)
+      brightness(105%) contrast(100%);
+    mix-blend-mode: color-burn;
+    
+    img {
+      opacity: 0.5;
+    }
+  }
+
+  &_grid {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 0 9rem;
+
+    .about {
+      &_content {
+        font-weight: 500;
+        font-size: 145px;
+        line-height: 1;
+        letter-spacing: -0.03em;
+        color: $black;
+        font-family: $primary-fonts;
+        margin-bottom: 40px;
+        @include respond-to("desktop") {
+          font-size: 100px;
+        }
+        @include respond-to("large_tablet") {
+          font-size: 75px;
+        }
+        @include respond-to("small_tablet") {
+          font-size: 50px;
+        }
+        @include respond-to("phone") {
+          font-size: 50px;
+        }
+
+        .btn-border-sm {
+          height: 50px;
+          line-height: 48px;
+          border-radius: 100px;
+          margin-top: 40px;
+          padding: 0 30px;
+          font-weight: 400;
+          font-size: 16px;
+          text-align: center;
+          text-transform: capitalize;
+          display: inline-block;
+          overflow: hidden;
+          letter-spacing: -0.01em;
+          color: $white;
+          font-family: $dm-font-family;
+          border: 1.5px solid hsla(0, 0%, 100%, 0.1);
+          transition: 0.3s;
+          text-decoration: none;
+          background-color: $black;
+          
+          span {
+            // margin-left: 15px;
+            // transform: translateY(-2px);
+            display: inline-block;
+          }
+        }
+      }
+
+      &_image {
+        position: relative;
+        animation: leftToRight 0.9s ease;
+        
+        .service-signature {
+          position: absolute;
+          bottom: 70px;
+          left: -69px;
+          @include respond-to("phone") {
+            left: 0px;
+          }
+        }
+
+        .servicecircle-img {
+          position: absolute;
+          bottom: -35px;
+          right: -40px;
+          border: 10px solid #f6f9ff;
+          border-radius: 50%;
+          animation: circle-img 10s linear infinite;
+          
+          @include respond-to("phone") {
+            right: -19px;
+          }
+
+          img {
+            filter: invert(100%) sepia(32%) saturate(304%) hue-rotate(200deg)
+              brightness(105%) contrast(100%);
+          }
+        }
+
+        .service-img img {
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}

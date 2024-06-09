@@ -3,7 +3,7 @@ import Shapes from "../Shapes";
 import "./index.scss";
 import ServiceCard from "../ServiceCard";
 import Aos from "../AOS/aos";
-import SectionTitle from "../SectionTitle";
+import SectionTitle from "../SectionBox";
 
 const ServicePanalArea = () => {
   return (

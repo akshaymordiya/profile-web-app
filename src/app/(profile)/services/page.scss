@@ -57,7 +57,7 @@
         margin-bottom: 40px;
         font-weight: 600;
         color: $black;
-        font-family: $dr-font-family;
+        font-family: $primary-fonts;
         width: 550px;
         @include respond-to("desktop") {
           font-size: 60px;
@@ -105,7 +105,7 @@
           line-height: 1;
           letter-spacing: 0.01em;
           color: $black;
-          font-family: $dr-font-family;
+          font-family: $primary-fonts;
           display: inline-block;
           padding: 0 40px;
           height: 66px;
@@ -294,7 +294,7 @@
             font-weight: 500;
             line-height: 1;
             color: $white;
-            font-family: $dr-font-family;
+            font-family: $primary-fonts;
             display: inline-block;
           }
           h3 {
@@ -303,7 +303,7 @@
             line-height: 1;
             letter-spacing: -0.02em;
             color: $white;
-            font-family: $dr-font-family;
+            font-family: $primary-fonts;
             margin-bottom: 25px;
             @include respond-to("desktop") {
               font-size: 60px;
@@ -375,7 +375,7 @@
       line-height: 58px;
       letter-spacing: -0.01em;
       color: $black;
-      font-family: $dr-font-family;
+      font-family: $primary-fonts;
       @include respond-to("large_tablet") {
         font-size: 29px;
         line-height: 40px;
@@ -602,7 +602,7 @@
       line-height: 1;
       letter-spacing: -0.02em;
       color: $black;
-      font-family: $dr-font-family;
+      font-family: $primary-fonts;
       margin-bottom: 25px;
       @include respond-to("large_tablet") {
         font-size: 50px;
@@ -622,7 +622,7 @@
       font-size: 24px;
       line-height: 1;
       color: $black;
-      font-family: $dr-font-family;
+      font-family: $primary-fonts;
       margin-bottom: 0;
     }
   }
@@ -640,7 +640,7 @@
       line-height: 20px;
       letter-spacing: -0.02em;
       color: $black;
-      font-family: $dr-font-family;
+      font-family: $primary-fonts;
     }
     span {
       font-weight: 500;
@@ -665,7 +665,7 @@
       line-height: 20px;
       letter-spacing: -0.02em;
       color: $black;
-      font-family: $dr-font-family;
+      font-family: $primary-fonts;
     }
     .price-text {
       font-weight: 500;

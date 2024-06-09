@@ -1,29 +1,26 @@
 'use client'
 import React from "react";
-import Aos from "../AOS";
 import 'aos/dist/aos.css';
+
+import "./index.scss";
+
+const BASE_CLASSNAME = "progress-bar_container"
 
 const ProgressBar = ({
     label ="",
-    ProgressValue="",
-    Progressmax =""
+    progressValue=""
 }) => {
   return (
-    <>
-    <Aos />
-      <div className="progress-bar-wrap">
-        <div className="progress-bar-item">
-          <label>{label}</label>
-          <div className="progress-bar" >
-            <div className="progress" data-aos="fade-right">
-              <div className="progress-barr" style={{ width:  `${Progressmax}` }}>
-                <span>{ProgressValue}</span>
-              </div>
-            </div>
-          </div>
+    <div className={BASE_CLASSNAME}>
+      <div className={`${BASE_CLASSNAME}_label-${progressValue}`}>
+        <label>{label}</label>
+        <span>{progressValue}%</span>
+      </div>
+      <div className={`${BASE_CLASSNAME}_progress-line`} data-aos="fade-bottom">
+        <div className={`${BASE_CLASSNAME}_progress-line-value-${progressValue}`}>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

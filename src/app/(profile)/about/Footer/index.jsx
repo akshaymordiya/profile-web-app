@@ -2,7 +2,7 @@ import React from "react";
 import "./index.scss";
 import IMG from "../../../components/IMG";
 import Grid from "../../../components/Grid";
-import SectionTitle from "../../../components/SectionTitle";
+import SectionBox from "../../../components/SectionBox";
 import FooterwidgetTitle from "../Footer/FooterWidgetitle";
 import about from "../../../../data/about.page.json";
 import { getIcon, renderIconComponent } from "@/Icons";
@@ -66,7 +66,7 @@ const Footer = () => {
                   xlg={2}
                   itemClass="footer-widget"
                 >
-                  <SectionTitle
+                  <SectionBox
                     interClass="footer-widget-title"
                     title={about.footer.explore.title}
                   />
@@ -91,7 +91,7 @@ const Footer = () => {
                   xlg={3}
                   itemClass="footer-widget"
                 >
-                  <SectionTitle
+                  <SectionBox
                     interClass="footer-widget-title"
                     title={about.footer.address.title}
                   />
@@ -109,7 +109,7 @@ const Footer = () => {
                   xlg={3}
                   itemClass="footer-widget"
                 >
-                  <SectionTitle
+                  <SectionBox
                     interClass="footer-widget-title"
                     title={about.footer.contact.title}
                   />

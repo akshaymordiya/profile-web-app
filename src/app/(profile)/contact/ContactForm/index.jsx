@@ -1,6 +1,6 @@
 "use client";
 // import CTA from "@/app/components/CTA";
-import SectionTitle from "@/app/components/SectionTitle";
+import SectionTitle from "@/app/components/SectionBox";
 import React, { useState } from "react";
 import contact from "../../../../data/contact.page.json";
 import ContactBuget from "./Client/ContactBuget";
