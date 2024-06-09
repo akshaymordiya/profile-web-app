@@ -3,48 +3,51 @@
 .progress-bar_container {
   margin-bottom: 2rem;
   width: 100%;
-  // border: 1px solid red;
   display: block;
 
-  @for $i from 1 through 100 {
-    &_label-#{$i} {
-      display: flex;
-      width: percentage($i / 100);
-      justify-content: space-between;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 1.5;
-      color: $black;
-      margin-bottom: 12px;
+  &_label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $black;
+    margin-bottom: 12px;
+
+    @for $i from 0 through 100 {
+      &.label-width-#{$i}{
+        width: percentage($i / 100);
+      }
     }
   }
 
   &_progress-line {
     display: flex;
     width: 100%;
-    color: $black;
-    transition: width 0.6s ease;
-    height: 2px;
+    height: 4px;
     border-radius: 4px;
     background: $progress-bar-placeholder;
+  }
 
-    @for $i from 1 through 100 {
-      &-value-#{$i} {
+  &_progress-line-value {
+    border-radius: 4px;
+    height: 4px;
+    background: $black;
+    animation: progressValue 2.3s ease-in-out forwards;
+  }
+
+  @for $i from 0 through 100 {
+    .progress-#{$i} {
+      width: percentage($i / 100);
+      animation: progress-#{$i} 2.3s ease-in-out forwards;
+    }
+
+    @keyframes progress-#{$i} {
+      from {
+        width: 0%;
+      }
+      to {
         width: percentage($i / 100);
-        border-radius: 4px;
-        height: 4px;
-        background: $black;
-        transform: translateY(-1px);
-        animation: progressValue 2.3s linear 2s forwards;
-
-        @keyframes progressValue {
-          0% {
-            width: 0%;
-          }
-          100% {
-            width: percentage($i / 100);
-          }
-        }
       }
     }
   }
