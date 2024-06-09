@@ -1,5 +1,5 @@
 import React from "react";
-import SectionTitle from "@/app/components/SectionBox";
+import SectionBox from "@/app/components/SectionBox";
 import WorkSilder from "./Client/WorkSlider";
 import work from '../../../../data/work.page.json'
 import Grid from "@/app/components/Grid";
@@ -14,12 +14,9 @@ const Hero = () => {
           <div className="row">
             <div className="porfolio-overlay">
               <div className="porfolio-text-1">
-                <SectionTitle
-                  interClass="porfolio-slider-title"
-                  animationName="flip-up"
+                <SectionBox
+                  containerClass="porfolio-slider-title"
                   title={work.hero.title}
-                  animationduration="2000"
-                  animationdelay="300"
                 />
               </div>
               <WorkSilder />

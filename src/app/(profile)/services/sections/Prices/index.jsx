@@ -1,7 +1,7 @@
 import React from "react";
 import CTA from "@/app/components/CTA";
 import Grid from "@/app/components/Grid";
-import SectionTitle from "@/app/components/SectionTitle";
+import SectionBox from "@/app/components/SectionBox";
 //style scss
 import "./index.scss";
 //data json
@@ -20,14 +20,12 @@ const Prices = () => {
             xlg={12}
             itemClass="inner-price-title-box"
           >
-            <SectionTitle
-              interClass="inner-section-title"
+            <SectionBox
+              containerClass="inner-section-title"
               title={service.price.title}
-              para={service.price.paragraph}
-              animationName="flip-up"
-              animationduration="2000"
-              animationdelay="200"
-            />
+            >
+              <p>{service.price.paragraph}</p>
+            </SectionBox>
           </Grid.Item>
         </Grid>
         <Grid classNames="price-content">

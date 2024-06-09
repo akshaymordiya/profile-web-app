@@ -1,6 +1,6 @@
 "use client";
 // import CTA from "@/app/components/CTA";
-import SectionTitle from "@/app/components/SectionTitle";
+import SectionBox from "@/app/components/SectionBox";
 import React, { useState } from "react";
 import contact from "../../../../../data/contact.page.json";
 import ContactBuget from "./Client/ContactBuget";
@@ -55,9 +55,9 @@ const ContactForm = () => {
               validated={validated}
               onSubmit={(event) => handleSubmit(event)}
             >
-              <SectionTitle
+              <SectionBox
                 title={contact.requestForm.title}
-                interClass="contact-category-title"
+                containerClass="contact-category-title"
               />
               <Grid classNames={`${BASE_CLASSNAME}_grid`}>
                 <Grid.Item xs={12} sm={12} md={12} lg={6} xlg={6}>

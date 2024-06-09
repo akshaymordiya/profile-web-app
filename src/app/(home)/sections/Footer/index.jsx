@@ -5,7 +5,7 @@ import menu from "../../../../data/menu.json";
 import sociallink from "../../../../data/socialLinks.json";
 import IMG from "@/app/components/IMG";
 import Grid from "@/app/components/Grid";
-import SectionTitle from "@/app/components/SectionTitle";
+import SectionBox from "@/app/components/SectionBox";
 import { renderIconComponent } from "@/Icons";
 import Link from "next/link";
 
@@ -29,10 +29,9 @@ const Footer = () => {
                 <span className="footer-subtitle">
                   {homeData.footerArea.subtitle}
                 </span>
-                <SectionTitle
-                  animationName="flip-up"
-                  interClass="footer-title"
+                <SectionBox
                   title={homeData.footerArea.title}
+                  containerClass="footer-title"
                 />
                 <div className="footer-widget">
                   <Grid classNames="footer-widget-top">

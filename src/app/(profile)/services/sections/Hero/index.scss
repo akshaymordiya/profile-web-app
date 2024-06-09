@@ -57,7 +57,7 @@
         margin-bottom: 40px;
         font-weight: 600;
         color: $black;
-        font-family: $dr-font-family;
+        font-family: $primary-fonts;
         width: 550px;
         @include respond-to("desktop") {
           font-size: 60px;

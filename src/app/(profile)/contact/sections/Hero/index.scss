@@ -22,7 +22,7 @@
       letter-spacing: -0.01em;
       margin-bottom: 70px;
       color: $black;
-      font-family: $dr-font-family;
+      font-family: $primary-fonts;
       @include respond-to("desktop") {
         font-size: 50px;
       }
@@ -42,7 +42,7 @@
         line-height: 1;
         text-transform: uppercase;
         color: $black;
-        font-family: $dr-font-family;
+        font-family: $primary-fonts;
         padding-bottom: 10px;
         display: inline-block;
         text-align: left;
@@ -127,7 +127,7 @@
           );
           -webkit-text-fill-color: transparent;
           background-clip: text;
-          font-family: $dr-font-family;
+          font-family: $primary-fonts;
           position: relative;
           &:after {
             position: absolute;

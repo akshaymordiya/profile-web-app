@@ -5,6 +5,7 @@ import Skills from "./sections/Serviceskill";
 import Testimonial from "./sections/Testimonial";
 import Servicees from "./sections/Services";
 import Prices from "./sections/Prices";
+
 function Services() {
   return (
     <>
