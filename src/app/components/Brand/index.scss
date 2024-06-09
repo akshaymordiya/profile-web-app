@@ -2,27 +2,35 @@
 @import '../../../styles/animations';
 @import '../../../styles/mixins';
 
-.brand-area{
+.technologies_container{
     background-color: #f6f9ff;
     margin-bottom: 5rem;
-    padding: 0.5rem 6rem;
+    padding: 0.5rem 1rem;
     transition: 0.3s all ease-in-out;
     
-    .btn-brand{
+    &_tech-item{
         color: $black;
         background-color: #f9f9ff;
         line-height: 50px;
         text-align: center;
-        padding: 15px 25px;
-        font-size: 28px;
+        padding: 15px 20px;
+        font-size: 24px;
         border-radius: 1000px;
         border: 1px solid rgba(2,2,30,.1);
         font-family: $primary-fonts;
         transition: 0.4s all ease-in-out;
+        min-width: 100px;
+        max-width: 200px;
+        box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+
+        &:not(:last-child) {
+            margin-right: 0.5rem;
+        }
         
         &:hover{
             background-color: $black;
             color: $white;
+            box-shadow: none;
         }
     }
 }
