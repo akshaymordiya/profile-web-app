@@ -1,16 +1,13 @@
 import React from "react";
-
 import IMG from "@/app/components/IMG";
 import Grid from "@/app/components/Grid";
 import ServiceBox from "@/app/(home)/sections/Services/Client/ServiceBox";
 import homeData from "../../../../data/home.page.json";
-
 import "./index.scss";
 import SectionTitle from "@/app/components/SectionTitle";
 
-const BASE_CLASSNAME = "services_container";
-
 const Services = () => {
+  const BASE_CLASSNAME = "services_container";
   return (
     <section id="services" className={`${BASE_CLASSNAME}`}>
       <div className={`${BASE_CLASSNAME}_service_shape_cirlce`}>

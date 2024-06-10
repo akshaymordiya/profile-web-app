@@ -1,12 +1,13 @@
 @import "../../../../../../styles/variables";
 @import "../../../../../../styles/mixins";
 
-  .inner-service-category {
-    padding: 25px 0 20px;
-    border-bottom: 1px solid rgba(2, 11, 24, 0.1);
-    transition: 0.3s;
-    a {
-      text-decoration: none;
+.inner-service-category {
+ padding: 0px;
+  border-bottom: 1px solid rgba(2, 11, 24, 0.1);
+  transition: 0.3s;
+  a {
+    padding: 25px 25px 20px;
+    text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,7 +24,6 @@
       @include respond-to("small_phone") {
         font-size: 20px;
       }
-    
       svg {
         margin-right: 13px;
       }
@@ -37,4 +37,3 @@
     }
   }
 }
-

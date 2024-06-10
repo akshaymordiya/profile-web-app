@@ -1,5 +1,6 @@
 'use client';
 import React, { useMemo } from 'react'
+import { createPortal } from "react-dom"
 import Link from 'next/link';
 
 //hooks
@@ -9,6 +10,7 @@ import useBreakpoint from '@/hooks/useBreakpoints';
 import menuItems from "../../../data/menu.json";
 
 import "./index.scss";
+import ResponsiveNav from '../ResponsiveNav';
 
 const BASE_CLASSNAME = "menu_container";
 
@@ -17,7 +19,9 @@ const Menu = ({
   className = "",
   itemclass = "",
   hiddenOnSmallerDevices = false,
-  useAsVerticalMenu = false
+  useAsVerticalMenu = false,
+  isVisible = false,
+  toggleMenu = () => {}
 }) => {
   const pathname = usePathname();
   
@@ -28,29 +32,39 @@ const Menu = ({
   }, [breakpoint, hiddenOnSmallerDevices]);
 
   if(isMenuHide){
+    if(isVisible){
+      return (
+        <div className='portal-wrapper'>
+          {createPortal(
+            <ResponsiveNav  />,
+            document.getElementById("portal")
+          )}
+        </div>
+      )
+    }
     return
   }
 
   return (
-    <div className={`
-      ${BASE_CLASSNAME} ${className}
-      ${hiddenOnSmallerDevices ? "hidden-on-small" : ""}
-      ${useAsVerticalMenu ? "vertical" : ""}
-    `}>
-      {(items ?? []).map(item => (
-        <Link
-          key={item.title}
-          className={`
-            ${BASE_CLASSNAME}_link 
-            ${itemclass}
-            ${pathname === item.page ? 'active' : ''}
-          `}
-          href={item.page}
-        >
-          {item.title}
-        </Link>
-      ))}
-    </div>
+        <div className={`
+          ${BASE_CLASSNAME} ${className} counter-row
+          ${hiddenOnSmallerDevices ? "hidden-on-small" : ""}
+          ${useAsVerticalMenu ? "vertical" : ""}
+        `}>
+          {(items ?? []).map(item => (
+            <Link
+              key={item.title}
+              className={`
+                ${BASE_CLASSNAME}_link 
+                ${itemclass}
+                ${pathname === item.page ? 'active' : ''}
+              `}
+              href={item.page}
+            >
+              {item.title}
+            </Link>
+          ))}
+        </div>
   )}
 
 export default Menu

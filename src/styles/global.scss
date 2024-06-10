@@ -98,11 +98,13 @@ textarea {
   margin: 0; /* 4 */
 }
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 button,
@@ -172,4 +174,21 @@ template {
 }
 [hidden] {
   display: none;
+}
+
+.loading-container {
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  background-color: #162251;  /* Set your desired background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  z-index: 9999;
+  color: #ffff;
+}
+
+.loading-container svg{
+  animation: loader 3s;
+  font-size: 70px;
 }

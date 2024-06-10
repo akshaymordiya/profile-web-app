@@ -4,17 +4,14 @@ import PersonalInfo from "./sections/PersonalInfo";
 import BrandButton from "@/app/components/Brand";
 import Hero from "./sections/Hero";
 import Counter from "./sections/Counter/Client/CounterUp";
-
 const About = () => {
   return (
     <>
-      <main>
-        <Hero />
-        <PersonalInfo />
-        <Counter />
-        <AwardArea />
-        <BrandButton />
-      </main>
+      <Hero />
+      <PersonalInfo />
+      <Counter />
+      <AwardArea />
+      <BrandButton />
     </>
   );
 };

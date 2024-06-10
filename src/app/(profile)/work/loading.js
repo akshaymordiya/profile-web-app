@@ -1,8 +1,9 @@
 import React from 'react'
+import AutoModeOutlinedIcon from '@mui/icons-material/AutoModeOutlined';
 
 const loading = () => {
   return (
-    <div>loading</div>
+    <div className="loading-container"><AutoModeOutlinedIcon /></div>
   )
 }
 
