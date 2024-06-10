@@ -10,7 +10,6 @@ import useBreakpoint from '@/hooks/useBreakpoints';
 import menuItems from "../../../data/menu.json";
 
 import "./index.scss";
-import ResponsiveNav from '../ResponsiveNav';
 
 const BASE_CLASSNAME = "menu_container";
 
@@ -36,7 +35,12 @@ const Menu = ({
       return (
         <div className='portal-wrapper'>
           {createPortal(
-            <ResponsiveNav  />,
+            <div
+              className='portal'
+            >
+              <p>Content in the portal</p>
+              <button onClick={toggleMenu}>Click Me</button>
+            </div>,
             document.getElementById("portal")
           )}
         </div>
