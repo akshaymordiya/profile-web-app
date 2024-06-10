@@ -43,7 +43,14 @@
           margin-bottom: 15px;
 
           h4 {
-            font-size: 40px;
+            font-size: 60px;
+            @include respond-to("small_tablet") {
+              font-size: 45px;
+            }
+      
+            @include respond-to("phone") {
+              font-size: 30px;
+            }
           }
         }
 

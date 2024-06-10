@@ -29,7 +29,15 @@
     display: grid;
     place-items: center;
     padding: 0 9rem;
-
+    @include respond-to("large_tablet") {
+      padding: 0 5rem;
+    }
+    @include respond-to("small_tablet") {
+      padding: 0 3rem;
+    }
+    @include respond-to("phone") {
+      padding: 0 2rem;
+    }
     .about {
       &_content {
         font-weight: 500;

@@ -3,7 +3,7 @@ import Grid from "@/app/components/Grid";
 import SectionBox from "@/app/components/SectionBox";
 import ServiceCategory from "./ServiceCategory";
 import service from "../../../../../data/service.page.json";
-import { getIcon, renderIconComponent } from "@/Icons";
+import { renderIconComponent } from "@/Icons";
 
 const Skills = () => {
   const BASE_CLASSNAME ="services-container";
@@ -47,7 +47,7 @@ const Skills = () => {
               >
                 <SectionBox
                   title={service.services.skill.title}
-                  icon={services.skill.icon}
+                  icon={service.services.skill.icon}
                   containerClass="inner-left-title"
                 />
               </Grid.Item>

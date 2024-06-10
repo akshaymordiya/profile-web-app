@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { getIcon, renderIconComponent } from "@/Icons";
+import { renderIconComponent } from "@/Icons";
 
 import "./index.scss";
 
@@ -10,7 +10,6 @@ const BASE_CLASSNAME = "award_item"
 const Awards = ({
   awardItems = []
 }) => {
-  const { RightIcon, Arrowoutward } = getIcon(["RightIcon", "Arrowoutward"]);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
   const followImgRef = useRef(null);

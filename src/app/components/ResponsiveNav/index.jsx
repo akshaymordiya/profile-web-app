@@ -1,25 +1,34 @@
-import React from "react";
-import './index.scss';
-const [visible, setVisible] = useState(false);
- 
-  const toggleMenu = () => {
-    setVisible(visible); 
-  };
+import React, { useState } from "react";
+import "./index.scss";
+import Grid from "../Grid";
 
-const ResponsiveNav = () => {
+const ResponsiveNav = ({toggleMenu}) => {
   return (
     <>
-      <div className='portal-wrapper'>
-          {createPortal(
-            <div
-              className='portal'
-            >
-              <p>Content in the portal</p>
-              <button onClick={toggleMenu}>Click Me</button>
-            </div>,
-            document.getElementById("portal")
-          )}
-        </div>
+      <div className="portal">
+      <button onClick={toggleMenu}>x</button>
+      
+        <Grid >
+          <Grid.Item
+           sm={12}
+           md={12}
+           xs={12}
+           lg={6}
+           xlg={6}
+           >
+             <p>Content in the portal</p>
+          </Grid.Item>
+          <Grid.Item
+           sm={12}
+           md={12}
+           xs={12}
+           lg={6}
+           xlg={6}
+           >
+             <p>Content in the portal</p>
+          </Grid.Item>
+        </Grid>
+      </div>
     </>
   );
 };

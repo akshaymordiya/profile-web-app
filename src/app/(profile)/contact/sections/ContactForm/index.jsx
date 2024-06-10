@@ -1,18 +1,17 @@
 "use client";
-// import CTA from "@/app/components/CTA";
 import SectionBox from "@/app/components/SectionBox";
 import React, { useState } from "react";
-import contact from "../../../../../data/contact.page.json";
 import ContactBuget from "./Client/ContactBuget";
 import Grid from "@/app/components/Grid";
 import "./index.scss";
 
-const ContactForm = () => {
+const ContactForm = ({ data = {} }) => {
+  const { button , content } = data;
   const [validated, setValidated] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [comment, setComment] = useState("");
-
+ 
   const handleSubmit = (event) => {
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
@@ -46,7 +45,6 @@ const ContactForm = () => {
   };
   const BASE_CLASSNAME = "contact-wrapper";
   return (
-    <>
       <div className={`${BASE_CLASSNAME}`}>
         <Grid classNames={`${BASE_CLASSNAME}_content`}>
           <Grid.Item xs={12} sm={12} md={12} lg={12} xlg={12}>
@@ -56,7 +54,7 @@ const ContactForm = () => {
               onSubmit={(event) => handleSubmit(event)}
             >
               <SectionBox
-                title={contact.requestForm.title}
+                title={data.title}
                 containerClass="contact-category-title"
               />
               <Grid classNames={`${BASE_CLASSNAME}_grid`}>
@@ -120,11 +118,11 @@ const ContactForm = () => {
                   </label>
                 </Grid.Item>
               </Grid>
-              <ContactBuget />
+              <ContactBuget content ={content} />
               <div className="contact-btn">
                 <button type="submit" className="btn-black-xl">
                   <div>
-                    <span>{contact.button.text}</span>
+                    <span>{button.text}</span>
                   </div>
                 </button>
               </div>
@@ -132,7 +130,6 @@ const ContactForm = () => {
           </Grid.Item>
         </Grid>
       </div>
-    </>
   );
 };
 

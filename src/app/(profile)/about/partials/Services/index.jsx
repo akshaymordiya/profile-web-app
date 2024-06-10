@@ -17,7 +17,7 @@ const Services = ({
         style={{ backgroundImage: `url(${ServiceImage})` }}
       ></div>
     </a>
-  );
-};
+  )
+}
 
 export default Services;
