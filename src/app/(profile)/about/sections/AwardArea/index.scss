@@ -1,22 +1,16 @@
 @import "../../../../../styles/variables";
 @import "../../../../../styles/mixins";
 
-.award-area {
-  background-color: $background_bg;
-  padding-top: 120px;
-  display: grid;
-  place-items: center;
-  .grid-container_wrap {
-    width: 100%;
-    padding: 40px 30px 0px;
-    @include respond-to("extra_large_desktop") {
-      max-width: 1320px;
-    }
-    .award-wrapper {
+.awards_container {
+  margin-bottom: 0rem !important;
+
+  &_grid {    
+    &-col-1 {
       place-content: flex-start !important;
       padding-bottom: 30px;
+      
       .award-section-title {
-        font-family: $dr-font-family;
+        font-family: $primary-fonts;
         font-weight: 500;
         font-size: 70px;
         line-height: 1;
@@ -29,15 +23,15 @@
           font-size: 45px;
         }
         @include respond-to("phone") {
-          font-size: 35px;
+          font-size: 45px;
         }
       }
       .award-text-wrapper {
         transform: translateY(40px);
-
+  
         .award-text-outline {
           -webkit-text-stroke-color: hsla(0, 0%, 7%, 0.12);
-          // -moz-text-stroke-color: hsla(0, 0%, 7%, .12);
+          -moz-text-stroke-color: hsla(0, 0%, 7%, .12);
           mix-blend-mode: luminosity;
           font-size: 130px;
           -webkit-text-fill-color: transparent;
@@ -96,12 +90,14 @@
         }
       }
     }
-    .award-item-wrapper {
+
+    &-col-2 {
       overflow: hidden;
       padding-top: 100px;
       padding-bottom: 70px;
       padding-left: 70px;
       place-content: flex-start !important;
+      
       @include respond-to("desktop") {
         padding-left: 20px;
         padding-top: 0px;

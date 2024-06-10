@@ -1,34 +1,24 @@
 import React from "react";
-import "./index.scss";
-import Aos from "../AOS";
-import Grid from "../Grid";
 
-const BrandButton = () => {
-  const repitions = 6;
-  const snowfleck = Array(repitions).fill(null);
+//components
+import HorizontalCarousel from "../HorizontalScroll";
+
+import "./index.scss";
+
+const BASE_CLASSNAME = "technologies_container"
+
+const BrandButton = ({
+  data = []
+}) => {
   return (
-    <>
-      <Aos />
-      <Grid classNames="brand-area">
-        {snowfleck.map(() => {
-          return (
-            <Grid.Item
-              xs={12}
-              sm={12}
-              md={6}
-              lg={4}
-              xlg={2}
-              itemClass="btn-brand"
-              data-aos="fade-up"
-              data-aos-duration="2000"
-              data-aos-delay="200"
-            >
-              <span>Snowflake</span>
-            </Grid.Item>
-          );
-        })}
-      </Grid>
-    </>
+
+    <section className={BASE_CLASSNAME}>
+      <HorizontalCarousel
+        items={data.map(d => (<span>{d}</span>))}
+        itemClass={`${BASE_CLASSNAME}_tech-item`}
+      >
+      </HorizontalCarousel>
+    </section>
   );
 };
 

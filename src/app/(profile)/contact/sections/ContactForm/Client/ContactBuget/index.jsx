@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import contact from "../../../../../../../data/contact.page.json";
-import SectionTitle from "@/app/components/SectionTitle";
+import SectionBox from "@/app/components/SectionBox";
 
 const ContactBrand = ({ label, labelText, labelClass, onClick }) => {
   return (
@@ -27,9 +27,9 @@ const ContactBuget = () => {
         className="contact-category-wrapper"
         style={{ paddingBottom: "50px" }}
       >
-        <SectionTitle
+        <SectionBox
           title={contact.contactbuget.title}
-          interClass="contact-category-title"
+          containerClass="contact-category-title"
         />
         {contact.contactbuget.options.map((item, index) => (
           <ContactBrand

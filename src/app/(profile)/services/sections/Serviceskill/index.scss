@@ -58,7 +58,7 @@
       line-height: 58px;
       letter-spacing: -0.01em;
       color: $black;
-      font-family: $dr-font-family;
+      font-family: $primary-fonts;
       @include respond-to("large_tablet") {
         font-size: 29px;
         line-height: 40px;

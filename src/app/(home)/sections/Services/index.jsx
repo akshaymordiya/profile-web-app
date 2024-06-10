@@ -4,7 +4,7 @@ import Grid from "@/app/components/Grid";
 import ServiceBox from "@/app/(home)/sections/Services/Client/ServiceBox";
 import homeData from "../../../../data/home.page.json";
 import "./index.scss";
-import SectionTitle from "@/app/components/SectionTitle";
+import SectionBox from "@/app/components/SectionBox";
 
 const Services = () => {
   const BASE_CLASSNAME = "services_container";
@@ -53,14 +53,12 @@ const Services = () => {
               <span className="pre-title" data-aos="flip-up">
                 {homeData.service.title}
               </span>
-              <SectionTitle
-                animationName="flip-up"
-                animationduration="2000"
-                animationdelay="200"
-                interClass="title"
+              <SectionBox
+                containerClass="title"
                 title="How We Carry Out Our Projects"
-                para="We offer a range of services to help elevate your brand & drive results."
-              />
+              >
+                <p>We offer a range of services to help elevate your brand & drive results.</p>
+              </SectionBox>
             </div>
           </div>
         </Grid.Item>

@@ -36,7 +36,7 @@
       letter-spacing: -0.02em;
       color: $black;
       text-align: center;
-      font-family: $dr-font-family;
+      font-family: $primary-fonts;
       margin: 100px 0px 25px;
       @include respond-to("desktop") {
         font-size: 60px;
@@ -118,7 +118,7 @@
       font-size: 34px;
       line-height: 1.2;
       color: $black;
-      font-family: $dr-font-family;
+      font-family: $primary-fonts;
       margin-bottom: 20px;
       display: inline-block;
       // width: 420px;
