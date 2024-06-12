@@ -6,9 +6,7 @@ import Link from "next/link";
 //hooks
 import { usePathname } from "next/navigation";
 import useBreakpoint from "@/hooks/useBreakpoints";
-
 import menuItems from "../../../data/menu.json";
-
 import "./index.scss";
 import ResponsiveNav from "../ResponsiveNav";
 

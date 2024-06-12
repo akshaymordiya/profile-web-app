@@ -4,14 +4,12 @@ import Grid from "@/app/components/Grid";
 import SectionBox from "@/app/components/SectionBox";
 //style scss
 import "./index.scss";
-//data json
-import service from "../../../../../data/service.page.json";
-
-const Prices = () => {
+import Section from "@/app/components/Section";
+const Prices = ({ data = {} }) => {
   return (
     <>
       <section className="inner-price-area">
-        <Grid>
+        {/* <Grid>
           <Grid.Item
             xs={12}
             sm={12}
@@ -20,20 +18,22 @@ const Prices = () => {
             xlg={12}
             itemClass="inner-price-title-box"
           >
-            <SectionBox
-              containerClass="inner-section-title"
-              title={service.price.title}
-            >
-              <p>{service.price.paragraph}</p>
+            <SectionBox containerClass="inner-section-title" title={data.title}>
+              <p>{data.paragraph}</p>
             </SectionBox>
           </Grid.Item>
-        </Grid>
+        </Grid> */}
+        <Section
+          title={data.title}
+          text={data.paragraph}
+          addSeprator
+        >
         <Grid classNames="price-content">
-          {service.price.serviceprice.map((item, index) => {
+          {data.serviceprice.map((item, index) => {
             return (
               <Grid.Item
                 xs={12}
-                sm={6}
+                sm={12}
                 md={6}
                 lg={4}
                 xlg={4}
@@ -66,6 +66,7 @@ const Prices = () => {
             );
           })}
         </Grid>
+        </Section>
       </section>
     </>
   );

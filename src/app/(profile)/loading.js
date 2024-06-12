@@ -30,7 +30,7 @@ const LoadingPage = ({ children }) => {
         <Loading />
       ) : (
         <>
-           <Navbar />
+          <Navbar />
           {children}
         </>
       )}

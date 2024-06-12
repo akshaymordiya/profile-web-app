@@ -63,12 +63,12 @@ const Servicees = ({ data = {} }) => {
                 </Fade>
                 <Fade
                   animationType="slideInBottom"
-                  delay={400}
+                  delay={200}
                   className="section-title"
                 >
                   <h3>{info.title}</h3>
                 </Fade>
-                <Fade animationType="slideInBottom" delay={600}>
+                <Fade animationType="slideInBottom" delay={200}>
                   <p>{info.paragraph}</p>
                 </Fade>
               </div>

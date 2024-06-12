@@ -2,6 +2,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import Grid from "@/app/components/Grid";
 import IMG from "@/app/components/IMG";
+import Link from "next/link";
 import { Lightbox } from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
@@ -10,7 +11,7 @@ import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import workData from "../../../../../data/work.page.json";
 //style scss
 import "./index.scss";
-import Link from "next/link";
+
 
 const WorkDetails = ({ id }) => {
   const BASE_CLASSNAME = "work-details-wrapper";

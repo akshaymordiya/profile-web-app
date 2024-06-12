@@ -148,7 +148,7 @@
             width: 425px;
             color: hsla(0, 0%, 100%, 0.7);
             @include respond-to("small_tablet") {
-              width: 220px;
+              // width: 220px;
             }
             @include respond-to("phone") {
               width: 250px;

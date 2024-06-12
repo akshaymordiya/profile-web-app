@@ -1,13 +1,12 @@
 "use client";
 import React, { useMemo } from "react";
 import Grid from "@/app/components/Grid";
-//data json
-import work from "../../../../data/work.page.json";
+import Link from "next/link";
 //render icon
 import { renderIconComponent } from "@/Icons";
 //style css
 import "./index.scss";
-import Link from "next/link";
+
 
 const Item = ({ item, index, imageHeight }) => {
   const Icon = useMemo(() => {
@@ -42,9 +41,9 @@ const Item = ({ item, index, imageHeight }) => {
   );
 };
 
-const WorkItem = () => {
-  const firstHalf = work.projectList?.slice(0, 3);
-  const secondHalf = work.projectList?.slice(3);
+const WorkItem = ({ data={} }) => {
+  const firstHalf = data?.slice(0, 3);
+  const secondHalf = data?.slice(3);
 
   return (
     <>

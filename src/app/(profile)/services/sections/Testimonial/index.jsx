@@ -4,9 +4,9 @@ import SlideNav from "./Client/Slidernav";
 //style scss
 import "./index.scss";
 
-const Testimonial = ({data={}}) => {
-  const {content} = data;
-   return (
+const Testimonial = ({ data = {} }) => {
+  const { content } = data;
+  return (
     <>
       <section className="testimonial-area">
         <Grid classNames="testimonial-container">

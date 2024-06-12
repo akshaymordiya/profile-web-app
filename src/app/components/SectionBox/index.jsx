@@ -10,9 +10,9 @@ const SectionBox = ({
   icon = "",
   iconProps = {},
   containerClass = "",
+  itemClass="",
   children
 }) => {
-
 
   let BoxIcon = null
 
@@ -30,7 +30,7 @@ const SectionBox = ({
   return (
     <div className={`${BASE_CLASSNAME} ${containerClass}`}>
       <div
-        className={`${BASE_CLASSNAME}_title`}
+        className={`${BASE_CLASSNAME}_title ${itemClass}`}
       >
         {BoxIcon !== null && BoxIcon}
         <h4>{title}</h4>

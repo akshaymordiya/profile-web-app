@@ -5,7 +5,7 @@ import "./index.scss";
 import { renderIconComponent } from "@/Icons";
 import Link from "next/link";
 
-const ServiceCard = ({content : {rightsideservice, button}}) => {
+const ServiceCard = ({ content: { rightsideservice, button } }) => {
   return (
     <>
       <div className="service-right-wrap">

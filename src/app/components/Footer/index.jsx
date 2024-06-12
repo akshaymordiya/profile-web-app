@@ -5,33 +5,12 @@ import "./index.scss";
 import IMG from "../IMG";
 import Grid from "../Grid";
 import SectionBox from "../SectionBox";
-
 import footer from "../../../data/global.footer.json";
-import { getIcon, renderIconComponent } from "@/Icons";
-
-const FooterwidgetTitle = ({ title = "", parag = "", parentclass = "" }) => {
-  return (
-    <>
-      <div className={parentclass}>
-        <a href="#" target="_blank">
-          {title}
-          <span></span>
-          <br />
-          {parag}
-        </a>
-      </div>
-    </>
-  );
-};
+import { renderIconComponent } from "@/Icons";
+import Link from "next/link";
+import FooterwidgetTitle from "./FooterWidgetitle";
 
 const Footer = () => {
-  const { Arrowforward } = getIcon([
-    "Arrowforward",
-    "MailIcon",
-    "LangIcon",
-    "SubscribIcon",
-  ]);
-
   const BASE_CLASSNAME = "footer-container";
   return (
     <>
@@ -66,13 +45,11 @@ const Footer = () => {
                     <p>{footer.paragraph}</p>
                   </div>
                   <div className="footer-social">
-                    {
-                      footer.socialmedia.map((item)=> (
-                        <a href="#" target="_blank">
-                      <span>{renderIconComponent(item?.icon)}</span>
-                    </a>
-                      ))
-                    }
+                    {footer.socialmedia.map((item) => (
+                      <Link href="/" target="_blank">
+                        <span>{renderIconComponent(item?.icon)}</span>
+                      </Link>
+                    ))}
                   </div>
                 </Grid.Item>
                 <Grid.Item
@@ -91,10 +68,10 @@ const Footer = () => {
                     {footer.explore.exploredata.map((item, i) => {
                       return (
                         <li key={i}>
-                          <a href="#">
-                            <Arrowforward />
+                          <Link href="#">
+                            {/* <Arrowforward /> */}
                             {item?.title}
-                          </a>
+                          </Link>
                         </li>
                       );
                     })}
@@ -142,7 +119,7 @@ const Footer = () => {
               </Grid>
             </div>
           </div>
-          <Grid classNames="copyright-bdr-top container">
+          <Grid classNames="copyright-bdr-top">
             <Grid.Item
               sm={12}
               xs={12}

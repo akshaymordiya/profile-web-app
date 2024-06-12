@@ -1,8 +1,6 @@
 import React from "react";
-import "../../styles/global.scss";
 import { Inter } from "next/font/google";
 
-import "../globals.css";
 import "../../styles/global.scss";
 
 import "bootstrap/dist/css/bootstrap.min.css";

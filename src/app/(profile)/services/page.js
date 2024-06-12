@@ -8,16 +8,17 @@ import Prices from "./sections/Prices";
 import serviceData from "../../../data/service.page.json";
 
 function Services() {
-  const { hero, services, skillinfo, testimonialinfo, price } = serviceData;
+  const { hero, services, skillinfo, testimonialinfo, price, technologies } =
+    serviceData;
   return (
     <>
       <React.Fragment>
         <Hero data={hero} />
         <Servicees data={services} />
         <Skills data={skillinfo} />
-       <Testimonial data={testimonialinfo} />
-         {/*<Prices data={price} /> */}
-        <BrandButton />
+        <Testimonial data={testimonialinfo} />
+        <Prices data={price} />
+        <BrandButton data={technologies} />
       </React.Fragment>
     </>
   );

@@ -156,36 +156,6 @@
   },
   "testimonialinfo": {
     "content":{
-      "testimonial": [
-        {
-          "id": 1,
-          "title": "Rudra Ghosh",
-          "position": "Founder & CEO at",
-          "passion": " Dulalix",
-          "image": "/assets/avata-1.png"
-        },
-        {
-          "id": 2,
-          "title": "Albert Flores",
-          "position": "Marketing Officer at",
-          "passion": " Google Inc",
-          "image": "/assets/avata-2.png"
-        },
-        {
-          "id": 3,
-          "title": "Robert Henricks",
-          "position": "UI/UX Designer",
-          "passion": " Webflow",
-          "image": "/assets/avata-3.png"
-        },
-        {
-          "id": 4,
-          "title": "Flores Flores",
-          "position": "Founder & CEO at",
-          "passion": "Dribblr",
-          "image": "/assets/user-1.jpg"
-        }
-      ],
       "testimonilafeedback": [
         {
           "id": 1,
@@ -194,6 +164,10 @@
             "max": "5",
             "min": "5"
           },
+          "title": "Rudra Ghosh",
+          "position": "Founder & CEO at",
+          "passion": " Dulalix",
+          "image": "/assets/avata-1.png",
           "feedback": "5.0 Rating",
           "description": "Will gave our website and brand whole new life while staying true to who we are. We would never have thought of going in the direction he pitched but we couldn't be happier."
         },
@@ -201,10 +175,14 @@
           "id": 2,
           "img": "/assets/quote.svg",
           "Rating": {
-            "max": "5",
-            "min": "5"
+            "max":"4",
+            "min": "4"
           },
           "feedback": "5.0 Rating",
+          "title": "Albert Flores",
+          "position": "Marketing Officer at",
+          "passion": " Google Inc",
+          "image": "/assets/avata-2.png",
           "description": "Will gave our website and brand whole new life while staying true to who we are. We would never have thought of going in the direction he pitched but we couldn't be happier."
         },
         {
@@ -215,6 +193,10 @@
             "min": "5"
           },
           "feedback": "5.0 Rating",
+          "title": "Robert Henricks",
+          "position": "UI/UX Designer",
+          "passion": " Webflow",
+          "image": "/assets/avata-3.png",
           "description": "Will gave our website and brand whole new life while staying true to who we are. We would never have thought of going in the direction he pitched but we couldn't be happier."
         },
         {
@@ -224,6 +206,10 @@
             "max": "5",
             "min": "5"
           },
+          "title": "Flores Flores",
+          "position": "Founder & CEO at",
+          "passion": "Dribblr",
+          "image": "/assets/user-1.jpg",
           "feedback": "5.0 Rating",
           "description": "Will gave our website and brand whole new life while staying true to who we are. We would never have thought of going in the direction he pitched but we couldn't be happier."
         }
@@ -260,5 +246,13 @@
         "button_title": "Free Skill Check"
       }
     ]
-  }
+  },
+  "technologies":[
+    "rect js",
+    "node js",
+    "github",
+    "git",
+    "mongo db",
+    "MySql"
+  ]
 }
