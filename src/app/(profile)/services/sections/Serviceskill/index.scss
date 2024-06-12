@@ -3,7 +3,7 @@
 
 .inner-info-area {
   background-color: #f6f9ff;
-  padding-top: 120px;
+  padding-top: 100px;
   display: grid;
   place-items: center;
   .services-container_grid{
@@ -21,7 +21,6 @@
   
   .inner-info-title-box {
     margin-bottom: 90px;
-
     @include respond-to("desktop_large") {
       margin-left: 0px;
       margin-right: 0px;
@@ -86,47 +85,6 @@
     }
     @include respond-to("small_phone") {
      padding: 20px;
-    }
-    .testinominal-slide {
-      .inner-info-service {
-        place-content: flex-start !important;
-        margin-bottom: 100px;
-        @include respond-to("large_tablet") {
-          margin-bottom: 0px;
-        }
-        @include respond-to("small_tablet") {
-          margin-bottom: 0px;
-        }
-        @include respond-to("tablet") {
-          margin-bottom: 0px;
-        }
-        @include respond-to("phone") {
-          margin-bottom: 0px;
-        }
-        .inner-left-title {
-          font-weight: 400;
-          font-size: 15px;
-          line-height: 14px;
-          letter-spacing: 0.02em;
-          text-transform: uppercase;
-          color: $black;
-          font-family: $dm-font-family;
-          margin-top: 27px;
-          // margin-top: 30px;
-          // border-bottom: 2px solid rgba(37, 37, 37, 0.08);
-          span {
-            transform: translateY(-2px);
-            color: $black;
-          }
-          svg {
-            font-size: 20px;
-          }
-        }
-      }
-    }
-    .inner-service-category-wrap {
-      place-content: flex-start !important;
-      margin-bottom: 100px;
     }
   }
 }

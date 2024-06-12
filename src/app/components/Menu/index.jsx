@@ -10,7 +10,7 @@ import useBreakpoint from "@/hooks/useBreakpoints";
 import menuItems from "../../../data/menu.json";
 
 import "./index.scss";
-import ResponsiveNav from "../Responsive Nav";
+import ResponsiveNav from "../ResponsiveNav";
 
 const BASE_CLASSNAME = "menu_container";
 

@@ -6,6 +6,8 @@
   padding-top: 135px;
   padding-bottom: 50px;
   position: relative;
+  display: grid;
+  place-items: center;
   .service-circle-img {
     position: absolute;
     top: 0;
@@ -81,7 +83,12 @@
     }
   }
   &_grid {
-    padding: 0px 2rem;
+    padding: 0px 30px;
+    width: 100%;
+    @include respond-to("extra_large_desktop") {
+      max-width: 1320px;
+    }
+   
     .service-card {
       place-content: start !important;
       .stack_card {

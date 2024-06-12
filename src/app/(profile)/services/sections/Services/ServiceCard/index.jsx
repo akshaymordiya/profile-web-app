@@ -1,22 +1,17 @@
 import React from "react";
 //style scss
 import "./index.scss";
-//data json
-import service from "../../../../../../data/service.page.json";
 // render icons
 import { renderIconComponent } from "@/Icons";
 import Link from "next/link";
 
-const ServiceCard = () => {
+const ServiceCard = ({content : {rightsideservice, button}}) => {
   return (
     <>
       <div className="service-right-wrap">
-        {service.services.servicecard.rightsideservice.map((item, index) => (
+        {rightsideservice.map((item, index) => (
           <div key={index} className="stack__card">
-            <div
-              className="service-item services-panel"
-              style={{ marginBottom: "25px" }}
-            >
+            <div className="service-item">
               <div className="service-icon">
                 <span>{renderIconComponent(item?.icon)}</span>
               </div>
@@ -33,8 +28,8 @@ const ServiceCard = () => {
         ))}
         <div className="service-btn-box">
           <Link href="#">
-            {service.services.servicecard.servicetext}
-            <span>{service.services.servicecard.lightbtn}</span>
+            {button.servicetext}
+            <span>{button.lightbtn}</span>
           </Link>
         </div>
       </div>

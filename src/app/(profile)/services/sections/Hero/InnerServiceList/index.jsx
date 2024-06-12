@@ -1,23 +1,12 @@
 import React from "react";
 //style scss
-import './index.scss';
+import "./index.scss";
 
-const InnerServiceList = ({
-  listName = "",
-  listclass = "",
-  animationName = "",
-  animationduration = "",
-  animationdelay = "",
-}) => {
+const InnerServiceList = ({ listName = "", listclass = "" }) => {
   return (
     <>
       <div className="inner-service-list-wrap">
-        <div
-          className={listclass}
-          data-aos={animationName}
-          data-aos-duration={animationduration}
-          data-aos-delay={animationdelay}
-        >
+        <div className={listclass}>
           <span>{listName}</span>
         </div>
       </div>

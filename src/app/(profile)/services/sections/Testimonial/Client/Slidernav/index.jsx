@@ -3,13 +3,11 @@ import React, { useEffect, useRef, useState } from "react";
 import Rating from "@mui/material/Rating";
 import Slider from "react-slick";
 import Grid from "@/app/components/Grid";
-//data json
-import service from '../../../../../../../data/service.page.json'
 //style  scss
 import './index.scss';
 import Link from "next/link";
 
-const SlideNav = () => {
+const SlideNav = ({content: {testimonial,testimonilafeedback}}) => {
   const [nav1, setNav1] = useState(null);
   const [nav2, setNav2] = useState(null);
   let sliderRef1 = useRef(null);
@@ -69,7 +67,7 @@ const SlideNav = () => {
           data-speed="0.5"
         >
           <Slider asNavFor={nav2} ref={(slider) => (sliderRef1 = slider)}>
-            {service.testimonilafeedback?.map((item,index) => {
+            {testimonilafeedback?.map((item,index) => {
               return (
                 <div key={index} className="testimonial-item">
                   <div className="testimonial-quote">
@@ -103,7 +101,7 @@ const SlideNav = () => {
             swipeToSlide={true}
             focusOnSelect={true}
           >
-            {service.testimonial?.map((item, index) => {
+            {testimonial?.map((item, index) => {
               return (
                 <div
                   key={index}

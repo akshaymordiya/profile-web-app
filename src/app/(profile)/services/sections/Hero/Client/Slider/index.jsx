@@ -2,12 +2,11 @@
 import React from "react";
 import Slider from "react-slick";
 import Grid from "@/app/components/Grid";
-//data json
-import service from "../../../../../../../data/service.page.json";
+import IMG from "@/app/components/IMG";
 //style scss
-import './index.scss';
+import "./index.scss";
 
-const ResponsiveSlider = () => {
+const ResponsiveSlider = ({ content: { slider1, slider2 } }) => {
   const settings = {
     loop: true,
     autoplay: true,
@@ -35,8 +34,8 @@ const ResponsiveSlider = () => {
           data-speed="0.5"
         >
           <Slider {...settings}>
-            {service.hero.slider.slider1.map((item) => (
-              <img src={item?.slide} useRawImgTag />
+            {slider1.map((item) => (
+              <IMG src={item?.slide} useRawImgTag />
             ))}
           </Slider>
         </Grid.Item>
@@ -50,8 +49,8 @@ const ResponsiveSlider = () => {
           data-speed="0.5"
         >
           <Slider {...settings}>
-            {service.hero.slider.slider2.map((item) => (
-              <img src={item?.slide} useRawImgTag />
+            {slider2.map((item) => (
+              <IMG src={item?.slide} useRawImgTag />
             ))}
           </Slider>
         </Grid.Item>

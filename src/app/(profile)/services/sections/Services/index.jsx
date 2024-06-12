@@ -1,19 +1,20 @@
 import React from "react";
 import IMG from "@/app/components/IMG";
-import service from "../../../../../data/service.page.json";
 import Grid from "@/app/components/Grid";
 import ServiceCard from "./ServiceCard";
 //style scss
-import './index.scss'
+import "./index.scss";
+import Fade from "@/app/components/Fade";
 
-const Servicees = () => {
+const Servicees = ({ data = {} }) => {
+  const { info, content } = data;
   const BASE_CLASSNAME = "services_wrapper";
   return (
     <>
       <div className={`${BASE_CLASSNAME}`}>
         <div className="service-circle-img">
           <IMG
-            src={service.services.circleImg}
+            src={data.circleImg}
             alt="circleImg"
             containerClasses="text-img"
             useContainer
@@ -34,7 +35,7 @@ const Servicees = () => {
             </svg>
           </div>
         </div>
-        {service.services.innerImg.map((item, index) => (
+        {data.innerImg.map((item, index) => (
           <IMG
             key={index}
             src={item?.img}
@@ -56,39 +57,25 @@ const Servicees = () => {
             data-speed="0.5"
           >
             <div className="stack_card">
-              <div className="service-title-box services-panel-pin">
-                <span
-                  className="section-subtitle"
-                  data-aos="flip-up"
-                  data-aos-duration="1200"
-                >
-                  OUR PROCESS
-                </span>
-                <h3
+              <div className="service-title-box">
+                <Fade animationType="slideInBottom" delay={200}>
+                  <span className="section-subtitle">{info.subtitle}</span>
+                </Fade>
+                <Fade
+                  animationType="slideInBottom"
+                  delay={400}
                   className="section-title"
-                  data-aos="flip-up"
-                  data-aos-duration="2000"
-                  data-aos-delay="300"
                 >
-                  How We
-                  <br />
-                  Carry Out Our
-                  <br />
-                  Projects
-                </h3>
-                <p
-                  data-aos="flip-up"
-                  data-aos-duration="2000"
-                  data-aos-delay="300"
-                >
-                  We offer a range of services to help elevate <br />
-                  your brand & drive results.
-                </p>
+                  <h3>{info.title}</h3>
+                </Fade>
+                <Fade animationType="slideInBottom" delay={600}>
+                  <p>{info.paragraph}</p>
+                </Fade>
               </div>
             </div>
           </Grid.Item>
           <Grid.Item xs={12} sm={12} md={12} lg={6} xlg={7} data-speed="0.5">
-            <ServiceCard />
+            <ServiceCard content={content} />
           </Grid.Item>
         </Grid>
       </div>

@@ -1,24 +1,17 @@
-
 import React from "react";
 import Grid from "@/app/components/Grid";
 import SectionBox from "@/app/components/SectionBox";
 import InnerServiceList from "./InnerServiceList";
 import ResponsiveSlider from "./Client/Slider";
-// data json
-import service from "../../../../../data/service.page.json";
-//aos animation 
-import Aos from "@/app/components/AOS";
-import 'aos/dist/aos.css'
 // style scss
-import './index.scss';
+import "./index.scss";
+import Fade from "@/app/components/Fade";
 
-
-
-const Hero = () => {
+const Hero = ({ data = {} }) => {
+  const {  slider } = data;
   const BASE_CLASSNAME = "services-container";
   return (
     <>
-    <Aos />
       <Grid classNames={`${BASE_CLASSNAME} inner-slider-area`}>
         <Grid.Item
           xs={12}
@@ -30,19 +23,21 @@ const Hero = () => {
           data-speed="0.5"
         >
           <div className="inner-slider-content-wrap">
-            <SectionBox
-              containerClass="inner-slider-title"
-              title={service.hero.title}
-            />
-            {service.hero.servicelist.map((item, index) => (
-              <InnerServiceList
-                key={index}
-                animationName= "fade-up"
-                animationduration= "2000"
-                animationdelay={item?.animationdelay}
-                listclass={item?.listclass}
-                listName={item?.listName}
+            <Fade animationType="slideInBottom" delay={200}>
+              <SectionBox
+                containerClass="inner-slider-title"
+                title={data.title}
               />
+            </Fade>
+
+            {data.servicelist.map((item, index) => (
+              <Fade animationType="slideInBottom" delay={index * 300}>
+                <InnerServiceList
+                  key={index}
+                  listclass={item?.listclass}
+                  listName={item?.listName}
+                />
+              </Fade>
             ))}
           </div>
         </Grid.Item>
@@ -55,7 +50,7 @@ const Hero = () => {
           itemClass="inner-slider-main"
           data-speed="0.5"
         >
-      <ResponsiveSlider />
+          <ResponsiveSlider content = {slider} />
         </Grid.Item>
       </Grid>
     </>
