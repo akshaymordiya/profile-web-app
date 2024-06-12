@@ -31,7 +31,7 @@ const Footer = () => {
                 </span>
                 <SectionBox
                   title={homeData.footerArea.title}
-                  containerClass="footer-title"
+                  itemClass="footer-title"
                 />
                 <div className="footer-widget">
                   <Grid classNames="footer-widget-top">

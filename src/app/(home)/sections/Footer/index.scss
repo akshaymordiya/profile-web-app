@@ -51,7 +51,7 @@
     .footer-title-box {
       padding-left: 120px;
       position: relative;
-      margin-bottom: 150px;
+      margin-bottom: 70px;
       @include respond-to("desktop_large") {
         padding-left: 0px;
       }
@@ -81,7 +81,7 @@
         text-transform: uppercase;
         color: #e7ecff;
       }
-      .footer-title {
+      .footer-title h4 {
         font-weight: 500;
         font-size: 103px;
         line-height: 1;

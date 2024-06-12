@@ -25,7 +25,7 @@ const Projects = () => {
           >
             <SectionBox
               title={homeData.projects.title}
-              containerClass="section-title"
+              itemClass="section-title"
             />
           </Grid.Item>
         </Grid>

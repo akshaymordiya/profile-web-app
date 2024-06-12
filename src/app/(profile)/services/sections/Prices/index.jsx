@@ -1,33 +1,18 @@
 import React from "react";
 import CTA from "@/app/components/CTA";
 import Grid from "@/app/components/Grid";
-import SectionBox from "@/app/components/SectionBox";
+import Section from "@/app/components/Section";
 //style scss
 import "./index.scss";
-import Section from "@/app/components/Section";
 const Prices = ({ data = {} }) => {
   return (
     <>
-      <section className="inner-price-area">
-        {/* <Grid>
-          <Grid.Item
-            xs={12}
-            sm={12}
-            md={12}
-            lg={12}
-            xlg={12}
-            itemClass="inner-price-title-box"
-          >
-            <SectionBox containerClass="inner-section-title" title={data.title}>
-              <p>{data.paragraph}</p>
-            </SectionBox>
-          </Grid.Item>
-        </Grid> */}
-        <Section
-          title={data.title}
-          text={data.paragraph}
-          addSeprator
-        >
+      <Section
+        sectionClass="inner-price-area"
+        title={data.title}
+        text={data.paragraph}
+        addSeprator
+      >
         <Grid classNames="price-content">
           {data.serviceprice.map((item, index) => {
             return (
@@ -66,8 +51,7 @@ const Prices = ({ data = {} }) => {
             );
           })}
         </Grid>
-        </Section>
-      </section>
+      </Section>
     </>
   );
 };

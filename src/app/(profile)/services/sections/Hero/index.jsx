@@ -8,7 +8,7 @@ import "./index.scss";
 import Fade from "@/app/components/Fade";
 
 const Hero = ({ data = {} }) => {
-  const {  slider } = data;
+  const { slider } = data;
   const BASE_CLASSNAME = "services-container";
   return (
     <>
@@ -24,10 +24,7 @@ const Hero = ({ data = {} }) => {
         >
           <div className="inner-slider-content-wrap">
             <Fade animationType="slideInBottom" delay={200}>
-              <SectionBox
-                containerClass="inner-slider-title"
-                title={data.title}
-              />
+              <SectionBox itemClass="inner-slider-title" title={data.title} />
             </Fade>
 
             {data.servicelist.map((item, index) => (
@@ -50,7 +47,7 @@ const Hero = ({ data = {} }) => {
           itemClass="inner-slider-main"
           data-speed="0.5"
         >
-          <ResponsiveSlider content = {slider} />
+          <ResponsiveSlider content={slider} />
         </Grid.Item>
       </Grid>
     </>

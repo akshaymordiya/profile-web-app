@@ -5,6 +5,7 @@ import Grid from "@/app/components/Grid";
 
 //style scss
 import "./index.scss";
+import Fade from "@/app/components/Fade";
 
 const Hero = ({ data = {} }) => {
   const BASE_CLASSNAME = "porfolio_area";
@@ -22,10 +23,14 @@ const Hero = ({ data = {} }) => {
           data-speed="0.5"
         >
           <div className="porfolio-text-1">
-            <SectionBox
-              containerClass="porfolio-slider-title"
+           <Fade animationType="slideInBottom"
+           delay={200}
+           >
+           <SectionBox
+              itemClass="porfolio-slider-title"
               title={data.title}
             />
+           </Fade>
           </div>
           <WorkSilder content={content} />
         </Grid.Item>

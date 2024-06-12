@@ -9,6 +9,7 @@ import footer from "../../../data/global.footer.json";
 import { renderIconComponent } from "@/Icons";
 import Link from "next/link";
 import FooterwidgetTitle from "./FooterWidgetitle";
+import Section from "../Section";
 
 const Footer = () => {
   const BASE_CLASSNAME = "footer-container";
@@ -24,7 +25,7 @@ const Footer = () => {
               useContainer
               containerClasses="footer-shape"
             />
-            <div className="container">
+            <Section>
               <Grid classNames={`${BASE_CLASSNAME}`}>
                 <Grid.Item
                   xs={12}
@@ -61,7 +62,7 @@ const Footer = () => {
                   itemClass="footer-widget"
                 >
                   <SectionBox
-                    interClass="footer-widget-title"
+                    itemClass="footer-widget-title"
                     title={footer.explore.title}
                   />
                   <ul>
@@ -86,7 +87,7 @@ const Footer = () => {
                   itemClass="footer-widget"
                 >
                   <SectionBox
-                    interClass="footer-widget-title"
+                    itemClass="footer-widget-title"
                     title={footer.address.title}
                   />
                   <FooterwidgetTitle
@@ -104,7 +105,7 @@ const Footer = () => {
                   itemClass="footer-widget"
                 >
                   <SectionBox
-                    interClass="footer-widget-title"
+                    itemClass="footer-widget-title"
                     title={footer.contact.title}
                   />
                   <FooterwidgetTitle
@@ -117,7 +118,7 @@ const Footer = () => {
                   />
                 </Grid.Item>
               </Grid>
-            </div>
+            </Section>
           </div>
           <Grid classNames="copyright-bdr-top">
             <Grid.Item

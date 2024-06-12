@@ -54,7 +54,7 @@ const Services = () => {
                 {homeData.service.title}
               </span>
               <SectionBox
-                containerClass="title"
+                itemClass="title"
                 title="How We Carry Out Our Projects"
               >
                 <p>We offer a range of services to help elevate your brand & drive results.</p>
