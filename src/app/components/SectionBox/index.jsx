@@ -13,7 +13,6 @@ const SectionBox = ({
   children
 }) => {
 
-
   let BoxIcon = null
 
   if(icon !== ""){

@@ -7,9 +7,8 @@ import Grid from "@/app/components/Grid";
 //partials
 import SkillSets from '../../partials/Skillsets';
 
-
 import "./index.scss";
-import ParallaxScroll from '@/app/components/ParallaxScroll';
+import Sticky from '@/app/components/Sticky';
 
 const BASE_CLASSNAME = "skills_container"
 
@@ -23,18 +22,34 @@ const Skills = ({
   } = data
 
   return (
-    <div className={`${BASE_CLASSNAME} personal-info-pin-section`}>
-      <Grid classNames={`${BASE_CLASSNAME}_grid`}>
-        <Grid.Item
-          xs={12}
-          sm={12}
-          md={6}
-          lg={4}
-          xlg={4}
-          itemClass={`${BASE_CLASSNAME}_grid-col-1`}
-          data-speed="0.5"
+    <Sticky
+      behaviour={{
+        "parent": "sticky_grid_container",
+        "pos_left": {
+          "id": "sticky_grid-col_left",
+          "isSticky": true
+        },
+        "pos_right" : {
+          "id": "sticky_grid-col_right"
+        },
+      }}
+      removeStickyonSmallerDevices
+    >
+      <div className={`${BASE_CLASSNAME}`}>
+        <Grid 
+          classNames={`${BASE_CLASSNAME}_grid`}
+          id="sticky_grid_container"
         >
-          <ParallaxScroll speed={0.2}>
+          <Grid.Item
+            xs={12}
+            sm={12}
+            md={6}
+            lg={4}
+            xlg={4}
+            itemClass={`${BASE_CLASSNAME}_grid-col-1`}
+            data-speed="0.5"
+            id="sticky_grid-col_left"
+          >
             <SectionBox
               icon={info.icon}
               iconProps={{
@@ -43,7 +58,7 @@ const Skills = ({
               title={info.title}
               containerClass='box'
             >
-              <div className="box_content">
+              <div className="box_content" >
                 <p>{info.description}</p>
                 <Link 
                   href={`mailto:${info.email}`}
@@ -62,21 +77,22 @@ const Skills = ({
                 </Link>
               </div>
             </SectionBox>
-          </ParallaxScroll>
-        </Grid.Item>
-        <Grid.Item
-          xs={12}
-          sm={12}
-          md={6}
-          lg={8}
-          xlg={8}
-          itemClass={`${BASE_CLASSNAME}_grid-col-2`}
-          data-speed="0.5"
-        >
-          <SkillSets content={content} />
-        </Grid.Item>
-      </Grid>
-    </div>
+          </Grid.Item>
+          <Grid.Item
+            xs={12}
+            sm={12}
+            md={6}
+            lg={8}
+            xlg={8}
+            itemClass={`${BASE_CLASSNAME}_grid-col-2`}
+            data-speed="0.5"
+            id="sticky_grid-col_right"
+          >
+            <SkillSets content={content} />
+          </Grid.Item>
+        </Grid>
+      </div>
+    </Sticky>
   )
 }
 

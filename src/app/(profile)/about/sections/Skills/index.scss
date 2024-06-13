@@ -10,9 +10,24 @@
     padding: 4rem 9rem;
     padding-bottom: 2rem;
 
+    @include respond-to("desktop"){
+      padding: 0 4rem;
+    }
+
+    @include respond-to("large_tablet"){
+      padding: 0 4rem;
+    }
+    
+    @include respond-to("small_tablet"){
+      padding: 0 3rem;
+    }
+    
+    @include respond-to("phone"){
+      padding: 0 2rem;
+    }
+
     &-col-1 {
-      position: sticky;
-      top: 0;
+      position: relative;
       height: 400px !important;
       padding-top: 80px;
       place-content: start !important;
@@ -40,8 +55,8 @@
           text-transform: uppercase;
           color: $black;
           font-family: $primary-fonts;
-          margin-bottom: 15px;
-
+          margin-bottom: 20px;
+          
           h4 {
             font-size: 40px;
           }
@@ -59,16 +74,23 @@
             font-size: 16px;
             line-height: 24px;
             color: #5c5e64;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
+            font-family: $dm-font-family;
           }
 
           .link {
-            display: block;
+            display: flex;
+            align-items: center;
             font-weight: 400;
             font-size: 20px;
-            line-height: 1;
+            // line-height: 1;
             color: #5c5e64;
             margin-bottom: 20px;
+            gap: 0.5rem;
+
+            span {
+              transform: translateY(4px);
+            }
           }
         }
       }

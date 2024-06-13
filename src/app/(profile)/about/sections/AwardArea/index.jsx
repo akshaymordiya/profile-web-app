@@ -31,15 +31,15 @@ const AwardArea = ({
           itemClass={`${BASE_CLASSNAME}_grid-col-1`}
         >
           <div className="award-text-wrapper position-relative">
-            <ParallaxScroll speed={0.1}>
+            <ParallaxScroll speed={0.1} enableLogs>
               <h3 className="award-text-outline">
                 {data.textoutline}
               </h3>
             </ParallaxScroll>
-            <ParallaxScroll speed={0.26}>
+            <ParallaxScroll speed={0.3} >
               <h3 className="award-text-fill">{data.textfill}</h3>
             </ParallaxScroll>
-            <ParallaxScroll speed={0.3}>
+            <ParallaxScroll speed={0.2}>
               <IMG
                 src={data.image}
                 containerClasses="award-shape"

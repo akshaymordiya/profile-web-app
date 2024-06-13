@@ -1,9 +1,8 @@
 import React from "react";
+//components
 import SectionBox from "@/app/components/SectionBox";
 import ProgressBar from "@/app/components/Progressbar";
 import Experience from "@/app/components/Experience";
-import about from "../../../../../data/about.page.json";
-import "aos/dist/aos.css";
 import { renderIconComponent } from "@/Icons";
 
 import "./index.scss"
@@ -24,6 +23,7 @@ const SkillSets = ({
         <SectionBox
           title={skills.title}
           icon={skills.icon}
+          containerClass="section-box"
         >
           {skills.skillsets.map((item, index) => (
               <ProgressBar
@@ -49,6 +49,7 @@ const SkillSets = ({
           <SectionBox
             title={element.title}
             icon={element.icon}
+            containerClass="section-box"
           />
           {element.data.map((item, index) => {
             return (

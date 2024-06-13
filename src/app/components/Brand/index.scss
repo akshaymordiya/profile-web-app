@@ -3,7 +3,7 @@
 @import '../../../styles/mixins';
 
 .technologies_container{
-    background-color: #f6f9ff;
+    // background-color: #f6f9ff;
     margin-bottom: 5rem;
     padding: 0.5rem 1rem;
     transition: 0.3s all ease-in-out;
@@ -21,7 +21,7 @@
         transition: 0.4s all ease-in-out;
         min-width: 100px;
         max-width: 200px;
-        box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+        box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
 
         &:not(:last-child) {
             margin-right: 0.5rem;

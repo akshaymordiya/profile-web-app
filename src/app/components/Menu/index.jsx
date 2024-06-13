@@ -27,7 +27,7 @@ const Menu = ({
   const breakpoint = useBreakpoint();
 
   const isMenuHide = useMemo(() => {
-    return hiddenOnSmallerDevices && ['xs', 'sm', 'md', 'lg'].includes(breakpoint)
+    return hiddenOnSmallerDevices && ['xs', 'sm', 'md'].includes(breakpoint)
   }, [breakpoint, hiddenOnSmallerDevices]);
 
   if(isMenuHide){

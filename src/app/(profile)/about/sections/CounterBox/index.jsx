@@ -1,6 +1,5 @@
 import React from "react";
 import "./index.scss";
-import "aos/dist/aos.css";
 //components
 import Grid from "@/app/components/Grid";
 import Fade from "@/app/components/Fade";

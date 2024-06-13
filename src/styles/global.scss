@@ -24,6 +24,7 @@ html {
   overscroll-behavior: none;
   scroll-behavior: smooth;
   background-color: $background_bg;
+  font-size: 16px;
 }
 
 body {
@@ -33,12 +34,15 @@ body {
   overscroll-behavior: none;
   scroll-behavior: auto;
   background-color: $background_bg !important;
+  font-family: $dm-font-family;;
+  }
+  
+  main {
+    display: block;
+    margin: 0;
+    font-family: $dm-font-family;;
 }
 
-main {
-  display: block;
-  margin: 0;
-}
 h1 {
   font-size: 2em;
   margin: 0;
