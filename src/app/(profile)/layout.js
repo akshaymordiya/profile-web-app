@@ -26,11 +26,9 @@ export default function RootLayout({ children }) {
         <Aos />
         <Navbar />
         <div id="smooth-content">
-          <main>
-            {children}
-          </main>
+          <main>{children}</main>
         </div>
-        <Footer/>
+        <Footer />
         <CustomCursor />
         <div id="portal"></div>
         <ScrollToTop />

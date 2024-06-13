@@ -51,12 +51,11 @@
         overflow-y: scroll;
         scrollbar-width: none;
         @include respond-to("phone") {
-          padding-bottom: 0px;
           padding-left: 40px;
           padding-right: 50px;
         }
         @include respond-to("small_phone") {
-          padding-bottom: 0px;
+        
           padding-left: 40px;
           padding-right: 50px;
         }
