@@ -57,7 +57,6 @@ const WorkDetails = ({ id }) => {
     ];
   }, [data]);
 
-  console.log("slides", slides);
   return (
     <>
       {isLoading && <p>Loading portfolio item...</p>}

@@ -6,6 +6,11 @@ import Testimonial from "./sections/Testimonial";
 import Servicees from "./sections/Services";
 import Prices from "./sections/Prices";
 import serviceData from "../../../data/service.page.json";
+export const metadata = {
+  title: {
+    absolute: "Service",
+  },
+};
 
 function Services() {
   const { hero, services, skillinfo, testimonialinfo, price, technologies } =

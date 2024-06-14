@@ -1,6 +1,12 @@
 import workData from "../../../../data/work.page.json";
 import WorkDetails from "./WorkDetails";
 
+export const metadata = {
+  title: {
+    absolute: "Work",
+  },
+};
+
 function WorkDetailsPage({ params }) {
   const postId = params.id;
 

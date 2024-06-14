@@ -3,6 +3,11 @@ import ContactCategory from "./sections/ContactCategory/Client/ContactCategory";
 import ContactForm from "./sections/ContactForm";
 import Hero from "./sections/Hero";
 import contactData from "../../../data/contact.page.json";
+export const metadata = {
+  title: {
+    absolute: "Contact",
+  },
+};
 
 const Contact = () => {
   const { hero, category, requestForm } = contactData;

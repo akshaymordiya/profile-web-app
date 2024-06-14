@@ -7,8 +7,13 @@ import Text from "./sections/Text";
 import Skills from "./sections/Skills";
 import CounterBox from "./sections/CounterBox";
 import AwardArea from "./sections/AwardArea";
-
 import aboutData from "../../../data/about.page.json";
+
+export const metadata = {
+  title: {
+    absolute: "About",
+  },
+};
 
 const About = () => {
   const {

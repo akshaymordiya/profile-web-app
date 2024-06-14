@@ -15,10 +15,7 @@ import CallMadeIcon from '@mui/icons-material/CallMade';
 import menWork from "../../../../../public/assets/lottie/men-work.json";
 
 import "./index.scss";
-import { renderIconComponent } from '@/Icons';
-
 const BASE_CLASSNAME = "hero-container"
-
 
 const Hero = () => {
   return (

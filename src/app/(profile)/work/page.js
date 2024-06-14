@@ -5,6 +5,12 @@ import WorkItem from "./WorkItem";
 //data json
 import workData from "../../../data/work.page.json";
 
+export const metadata = {
+  title: {
+    absolute: "Work",
+  },
+};
+
 //TODO:: The child page of work route
 const Work = () => {
   const { technologies, projectList, hero } = workData;

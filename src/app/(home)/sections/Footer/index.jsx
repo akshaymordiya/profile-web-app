@@ -62,8 +62,8 @@ const Footer = () => {
                       itemClass="footer-menu"
                     >
                       <ul>
-                        {menu.map((item) => (
-                          <li>
+                        {menu.map((item , index) => (
+                          <li key={index}>
                             <Link href='/'>{item?.title}</Link>
                           </li>
                         ))}
@@ -109,8 +109,8 @@ const Footer = () => {
                 itemClass="copyright-social"
               >
                 <ul>
-                  {sociallink.map((item) => (
-                    <li>
+                  {sociallink.map((item, index) => (
+                    <li key={index}>
                       <Link href={item?.link} target="_blank">
                         {item?.name}
                       </Link>
