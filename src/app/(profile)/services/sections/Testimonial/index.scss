@@ -1,24 +1,15 @@
-@import "../../../../../styles//mixins";
+@import "../../../../../styles/mixins";
 
-.testimonial-area {
-  background-color: #f6f9ff;
-  padding: 50px 2rem 100px;
-  display: grid;
-  place-items: center;
+.testimonial_container {
+  padding: 2rem 8rem;
+  margin: 0 auto;
+  margin-bottom: 4rem;
 
   @include respond-to("phone") {
-    padding: 0px 1rem 100px;
+    padding: 2rem 8rem;
   }
 
   @include respond-to("small_phone") {
-    padding: 0px 1rem 100px;
-  }
-
-  .testimonial-container {
-    width: 100%;
-
-    @include respond-to("extra_large_desktop") {
-      max-width: 1320px;
-    }
+    padding: 2rem 8rem;
   }
 }

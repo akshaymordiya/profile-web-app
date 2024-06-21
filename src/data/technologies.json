@@ -1,0 +1,26 @@
+[
+  {
+    "name": "rect js",
+    "img": "/assets/technologies/fb.webp"
+  },
+  {
+    "name": "node js",
+    "img": "/assets/technologies/fb.webp"
+  },
+  {
+    "name": "github",
+    "img": "/assets/technologies/fb.webp"
+  },
+  {
+    "name": "git",
+    "img": "/assets/technologies/fb.webp"
+  },
+  {
+    "name": "mongo db",
+    "img": "/assets/technologies/fb.webp"
+  },
+  {
+    "name": "MySql",
+    "img": "/assets/technologies/fb.webp"
+  }
+]

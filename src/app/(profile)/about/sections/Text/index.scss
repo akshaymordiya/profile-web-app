@@ -7,17 +7,25 @@
 
   &_grid {
     padding: 0 9rem;
-    @include respond-to("large_tablet") {
-      padding: 0 5rem;
+
+    @include respond-to("desktop"){
+      padding: 0 4rem;
     }
-    @include respond-to("small_tablet") {
+
+    @include respond-to("large_tablet"){
+      padding: 0 4rem;
+    }
+    
+    @include respond-to("small_tablet"){
       padding: 0 3rem;
     }
-    @include respond-to("phone") {
+    
+    @include respond-to("phone"){
       padding: 0 2rem;
     }
+
     &-col-1 {
-      font-weight: 300;
+      font-weight: 400;
       font-size: 50px;
       line-height: 60px;
       letter-spacing: -0.01em;

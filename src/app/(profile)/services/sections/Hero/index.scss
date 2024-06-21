@@ -1,7 +1,7 @@
 @import "../../../../../styles/variables";
 @import "../../../../../styles/mixins";
 
-.inner-slider-area {
+.hero-container {
   background-color: #f6f9ff;
   padding: 0 85px;
   @include respond-to("desktop") {
@@ -19,10 +19,13 @@
   @include respond-to("phone") {
     padding: 140px 20px 80px;
   }
-  .inner-slider-content-main {
+
+  &_col-1 {
     display: flex;
     justify-content: flex-end !important;
     align-items: center;
+    transform: translateY(-10%);
+
     @include respond-to("desktop") {
       justify-content: flex-start !important;
     }
@@ -39,54 +42,53 @@
       justify-content: flex-start !important;
     }
 
-    .inner-slider-content-wrap {
-      width: 520px;
-      @include respond-to("small_tablet") {
-        width: 380px;
-      }
-      @include respond-to("phone") {
-        width: 360px;
-      }
-      @include respond-to("small_phone") {
-        width: 300px;
-      }
-      .inner-slider-title h4{
-        font-size: 70px;
-        line-height: 1;
+    &-box {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      // border: 1px solid red;
+      gap: 0;
+
+      .title {
+        font-size: 100px;
+        // line-height: 1;
         letter-spacing: -0.01em;
-        margin-bottom: 40px;
         font-weight: 600;
         color: $black;
         font-family: $primary-fonts;
-        width: 550px;
+        width: 70%;
+        // border: 1px solid red;
+        gap: 0;
+
         @include respond-to("desktop") {
           font-size: 60px;
-          width: 460px;
+          // width: 460px;
         }
         @include respond-to("tablet") {
           font-size: 55px;
-          width: 460px;
+          // width: 460px;
         }
         @include respond-to("large_tablet") {
           font-size: 55px;
-          width: 460px;
+          // width: 460px;
         }
         @include respond-to("small_tablet") {
           font-size: 55px;
-          width: 460px;
+          // width: 460px;
         }
         @include respond-to("phone") {
           font-size: 55px;
-          width: 309px;
+          // width: 309px;
         }
         @include respond-to("small_phone") {
           font-size: 40px;
-          width: 280px;
+          // width: 280px;
         }
       }
     }
   }
-  .inner-slider-main {
+
+  &_col-2 {
     margin-top: 200px;
     margin-bottom: 120px;
     position: relative;

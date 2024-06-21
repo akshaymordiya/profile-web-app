@@ -6,10 +6,11 @@ const BASE_CLASSNAME = "grid-container";
 
 const Grid = ({
   children,
-  classNames = ""
+  classNames = "",
+  ...props
 }) => {
   return (
-    <div className={`${BASE_CLASSNAME} ${classNames}`}>   {children}
+    <div className={`${BASE_CLASSNAME} ${classNames}`} {...props}>   {children}
     </div>
   )
 }

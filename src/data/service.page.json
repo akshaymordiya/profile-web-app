@@ -1,20 +1,20 @@
 {
   "hero": {
     "title": "High Quality Projects",
-    "servicelist": [
+    "services": [
       {
         "id": "1",
-        "listclass": "inner-service-list list-1",
+        "animationdelay": "300",
         "listName": "Over 40 Websites Built With Envato"
       },
       {
         "id": "2",
-        "listclass": "inner-service-list list-2",
+        "animationdelay": "500",
         "listName": "Visual Designer for 10+ years"
       },
       {
         "id": "3",
-        "listclass": "inner-service-list list-3",
+        "animationdelay": "700",
         "listName": "UI/UX Designer, Envato"
       }
     ],
@@ -38,221 +38,251 @@
     }
   },
   "services": {
-    "circleImg": "/assets/footer-circle-img.png",
-    "innerImg": [
-      {
-        "id": "1",
-        "img": "/assets/service-shape-1.png",
-        "class": "service-shape-1",
-        "alt": "shape-img"
-      },
-      {
-        "id": "2",
-        "img": "/assets/service-shape-2.png",
-        "class": "service-shape-2",
+    "images":{
+      "circleImg": {
+        "src": "/assets/footer-circle-img.png",
         "alt": "circle_shape-img"
       },
-      {
-        "id": "3",
-        "img": "/assets/star.png",
-        "class": "service-shape-3",
-        "alt": "star-img"
-      }
-    ],
-    "info": {
-      "subtitle": "OUR PROCESS",
-      "title": " How We Carry Out Our Projects",
-      "paragraph": " We offer a range of services to help elevate your brand & drive results."
+      "innerImg": [
+        {
+          "id": "1",
+          "src": "/assets/service-shape-1.png",
+          "alt": "shape-img"
+        },
+        {
+          "id": "2",
+          "src": "/assets/service-shape-2.png",
+          "alt": "circle_shape-img"
+        },
+        {
+          "id": "3",
+          "src": "/assets/service-shape-1.png",
+          "alt": "shape-img"
+        },
+        {
+          "id": "4",
+          "src": "/assets/service-shape-2.png",
+          "alt": "circle_shape-img"
+        },
+        {
+          "id": "5",
+          "src": "/assets/star.png",
+          "alt": "star-img",
+          "usePrallax": true
+        }
+      ]
     },
-    "content": {
-      "rightsideservice": [
+    "data": {
+      "title": "OUR PROCESS",
+      "excert": " How We_Carry Out Our_Projects",
+      "description": "We offer a range of services to help elevate_your brand & drive results.",
+      "serviceCards": [
         {
           "id": "1",
           "title": "Design Strategy",
           "desc": " We always ensure that it combines a clean and beautiful visual design.",
           "icon": "AutoIcon",
-          "tag1": "UI/UX Audit",
-          "tag2": "Workshops"
+          "tags": ["UI/UX Audit", "Workshops"]
         },
         {
           "id": "2",
           "title": "Product Leadership",
           "desc": " We always ensure that it combines a clean and beautiful visual design.",
           "icon": "Flipfront",
-          "tag1": "UI/UX Audit",
-          "tag2": "Workshops"
+          "tags": ["UI/UX Audit", "Workshops"]
         },
         {
           "id": "3",
           "title": "Front-End Development",
           "desc": " We always ensure that it combines a clean and beautiful visual design.",
           "icon": "PhonelinkIcon",
-          "tag1": "UI/UX Audit",
-          "tag2": "Workshops"
+          "tags": ["UI/UX Audit", "Workshops"]
         }
       ],
-      "button":{
-        "servicetext": "Call me to get more extra service ",
-        "lightbtn": "Call Now"
-      }
+      "servicetext": "Call me to get more extra service ",
+      "lightbtn": "Call Now"
     }
   },
-  "skillinfo": {
+  "skills": {
     "paragraph": "Refined branding and web design strategically created to tell your story, make a connection and establish a cutting-edge online and offline presence.",
-    "content":{
-      "design": {
+    "data": [
+      {
         "title": "Design",
         "icon": "Star",
-        "designskill": [
+        "list":  [
           {
             "title": "Web Design",
-            "iconleft": "Viewoutline",
-            "iconright": "Arrowoutline"
+            "icons": {
+              "left": "Viewoutline",
+              "right": "Arrowoutline"
+            },
+            "url": "#"
           },
           {
             "title": "UI/UX Design",
-            "iconleft": "VerticalSplit",
-            "iconright": "Arrowoutline"
+            "icons": {
+              "left": "VerticalSplit",
+              "right": "Arrowoutline"
+            },
+            "url": "#"
           },
           {
             "title": "Mobile App Design",
-            "iconleft": "AodIcon",
-            "iconright": "Arrowoutline"
+            "icons": {
+              "left": "AodIcon",
+              "right": "Arrowoutline"
+            },
+            "url": "#"
           },
           {
             "title": "Branding",
-            "iconleft": "AndroidIcon",
-            "iconright": "Arrowoutline"
+            "icons": {
+              "left": "AndroidIcon",
+              "right": "Arrowoutline"
+            },
+            "url": "#"
           }
         ]
       },
-      "development": {
+      {
         "title": "Development",
         "icon": "Star",
-        "developmentskill": [
+        "list":  [
           {
             "title": "Web Development",
-            "iconleft": "AutomotionIcon",
-            "iconright": "Arrowoutline"
+            "icons": {
+              "left": "AutomotionIcon",
+              "right": "Arrowoutline"
+            },
+            "url": "#"
           },
           {
             "title": "Software Development",
-            "iconleft": "CoronaIcon",
-            "iconright": "Arrowoutline"
+            "icons": {
+              "left": "CoronaIcon",
+              "right": "Arrowoutline"
+            },
+            "url": "#"
           },
           {
             "title": "CMS Development",
-            "iconleft": "AodIcon",
-            "iconright": "Arrowoutline"
+            "icons": {
+              "left": "AodIcon",
+              "right": "Arrowoutline"
+            },
+            "url": "#"
           },
           {
             "title": "Front-End Development",
-            "iconleft": "AndroidIcon",
-            "iconright": "Arrowoutline"
+            "icons": {
+              "left": "AndroidIcon",
+              "right": "Arrowoutline"
+            },
+            "url": "#"
           }
         ]
       }
-    }
+    ]
   },
-  "testimonialinfo": {
-    "content":{
-      "testimonilafeedback": [
-        {
-          "id": 1,
-          "img": "/assets/quote.svg",
-          "Rating": {
-            "max": "5",
-            "min": "5"
-          },
-          "title": "Rudra Ghosh",
-          "position": "Founder & CEO at",
-          "passion": " Dulalix",
-          "image": "/assets/avata-1.png",
-          "feedback": "5.0 Rating",
-          "description": "Will gave our website and brand whole new life while staying true to who we are. We would never have thought of going in the direction he pitched but we couldn't be happier."
-        },
-        {
-          "id": 2,
-          "img": "/assets/quote.svg",
-          "Rating": {
-            "max":"4",
-            "min": "4"
-          },
-          "feedback": "5.0 Rating",
-          "title": "Albert Flores",
-          "position": "Marketing Officer at",
-          "passion": " Google Inc",
-          "image": "/assets/avata-2.png",
-          "description": "Will gave our website and brand whole new life while staying true to who we are. We would never have thought of going in the direction he pitched but we couldn't be happier."
-        },
-        {
-          "id": 3,
-          "img": "/assets/quote.svg",
-          "Rating": {
-            "max": "5",
-            "min": "5"
-          },
-          "feedback": "5.0 Rating",
-          "title": "Robert Henricks",
-          "position": "UI/UX Designer",
-          "passion": " Webflow",
-          "image": "/assets/avata-3.png",
-          "description": "Will gave our website and brand whole new life while staying true to who we are. We would never have thought of going in the direction he pitched but we couldn't be happier."
-        },
-        {
-          "id": 4,
-          "img": "/assets/quote.svg",
-          "Rating": {
-            "max": "5",
-            "min": "5"
-          },
-          "title": "Flores Flores",
-          "position": "Founder & CEO at",
-          "passion": "Dribblr",
-          "image": "/assets/user-1.jpg",
-          "feedback": "5.0 Rating",
-          "description": "Will gave our website and brand whole new life while staying true to who we are. We would never have thought of going in the direction he pitched but we couldn't be happier."
-        }
-      ]
+  "feedbacks": [
+    { 
+      "id": 1,
+      "images": {
+        "quote": "/assets/quote.svg",
+        "avatar": "/assets/avata-1.png"
+      },
+      "ratings": 5,
+      "feedback": "Will gave our website and brand whole new life while staying true to who we are. We would never have thought of going in the direction he pitched but we couldn't be happier.",
+      "author": {
+        "name": "Mark Zuku",
+        "position": "Founder & CEO",
+        "company": "Tech infotech"
+      }
+    },
+    { 
+      "id": 2,
+      "images": {
+        "quote": "/assets/quote.svg",
+        "avatar": "/assets/avata-3.png"
+      },
+      "ratings": 5,
+      "feedback": "Will gave our website and brand whole new life while staying true to who we are. We would never have thought of going in the direction he pitched but we couldn't be happier.",
+      "author": {
+        "name": "Carnol Blade",
+        "position": "Founder & CEO",
+        "company": "Cozy infotech"
+      }
+    },
+    { 
+      "id": 3,
+      "images": {
+        "quote": "/assets/quote.svg",
+        "avatar": "/assets/avata-4.png"
+      },
+      "ratings": 5,
+      "feedback": "Will gave our website and brand whole new life while staying true to who we are. We would never have thought of going in the direction he pitched but we couldn't be happier.",
+      "author": {
+        "name": "Brain O'corner",
+        "position": "Founder & CEO",
+        "company": "brain infotech"
+      }
+    },
+    { 
+      "id": 4,
+      "images": {
+        "quote": "/assets/quote.svg",
+        "avatar": "/assets/avata-5.png"
+      },
+      "ratings": 5,
+      "feedback": "Will gave our website and brand whole new life while staying true to who we are. We would never have thought of going in the direction he pitched but we couldn't be happier.",
+      "author": {
+        "name": "Leo Das",
+        "position": "Founder & CEO",
+        "company": "Tobaco infotech"
+      }
     }
-  },
-  "price": {
-    "title": "Services & Pricing",
-    "paragraph": "No surprises. No hassles. Just right.",
-    "serviceprice": [
+  ],
+  "prices":{
+    "title":"Services & Pricing",
+    "paragraph":"No surprises. No hassles. Just right.",
+    "plans":[
       {
         "id": 1,
-        "head_title": "1 month",
-        "head_des": "Paid monthly",
-        "body_des": "Cancel anytime",
-        "body_title": "$1300/mo",
-        "button_title": "Get started"
+        "head": {
+          "title": "1 month",
+          "excert": "Paid monthly"
+        },
+        "body": {
+          "title": "Cancel anytime",
+          "excert": "$1300/mo"
+        },
+        "btn": "Get started"
       },
       {
         "id": 2,
-        "head_title": "3 month",
-        "head_des": "Paid monthly",
-        "body_des": "Save $800",
-        "body_title": "$4200/mo",
-        "button_title": "Get started"
+        "head": {
+          "title": "3 month",
+          "excert": "Paid monthly"
+        },
+        "body": {
+          "title": "Save $800",
+          "excert": "$4200/mo"
+        },
+        "btn": "Get started"
       },
       {
         "id": 3,
-        "head_title": "Not sure?",
-        "head_des": "Check the skill",
-        "price_text": "You can order 1 free task",
-        "body_des": "-",
-        "body_title": "-",
-        "button_title": "Free Skill Check"
+        "head": {
+          "title": "Not sure?",
+          "excert": "Check the skill"
+        },
+        "body": {
+          "title": "",
+          "excert": "",
+          "text": "You can order 1 free task"
+        },
+        "btn": "Free Skill Check"
       }
     ]
-  },
-  "technologies":[
-    "rect js",
-    "node js",
-    "github",
-    "git",
-    "mongo db",
-    "MySql"
-  ]
+  }
 }

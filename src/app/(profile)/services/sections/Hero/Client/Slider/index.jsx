@@ -22,40 +22,38 @@ const ResponsiveSlider = ({ content: { slider1, slider2 } }) => {
     infinite: true,
   };
   return (
-    <>
-      <Grid>
-        <Grid.Item
-          xs={12}
-          sm={12}
-          md={6}
-          lg={6}
-          xlg={6}
-          itemClass="inner-slider-active-1"
-          data-speed="0.5"
-        >
-          <Slider {...settings}>
-            {slider1.map((item) => (
-              <IMG src={item?.slide} useRawImgTag />
-            ))}
-          </Slider>
-        </Grid.Item>
-        <Grid.Item
-          xs={12}
-          sm={12}
-          md={6}
-          lg={6}
-          xlg={6}
-          itemClass="inner-slider-active-2"
-          data-speed="0.5"
-        >
-          <Slider {...settings}>
-            {slider2.map((item) => (
-              <IMG src={item?.slide} useRawImgTag />
-            ))}
-          </Slider>
-        </Grid.Item>
-      </Grid>
-    </>
+    <Grid>
+      <Grid.Item
+        xs={12}
+        sm={12}
+        md={6}
+        lg={6}
+        xlg={6}
+        itemClass="inner-slider-active-1"
+        data-speed="0.5"
+      >
+        <Slider {...settings}>
+          {slider1.map((item) => (
+            <img src={item?.slide} useRawImgTag />
+          ))}
+        </Slider>
+      </Grid.Item>
+      <Grid.Item
+        xs={12}
+        sm={12}
+        md={6}
+        lg={6}
+        xlg={6}
+        itemClass="inner-slider-active-2"
+        data-speed="0.5"
+      >
+        <Slider {...settings}>
+          {slider2.map((item) => (
+            <img src={item?.slide} useRawImgTag />
+          ))}
+        </Slider>
+      </Grid.Item>
+    </Grid>
   );
 };
 

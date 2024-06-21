@@ -1,9 +1,6 @@
 import React from "react";
-import { Inter } from "next/font/google";
-
 import "../../styles/global.scss";
-
-import "bootstrap/dist/css/bootstrap.min.css";
+import { Inter } from "next/font/google";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -12,6 +9,7 @@ import CustomCursor from "@/app/components/MouseCursor";
 import Aos from "@/app/components/AOS";
 import Footer from "@/app/components/Footer";
 import ScrollToTop from "@/app/components/scrollToTop";
+import SmoothScroll from "@/app/components/SmoothScroll";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -22,16 +20,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className}`}>
+      <body>
         <Aos />
-        <Navbar />
-        <div id="smooth-content">
-          <main>{children}</main>
-        </div>
-        <Footer />
-        <CustomCursor />
-        <div id="portal"></div>
-        <ScrollToTop />
+        <SmoothScroll>
+          <Navbar />
+            <main>
+              {children}
+            </main>
+          <Footer/>
+          <CustomCursor />
+          <ScrollToTop />
+          <div id="portal"></div>
+        </SmoothScroll>
       </body>
     </html>
   );
