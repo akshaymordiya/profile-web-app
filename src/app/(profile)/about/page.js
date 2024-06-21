@@ -15,8 +15,7 @@ const About = () => {
     hero,
     aboutMe,
     counter,
-    awards,
-    technologies
+    awards
   } = aboutData
   return (
     <React.Fragment>
@@ -25,7 +24,7 @@ const About = () => {
       <Skills data={aboutMe} />
       <CounterBox data={counter} />
       <AwardArea data={awards} />
-      <BrandButton data={technologies} />
+      <BrandButton />
     </ React.Fragment>
   );
 };

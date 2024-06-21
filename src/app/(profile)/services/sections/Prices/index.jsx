@@ -2,72 +2,62 @@ import React from "react";
 import CTA from "@/app/components/CTA";
 import Grid from "@/app/components/Grid";
 import SectionBox from "@/app/components/SectionBox";
+import Section from "@/app/components/Section";
 //style scss
 import "./index.scss";
 //data json
 import service from "../../../../../data/service.page.json";
 
-const Prices = () => {
+const BASE_CLASSNAME = "price_container";
+
+const Prices = ({
+  data
+}) => {
   return (
-    <>
-      <section className="inner-price-area">
-        <Grid>
-          <Grid.Item
-            xs={12}
-            sm={12}
-            md={12}
-            lg={12}
-            xlg={12}
-            itemClass="inner-price-title-box"
-          >
-            <SectionBox
-              containerClass="inner-section-title"
-              title={service.price.title}
+    <Section
+      title={data.title}
+      text={data.paragraph}
+      sectionClass={BASE_CLASSNAME}
+    >
+      <Grid classNames={`${BASE_CLASSNAME}_grid`}>
+        {data.plans.map((plan, index) => {
+          return (
+            <Grid.Item
+              xs={12}
+              sm={6}
+              md={6}
+              lg={4}
+              xlg={4}
+              itemClass={`${BASE_CLASSNAME}_grid_plan_item`}
+              key={index}
             >
-              <p>{service.price.paragraph}</p>
-            </SectionBox>
-          </Grid.Item>
-        </Grid>
-        <Grid classNames="price-content">
-          {service.price.serviceprice.map((item, index) => {
-            return (
-              <Grid.Item
-                xs={12}
-                sm={6}
-                md={6}
-                lg={4}
-                xlg={4}
-                itemClass="price-item"
-                key={index}
-              >
-                <div className="price-head">
-                  <h4>{item?.head_title}</h4>
-                  <span>{item?.head_des}</span>
-                </div>
-                <div className="price-body">
-                  {item?.price_text ? (
-                    <div className="price-text">{item?.price_text}</div>
-                  ) : (
-                    <>
-                      <span>{item?.body_des}</span>
-                      <h4>{item?.body_title}</h4>
-                    </>
-                  )}
-                </div>
-                <div className="price-btn-box">
-                  <CTA
-                    btn_color="btn-price-white"
-                    linkText={item?.button_title}
-                    linkClass="btn-price-white"
-                    linkHref="/contact"
-                  />
-                </div>
-              </Grid.Item>
-            );
-          })}
-        </Grid>
-      </section>
-    </>
+              <div className={`${BASE_CLASSNAME}_grid_plan_item_head`}>
+                <h4>{plan.head.title}</h4>
+                <span>{plan.head.excert}</span>
+              </div>
+              <div className={`${BASE_CLASSNAME}_grid_plan_item_content`}>
+                {plan.body?.text ? (
+                  <div className="price-text">{plan.body.text}</div>
+                ) : (
+                  <React.Fragment>
+                    <span>{plan.body.title}</span>
+                    <h4>{plan.body.excert}</h4>
+                  </React.Fragment>
+                )}
+              </div>
+              <div className={`${BASE_CLASSNAME}_grid_plan_item_btn`}>
+                <CTA
+                  btn_color="btn-price-white"
+                  linkText={plan.btn}
+                  linkClass="price-btn"
+                  linkHref="/contact"
+                />
+              </div>
+            </Grid.Item>
+          );
+        })}
+      </Grid>
+    </Section>
   );
 };
 

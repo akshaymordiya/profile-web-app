@@ -2,117 +2,64 @@ import React from "react";
 import Grid from "@/app/components/Grid";
 import SectionBox from "@/app/components/SectionBox";
 import ServiceCategory from "./ServiceCategory";
-import service from "../../../../../data/service.page.json";
+
 import { getIcon, renderIconComponent } from "@/Icons";
 
-const Skills = () => {
-  const BASE_CLASSNAME ="services-container";
- 
+import "./index.scss";
+
+const BASE_CLASSNAME ="skills_container";
+
+const Skills = ({
+  data
+}) => {
+
   return (
-    <>
-      <div className="inner-info-area">
-        <Grid classNames={`${BASE_CLASSNAME}_grid `}>
-          <Grid.Item
-            xs={12}
-            sm={12}
-            md={12}
-            lg={9}
-            xlg={9}
-            itemClass="inner-info-title-box"
-          >
-            <SectionBox
-              containerClass="inner-info-title"
-              title={service.services.paragraph}
-            />
-          </Grid.Item>
-        </Grid>
-        <Grid classNames={`${BASE_CLASSNAME}_wrapper `}>
-          <Grid.Item
-            xs={12}
-            sm={12}
-            md={12}
-            lg={12}
-            xlg={12}
-            itemClass="testinominal-slide"
-          >
-            <Grid>
-              <Grid.Item
-                xs={12}
-                sm={12}
-                md={6}
-                lg={4}
-                xlg={4}
-                itemClass="inner-info-service"
-                data-speed="0.5"
-              >
-                <SectionBox
-                  title={service.services.skill.title}
-                  icon={services.skill.icon}
-                  containerClass="inner-left-title"
-                />
-              </Grid.Item>
-              <Grid.Item
-                xs={12}
-                sm={12}
-                md={12}
-                lg={8}
-                xlg={8}
-                itemClass="inner-service-category-wrap"
-                data-speed="0.5"
-              >
-                {service.services.skill.designskill.map((item, index) => {
-                  return (
-                    <ServiceCategory
-                      key={index}
-                      serviceTitle={item?.title}
-                      serviceIconLeft={renderIconComponent(item?.iconleft)}
-                      serviceIconRight={renderIconComponent(item?.iconright)}
-                    />
-                  );
-                })}
-              </Grid.Item>
-            </Grid>
-            <Grid>
-              <Grid.Item
-                xs={12}
-                sm={12}
-                md={6}
-                lg={4}
-                xlg={4}
-                itemClass="inner-info-service"
-                data-speed="0.5"
-              >
-                <SectionBox
-                  title={service.services.skilldev.title}
-                  icon={service.services.skill.icon}
-                  containerClass="inner-left-title"
-                />
-              </Grid.Item>
-              <Grid.Item
-                xs={12}
-                sm={12}
-                md={12}
-                lg={8}
-                xlg={8}
-                itemClass="inner-service-category-wrap"
-                data-speed="0.5"
-              >
-                {service.services.skilldev.development.map((item, index) => {
-                  return (
-                    <ServiceCategory
-                      key={index}
-                      serviceTitle={item?.title}
-                      serviceIconLeft={renderIconComponent(item?.iconleft)}
-                      serviceIconRight={renderIconComponent(item?.iconright)}
-                    />
-                  );
-                })}
-              </Grid.Item>
-            </Grid>
-          </Grid.Item>
-        </Grid>
-      </div>
-    </>
+    <div className={BASE_CLASSNAME}>
+      <SectionBox
+        containerClass={`${BASE_CLASSNAME}_title`}
+        title={data.paragraph}
+      />
+      <Grid classNames={`${BASE_CLASSNAME}_grid`}>
+        {data.data.map(skill => (
+          <React.Fragment>
+            <Grid.Item
+              xs={12}
+              sm={12}
+              md={5}
+              lg={5}
+              xlg={5}
+              itemClass={`${BASE_CLASSNAME}_grid_col-left`}
+            >
+              <SectionBox
+                title={skill.title}
+                icon={skill.icon}
+                containerClass="left-title"
+              />
+            </Grid.Item>
+            <Grid.Item
+              xs={12}
+              sm={12}
+              md={7}
+              lg={7}
+              xlg={7}
+              itemClass={`${BASE_CLASSNAME}_grid_col-right`}
+            >
+              {skill.list.map((s, index) => {
+                return (
+                  <ServiceCategory
+                    key={index}
+                    title={s.title}
+                    iconLeft={renderIconComponent(s.icons.left)}
+                    iconRight={renderIconComponent(s.icons.right)}
+                    link={s.url}
+                  />
+                );
+              })}
+            </Grid.Item>
+          </React.Fragment>
+        ))}
+      </Grid>
+    </div>
   );
 };
 

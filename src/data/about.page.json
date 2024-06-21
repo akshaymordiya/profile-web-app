@@ -210,14 +210,6 @@
       }
     ]
   },
-  "technologies": [
-    "rect js",
-    "node js",
-    "github",
-    "git",
-    "mongo db",
-    "MySql"
-  ],
   "footer": {
     "footerImg": "/assets/footer-shape-2.png",
     "whitelogo": "/assets/logo-white.png",

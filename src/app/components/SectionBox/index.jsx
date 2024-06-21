@@ -25,7 +25,7 @@ const SectionBox = ({
 
     BoxIcon = renderIconComponent(icon)
   }
-
+  
   return (
     <div className={`${BASE_CLASSNAME} ${containerClass}`}>
       <div

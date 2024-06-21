@@ -1,20 +1,17 @@
-import Grid from "@/app/components/Grid";
 import React from "react";
 import SlideNav from "./Client/Slidernav";
 //style scss
 import "./index.scss";
 
-const Testimonial = () => {
+const BASE_CLASSNAME = "testimonial_container"
+
+const Testimonial = ({
+  data
+}) => {
   return (
-    <>
-      <section className="testimonial-area">
-        <Grid classNames="testimonial-container">
-          <Grid.Item xs={12} sm={12} md={12} lg={12} xlg={12}>
-            <SlideNav />
-          </Grid.Item>
-        </Grid>
-      </section>
-    </>
+    <section className={BASE_CLASSNAME} >
+      <SlideNav data={data} />
+    </section>
   );
 };
 

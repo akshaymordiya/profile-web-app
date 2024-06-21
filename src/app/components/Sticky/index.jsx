@@ -44,7 +44,6 @@ const Sticky = ({
   const capturedOffset = useRef(null);
   const offsetContext = useContext(OffsetContext);
   const breakpoint = useBreakpoint();
-  console.log("currentBreakpoint", breakpoint);
 
   useEffect(() => {
     requestAnimationFrame(() => stickyScrolling());

@@ -1,0 +1,13 @@
+@import "../../../styles/variables";
+
+.ratings_container {
+  display: flex;
+  gap: 0.3rem;
+  width: fit-content;
+  align-items: center;
+  height: auto;
+
+  &_star {
+    color: $yellow;
+  }
+}

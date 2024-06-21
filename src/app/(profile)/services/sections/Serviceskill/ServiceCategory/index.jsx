@@ -3,33 +3,31 @@ import React from "react";
 //style scss
 import './index.scss'
 
+const BASE_CLASSNAME = 'skill-box-container'
+
 const ServiceCategory = ({
-    serviceTitle = "",
-    serviceHref = "/",
-    serviceIconLeft = Icon,
-    serviceIconRight = Icon,
+  title = "",
+  link = "/",
+  iconLeft = Icon,
+  iconRight = Icon,
 }) => {
   return (
-    <>
-      <div className="inner-service-category">
-        <Link
-          className="inner-service-content"
-          href={serviceHref}
-        >
-          <div className="inner-service-category-content">
-            <span>
-              {serviceIconLeft}
-            </span>
-            <span>{serviceTitle}</span>
-          </div>
-          <div className="inner-service-category-link">
-            <span>
-             {serviceIconRight}
-            </span>
-          </div>
-        </Link>
+    <Link
+      className={`${BASE_CLASSNAME}`}
+      href={link}
+    > 
+      <div className={`${BASE_CLASSNAME}_content`}>
+        <span>
+          {iconLeft}
+        </span>
+        <span>{title}</span>
       </div>
-    </>
+      <div className={`${BASE_CLASSNAME}_list`}>
+        <span>
+          {iconRight}
+        </span>
+      </div>
+    </Link>
   );
 };
 
