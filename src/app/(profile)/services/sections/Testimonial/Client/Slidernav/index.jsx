@@ -61,37 +61,6 @@ const SlideNav = ({
           );
         })}
       </Slider>
-      {/* <Slider
-      {...nav1Settings}
-        asNavFor={nav1}
-        ref={(slider) => (sliderRef2 = slider)}
-        slidesToShow={3}
-        swipeToSlide={true}
-        focusOnSelect={true}
-      >
-        {service.testimonials?.map((item, index) => {
-          return (
-            <div
-              key={index}
-              className="testimonial-user-item"
-            >
-              <div className="testimonial-user-thumb">
-                <img src={item?.image} alt="avtar-image" />
-              </div>
-              <div className="testimonial-user-content">
-                <h3 className="testimonial-user-title">{item?.title}</h3>
-                <span className="testimonial-user-designation">
-                  {item?.position}
-                  <Link href="#">{item?.passion}</Link>
-                </span>
-              </div>
-              <div
-                className="testimonial-user-border"
-              ></div>
-            </div>
-          );
-        })}
-      </Slider> */}
     </div>
   );
 };

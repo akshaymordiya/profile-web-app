@@ -8,7 +8,6 @@
   .contact-category {
     width: 100%;
     padding: 0px 30px;
-    padding-bottom: 50px;
     @include respond-to("extra_large_desktop") {
       max-width: 1320px;
     }
@@ -34,6 +33,7 @@
 }
 
 .contact-category-wrapper {
+  margin-bottom: 50px;
   .contact-category-btn {
     height: 60px;
     line-height: 60px;

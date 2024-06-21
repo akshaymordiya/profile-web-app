@@ -2,27 +2,40 @@ import React from "react";
 import SectionBox from "@/app/components/SectionBox";
 import WorkSilder from "./Client/WorkSlider";
 import Grid from "@/app/components/Grid";
-//data json
-import work from "../../../../../data/work.page.json";
+
 //style scss
 import "./index.scss";
+import Fade from "@/app/components/Fade";
 
-const Hero = () => {
-  const BASE_CLASSNAME = "porfolio-area";
+const Hero = ({ data = {} }) => {
+  const BASE_CLASSNAME = "porfolio_area";
+  const { content } = data;
   return (
     <>
-      <div className="porfolio-slider-area">
-        <div className="porfolio-overlay">
+      <Grid classNames={`${BASE_CLASSNAME}_wrapper`}>
+        <Grid.Item
+          xs={12}
+          sm={12}
+          lg={12}
+          md={12}
+          xlg={12}
+          itemClass="porfolio-overlay"
+          data-speed="0.5"
+        >
           <div className="porfolio-text-1">
-            <SectionBox
-              containerClass="porfolio-slider-title"
-              title={work.hero.title}
+           <Fade animationType="slideInBottom"
+           delay={200}
+           >
+           <SectionBox
+              itemClass="porfolio-slider-title"
+              title={data.title}
             />
+           </Fade>
           </div>
-          <WorkSilder />
-        </div>
-      </div>
-      <Grid classNames={`${BASE_CLASSNAME}-wrapper`}>
+          <WorkSilder content={content} />
+        </Grid.Item>
+      </Grid>
+      <Grid classNames={`${BASE_CLASSNAME}_projectlist`}>
         <Grid.Item
           xs={12}
           sm={12}
@@ -32,8 +45,8 @@ const Hero = () => {
           itemClass="portfolio-list-text"
           data-speed="0.5"
         >
-          <p>{work.projectTitle}</p>
-          <p>{work.projectTitle}</p>
+          <p>{data.projectTitle}</p>
+          <p>{data.projectTitle}</p>
         </Grid.Item>
       </Grid>
     </>

@@ -1,12 +1,9 @@
 import React from "react";
 import CTA from "@/app/components/CTA";
 import Grid from "@/app/components/Grid";
-import SectionBox from "@/app/components/SectionBox";
 import Section from "@/app/components/Section";
 //style scss
 import "./index.scss";
-//data json
-import service from "../../../../../data/service.page.json";
 
 const BASE_CLASSNAME = "price_container";
 

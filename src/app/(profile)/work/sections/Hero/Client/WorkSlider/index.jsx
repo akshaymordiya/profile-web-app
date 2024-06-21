@@ -3,12 +3,10 @@ import React from "react";
 import Slider from "react-slick";
 import Grid from "@/app/components/Grid";
 import IMG from "@/app/components/IMG";
-//data json
-import work from "../../../../../../../data/work.page.json";
 //style css
 import './index.scss';
 
-const WorkSilder = () => {
+const WorkSilder = ({content :{slider}}) => {
   const settings = {
     loop: true,
     autoplay: true,
@@ -53,7 +51,7 @@ const WorkSilder = () => {
       <Grid>
         <Grid.Item xs={12} sm={12} md={12} lg={12} xlg={12}>
           <Slider {...settings}>
-            {work.hero.slider.map((item) => (
+            {slider.map((item) => (
               <IMG
                 src={item?.slide}
                 useContainer

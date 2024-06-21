@@ -174,14 +174,14 @@
           perspective: 400px;
         }
 
-        .title {
+        .title h4 {
           font-size: 70px;
           font-weight: 700;
           font-size: 80px;
           font-family: $rondal-font;
           line-height: 1;
           letter-spacing: -0.02em;
-          color: $white;
+          color: $white !important;
           margin-bottom: 25px;
           perspective: 400px;
           width: 390px;

@@ -1,4 +1,3 @@
-
 import React from "react";
 import Grid from "@/app/components/Grid";
 import SectionBox from "@/app/components/SectionBox";
@@ -50,7 +49,7 @@ const Hero = ({
         xlg={6}
         itemClass={`${BASE_CLASSNAME}_col-2`}
       >
-        <ResponsiveSlider />
+        <ResponsiveSlider content={data.slider} />
       </Grid.Item>
     </Grid>
   );

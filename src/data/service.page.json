@@ -18,21 +18,21 @@
         "listName": "UI/UX Designer, Envato"
       }
     ],
-    "slider":{
-      "slider1":[
+    "slider": {
+      "slider1": [
         {
-          "slide":"/assets/services-slider-1.jpg"
+          "slide": "/assets/services-slider-1.jpg"
         },
         {
-          "slide":"/assets/services-slider-2.jpg"
+          "slide": "/assets/services-slider-2.jpg"
         }
       ],
-      "slider2":[
+      "slider2": [
         {
-          "slide":"/assets/services-slider-3.jpg"
+          "slide": "/assets/services-slider-3.jpg"
         },
         {
-          "slide":"/assets/services-slider-4.jpg"
+          "slide": "/assets/services-slider-4.jpg"
         }
       ]
     }
@@ -246,43 +246,43 @@
     "title":"Services & Pricing",
     "paragraph":"No surprises. No hassles. Just right.",
     "plans":[
-        {
-          "id": 1,
-          "head": {
-            "title": "1 month",
-            "excert": "Paid monthly"
-          },
-          "body": {
-            "title": "Cancel anytime",
-            "excert": "$1300/mo"
-          },
-          "btn": "Get started"
+      {
+        "id": 1,
+        "head": {
+          "title": "1 month",
+          "excert": "Paid monthly"
         },
-        {
-          "id": 2,
-          "head": {
-            "title": "3 month",
-            "excert": "Paid monthly"
-          },
-          "body": {
-            "title": "Save $800",
-            "excert": "$4200/mo"
-          },
-          "btn": "Get started"
+        "body": {
+          "title": "Cancel anytime",
+          "excert": "$1300/mo"
         },
-        {
-          "id": 3,
-          "head": {
-            "title": "Not sure?",
-            "excert": "Check the skill"
-          },
-          "body": {
-            "title": "",
-            "excert": "",
-            "text": "You can order 1 free task"
-          },
-          "btn": "Free Skill Check"
-        }
-      ]
+        "btn": "Get started"
+      },
+      {
+        "id": 2,
+        "head": {
+          "title": "3 month",
+          "excert": "Paid monthly"
+        },
+        "body": {
+          "title": "Save $800",
+          "excert": "$4200/mo"
+        },
+        "btn": "Get started"
+      },
+      {
+        "id": 3,
+        "head": {
+          "title": "Not sure?",
+          "excert": "Check the skill"
+        },
+        "body": {
+          "title": "",
+          "excert": "",
+          "text": "You can order 1 free task"
+        },
+        "btn": "Free Skill Check"
+      }
+    ]
   }
 }

@@ -1,7 +1,10 @@
 import { Inter } from "next/font/google";
 import "../../styles/global.scss";
-import ScrollToTop from "../components/scrollToTop";
-import Navbar from "../components/Navbar";
+import ScrollToTop from "@/app/components/scrollToTop";
+import Navbar from "@/app/components/Navbar";
+import Footer from "./sections/Footer";
+import Aos from "../components/AOS";
+import "aos/dist/aos.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,8 +17,11 @@ export default function Layout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
+        <Aos />
         <Navbar />
         {children}
+        <Footer />
+        <div id="portal"></div>
         <ScrollToTop />
       </body>
     </html>

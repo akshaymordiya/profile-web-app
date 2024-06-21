@@ -2,7 +2,7 @@ import React from "react";
 //components
 import Fade from "@/app/components/Fade";
 //style scss
-import './index.scss';
+import "./index.scss";
 
 const BASE_CLASSNAME = "inner-service-list-wrap";
 

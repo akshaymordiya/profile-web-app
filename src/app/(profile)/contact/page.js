@@ -1,16 +1,17 @@
-
 import React from "react";
 import ContactCategory from "./sections/ContactCategory/Client/ContactCategory";
 import ContactForm from "./sections/ContactForm";
 import Hero from "./sections/Hero";
+import contactData from "../../../data/contact.page.json";
 
 const Contact = () => {
+  const { hero, category, requestForm } = contactData;
   return (
-    <>
-      <Hero />
-      <ContactCategory />
-      <ContactForm />
-    </>
+    <React.Fragment>
+      <Hero data={hero} />
+      <ContactCategory data={category} />
+      <ContactForm data={requestForm} />
+    </React.Fragment>
   );
 };
 

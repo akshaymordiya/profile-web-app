@@ -4,19 +4,11 @@ import SectionBox from "@/app/components/SectionBox";
 import ProgressBar from "@/app/components/Progressbar";
 import Experience from "@/app/components/Experience";
 import { renderIconComponent } from "@/Icons";
+import "./index.scss";
 
-import "./index.scss"
+const BASE_CLASSNAME = "personal-info";
 
-const BASE_CLASSNAME = "personal-info"
-
-const SkillSets = ({
-  content: {
-    skills,
-    experiences,
-    educations
-  }
-}) => {
-  
+const SkillSets = ({ content: { skills, experiences, educations } }) => {
   return (
     <div className={BASE_CLASSNAME}>
       <div className={`${BASE_CLASSNAME}-skill mb`}>
@@ -26,25 +18,25 @@ const SkillSets = ({
           containerClass="section-box"
         >
           {skills.skillsets.map((item, index) => (
-              <ProgressBar
-                data-aos="fade-left"
-                key={index}
-                label={item?.skillslabel}
-                progressValue={item?.Value}
-              />
-            ))}
+            <ProgressBar
+              data-aos="fade-left"
+              key={index}
+              label={item?.skillslabel}
+              progressValue={item?.Value}
+            />
+          ))}
         </SectionBox>
       </div>
       {[
         {
           class: "experience",
-          ...experiences
+          ...experiences,
         },
         {
           class: "education",
-          ...educations
-        }
-      ].map(element => (
+          ...educations,
+        },
+      ].map((element) => (
         <div className={`${BASE_CLASSNAME}-${element.class} mb`}>
           <SectionBox
             title={element.title}

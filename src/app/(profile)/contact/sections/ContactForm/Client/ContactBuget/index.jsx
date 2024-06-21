@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import contact from "../../../../../../../data/contact.page.json";
 import SectionBox from "@/app/components/SectionBox";
 
 const ContactBrand = ({ label, labelText, labelClass, onClick }) => {
@@ -14,36 +13,30 @@ const ContactBrand = ({ label, labelText, labelClass, onClick }) => {
   );
 };
 
-const ContactBuget = () => {
+const ContactBuget = ({content : {contactbuget}}) => {
   const [activeIndex, setActiveIndex] = useState(null);
-
   const handleClick = (index) => {
     setActiveIndex(index);
   };
 
   return (
-    <>
-      <div
-        className="contact-category-wrapper"
-        style={{ paddingBottom: "50px" }}
-      >
-        <SectionBox
-          title={contact.contactbuget.title}
-          containerClass="contact-category-title"
+    <div className="contact-category-wrapper">
+      <SectionBox
+        title={contactbuget.title}
+        containerClass="contact-category-title"
+      />
+      {contactbuget.categories.map((item, index) => (
+        <ContactBrand
+          key={index}
+          label={item.label}
+          labelText={item.value}
+          labelClass={`contact-category-btn ${
+            activeIndex === index ? "active" : ""
+          }`}
+          onClick={() => handleClick(index)}
         />
-        {contact.contactbuget.options.map((item, index) => (
-          <ContactBrand
-            key={index}
-            label={item.label}
-            labelText={item.value}
-            labelClass={`contact-category-btn ${
-              activeIndex === index ? "active" : ""
-            }`}
-            onClick={() => handleClick(index)}
-          />
-        ))}
-      </div>
-    </>
+      ))}
+    </div>
   );
 };
 

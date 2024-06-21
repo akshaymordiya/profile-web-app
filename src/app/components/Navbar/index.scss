@@ -5,7 +5,7 @@
   width: 100%;
   height: auto;
   padding: 1.8rem 5rem;
-  padding-bottom:0;
+  padding-bottom: 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -14,11 +14,11 @@
   align-items: center;
   z-index: 5;
 
-  @include respond-to('small_tablet') {
+  @include respond-to("small_tablet") {
     padding: 1.8rem 3rem;
   }
 
-  @include respond-to('phone') {
+  @include respond-to("phone") {
     padding: 1.8rem 2rem;
   }
 
@@ -28,10 +28,28 @@
     align-items: center;
 
     .contact_btn {
-      @include respond-to('small_phone'){
+      @include respond-to("small_phone") {
         display: none;
         width: 0px;
         height: 0px;
+      }
+    }
+    .menu_icon {
+      display: none;
+      @include respond-to("desktop") {
+        display: block;
+      }
+      @include respond-to("large_tablet") {
+        display: block;
+      }
+      @include respond-to("small_tablet") {
+        display: block;
+      }
+      @include respond-to("phone") {
+        display: block;
+      }
+      @include respond-to("small_phone") {
+        display: block;
       }
     }
   }

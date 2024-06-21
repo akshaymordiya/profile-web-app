@@ -12,11 +12,6 @@
   }
 
   &.hidden-on-small {
-    // visibility:  hidden;
-    // width: 0%;
-    // height: 0%;
-    // position: absolute;
-    // left: 0;
     @include respond-to("small_devices") {
       visibility: visible;
       width: 100%;
@@ -75,9 +70,6 @@
       &::after {
         content: "";
         width: 0%;
-        @include respond-to("small_devices") {
-          content: "0" counter(count);
-        }
       }
     }
 
@@ -95,7 +87,3 @@
     }
   }
 }
-.counter-row {
-  counter-reset: count;
-}
-

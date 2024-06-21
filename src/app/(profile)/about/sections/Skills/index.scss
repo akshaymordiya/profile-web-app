@@ -9,27 +9,23 @@
   &_grid {
     padding: 4rem 9rem;
     padding-bottom: 2rem;
-
-    @include respond-to("desktop"){
-      padding: 0 4rem;
+    @include respond-to("desktop") {
+      padding: 0 5rem;
     }
-
-    @include respond-to("large_tablet"){
-      padding: 0 4rem;
+    @include respond-to("large_tablet") {
+      padding: 0 5rem;
     }
-    
-    @include respond-to("small_tablet"){
+    @include respond-to("small_tablet") {
       padding: 0 3rem;
     }
-    
-    @include respond-to("phone"){
+    @include respond-to("phone") {
       padding: 0 2rem;
     }
 
     &-col-1 {
       position: relative;
-      height: 400px !important;
-      padding-top: 80px;
+      height: fit-content !important;
+      padding-top: 40px;
       place-content: start !important;
 
       @include respond-to("large_tablet") {
@@ -51,14 +47,20 @@
           margin-bottom: 1rem;
           font-weight: 500;
           font-size: 40px;
-          line-height: 30px;
           text-transform: uppercase;
           color: $black;
           font-family: $primary-fonts;
           margin-bottom: 20px;
           
           h4 {
-            font-size: 40px;
+            font-size: 60px;
+            @include respond-to("small_tablet") {
+              font-size: 45px;
+            }
+      
+            @include respond-to("phone") {
+              font-size: 30px;
+            }
           }
         }
 

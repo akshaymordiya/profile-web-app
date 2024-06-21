@@ -1,10 +1,10 @@
 "use client";
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from "react";
 
 //components
-import IMG from '@/app/components/IMG';
+import IMG from "@/app/components/IMG";
 
-import "./index.scss"
+import "./index.scss";
 
 const BASE_CLASSNAME = "counter_box";
 
@@ -22,7 +22,7 @@ const Counter = ({ number = 0, text, image, title }) => {
           setIsInViewport(false);
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 }  
     );
 
     if (counterRef.current) {
@@ -47,8 +47,8 @@ const Counter = ({ number = 0, text, image, title }) => {
             clearInterval(intervalId);
             return prevCount;
           }
-        });
-      }, 50); // Adjust the interval speed as needed
+        })
+      }, 50) // Adjust the interval speed as needed
     }
 
     return () => {
@@ -57,17 +57,15 @@ const Counter = ({ number = 0, text, image, title }) => {
   }, [isInViewport, count, number]);
 
   return (
-    <div ref={counterRef} className={BASE_CLASSNAME} >
+    <div ref={counterRef} className={BASE_CLASSNAME}>
       <div className={`${BASE_CLASSNAME}_count`}>
         <span>
           <div className="counter-item">
-            <strong>
-              {`${count} `}
-            </strong>
+            <strong>{`${count} `}</strong>
             <span> +</span>
           </div>
         </span>
-        <IMG 
+        <IMG
           useRawImgTag
           src={image}
           imageClasses={`${BASE_CLASSNAME}_count_img`}

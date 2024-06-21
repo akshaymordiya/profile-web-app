@@ -38,26 +38,26 @@
       }
       @include respond-to("large_tablet") {
         font-size: 35px;
-        padding-right: 0px;
+        padding: 0 5rem;
       }
       @include respond-to("small_tablet") {
         font-size: 30px;
-        padding-right: 0px;
+        padding: 0 3rem;
         line-height: 45px;
       }
       @include respond-to("phone") {
         font-size: 30px;
-        padding-right: 0px;
+        padding: 0 2rem;
         line-height: 45px;
       }
-      span.line {
-        height: 2px;
-        width: 100px;
-        background-color: $black;
-        display: inline-block;
-        margin: 0 10px;
-        transform: translateY(-10px);
-      }
+      // span.line {
+      //   height: 2px;
+      //   width: 100px;
+      //   background-color: $black;
+      //   display: inline-block;
+      //   margin: 0 10px;
+      //   transform: translateY(-10px);
+      // }
     }
   }
 }
