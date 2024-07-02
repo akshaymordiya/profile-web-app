@@ -67,7 +67,6 @@ const ServiceCards = ({
         }
         return Image
       })}
-      
       <Sticky
         behaviour={{
           "parent": "sticky_grid_container",

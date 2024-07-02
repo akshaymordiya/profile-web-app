@@ -1,3 +1,4 @@
+import React from "react";
 import DriveFileRenameOutlineIcon from "@mui/icons-material/DriveFileRenameOutline";
 import SubdirectoryArrowRightIcon from "@mui/icons-material/SubdirectoryArrowRight";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
@@ -65,7 +66,10 @@ export const getIcon = (keys = []) => {
 export const renderIconComponent = (key, returnReference = false) => {
     const Component = Icons[key];
 
-    if(!Component) return <></>;
+    if(!Component) return (
+        <React.Fragment>
+        </React.Fragment>
+    );
 
     if(returnReference){
         return Component;

@@ -102,8 +102,8 @@
     
     &-service-card {
       place-content: start !important;
-      height: fit-content;
-      
+      height: fit-content !important;
+            
       .stack_card {
         display: flex;
         justify-content: center;

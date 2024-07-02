@@ -7,12 +7,11 @@ import { getIcon, renderIconComponent } from "@/Icons";
 
 import "./index.scss";
 
-const BASE_CLASSNAME ="skills_container";
+const BASE_CLASSNAME ="services_skills_container";
 
 const Skills = ({
   data
 }) => {
-
   return (
     <div className={BASE_CLASSNAME}>
       <SectionBox

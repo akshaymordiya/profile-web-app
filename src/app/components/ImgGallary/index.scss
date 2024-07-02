@@ -1,0 +1,12 @@
+.portfolio-thumb {
+  width: 90%;
+  
+  &-img {
+    width: 100%;
+    border-radius: 12px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

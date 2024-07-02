@@ -3,6 +3,16 @@ import React, { useEffect, useState, useRef, useMemo } from 'react'
 
 import "./index.scss";
 
+
+const animationTypes = {
+  "fadeIn": "fade-in",
+  "fadeOut": "fade-out",
+  "slideInLeft": "slide-in-left",
+  "slideInRight": "slide-in-right",
+  "slideInBottom": "slide-in-bottom",
+  "flipX": "flip-x"
+}
+
 const Fade = ({
   children,
   animationType = 'fadeIn', // Default animation type
@@ -36,20 +46,14 @@ const Fade = ({
   }, [delay]);
 
   const getAnimationClass = () => {
-    switch (animationType) {
-      case 'fadeIn':
-        return 'fade-in';
-      case 'fadeOut':
-        return 'fade-out';
-      case 'slideInLeft':
-        return 'slide-in-left';
-      case 'slideInRight':
-        return 'slide-in-right';
-      case 'slideInBottom':
-        return 'slide-in-bottom';
-      default:
-        return 'fade-in';
+
+    const type = animationTypes[animationType];
+
+    if(!type){
+      return "fade-in";
     }
+
+    return type;
   };
 
   const styleObject = useMemo(() => {

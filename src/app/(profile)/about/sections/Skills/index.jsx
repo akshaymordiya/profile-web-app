@@ -10,7 +10,7 @@ import SkillSets from '../../partials/Skillsets';
 import "./index.scss";
 import Sticky from '@/app/components/Sticky';
 
-const BASE_CLASSNAME = "skills_container";
+const BASE_CLASSNAME = "about_skills_container";
 
 const Skills = ({ data = {} }) => {
   const { info, content } = data;

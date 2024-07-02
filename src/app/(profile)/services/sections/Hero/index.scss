@@ -1,7 +1,7 @@
 @import "../../../../../styles/variables";
 @import "../../../../../styles/mixins";
 
-.hero-container {
+.services_hero-container {
   background-color: #f6f9ff;
   padding: 0 85px;
   @include respond-to("desktop") {

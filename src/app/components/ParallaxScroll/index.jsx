@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useContext } from 'react';
 //context
-import OffsetContext from '@/context/offset.context';
 
 import './index.scss';
 
@@ -9,6 +8,7 @@ const ParallaxScroll = ({
   speed = 0.5, 
   children, 
   className = "",
+  direction = "y",
   enableLogs = false
 }) => {
   const parallaxRef = useRef();
@@ -19,8 +19,13 @@ const ParallaxScroll = ({
 
   const handleParallax = () => {
     if(parallaxRef.current){
-      const parallaxRect = parallaxRef.current.getBoundingClientRect();
-      parallaxRef.current.style.transform = `translateY(${parallaxRect.top * speed}px)`
+      if(direction === "y"){
+        const parallaxRect = parallaxRef.current.getBoundingClientRect();
+        parallaxRef.current.style.transform = `translateY(${parallaxRect.top * speed}px)`
+      } else if(direction === "x") {
+        const parallaxRect = parallaxRef.current.getBoundingClientRect();
+        parallaxRef.current.style.transform = `translateX(${parallaxRect.top * speed}px)`
+      }
     }
     requestAnimationFrame(() => handleParallax())
   }

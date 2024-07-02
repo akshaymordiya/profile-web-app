@@ -9,7 +9,7 @@ import CTA from "@/app/components/CTA";
 import { renderIconComponent } from "@/Icons";
 import "./index.scss";
 
-const BASE_CLASSNAME = "hero_container";
+const BASE_CLASSNAME = "about_hero_container";
 
 const Hero = ({
   data = {}

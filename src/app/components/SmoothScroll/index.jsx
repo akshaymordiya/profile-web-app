@@ -10,9 +10,10 @@ const SmoothScroll = ({
 }) => {
 
   const [windowSize, setWindowSize] = useState({
-    width: 0,
-    height: 0
+    width: typeof window !== 'undefined' ? window.innerWidth : 0,
+    height: typeof window !== 'undefined' ? window.innerHeight : 0,
   });
+
   const dataRef = useRef({
     ease: 0.1,
     current: 0,
@@ -20,7 +21,6 @@ const SmoothScroll = ({
     rounded: 0,
   })
 
-  //2.
   const scrollingContainerRef = useRef();
 
   useEffect(() => {
@@ -40,33 +40,43 @@ const SmoothScroll = ({
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // 4.
   useEffect(() => {
     setBodyHeight();
-  }, [windowSize.height]);
+  }, [windowSize])
 
   const setBodyHeight = () => {
-    document.body.style.height = `${
-      scrollingContainerRef.current.getBoundingClientRect().height
-    }px`;
+    if (scrollingContainerRef.current) {
+      const currentHeight = scrollingContainerRef.current.getBoundingClientRect().height;
+      document.body.style.height = `${currentHeight}px`;
+    }
   };
 
-  // 5.
   useEffect(() => {
     requestAnimationFrame(() => smoothScrollingHandler());
   }, []);
 
   const smoothScrollingHandler = () => {
-    dataRef.current.current = window.scrollY;
-    dataRef.current.previous += (dataRef.current.current - dataRef.current.previous) * dataRef.current.ease;
+    const bodyHeight = document.body.clientHeight;
+    if(Math.abs(bodyHeight - scrollingContainerRef.current.getBoundingClientRect().height) > 1){
+      setBodyHeight()
+    }
 
-    scrollingContainerRef.current.style.transform = `translateY(-${dataRef.current.previous}px)`;
+    if(scrollingContainerRef.current){
+      dataRef.current.current = window.scrollY;
+      dataRef.current.previous += (dataRef.current.current - dataRef.current.previous) * dataRef.current.ease;
+  
+      scrollingContainerRef.current.style.transform = `translateY(-${dataRef.current.previous}px)`;
+    }
+
     // Recursive call
     requestAnimationFrame(() => smoothScrollingHandler());
   };
-
+  
   return (
-    <OffsetContext.Provider value={dataRef.current}>
+    <OffsetContext.Provider value={{
+      offset: dataRef.current,
+      setBodyHeight
+    }}>
       <div className="parent">
         <div ref={scrollingContainerRef}>{children}</div>
       </div>
