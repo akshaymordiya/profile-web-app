@@ -7,7 +7,7 @@ import ResponsiveSlider from "./Client/Slider";
 // style scss
 import './index.scss';
 
-const BASE_CLASSNAME = "hero-container";
+const BASE_CLASSNAME = "services_hero-container";
 
 const Hero = ({
   data = {}

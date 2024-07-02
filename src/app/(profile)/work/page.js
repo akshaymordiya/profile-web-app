@@ -1,19 +1,19 @@
 import React from "react";
 import BrandButton from "@/app/components/Brand";
 import Hero from "./sections/Hero";
-import WorkItem from "./WorkItem";
+import WorkList from "./sections/Work";
 //data json
 import workData from "../../../data/work.page.json";
 
 //TODO:: The child page of work route
 const Work = () => {
-  const { technologies, projectList, hero } = workData;
+  const { work, hero } = workData;
   return (
-    <>
+    <React.Fragment>
       <Hero data={hero} />
-      <WorkItem data={projectList} />
-      <BrandButton data={technologies} />
-    </>
+      <WorkList data={work} />
+      <BrandButton />
+    </React.Fragment>
   );
 };
 

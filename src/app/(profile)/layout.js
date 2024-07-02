@@ -6,7 +6,6 @@ import "slick-carousel/slick/slick-theme.css";
 
 import Navbar from "@/app/components/Navbar";
 import CustomCursor from "@/app/components/MouseCursor";
-import Aos from "@/app/components/AOS";
 import Footer from "@/app/components/Footer";
 import ScrollToTop from "@/app/components/scrollToTop";
 import SmoothScroll from "@/app/components/SmoothScroll";
@@ -20,8 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <Aos />
+      <body className={inter.className}>
         <SmoothScroll>
           <Navbar />
             <main>

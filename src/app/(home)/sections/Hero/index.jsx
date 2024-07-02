@@ -17,10 +17,12 @@ import menWork from "../../../../../public/assets/lottie/men-work.json";
 import "./index.scss";
 import { renderIconComponent } from '@/Icons';
 
-const BASE_CLASSNAME = "hero-container"
+const BASE_CLASSNAME = "home_hero-container"
 
 
-const Hero = () => {
+const Hero = ({
+  data = {}
+}) => {
   return (
     <section className={BASE_CLASSNAME} >
       {['top', 'bottom'].map((pos, index) => (
@@ -47,7 +49,7 @@ const Hero = () => {
           className: "scroll_icon"
         }}
       />
-      <ParallaxScroll speed={0.2}>
+      <ParallaxScroll speed={-0.2}>
         <Grid classNames={`${BASE_CLASSNAME}_grid`}>
           <Grid.Item 
             xs={12}
@@ -59,7 +61,7 @@ const Hero = () => {
             data-speed="0.5"
           >
             {
-              homeData.hero.name.map((hero)=>(
+              data.name.map((hero)=>(
                 <AnimatedCharactors
                 charactors={hero}
                 capitlized
@@ -95,7 +97,7 @@ const Hero = () => {
             data-speed="0.8"
           >
             <CTA 
-              linkText={homeData.hero.button.title}
+              linkText={data.button.title}
               linkHref='/work'
               linkClass='btn-blue'
               icon={CallMadeIcon}
@@ -115,7 +117,7 @@ const Hero = () => {
             itemClass='description_text'
             data-speed="0.8"
           >
-             {homeData.hero.description}
+             {data.description}
           </Grid.Item>
         </Grid>
       </ParallaxScroll>

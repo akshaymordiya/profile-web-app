@@ -42,7 +42,7 @@ const Sticky = ({
 
   const containerRef = useRef(null);
   const capturedOffset = useRef(null);
-  const offsetContext = useContext(OffsetContext);
+  const { offset: offsetContext } = useContext(OffsetContext);
   const breakpoint = useBreakpoint();
 
   useEffect(() => {

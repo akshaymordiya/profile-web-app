@@ -6,7 +6,7 @@
   position: fixed;
   z-index: 3;
   bottom: 30px;
-  left: calc(100% - 80px);
+  left: calc(100% - 80px) !important;
   right: 30px;
   border-radius: 50%;
   width: 50px;

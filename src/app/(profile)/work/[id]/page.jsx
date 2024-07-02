@@ -2,18 +2,31 @@ import workData from "../../../../data/work.page.json";
 import WorkDetails from "./WorkDetails";
 
 function WorkDetailsPage({ params }) {
-  const postId = params.id;
+  const workId = params.id;
+  const {
+    work : {
+      left = [],
+      right = []
+    }
+  } = workData
+
+  const work = ([...left, ...right] ?? []).find(w => parseInt(w.id) === parseInt(workId));
 
   return (
-    <WorkDetails id={postId} />
+    <WorkDetails data={work} />
   )
 }
 
 export default WorkDetailsPage;
 
 export async function generateStaticParams() {
-  
-  return (workData.projectList ?? []).map((post) => ({
-    id: `${post.id}`,
+  const {
+    work : {
+      left = [],
+      right = []
+    }
+  } = workData
+  return ([...left, ...right] ?? []).map((work) => ({
+    id: `${work.id}`,
   }));
 }
