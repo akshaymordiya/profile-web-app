@@ -21,6 +21,7 @@
     "gsap": "^3.12.5",
     "lottie-react": "^2.4.0",
     "next": "14.2.3",
+    "nodemailer": "^6.9.14",
     "react": "^18",
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18",
@@ -31,7 +32,8 @@
     "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1",
     "wow.js": "^1.2.2",
-    "yet-another-react-lightbox": "^1.14.0"
+    "yet-another-react-lightbox": "^1.14.0",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "eslint": "^8",

@@ -12,78 +12,32 @@
       "para": "Interested in working with me? Submit your project inquiry using the form below."
     }
   },
-  "requestForm": {
+  "form": {
     "title": "Request A Quote",
-    "button": {
-      "text": "Send Message"
-    },
-    "content": {
-      "contactbuget": {
-        "title": "Project budget (USD)",
-        "categories": [
-          {
-            "label": "10_20k",
-            "value": "10-20k"
-          },
-          {
-            "label": "30_40k",
-            "value": "30-40k"
-          },
-          {
-            "label": "40_50k",
-            "value": "40-50K"
-          },
-          {
-            "label": "50_100K",
-            "value": "50-100K"
-          },
-          {
-            "label": ">_100K",
-            "value": "> 100K"
-          }
-        ]
-      }
-    }
-  },
-    "category": {
+    "btnText": "Send Message",
+    "serviceTags": {
       "title": "I'm interested in...",
-      "categories": [
-        {
-          "label": "branding",
-          "value": "branding"
-        },
-        {
-          "label": "web_design",
-          "value": "Web Design"
-        },
-        {
-          "label": "app_design",
-          "value": "App Design"
-        },
-        {
-          "label": "logo",
-          "value": "Logo"
-        },
-        {
-          "label": "digital_marketing",
-          "value": "Digital Marketing"
-        },
-        {
-          "label": "android_development",
-          "value": "Android Development"
-        },
-        {
-          "label": "ios_development",
-          "value": "iOS Development"
-        },
-        {
-          "label": "design_concept",
-          "value": "Design Concept"
-        },
-        {
-          "label": "others",
-          "value": "Other"
-        }
+      "list": [
+        "branding",
+        "Web Design",
+        "App Design",
+        "Logo",
+        "Digital Marketing",
+        "Android Development",
+        "iOS Development",
+        "Design Concept",
+        "Other"
+      ]
+    },
+    "priceTags": {
+      "title": "Project budget (USD)",
+      "list": [
+        "10-20k",
+        "30-40k",
+        "40-50K",
+        "50-100K",
+        "> 100K"
       ]
     }
+  }
 }
