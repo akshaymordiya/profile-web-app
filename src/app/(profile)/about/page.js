@@ -16,13 +16,7 @@ export const metadata = {
 };
 
 const About = () => {
-  const {
-    hero,
-    aboutMe,
-    counter,
-    awards,
-    technologies
-  } = aboutData
+  const { hero, aboutMe, counter, awards, technologies } = aboutData;
   return (
     <React.Fragment>
       <Hero data={hero} />
@@ -31,7 +25,7 @@ const About = () => {
       <CounterBox data={counter} />
       <AwardArea data={awards} />
       <BrandButton data={technologies} />
-    </ React.Fragment>
+    </React.Fragment>
   );
 };
 

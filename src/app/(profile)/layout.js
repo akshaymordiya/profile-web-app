@@ -10,7 +10,6 @@ import Aos from "@/app/components/AOS";
 import Footer from "@/app/components/Footer";
 import ScrollToTop from "@/app/components/scrollToTop";
 const inter = Inter({ subsets: ["latin"] });
-// import  {metadata}  from 'next';
 
 export const metadata = {
   title: {

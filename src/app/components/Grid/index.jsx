@@ -1,18 +1,11 @@
-
-import React from 'react';
+import React from "react";
 import "./index.scss";
 
 const BASE_CLASSNAME = "grid-container";
 
-const Grid = ({
-  children,
-  classNames = ""
-}) => {
-  return (
-    <div className={`${BASE_CLASSNAME} ${classNames}`}>   {children}
-    </div>
-  )
-}
+const Grid = ({ children, classNames = "" }) => {
+  return <div className={`${BASE_CLASSNAME} ${classNames}`}>{children}</div>;
+};
 
 Grid.Item = ({
   children,
@@ -26,27 +19,27 @@ Grid.Item = ({
 }) => {
   const getClassNames = () => {
     const breakpoints = {
-      'xs': xs || 12,
-      'sm': sm || xs,
-      'md': md || sm || xs,
-      'lg' : lg || md || sm ||xs,
-      'xlg': xlg || lg || md || sm ||xs
+      xs: xs || 12,
+      sm: sm || xs,
+      md: md || sm || xs,
+      lg: lg || md || sm || xs,
+      xlg: xlg || lg || md || sm || xs,
     };
 
     return Object.entries(breakpoints).reduce((cls, [key, breakpoint]) => {
-      if(breakpoint){
+      if (breakpoint) {
         cls += ` ${key}-${breakpoint}`;
       }
 
       return cls;
-    }, '');
-  }
+    }, "");
+  };
 
   return (
     <div className={`grid-item ${getClassNames()} ${itemClass}`} {...props}>
       {children}
     </div>
   );
-}
+};
 
-export default Grid
+export default Grid;

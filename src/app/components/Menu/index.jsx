@@ -36,7 +36,7 @@ const Menu = ({
       return (
         <div className="portal-wrapper">
           {createPortal(
-            <ResponsiveNav toggleMenu={toggleMenu}/>,
+            <ResponsiveNav toggleMenu={toggleMenu} />,
             document.getElementById("portal")
           )}
         </div>

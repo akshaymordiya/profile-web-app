@@ -1,10 +1,12 @@
-import React from 'react'
-import AutoModeOutlinedIcon from '@mui/icons-material/AutoModeOutlined';
+import React from "react";
+import AutoModeOutlinedIcon from "@mui/icons-material/AutoModeOutlined";
 
 const loading = () => {
   return (
-    <div className="loading-container"><AutoModeOutlinedIcon /></div>
-  )
-}
+    <div className="loading-container">
+      <AutoModeOutlinedIcon />
+    </div>
+  );
+};
 
-export default loading
+export default loading;
