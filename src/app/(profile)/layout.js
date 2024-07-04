@@ -30,6 +30,7 @@ export default function RootLayout({ children }) {
           <ScrollToTop />
           <div id="portal"></div>
         </SmoothScroll>
+        <div id="alert-box"></div>
       </body>
     </html>
   );
