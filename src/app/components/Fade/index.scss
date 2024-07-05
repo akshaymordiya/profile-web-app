@@ -30,6 +30,25 @@
   animation: slideCmpInBottom 1.5s forwards;
 }
 
+.flip-x {
+  opacity: 0;
+  animation-name: flipX;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes flipX {
+  from {
+    opacity: 0;
+    transform: rotateX(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+
 @keyframes fadeCmpIn {
   from { opacity: 0; }
   to { opacity: 1; }

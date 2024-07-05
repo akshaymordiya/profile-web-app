@@ -42,7 +42,7 @@ const Sticky = ({
 
   const containerRef = useRef(null);
   const capturedOffset = useRef(null);
-  const offsetContext = useContext(OffsetContext);
+  const { offset: offsetContext } = useContext(OffsetContext);
   const breakpoint = useBreakpoint();
 
   useEffect(() => {
@@ -90,7 +90,7 @@ const Sticky = ({
         bottom: preCalculatedBoundryOffset[behaviour.pos_left?.isSticky ? "stickyLeft" : "stickyRight" ]
       }
 
-      if(removeStickyonSmallerDevices && ['xs', 'sm'].includes(breakpoint)){
+      if(removeStickyonSmallerDevices && ['xs', 'sm', 'md'].includes(breakpoint)){
         const stickyElement = behaviour.pos_left.isSticky ? posLeft : posRight;
         stickyElement.style.transform = `translateY(0px)`;
         

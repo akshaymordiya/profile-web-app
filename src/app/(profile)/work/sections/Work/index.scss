@@ -1,0 +1,29 @@
+@import "../../../../../styles/variables";
+@import "../../../../../styles/mixins";
+
+.work_portfolio_container {
+  padding: 4rem 9rem;
+  padding-bottom: 2rem;
+  grid-gap: 52px !important;
+  
+  @include respond-to("desktop") {
+    padding: 0 5rem;
+  }
+  @include respond-to("large_tablet") {
+    padding: 0 5rem;
+  }
+  @include respond-to("small_tablet") {
+    padding: 0 3rem;
+  }
+  @include respond-to("phone") {
+    padding: 0 2rem;
+  }
+
+  .column {
+    place-content: start;
+
+    .big {
+      height: 560px !important;
+    }
+  }
+}

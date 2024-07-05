@@ -13,13 +13,13 @@
       top: 0;
       right: 315px;
       @include respond-to("large_tablet") {
-        right: 30px;
+        display: none;
       }
       @include respond-to("small_tablet") {
-        right: 30px;
+        display: none;
       }
       @include respond-to("phone") {
-        right: 30px;
+        display: none;
       }
 
       &_text {
@@ -99,11 +99,21 @@
 
   &_grid {
     padding: 6rem 2rem;
+
+    @include respond-to("large_tablet") {
+      padding: 6rem 2rem;
+    }
+    @include respond-to("small_tablet") {
+      padding: 4rem 2rem;
+    }
+    @include respond-to("phone") {
+      padding: 4rem 2rem;
+    }
     
     &-service-card {
       place-content: start !important;
-      height: fit-content;
-      
+      height: fit-content !important;
+            
       .stack_card {
         display: flex;
         justify-content: center;
@@ -126,7 +136,6 @@
         }
         
         .service-title-box {
-          
           .excert {
             font-size: 20px;
             padding-bottom: 10px;
@@ -140,22 +149,26 @@
           .title {
             font-weight: 500;
             font-size: 80px;
-            line-height: 1;
+            line-height: 90px;
             letter-spacing: -0.02em;
             color: $white;
             font-family: $primary-fonts;
             margin-bottom: 25px;
             @include respond-to("desktop") {
-              font-size: 60px;
+              font-size: 70px;
+              line-height: 80px;
             }
             @include respond-to("large_tablet") {
-              font-size: 50px;
+              font-size: 60px;
+              line-height: 70px;
             }
             @include respond-to("small_tablet") {
-              font-size: 40px;
+              font-size: 60px;
+              line-height: 70px;
             }
             @include respond-to("phone") {
-              font-size: 40px;
+              font-size: 60px;
+              line-height: 70px;
             }
           }
           
