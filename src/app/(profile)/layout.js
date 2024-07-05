@@ -28,8 +28,8 @@ export default function RootLayout({ children }) {
           <Footer/>
           <CustomCursor />
           <ScrollToTop />
-          <div id="portal"></div>
         </SmoothScroll>
+        <div id="menu-portal"></div>
         <div id="alert-box"></div>
       </body>
     </html>

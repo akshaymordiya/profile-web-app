@@ -14,6 +14,12 @@
   @include respond-to('large_tablet'){
     margin-top: 6rem;
   }
+  @include respond-to('small_tablet'){
+    gap: 1rem;
+  }
+  @include respond-to('phone'){
+    gap: 1rem;
+  }
 
   .service_card {
     float: none;
@@ -50,15 +56,15 @@
 
     @include respond-to('large_tablet'){
       padding: 4rem;
+      width: 100%;
     }
     @include respond-to('small_tablet'){
       padding: 4rem;
+      width: 100%;
     }
     @include respond-to('phone'){
       padding: 2rem;
-    }
-    @include respond-to('small_phone'){
-      padding: 2rem;
+      width: 100%;
     }
 
     &_icon {

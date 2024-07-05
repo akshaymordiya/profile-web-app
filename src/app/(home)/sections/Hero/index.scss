@@ -52,21 +52,21 @@
     }
 
     @include respond-to('large_tablet') {
-      display: none;
-      width: 0%;
-      height: 0%;
+      display: none !important;
+      width: 0% !important;
+      height: 0% !important;
     }
 
     @include respond-to('small_tablet') {
-      display: none;
-      width: 0%;
-      height: 0%;
+      display: none !important;
+      width: 0% !important;
+      height: 0% !important;
     }
 
     @include respond-to('phone') {
-      display: none;
-      width: 0%;
-      height: 0%;
+      display: none !important;
+      width: 0% !important;
+      height: 0% !important;
     }
   }
 
@@ -180,13 +180,14 @@
 
     @include respond-to('phone') {
       padding: 3rem;
-      padding-bottom: 2rem;
+      padding-top: 6rem;
+      padding-bottom: 4rem;
     }
 
     @include respond-to('small_phone') {
       padding: 3rem 2rem;
-      padding-top: 3rem;
-      padding-bottom: 2rem;
+      padding-top: 6rem;
+      padding-bottom: 4rem;
     }
 
     .charactor_Wrapper {

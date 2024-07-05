@@ -1,4 +1,3 @@
-"use client";
 import React from 'react';
 import CTA from '@/app/components/CTA';
 import IMG from '@/app/components/IMG';
@@ -8,17 +7,14 @@ import Grid from '@/app/components/Grid';
 import AnimatedCharactors from '@/app/components/AnimatedCharactors';
 import Animation from '@/app/components/Animation';
 import ParallaxScroll from '@/app/components/ParallaxScroll';
-import homeData from '../../../../data/home.page.json';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import CallMadeIcon from '@mui/icons-material/CallMade';
 //lottie animations
 import menWork from "../../../../../public/assets/lottie/men-work.json";
 
 import "./index.scss";
-import { renderIconComponent } from '@/Icons';
 
 const BASE_CLASSNAME = "home_hero-container"
-
 
 const Hero = ({
   data = {}
