@@ -112,6 +112,7 @@
     }
     .menu_icon {
       display: none;
+      cursor: pointer;
       // @include respond-to("desktop") {
       //   display: block;
       // }
