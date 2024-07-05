@@ -24,7 +24,7 @@ const CounterBox = ({
           return (
             <Grid.Item
               xs={12}
-              sm={6}
+              sm={12}
               md={6}
               lg={4}
               xlg={4}

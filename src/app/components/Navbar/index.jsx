@@ -1,5 +1,5 @@
 "use client";
-import React, { useContext, useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 //components
 import Logo from "../Logo";
@@ -11,16 +11,13 @@ import MenuOpenRoundedIcon from "@mui/icons-material/MenuOpenRounded";
 import CreateRoundedIcon from "@mui/icons-material/CreateRounded";
 
 import "./index.scss";
-import OffsetContext from "@/context/offset.context";
 
 const BASE_CLASSNAME = "header";
 
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
-  const navRef = useRef();
   const [scrollDirection, setScrollDirection] = useState(null);
   const [showNavBg, setShowNavBg] = useState(false);
-  // const { offset } = useContext(OffsetContext);
  
   const toggleMenu = () => {
     setVisible(!visible); 
@@ -50,7 +47,6 @@ const Navbar = () => {
   return (
     <div 
       className={`${BASE_CLASSNAME} ${scrollDirection === 'down' ? "hide" : "show" } ${showNavBg ? "white_bg" : ""}`}
-      ref={navRef}
     >
       <Logo />
       <Menu

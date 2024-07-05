@@ -25,8 +25,8 @@ export default function Layout({ children }) {
           <Footer />
           <CustomCursor />
           <ScrollToTop />
-          <div id="portal"></div>
         </SmoothScroll>
+        <div id="menu-portal"></div>
       </body>
     </html>
   );
