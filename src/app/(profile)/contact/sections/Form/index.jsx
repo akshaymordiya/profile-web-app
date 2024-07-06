@@ -269,7 +269,7 @@ const Form = ({
     return icons[message.type]
   }, [message.type]);
 
-  Icon?.displayName = "Icon"
+  Icon.displayName = "Icon"
 
   const clearMessage = () => setMessage(defaultMessageState);
 

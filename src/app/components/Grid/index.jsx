@@ -50,6 +50,6 @@ Grid.Item = ({
   );
 }
 
-Grid?.displayName = "Grid"
+Grid.displayName = "Grid"
 
 export default Grid
