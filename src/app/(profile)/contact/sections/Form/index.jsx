@@ -108,6 +108,21 @@ const icons = {
   "error": WarningAmberIcon
 }
 
+const IconCmp = ({
+  type,
+  classNames = ""
+}) => {
+  if(type === ""){
+    return
+  }
+
+  const Icon = icons[type];
+
+  return <Icon className={classNames} />
+}
+
+IconCmp.displayName = "IconCmp"
+
 const Form = ({
   data = {}
 }) => {
@@ -261,16 +276,6 @@ const Form = ({
     }
   }
 
-  const Icon = useMemo(() => {
-    if(message.type === ""){
-      return () => <React.Fragment></React.Fragment>
-    }
-
-    return icons[message.type]
-  }, [message.type]);
-
-  Icon.displayName = "Icon"
-
   const clearMessage = () => setMessage(defaultMessageState);
 
   const clearNotifications = () => setNotification(defaultMessageState);
@@ -290,7 +295,10 @@ const Form = ({
       {message.type !== "" && (
         <div className={`${BASE_CLASSNAME}_msg ${message.type}`}>
           <div className='left'>
-            <Icon className="icon" />
+            <IconCmp 
+              type={message.type}
+              classNames='icon'
+            />
             <p>{message.text}</p>
           </div>
           <HighlightOffIcon className='right' onClick={clearMessage} />
@@ -411,5 +419,7 @@ const Form = ({
     </div>
   )
 }
+
+Form.displayName = "Form"
 
 export default Form

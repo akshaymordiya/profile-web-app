@@ -15,6 +15,8 @@ const Grid = ({
   )
 }
 
+Grid.displayName = "Grid"
+
 Grid.Item = ({
   children,
   xs = undefined,
@@ -49,7 +51,6 @@ Grid.Item = ({
     </div>
   );
 }
-
-Grid.displayName = "Grid"
+Grid.Item.displayName = "Grid.Item";
 
 export default Grid
