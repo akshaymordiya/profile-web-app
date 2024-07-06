@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useContext } from 'react';
+import React, { useEffect, useRef } from 'react';
 //context
 
 import './index.scss';
@@ -9,7 +9,8 @@ const ParallaxScroll = ({
   children, 
   className = "",
   direction = "y",
-  enableLogs = false
+  applyToCustomElement = false,
+  effectElementId = ""
 }) => {
   const parallaxRef = useRef();
 
@@ -21,7 +22,15 @@ const ParallaxScroll = ({
     if(parallaxRef.current){
       if(direction === "y"){
         const parallaxRect = parallaxRef.current.getBoundingClientRect();
-        parallaxRef.current.style.transform = `translateY(${parallaxRect.top * speed}px)`
+        const value = `translateY(${parallaxRect.top * speed}px)`;
+        if(applyToCustomElement){
+          const element = document.getElementById(effectElementId);
+          if(element){
+            element.style.transform = value
+          }
+        } else {
+          parallaxRef.current.style.transform = value
+        }
       } else if(direction === "x") {
         const parallaxRect = parallaxRef.current.getBoundingClientRect();
         parallaxRef.current.style.transform = `translateX(${parallaxRect.top * speed}px)`

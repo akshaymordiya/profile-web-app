@@ -16,9 +16,27 @@
     justify-content: center;
     width: 100%;
     padding: 4rem;
+
+    @include respond-to("large_tablet") {
+      padding: 2rem;
+    }
+    @include respond-to("small_tablet") {
+      padding: 2rem;
+    }
+    @include respond-to("phone") {
+      padding: 0.5rem;
+    }
   }
 
   &_content {
+
+    @include respond-to("small_tablet") {
+      margin-top: 2rem;
+    }
+    @include respond-to("phone") {
+      margin-top: 2rem;
+    }
+
     .title {
       font-size: 30px;
       color: $black;

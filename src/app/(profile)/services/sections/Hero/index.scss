@@ -11,13 +11,13 @@
     padding: 140px 20px;
   }
   @include respond-to("small_tablet") {
-    padding: 140px 20px 80px;
+    padding: 160px 20px 80px;
   }
   @include respond-to("tablet") {
-    padding: 140px 20px 80px;
+    padding: 160px 20px 80px;
   }
   @include respond-to("phone") {
-    padding: 140px 20px 80px;
+    padding: 160px 20px 80px;
   }
 
   &_col-1 {
@@ -40,6 +40,7 @@
     }
     @include respond-to("phone") {
       justify-content: flex-start !important;
+      transform: translateY(0px);
     }
 
     &-box {

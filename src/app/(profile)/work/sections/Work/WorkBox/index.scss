@@ -22,11 +22,20 @@
     transition: all 0.6s ease-out;
     height: 420px;
     
-    @include respond-to("phone") {
-      height: 460px !important;
+    @include respond-to("large_tablet") {
+      height: 320px !important;
     }
+    @include respond-to("small_tablet") {
+      height: 320px !important;
+    }
+    @include respond-to("phone") {
+      height: 320px !important;
+      position: inherit;
+    }
+
     @include respond-to("small_phone") {
       height: 280px !important;
+      margin-bottom: 0;
     }
 
     &_thumb {
@@ -38,8 +47,18 @@
       transition: all 0.6s ease-out;
       border-radius: 12px;
       display: inline-block;
-      
+      overflow: hidden;
+
+      margin-bottom: 0;
+
+      @include respond-to("large_tablet") {
+        height: 320px !important;
+      }
+      @include respond-to("small_tablet") {
+        height: 320px !important;
+      }
       @include respond-to("phone") {
+        height: 320px !important;
         position: inherit;
       }
 

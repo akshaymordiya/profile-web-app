@@ -7,9 +7,7 @@ import "./index.scss";
 
 const BASE_CLASSNAME = "work_portfolio_container"
 
-
 const Work = ({ data = {} }) => {
-
   return (
     <Grid
       classNames={BASE_CLASSNAME}
@@ -17,7 +15,7 @@ const Work = ({ data = {} }) => {
       <Grid.Item
         xs={12}
         sm={12}
-        md={12}
+        md={6}
         lg={6}
         xlg={6}
         itemClass="column"
@@ -33,7 +31,7 @@ const Work = ({ data = {} }) => {
       <Grid.Item
         xs={12}
         sm={12}
-        md={12}
+        md={6}
         lg={6}
         xlg={6}
         itemClass="column"

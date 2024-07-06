@@ -9,7 +9,7 @@ import './index.scss';
 const BASE_CLASSNAME = "testimonial-slider-container";
 
 const settings = {
-  dots: false,
+  dots: true,
   arrows: false,
   autoplay: true,
   autoplaySpeed: 2000,

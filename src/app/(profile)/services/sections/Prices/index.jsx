@@ -21,8 +21,8 @@ const Prices = ({
           return (
             <Grid.Item
               xs={12}
-              sm={6}
-              md={6}
+              sm={12}
+              md={4}
               lg={4}
               xlg={4}
               itemClass={`${BASE_CLASSNAME}_grid_plan_item`}

@@ -5,11 +5,15 @@
   margin: 0 auto;
   margin-bottom: 4rem;
 
-  @include respond-to("phone") {
-    padding: 2rem 8rem;
+  @include respond-to("large_tablet") {
+    padding: 4rem;
   }
 
-  @include respond-to("small_phone") {
-    padding: 2rem 8rem;
+  @include respond-to("small_tablet") {
+    padding: 2rem;
+  }
+
+  @include respond-to("phone") {
+    padding: 2rem;
   }
 }

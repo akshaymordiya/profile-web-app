@@ -19,11 +19,11 @@ const WorkItem = ({
       href={`/work/${work.id}`} className={BASE_CLASSNAME}
     >
       <div className={`${BASE_CLASSNAME}_img_wrapper ${imageClass}`}>
-          <ParallaxScroll speed={0.2}>
         <div className={`${BASE_CLASSNAME}_img_wrapper_thumb`}>
-            <img src={work.images.main} alt={`${work.id}_work-thumbnail`} />
+          <ParallaxScroll speed={0.2} applyToCustomElement effectElementId={`thumb_image_${work.id}`}>
+            <img id={`thumb_image_${work.id}`} src={work.images.main} alt={`${work.id}_work-thumbnail`} />
+          </ParallaxScroll>
         </div>
-        </ParallaxScroll>
       </div>
       <div className={`${BASE_CLASSNAME}_content`}>
         <h3 className="title">{work.title}</h3>

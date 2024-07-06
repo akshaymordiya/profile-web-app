@@ -63,6 +63,7 @@
       width: 100%;
     }
     @include respond-to('phone'){
+      flex-direction: column;
       padding: 2rem;
       width: 100%;
     }
@@ -121,6 +122,10 @@
             background-color: $white;
             color: $black;
           }
+
+          @include respond-to('phone'){
+            margin-bottom: 0.7rem;
+          }
         }
       }
     }
@@ -148,6 +153,12 @@
         margin-left: 0.5rem;
         text-decoration: underline;
         color: $white;
+
+        @include respond-to('phone'){
+          display: block;
+          text-align: center;
+          margin-top: 10px;
+        }
       }
     }
 

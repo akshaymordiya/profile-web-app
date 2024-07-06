@@ -4,18 +4,21 @@
 .work_portfolio_container {
   padding: 4rem 9rem;
   padding-bottom: 2rem;
-  grid-gap: 52px !important;
+  grid-gap: 60px !important;
   
   @include respond-to("desktop") {
     padding: 0 5rem;
   }
   @include respond-to("large_tablet") {
-    padding: 0 5rem;
+    grid-gap: 52px !important;
+    padding: 0 2rem;
   }
   @include respond-to("small_tablet") {
+    grid-gap: 0 !important;
     padding: 0 3rem;
   }
   @include respond-to("phone") {
+    grid-gap: 0 !important;
     padding: 0 2rem;
   }
 
@@ -24,6 +27,16 @@
 
     .big {
       height: 560px !important;
+
+      @include respond-to("large_tablet") {
+        height: 320px !important;
+      }
+      @include respond-to("small_tablet") {
+        height: 320px !important;
+      }
+      @include respond-to("phone") {
+        height: 320px !important;
+      }
     }
   }
 }

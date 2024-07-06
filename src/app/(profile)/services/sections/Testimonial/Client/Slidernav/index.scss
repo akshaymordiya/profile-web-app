@@ -29,13 +29,7 @@
     @include respond-to("large_tablet") {
       padding-right: 75px;
     }
-    @include respond-to("large_tablet") {
-      padding-right: 75px;
-    }
     @include respond-to("small_tablet") {
-      padding: 30px;
-    }
-    @include respond-to("tablet") {
       padding: 30px;
     }
     @include respond-to("phone") {
@@ -50,6 +44,35 @@
       z-index: -1;
       filter: invert(100%) sepia(32%) saturate(304%) hue-rotate(200deg)
         brightness(105%) contrast(100%);
+
+      @include respond-to("tablet") {
+        top: 75px;
+        right: 75px;
+      }
+
+      @include respond-to("small_tablet") {
+        top: 30px;
+        right: 30px;
+      }
+      @include respond-to("phone") {
+        top: 30px;
+        right: 30px;
+      }
+
+      img {
+        @include respond-to("tablet") {
+          width: 40px;
+          height: auto;
+        }
+        @include respond-to("small_tablet") {
+          width: 30px;
+          height: auto;
+        }
+        @include respond-to("phone") {
+          width: 30px;
+          height: auto;
+        }
+      }
     }
 
     &_content {
@@ -68,6 +91,15 @@
         font-size: 28px;
         font-family: $dm-font-family;
         line-height: 38px;
+
+        @include respond-to("small_tablet") {
+          font-size: 20px;
+          line-height: 30px;
+        }
+        @include respond-to("phone") {
+          font-size: 20px;
+          line-height: 30px;
+        }
       }
     }
 

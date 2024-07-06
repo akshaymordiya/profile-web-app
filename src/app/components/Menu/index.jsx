@@ -45,6 +45,7 @@ const Menu = ({
           key={item.title}
           className={`${BASE_CLASSNAME}_link ${itemclass} ${pathname === item.page ? "active" : ""} ${isDesktopMenuHide ? `link_${index + 1}` : ''}`}
           href={item.page}
+          onClick={toggleMenu}
         >
           {isDesktopMenuHide && (
             <span>0{index + 1}</span>
