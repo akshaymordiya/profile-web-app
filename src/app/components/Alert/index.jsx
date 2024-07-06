@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 
 //icons
@@ -18,6 +18,21 @@ const icons = {
   "error": WarningAmberIcon
 }
 
+const IconCmp = ({
+  type,
+  classNames = ""
+}) => {
+  if(type === ""){
+    return
+  }
+
+  const Icon = icons[type];
+
+  return <Icon className={classNames} />
+}
+
+IconCmp.displayName = "IconCmp"
+
 const Alert = ({
   show = false,
   type = "",
@@ -27,14 +42,6 @@ const Alert = ({
 }) => {
 
   const [isClosing, setIsClosing] = useState(false);
-
-  const Icon = useMemo(() => {
-    if(type === ""){
-      return () => <React.Fragment></React.Fragment>
-    }
-
-    return icons[type]
-  }, [type]);
 
   const handleClose = () => {
     setIsClosing(true);
@@ -55,7 +62,10 @@ const Alert = ({
   return createPortal(
     <div className={`${BASE_CLASSNAME} ${type} ${(show && !isClosing)  ? "open": "close" }`}>
       <div className={`${BASE_CLASSNAME}_left`}>
-        <Icon className="icon" />
+        <IconCmp
+          type={type}
+          classNames='icon'
+        />
         <p>{text}</p>
       </div>
       <HighlightOffIcon className={`${BASE_CLASSNAME}_right`} onClick={handleClose} />
