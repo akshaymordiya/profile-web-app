@@ -42,6 +42,11 @@ const Alert = ({
 }) => {
 
   const [isClosing, setIsClosing] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const handleClose = () => {
     setIsClosing(true);
@@ -59,6 +64,8 @@ const Alert = ({
     }
   }, [show, duration]);
 
+  if (!mounted) return null;
+
   return createPortal(
     <div className={`${BASE_CLASSNAME} ${type} ${(show && !isClosing)  ? "open": "close" }`}>
       <div className={`${BASE_CLASSNAME}_left`}>
@@ -70,7 +77,7 @@ const Alert = ({
       </div>
       <HighlightOffIcon className={`${BASE_CLASSNAME}_right`} onClick={handleClose} />
     </div>,
-    document.getElementById("alert-box")
+    document?.getElementById("alert-box")
   )
 }
 
