@@ -73,8 +73,9 @@ const Tags = ({
       containerClass={`tags ${classNames}`}
     >
       <div className={`tags_list`}>
-        {mappedTags.map(t => (
-          <div 
+        {mappedTags.map((t, index) => (
+          <div
+            key={index}
             className={`tag ${tagClassName} ${t.isSelected ? "selected" : ""}`}
             onClick={() => onTagClick(t.title)}  
           >{t.title}</div>
@@ -267,6 +268,8 @@ const Form = ({
 
     return icons[message.type]
   }, [message.type]);
+
+  Icon?.displayName = "Icon"
 
   const clearMessage = () => setMessage(defaultMessageState);
 

@@ -33,8 +33,8 @@ const ResponsiveSlider = ({ content: { slider1, slider2 } }) => {
         data-speed="0.5"
       >
         <Slider {...settings}>
-          {slider1.map((item) => (
-            <img src={item?.slide} useRawImgTag />
+          {slider1.map((item, index) => (
+            <img key={index} src={item?.slide} useRawImgTag />
           ))}
         </Slider>
       </Grid.Item>
@@ -48,8 +48,8 @@ const ResponsiveSlider = ({ content: { slider1, slider2 } }) => {
         data-speed="0.5"
       >
         <Slider {...settings}>
-          {slider2.map((item) => (
-            <img src={item?.slide} useRawImgTag />
+          {slider2.map((item, index) => (
+            <img key={index} src={item?.slide} useRawImgTag />
           ))}
         </Slider>
       </Grid.Item>

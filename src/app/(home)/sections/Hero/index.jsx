@@ -57,8 +57,9 @@ const Hero = ({
             data-speed="0.5"
           >
             {
-              data.name.map((hero)=>(
+              data.name.map((hero, index)=>(
                 <AnimatedCharactors
+                key={index}
                 charactors={hero}
                 capitlized
                 leftSpaceOnLastCharactor

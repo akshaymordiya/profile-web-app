@@ -53,8 +53,9 @@ const WorkSilder = ({content :{slider}}) => {
   return (
     <div className={BASE_CLASSNAME}>
       <Slider {...settings}>
-        {slider.map((item) => (
+        {slider.map((item, index) => (
           <IMG
+            key={index}
             src={item?.slide}
             useContainer
             useRawImgTag

@@ -27,38 +27,36 @@ const Header = () => {
     : "header-area header-transparent header-ptlr int-menu header-sticky-cloned header-pinned";
 
   return (
-    <>
-      <header>
-        <div className={cls}>
-          <div className="container-fluid">
-            <div className="row align-items-center">
-              <div className="col-xl-6 col-lg-6 col-md-6 col-6">
-                <div className="header-logo">
-                  <img src="/assets/logo-black.png" alt="" />
-                </div>
+    <header>
+      <div className={cls}>
+        <div className="container-fluid">
+          <div className="row align-items-center">
+            <div className="col-xl-6 col-lg-6 col-md-6 col-6">
+              <div className="header-logo">
+                <img src="/assets/logo-black.png" alt="" />
               </div>
-              <div className="col-xl-6 col-lg-6 col-md-6 col-6">
-                <div className="d-flex align-items-center justify-content-end">
-                  <div className="header-btn d-none d-md-block">
-                    <Link className="btn-white" href="/contact">
-                      <span className="text">Let's Talk</span>
-                      <span>
-                        <BiSolidPencil />
-                      </span>
-                    </Link>
-                  </div>
-                  <div className="header-bar">
-                    <button className="bar-btn">
-                      <IoReorderTwoOutline />
-                    </button>
-                  </div>
+            </div>
+            <div className="col-xl-6 col-lg-6 col-md-6 col-6">
+              <div className="d-flex align-items-center justify-content-end">
+                <div className="header-btn d-none d-md-block">
+                  <Link className="btn-white" href="/contact">
+                    <span className="text">Let's Talk</span>
+                    <span>
+                      <BiSolidPencil />
+                    </span>
+                  </Link>
+                </div>
+                <div className="header-bar">
+                  <button className="bar-btn">
+                    <IoReorderTwoOutline />
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </header>
-    </>
+      </div>
+    </header>
   );
 };
 

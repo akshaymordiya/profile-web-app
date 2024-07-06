@@ -44,7 +44,6 @@ const ServiceCards = ({
         </div>
       </div>
       {images.innerImg.map(img => {
-
         const Image = (
           <IMG
             key={img.id}
@@ -57,10 +56,9 @@ const ServiceCards = ({
           />
         );
 
-
         if(img?.usePrallax) {
           return (
-            <ParallaxScroll speed={0.2}>
+            <ParallaxScroll key={img.id} speed={0.2}>
               {Image}
             </ParallaxScroll>
           )
@@ -100,15 +98,15 @@ const ServiceCards = ({
                 <h3
                   className="title"
                 >
-                  {serviceData.excert.split("_").map((word) => (
-                    <React.Fragment>
+                  {serviceData.excert.split("_").map((word, index) => (
+                    <React.Fragment key={index}>
                       {word}<br />
                     </React.Fragment>
                   ))}
                 </h3>
                 <p>
-                  {serviceData.description.split("_").map(word => (
-                    <React.Fragment>
+                  {serviceData.description.split("_").map((word, index) => (
+                    <React.Fragment key={index}>
                     {word}<br />
                     </React.Fragment>
                   ))}

@@ -19,8 +19,8 @@ const Skills = ({
         title={data.paragraph}
       />
       <Grid classNames={`${BASE_CLASSNAME}_grid`}>
-        {data.data.map(skill => (
-          <React.Fragment>
+        {data.data.map((skill, index) => (
+          <React.Fragment key={index}>
             <Grid.Item
               xs={12}
               sm={12}

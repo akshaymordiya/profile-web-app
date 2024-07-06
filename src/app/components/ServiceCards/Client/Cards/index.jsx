@@ -56,8 +56,8 @@ const Cards = ({
             <h3 className="service_card_content_title">{service?.title}</h3>
             <p className='service_card_content_description'>{service?.desc}</p>
             <div className="service_card_content_tags">
-              {service.tags.map(tag => (
-                <span className='tag'>{tag}</span>
+              {service.tags.map((tag, index) => (
+                <span key={index} className='tag'>{tag}</span>
               ))}
             </div>
           </div>

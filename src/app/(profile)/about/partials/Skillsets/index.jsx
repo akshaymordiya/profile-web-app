@@ -36,8 +36,8 @@ const SkillSets = ({ content: { skills, experiences, educations } }) => {
           class: "education",
           ...educations,
         },
-      ].map((element) => (
-        <div className={`${BASE_CLASSNAME}-${element.class} mb`}>
+      ].map((element, index) => (
+        <div key={index} className={`${BASE_CLASSNAME}-${element.class} mb`}>
           <SectionBox
             title={element.title}
             icon={element.icon}
