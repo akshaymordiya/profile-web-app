@@ -16,11 +16,11 @@
         @content;  
       }
   } @else if $breakpoint == 'large_tablet'{
-      @media (min-width: 768px) and (max-width: 954px) {
+      @media (min-width: 768px) and (max-width: 1100px) {
         @content;
       }
   } @else if $breakpoint == 'desktop' {
-      @media (min-width: 954px) and (max-width: 1299px) { 
+      @media (min-width: 1100px) and (max-width: 1299px) { 
         @content; 
       }
   } @else if $breakpoint == 'desktop_large' {

@@ -3,8 +3,8 @@ import "../../styles/global.scss";
 import ScrollToTop from "@/app/components/scrollToTop";
 import Navbar from "@/app/components/Navbar";
 import Footer from "./sections/Footer";
-import Aos from "../components/AOS";
-import "aos/dist/aos.css";
+import SmoothScroll from "@/app/components/SmoothScroll";
+import CustomCursor from "@/app/components/MouseCursor";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,12 +17,16 @@ export default function Layout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Aos />
         <Navbar />
-        {children}
-        <Footer />
-        <div id="portal"></div>
-        <ScrollToTop />
+        <SmoothScroll>
+            <main>
+              {children}
+            </main>
+          <Footer />
+          <CustomCursor />
+          <ScrollToTop />
+        </SmoothScroll>
+        <div id="menu-portal"></div>
       </body>
     </html>
   );

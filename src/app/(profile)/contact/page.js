@@ -1,21 +1,23 @@
+"use client";
 import React from "react";
-import ContactCategory from "./sections/ContactCategory/Client/ContactCategory";
-import ContactForm from "./sections/ContactForm";
 import Hero from "./sections/Hero";
 import contactData from "../../../data/contact.page.json";
+<<<<<<< HEAD
 export const metadata = {
   title: {
     absolute: "Contact",
   },
 };
+=======
+import Form from "./sections/Form";
+>>>>>>> 6c22594bda1e0e9d33c22c4bf4c860a0df6dd7e2
 
 const Contact = () => {
-  const { hero, category, requestForm } = contactData;
+  const { hero, form } = contactData;
   return (
     <React.Fragment>
       <Hero data={hero} />
-      <ContactCategory data={category} />
-      <ContactForm data={requestForm} />
+      <Form data={form} />
     </React.Fragment>
   );
 };

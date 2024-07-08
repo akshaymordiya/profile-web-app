@@ -1,0 +1,169 @@
+@import "../../../../../styles/_variables.scss";
+@import "../../../../../styles/mixins";
+
+
+.contact_from_container {
+  width: 100%;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  padding-bottom: 7rem;
+
+  @include respond-to("desktop"){
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  @include respond-to("large_tablet"){
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  
+  @include respond-to("small_tablet"){
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  @include respond-to("phone"){
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  &_form_box {
+    margin: 1rem 0;
+    margin-bottom: 3rem;
+    width: 100%;
+
+    &_grid {
+      width: 100%;
+      margin-top: 3rem;
+      gap: 2rem;
+    }
+  }
+
+  &-tags {
+    width: 100%;
+    margin-bottom: 3rem;
+
+    .section_boxes_title {
+      margin-bottom: 1.6rem !important;
+    }
+
+    .section_boxes_content {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .tags_list {
+        display: flex;
+        gap: 1.2rem;
+        flex-wrap: wrap;
+    
+        .tag {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: fit-content;
+          padding: 1.2rem 3rem;
+          display: inline-block;
+          border: 1px solid rgba(2, 11, 24, 0.1) !important;
+          border-radius: 30px;
+          font-weight: 400;
+          font-size: 18px;
+          color: $black;
+          transition: 0.3s all ease-in-out;
+  
+          &:hover {
+            background-color: $black;
+            color: $white;
+          }
+            
+          &.selected {
+            background-color: $black;
+            color: $white;    
+          }
+        }
+      }
+
+      .error {
+        width: 100%;
+        text-wrap: wrap;
+        color: red;
+        font-size: 16px;
+        line-height: 16px;
+      }
+    }
+  }
+
+  &_msg {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid rgb(1, 67, 97);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    color: rgb(1, 67, 97);
+    background-color: rgb(229, 246, 253);
+
+    &.error {
+      border-color: rgb(95, 33, 32);
+      color: rgb(95, 33, 32);
+      background-color: rgb(253, 237, 237);
+    }
+
+    &.success {
+      border-color: rgb(30, 70, 32);
+      color: rgb(30, 70, 32);
+      background-color: rgb(237, 247, 237);
+    }
+
+    .left {
+      display: flex;
+      gap: 1.2rem;
+      align-items: center;
+    }
+
+    .right {
+      cursor: pointer;
+      font-size: 26px;
+      transition: 0.3s all ease-in-out;
+    }
+  }
+
+  &_submit-btn {
+    text-decoration: none;
+    background-color: $black;
+    color: $white;
+    height: 90px;
+    line-height: 90px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 100px;
+    padding: 0 80px;
+    font-family: $dm-font-family;
+    cursor: pointer;
+
+    div {
+      line-height: 1;
+      display: inline-block;
+      overflow: hidden;
+      transform: translateY(7px);
+      height: 22px;
+      span {
+        display: block;
+        transition: transform 0.2s ease-out;
+        text-shadow: 0 22px 0 $white;
+      }
+    }
+    
+    &:hover div span {
+      transform: translateY(-122%);
+    }
+  }
+}

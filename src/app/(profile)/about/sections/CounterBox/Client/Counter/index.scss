@@ -7,8 +7,7 @@
   align-items: flex-start;
   place-content: center;
   border: 1px solid $progress-bar-placeholder;
-  padding: 0.9rem 2.5rem;
-  padding-top: 1.5rem;
+  padding: 1.5rem 2.5rem;
   border-radius: 20px;
   box-shadow: $box-shadow-three;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -60,11 +59,13 @@
       line-height: 1.2;
       color: $dark-bg;
       font-family: $primary-fonts;
-      font-weight: 500;
-    }
-    
+      font-weight: 600;
+    } 
+      
     p {
       font-size: 16px;
+      font-family: $dm-font-family;
+      line-height: 1.4;
       color: $text-para;
     }
   }

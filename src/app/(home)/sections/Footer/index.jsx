@@ -15,8 +15,9 @@ const Footer = () => {
     <>
       <footer>
         <div className={`${BASE_CLASSNAME}`}>
-          {homeData.footer.map((item) => (
+          {homeData.footer.map((item, index) => (
             <IMG
+              key={index}
               containerClasses={item?.footerclass}
               src={item?.footerimg}
               useContainer
@@ -62,7 +63,7 @@ const Footer = () => {
                       itemClass="footer-menu"
                     >
                       <ul>
-                        {menu.map((item , index) => (
+                        {menu.map((item, index) => (
                           <li key={index}>
                             <Link href='/'>{item?.title}</Link>
                           </li>

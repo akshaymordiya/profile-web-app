@@ -1,0 +1,179 @@
+@import "../../../../../styles/variables";
+@import "../../../../../styles/mixins";
+
+.services_box_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  scroll-behavior: smooth;
+  gap: 2.5rem;
+
+  @include respond-to('large_tablet'){
+    margin-top: 6rem;
+  }
+  @include respond-to('small_tablet'){
+    gap: 1rem;
+  }
+  @include respond-to('phone'){
+    gap: 1rem;
+  }
+
+  .service_card {
+    float: none;
+    flex-shrink: 1;
+    display: flex;
+    inset: auto;
+    flex-basis: auto;
+    overflow: visible;
+    box-sizing: border-box;
+    width: 74%;
+    height: auto;
+    margin-bottom: 25px;
+    padding: 4rem;
+    background: $box-bg-type-one;
+    border-radius: 30px;
+    box-shadow: $box-shadow-one;
+    overscroll-behavior-block: none;
+    scroll-behavior: smooth;
+    transition: transform 0.3s ease-in-out;
+    border: 0.5px solid $white;
+    gap: 2.5rem;
+
+    &:nth-child(1) {
+      z-index: 1;
+    }
+
+    &:nth-child(2) {
+      z-index: 2;
+    }
+
+    &:nth-child(3) {
+      z-index: 3;
+    }
+
+    @include respond-to('large_tablet'){
+      padding: 4rem;
+      width: 100%;
+    }
+    @include respond-to('small_tablet'){
+      padding: 4rem;
+      width: 100%;
+    }
+    @include respond-to('phone'){
+      flex-direction: column;
+      padding: 2rem;
+      width: 100%;
+    }
+
+    &_icon {
+      span {
+        display: inline-block;
+
+        svg {
+          font-size: 60px;
+          color: $white;
+          @include respond-to("phone") {
+            font-size: 75px;
+          }
+        }
+      }
+    }
+    
+    &_content {
+      &_title {
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.1;
+        color: $white;
+        margin-bottom: 16px;
+        width: 180px;
+      }
+      
+
+      &_description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $text-body;
+        margin-bottom: 28px;
+      }
+
+      &_tags {
+        .tag {
+          border: 1px solid $light-grey;
+          border-radius: 100px;
+          display: inline-block;
+          height: 30px;
+          line-height: 29px;
+          padding: 0 20px;
+          font-weight: 500;
+          font-size: 13px;
+          color: $white;
+          transition: 0.3s all ease-in-out;
+
+          &:not(:last-child) {
+            margin-right: 0.5rem;
+          }
+
+          &:hover {
+            background-color: $white;
+            color: $black;
+          }
+
+          @include respond-to('phone'){
+            margin-bottom: 0.7rem;
+          }
+        }
+      }
+    }
+  }
+
+  .service-contact_btn {
+    position: sticky;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background: #4c40f7;
+    border-radius: 30px;
+    font-weight: 400;
+    font-size: 17px;
+    transition: all 0.3s ease-in-out;
+    
+    a {
+      color: $text-body;
+      
+      span {
+        font-size: 18px;
+        margin-left: 0.5rem;
+        text-decoration: underline;
+        color: $white;
+
+        @include respond-to('phone'){
+          display: block;
+          text-align: center;
+          margin-top: 10px;
+        }
+      }
+    }
+
+    &:hover {
+      background: $white;
+
+      a {
+        color: $black;
+
+        span {
+          transition: 0.3s all ease-in-out;
+          color: #4c40f7;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

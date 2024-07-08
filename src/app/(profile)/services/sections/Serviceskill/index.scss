@@ -1,90 +1,103 @@
 @import "../../../../../styles/variables";
 @import "../../../../../styles/mixins";
 
-.inner-info-area {
-  background-color: #f6f9ff;
-  padding-top: 100px;
-  display: grid;
-  place-items: center;
-  .services-container_grid{
-    // width: 100%;
-    padding: 0 70px;
-    @include respond-to("extra_large_desktop") {
-      max-width: 1320px;
-    }
-    @include respond-to("phone") {
-      padding: 0 20px;
-    }
-    @include respond-to("small_phone") {
-      padding: 0 20px;
-    }
+.services_skills_container {
+  padding: 9rem 14rem;
+  padding-bottom: 2rem;
+
+  @include respond-to("desktop"){
+    padding:  4rem;
+    padding-bottom: 2rem;
+  }
+
+  @include respond-to("large_tablet"){
+    padding:  4rem;
+    padding-bottom: 2rem;
+  }
   
-  .inner-info-title-box {
-    margin-bottom: 90px;
-    @include respond-to("desktop_large") {
-      margin-left: 0px;
-      margin-right: 0px;
-      position: relative;
+  @include respond-to("small_tablet"){
+    padding:  3rem;
+    padding-bottom: 2rem;
+  }
+  
+  @include respond-to("phone"){
+    padding:  2rem;
+    padding-bottom: 2rem;
+  }
+
+  &_title {
+    font-weight: 300;
+    line-height: 68px;
+    letter-spacing: -0.01em;
+    color: $black;
+    font-family: $primary-fonts;
+    margin-bottom: 8rem;
+
+    h4 {
+      font-size: 56px;
+      line-height: 64px;
+      font-weight: 400;
     }
-    @include respond-to("desktop") {
-      margin-left: 0px;
-      margin-right: 0px;
-      position: relative;
-    }
+    
     @include respond-to("large_tablet") {
-      margin-left: 0px;
-      margin-right: 0px;
-      position: relative;
+      font-size: 29px;
+      line-height: 40px;
     }
+    
     @include respond-to("small_tablet") {
-      margin-left: 0px;
-      margin-right: 0px;
-      position: relative;
+      font-size: 29px;
+      line-height: 40px;
     }
+    
     @include respond-to("tablet") {
-      margin-left: 0px;
-      margin-right: 0px;
-      position: relative;
+      font-size: 29px;
+      line-height: 40px;
     }
+    
     @include respond-to("phone") {
-      margin-left: 0px;
-      margin-right: 0px;
-      position: relative;
-    }
-    .inner-info-title h4{
-      font-weight: 300;
-      font-size: 48px;
-      line-height: 58px;
-      letter-spacing: -0.01em;
-      color: $black;
-      font-family: $primary-fonts;
-      @include respond-to("large_tablet") {
-        font-size: 29px;
-        line-height: 40px;
-      }
-      @include respond-to("small_tablet") {
-        font-size: 29px;
-        line-height: 40px;
-      }
-      @include respond-to("tablet") {
-        font-size: 29px;
-        line-height: 40px;
-      }
-      @include respond-to("phone") {
-        font-size: 29px;
-        line-height: 40px;
-      }
+      font-size: 29px;
+      line-height: 40px;
     }
   }
-}
-  .services-container_wrapper {
-    width: 100%;
-    padding: 0 70px;
-    @include respond-to("extra_large_desktop") {
-      max-width: 1320px;
+
+  &_grid {
+    &_col-left {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 5rem;
+
+      @include respond-to("small_tablet") {
+        margin-bottom: 0;
+        padding: 0 1.4rem;
+      }
+      
+      @include respond-to("phone") {
+        margin-bottom: 0;
+        padding: 0 1.4rem;
+      }
+
+      .left-title {
+        .section_boxes_title {
+          display: flex;
+          align-items: center;          
+          gap: 0.4rem;
+
+          svg{
+            font-size: 20px;
+          }
+
+          h4 {
+            font-weight: 400;
+            font-size: 20px;
+            text-transform: uppercase;
+          }
+        }
+      }
+
     }
-    @include respond-to("small_phone") {
-     padding: 20px;
+      
+    &_col-right {
+      margin-bottom: 5rem;
     }
   }
 }

@@ -1,7 +1,30 @@
-.porfolio-thumb {
+.hero_slider {
+  position: absolute;
   width: 100%;
-  img {
-    opacity: 0.4;
-    mix-blend-mode: normal;
+  height: 100%;
+  top: 140px;
+  left: 0;
+  
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      100% 1330.1% at 0 52.65%,
+      #f6f9ff 0,
+      hsla(0, 0%, 100%, 0.77) 52.08%,
+      #f6f9ff 100%
+    );
+    content: "";
+  }
+
+  &_img_thumb {
+    width: 100%;
+    img {
+      opacity: 0.4;
+      mix-blend-mode: normal;
+    }
   }
 }

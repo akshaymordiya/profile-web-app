@@ -8,14 +8,22 @@ export const metadata = {
   },
 };
 
+//data
+import homeData from "../../data/home.page.json";
+
 export default function Home() {
+
+  const {
+    hero,
+    services,
+    projects
+  } = homeData
+
   return (
-    <div id="home-content">
-      <main>
-        <Hero />
-        <Services />
-        <Projects />
-      </main>
-    </div>
+    <React.Fragment>
+      <Hero data={hero} />
+      <Services data={services} />
+      <Projects data={projects} />
+    </React.Fragment>
   );
 }

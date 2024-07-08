@@ -1,0 +1,50 @@
+@import "../../../../../../styles/variables";
+@import "../../../../../../styles/mixins";
+
+.skill-box-container {
+  border-bottom: 1px solid rgba(2, 11, 24, 0.1);
+  transition: 0.3s all ease-in-out;
+  padding: 1.4rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &:hover {
+    padding: 1.4rem 2.5rem;
+    background: rgba(2, 11, 24, 0.04);
+  }
+
+  &_content {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    color: $black;
+    font-family: $primary-fonts;
+    
+    @include respond-to("phone") {
+      font-size: 20px;
+    }
+    
+    @include respond-to("small_phone") {
+      font-size: 20px;
+    }
+    
+    svg {
+      margin-right: 16px;
+    }
+  }
+
+  &_list {
+    color: $black;
+    transition: 0.3s all ease-in-out;
+
+    &:hover {
+      padding: 25px 25px 20px;
+      background: $off-white;
+    }
+  }
+}

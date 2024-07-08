@@ -2,165 +2,206 @@
 @import "../../../../../styles/animations";
 @import "../../../../../styles/mixins";
 
-.contact-area {
+.contact-area_container {
   background-color: $background_bg;
-  padding-top: 130px;
   position: relative;
-  display: grid;
-  place-items: center;
+  width: 100%;
+  // padding: 40px 30px 100px;
+  padding-top: 130px;
+  padding-left: 7rem;
+  padding-right: 10rem;
+  padding-bottom: 7rem;
 
-  .contact-area_wrapper {
-    width: 100%;
-    padding: 40px 30px 100px ;
-    @include respond-to("extra_large_desktop") {
-      max-width: 1320px;
+  @include respond-to("desktop"){
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  @include respond-to("large_tablet"){
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  
+  @include respond-to("small_tablet"){
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 4rem;
+  }
+  
+  @include respond-to("phone"){
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 4rem;
+  }
+
+  &_col-1 {
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    margin-bottom: 70px;
+    color: $black;
+    font-family: $primary-fonts;
+    @include respond-to("desktop") {
+      font-size: 50px;
     }
-    .contact-title {
+    @include respond-to("large_tablet") {
+      font-size: 60px;
+    }
+    @include respond-to("small_tablet") {
+      font-size: 40px;
+    }
+    @include respond-to("phone") {
+      font-size: 40px;
+    }
+
+    .title {
       font-weight: 500;
-      font-size: 70px;
+      font-size: 22px;
       line-height: 1;
-      letter-spacing: -0.01em;
-      margin-bottom: 70px;
+      text-transform: uppercase;
       color: $black;
       font-family: $primary-fonts;
-      @include respond-to("desktop") {
-        font-size: 50px;
+      padding-bottom: 10px;
+      display: inline-block;
+      text-align: left;
+      &:after {
+        content: "";
+        display: inline-block;
+        height: 1px;
+        width: 100px;
+        background-color: $black;
+        margin-left: 10px;
       }
-      @include respond-to("large_tablet") {
-        font-size: 60px;
-      }
-      @include respond-to("small_tablet") {
-        font-size: 40px;
-      }
+    }
+
+    .animated-letter {
+      position: relative;
+      display: inline-block;
+      animation: slideRightToLeft 1s ease forwards;
+      opacity: 0;
+      animation-fill-mode: forwards; /* Keeps the last frame of the animation */
+    }
+
+    .contact-img {
+      border-radius: 100px;
+      transform: translateY(10px);
+      margin-right: 30px;
       @include respond-to("phone") {
-        font-size: 40px;
+        transform: translateY(2px);
+      }
+    }
+  }
+
+  &_col-2 {
+    display: block;
+    text-align: end;
+    @include respond-to("large_tablet") {
+      display: none;
+    }
+    @include respond-to("small_tablet") {
+      display: none;
+    }
+    @include respond-to("phone") {
+      display: none;
+    }
+    @include respond-to("small_phone") {
+      display: none;
+    }
+
+    .shape {
+      margin-right: -100px;
+      position: relative;
+      top: 0;
+      right: 0;
+      text-align: end;
+      display: inline-block;
+      filter: invert(100%) sepia(32%) saturate(304%) hue-rotate(200deg)
+        brightness(105%) contrast(100%);
+      animation: rotate_img 10s linear infinite;
+      
+      .flower-img {
+        position: absolute;
+        top: 51%;
+        left: 52%;
+        transform: translate(-50%, -50%);
+        animation: rotate_img 10s linear infinite;
+      }
+    }
+  }
+
+  &_col-3 {
+    @include respond-to("small_tablet"){
+      margin-bottom: 16px;
+    }
+    
+    @include respond-to("phone"){
+      margin-bottom: 16px;
+    }
+    .mail {
+      &_text {
+        display: block;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1;
+        color: rgba(2, 11, 24, 0.4);
+        margin-bottom: 15px;
       }
 
-      .contact-subtitle {
+      &_link {
         font-weight: 500;
-        font-size: 22px;
-        line-height: 1;
-        text-transform: uppercase;
-        color: $black;
+        font-size: 36px;
+        line-height: 18px;
+        background: linear-gradient(
+          90deg,
+          #a248ed,
+          #ff5075 44.98%,
+          #ffa14d 97.77%
+        );
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
         font-family: $primary-fonts;
-        padding-bottom: 10px;
-        display: inline-block;
-        text-align: left;
+        position: relative;
         &:after {
-          content: "";
-          display: inline-block;
-          height: 1px;
-          width: 100px;
-          background-color: $black;
-          margin-left: 10px;
-        }
-      }
-      .animated-letter {
-        position: relative;
-        display: inline-block;
-        animation: slideRightToLeft 1s ease forwards;
-        opacity: 0;
-        animation-fill-mode: forwards; /* Keeps the last frame of the animation */
-      }
-      .contact-img {
-        border-radius: 100px;
-        transform: translateY(10px);
-        margin-right: 30px;
-        @include respond-to("phone") {
-          transform: translateY(2px);
-        }
-      }
-    }
-    .contactShape {
-      display: block;
-      text-align: end;
-      @include respond-to("large_tablet") {
-        display: none;
-      }
-      @include respond-to("small_tablet") {
-        display: none;
-      }
-      @include respond-to("phone") {
-        display: none;
-      }
-      @include respond-to("small_phone") {
-        display: none;
-      }
-      .contactshape1 {
-        margin-right: -100px;
-        position: relative;
-        top: 0;
-        right: 0;
-        text-align: end;
-        display: inline-block;
-        filter: invert(100%) sepia(32%) saturate(304%) hue-rotate(200deg)
-          brightness(105%) contrast(100%);
-        animation: rotate_img 10s linear infinite;
-        .flower-img {
           position: absolute;
-          top: 51%;
-          left: 52%;
-          transform: translate(-50%, -50%);
-          animation: rotate_img 10s linear infinite;
-        }
-      }
-    }
-    .contact-mail-box {
-      .contact-mail-info {
-        span {
-          display: block;
-          font-weight: 500;
-          font-size: 18px;
-          line-height: 1;
-          color: rgba(2, 11, 24, 0.4);
-          margin-bottom: 15px;
-        }
-        a {
-          font-weight: 500;
-          font-size: 36px;
-          line-height: 18px;
+          bottom: 0;
+          left: 0;
+          width: 50%;
+          height: 2px;
+          content: "";
           background: linear-gradient(
             90deg,
             #a248ed,
             #ff5075 44.98%,
             #ffa14d 97.77%
           );
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-          font-family: $primary-fonts;
-          position: relative;
-          &:after {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 50%;
-            height: 2px;
-            content: "";
-            background: linear-gradient(
-              90deg,
-              #a248ed,
-              #ff5075 44.98%,
-              #ffa14d 97.77%
-            );
-            z-index: 99;
-            transition: 0.4s;
-          }
-          &:hover:after {
-            width: 100%;
-          }
+          z-index: 99;
+          transition: 0.4s;
+        }
+        &:hover:after {
+          width: 100%;
         }
       }
-      .contact-mail-text{
-        p {
-          font-weight: 500;
-          font-size: 18px;
-          line-height: 26px;
-          color: #56585f;
-          margin-bottom: 0;
-          padding-left: 30px;
-        }
+    }
+  }
+
+  &_col-4{
+    .text {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 26px;
+      color: #56585f;
+      margin-bottom: 0;
+      padding-left: 30px;
+
+      @include respond-to("small_tablet"){
+        padding-left: 0px;
       }
       
+      @include respond-to("phone"){
+        padding-left: 0px;
+      }
+
     }
   }
 }

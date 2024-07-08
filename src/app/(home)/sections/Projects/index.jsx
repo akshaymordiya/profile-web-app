@@ -30,8 +30,9 @@ const Projects = () => {
           </Grid.Item>
         </Grid>
         <Grid classNames={`${BASE_CLASSNAME}_content`}>
-          {homeData.projects.workproject.map((item) => (
+          {homeData.projects.workproject.map((item, index) => (
             <Grid.Item
+              key={index}
               xs={12}
               sm={12}
               md={12}

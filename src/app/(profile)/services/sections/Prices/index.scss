@@ -1,62 +1,87 @@
 @import "../../../../../styles/variables";
 @import "../../../../../styles/mixins";
 
-.inner-price-area {
-  background-color: #f6f9ff;
-  display: grid;
-  place-items: center;
-  .inner-price-title-box {
-    margin-bottom: 40px;
+.price_container {
+  &.section {
     text-align: center;
-    .inner-section-title {
-      font-weight: 500;
-      font-size: 80px;
-      line-height: 1;
-      letter-spacing: -0.02em;
-      color: $black;
-      font-family: $primary-fonts;
-      margin-bottom: 25px;
-      @include respond-to("large_tablet") {
-        font-size: 50px;
-      }
-      @include respond-to("small_tablet") {
-        font-size: 50px;
-      }
-      @include respond-to("tablet") {
-        font-size: 40px;
-      }
-      @include respond-to("phone") {
-        font-size: 40px;
-      }
-    }
-    p {
-      font-weight: 300;
-      font-size: 24px;
-      line-height: 1;
-      color: $black;
-      font-family: $primary-fonts;
-      margin-bottom: 0;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+
+    @include respond-to("large_tablet") {
+      padding: 0 2rem;
     }
   }
-  .price-content {
-    // padding: 50px 70px 70px;
+
+  .section_content {
+    padding: 0.5rem 0;
+    padding-bottom: 3rem;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1;
+    color: $black;
+    font-family: $primary-fonts;
+    margin-bottom: 0;
+  }
+
+  &_grid {
+    padding: 50px 70px 70px;
+    gap: 0;
     width: 100%;
     @include respond-to("extra_large_desktop") {
       max-width: 1320px;
     }
-    @include respond-to("small_phone") {
-      // padding: 50px 15px 70px;
+
+    @include respond-to("large_tablet") {
+      padding: 20px 0 10px;
     }
-    .price-item {
+
+    @include respond-to("phone") {
+      padding: 20px 15px 10px;
+    }
+    
+    &_plan_item {
       position: relative;
       margin-bottom: 20px;
-      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
-      padding: 40px 20px;
-      transform: 1s ease;
-      // border-radius: 10px;
-      .price-head {
+
+      @include respond-to("tablet") {
+        grid-column: span 12 !important;
+      }
+
+      &:not(:last-child) {
+        border-right: 1px solid  rgba(2, 11, 24, 0.12);
+
+        @include respond-to("tablet") {
+          border-right: none;
+          border-bottom: 1px solid  rgba(2, 11, 24, 0.12);
+        }
+
+        @include respond-to("small_tablet") {
+          border-right: none;
+          border-bottom: 1px solid  rgba(2, 11, 24, 0.12);
+        }
+
+        @include respond-to("phone") {
+          border-right: none;
+          border-bottom: 1px solid  rgba(2, 11, 24, 0.12);
+        }
+      }
+
+      &_head {
         text-align: center;
         margin-bottom: 100px;
+  
+        @include respond-to("tablet") {
+          margin-bottom: 40px;
+        }
+
+        @include respond-to("small_tablet") {
+          margin-bottom: 40px;
+        }
+
+        @include respond-to("phone") {
+          margin-bottom: 40px;
+        }
+
         h4 {
           font-weight: 500;
           font-size: 34px;
@@ -72,9 +97,11 @@
           color: hsla(0, 0%, 7%, 0.6);
         }
       }
-      .price-body {
+
+      &_content {
         text-align: center;
         margin-bottom: 25px;
+
         span {
           font-weight: 500;
           font-size: 14px;
@@ -82,6 +109,7 @@
           margin-bottom: 18px;
           display: inline-block;
         }
+
         h4 {
           font-weight: 500;
           font-size: 34px;
@@ -90,6 +118,7 @@
           color: $black;
           font-family: $primary-fonts;
         }
+
         .price-text {
           font-weight: 500;
           font-size: 18px;
@@ -101,26 +130,23 @@
           display: inline-block;
         }
       }
-      &:after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        display: inline-block;
-        width: 100%;
-        height: 3px;
-        background-color: $background_bg;
-        background: linear-gradient(to left, $dark-bg, $dark-bg) right;
-        mix-blend-mode: luminosity;
-        background-size: 200%;
-        transition: all 0.5s ease-out;
-      }
-      &:hover:after{
-        background-position: left;
-      }
-      .price-btn-box {
+
+      &_btn {
         text-align: center;
-        .btn-price-white {
+        
+        @include respond-to("tablet") {
+          margin-bottom: 40px;
+        }
+
+        @include respond-to("small_tablet") {
+          margin-bottom: 40px;
+        }
+
+        @include respond-to("phone") {
+          margin-bottom: 40px;
+        }
+
+        .price-btn {
           text-decoration: none;
           background-color: $black;
           color: $white;
@@ -135,6 +161,7 @@
           border-radius: 100px;
           padding: 0 80px;
           font-family: $dm-font-family;
+          
           div {
             line-height: 1;
             display: inline-block;
@@ -147,8 +174,8 @@
               text-shadow: 0 22px 0 $white;
             }
           }
+          
           &:hover div span {
-            // Target nested element on hover
             transform: translateY(-122%);
           }
         }

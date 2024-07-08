@@ -3,9 +3,18 @@ import "./index.scss";
 
 const BASE_CLASSNAME = "grid-container";
 
-const Grid = ({ children, classNames = "" }) => {
-  return <div className={`${BASE_CLASSNAME} ${classNames}`}>{children}</div>;
-};
+const Grid = ({
+  children,
+  classNames = "",
+  ...props
+}) => {
+  return (
+    <div className={`${BASE_CLASSNAME} ${classNames}`} {...props}>   {children}
+    </div>
+  )
+}
+
+Grid.displayName = "Grid"
 
 Grid.Item = ({
   children,
@@ -42,6 +51,7 @@ Grid.Item = ({
       {children}
     </div>
   );
-};
+}
+Grid.Item.displayName = "Grid.Item";
 
 export default Grid;
