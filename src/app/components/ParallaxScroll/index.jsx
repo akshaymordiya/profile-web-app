@@ -13,7 +13,6 @@ const ParallaxScroll = ({
     if (parallaxRef.current) {
       const parallaxTop = parallaxRef.current.getBoundingClientRect().top;
       parallaxRef.current.style.transform = `translateY(${parallaxTop * speed}px)`;
-      // }
     }
   };
 

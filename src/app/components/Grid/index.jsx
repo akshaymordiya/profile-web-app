@@ -13,6 +13,7 @@ Grid.Item = ({
   sm = undefined,
   md = undefined,
   lg = undefined,
+  xl = undefined,
   xlg = undefined,
   itemClass = "",
   ...props
@@ -23,7 +24,8 @@ Grid.Item = ({
       sm: sm || xs,
       md: md || sm || xs,
       lg: lg || md || sm || xs,
-      xlg: xlg || lg || md || sm || xs,
+      xl: xl || lg || md || sm || xs,
+      xlg: xlg || xl || lg || md || sm || xs,
     };
 
     return Object.entries(breakpoints).reduce((cls, [key, breakpoint]) => {

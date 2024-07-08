@@ -9,32 +9,34 @@ const AnimatedCharactors = ({
   uppercase = false,
   leftSpaceOnLastCharactor = false,
   wrapperClass = "",
-  charactorClass = ""
+  charactorClass = "",
 }) => {
+  let word = charactors;
 
-  let word = charactors
-
-  if(capitlized){
-    word = word.replace(/\b\w/g, char => char.toUpperCase());
-  } else if(lowercase) {
+  if (capitlized) {
+    word = word.replace(/\b\w/g, (char) => char.toUpperCase());
+  } else if (lowercase) {
     word = word.toLowerCase();
-  } else if(uppercase) {
+  } else if (uppercase) {
     word = word.toUpperCase();
   }
 
   return (
     <div
-      className={`${BASE_CLASSNAME} ${wrapperClass} ${leftSpaceOnLastCharactor ? "space-end-x" : ''}`}
-  >
-    {word.split('').map((charactor, index) => (
-      <div 
-        key={`${charactor}-${index}`} className={`charactor ${charactorClass}`}
-      >
-        {charactor}
-      </div>
-    ))}
-  </div>
-  )
-}
+      className={`${BASE_CLASSNAME} ${wrapperClass} ${
+        leftSpaceOnLastCharactor ? "space-end-x" : ""
+      }`}
+    >
+      {word.split("").map((charactor, index) => (
+        <div
+          key={`${charactor}-${index}`}
+          className={`charactor ${charactorClass}`}
+        >
+          {charactor}
+        </div>
+      ))}
+    </div>
+  );
+};
 
-export default AnimatedCharactors
+export default AnimatedCharactors;

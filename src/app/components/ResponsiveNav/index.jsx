@@ -60,8 +60,8 @@ const ResponsiveNav = ({ toggleMenu }) => {
                 <Link href="tel:61404093954">+61404093 954</Link>
               </div>
               <div className="mailtext">
-                <Link href="mailto:hellocontact@diego.com">
-                  hello contact@diego.com
+                <Link href="mailto:hellocontact@gmail.com">
+                  hello contact@gmail.com
                 </Link>
               </div>
               <p>If in doubt. reach out.</p>

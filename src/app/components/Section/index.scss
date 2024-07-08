@@ -42,7 +42,6 @@
         border-radius: 13px;
         background-color: $progress-bar-placeholder;
         animation: slideRight 3.5s linear forwards;
-
         @keyframes slideRight {
           from {
             width: 0%;
