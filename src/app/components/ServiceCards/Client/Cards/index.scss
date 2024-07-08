@@ -144,6 +144,10 @@
     font-weight: 400;
     font-size: 17px;
     transition: all 0.3s ease-in-out;
+
+    @include respond-to("phone"){
+      text-align: center;
+    }
     
     a {
       color: $text-body;
@@ -153,11 +157,13 @@
         margin-left: 0.5rem;
         text-decoration: underline;
         color: $white;
+        
 
         @include respond-to('phone'){
           display: block;
           text-align: center;
           margin-top: 10px;
+          margin-left: 0px;
         }
       }
     }

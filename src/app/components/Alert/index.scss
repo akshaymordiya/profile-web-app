@@ -1,3 +1,5 @@
+@import "../../../styles/mixins";
+
 .alert {
   position: fixed;
   right: -100%;
@@ -22,6 +24,10 @@
 
   &.close {
     right: -100%;
+
+    @include respond-to("phone"){
+      right: -125%;
+    }
   }
 
   &.error {
