@@ -23,6 +23,7 @@
         "title": "Space Needle",
         "author": "Branding",
         "date": "12 April, 2022",
+        "isFeatured": true,
         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores. Sunt vitae ea magni libero voluptatibus voluptates ad debitis iste itaque laborum vero odit, maiores qui iure animi id at.",
         "icons":{
           "easticon": "Arrowicon"
@@ -53,6 +54,7 @@
         "title": "Crisis Cleanup",
         "author": "Branding",
         "date": "23 Jan, 2024",
+        "isFeatured": true,
         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores. Sunt vitae ea magni libero voluptatibus voluptates ad debitis iste itaque laborum vero odit, maiores qui iure animi id at.",
         "icons":{
           "easticon": "Arrowicon"
@@ -83,6 +85,7 @@
         "title": "Space Needle",
         "author": "Branding",
         "date": "12 April, 2022",
+        "isFeatured": false,
         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores. Sunt vitae ea magni libero voluptatibus voluptates ad debitis iste itaque laborum vero odit, maiores qui iure animi id at.",
         "icons":{
           "easticon": "Arrowicon"
@@ -113,6 +116,7 @@
         "title": "Space Needle",
         "author": "Branding",
         "date": "12 April, 2022",
+        "isFeatured": false,
         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores. Sunt vitae ea magni libero voluptatibus voluptates ad debitis iste itaque laborum vero odit, maiores qui iure animi id at.",
         "icons":{
           "easticon": "Arrowicon"
@@ -145,6 +149,7 @@
         "title": "Space Needle",
         "author": "Branding",
         "date": "12 April, 2022",
+        "isFeatured": true,
         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores. Sunt vitae ea magni libero voluptatibus voluptates ad debitis iste itaque laborum vero odit, maiores qui iure animi id at.",
         "icons":{
           "easticon": "Arrowicon"
@@ -176,6 +181,7 @@
         "title": "Crisis Cleanup",
         "author": "Branding",
         "date": "23 Jan, 2024",
+        "isFeatured": true,
         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores. Sunt vitae ea magni libero voluptatibus voluptates ad debitis iste itaque laborum vero odit, maiores qui iure animi id at.",
         "icons":{
           "easticon": "Arrowicon"
@@ -206,6 +212,7 @@
         "title": "Space Needle",
         "author": "Branding",
         "date": "12 April, 2022",
+        "isFeatured": false,
         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores. Sunt vitae ea magni libero voluptatibus voluptates ad debitis iste itaque laborum vero odit, maiores qui iure animi id at.",
         "icons":{
           "easticon": "Arrowicon"
@@ -236,6 +243,7 @@
         "title": "Space Needle",
         "author": "Branding",
         "date": "12 April, 2022",
+        "isFeatured": false,
         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores. Sunt vitae ea magni libero voluptatibus voluptates ad debitis iste itaque laborum vero odit, maiores qui iure animi id at.",
         "icons":{
           "easticon": "Arrowicon"

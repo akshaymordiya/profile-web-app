@@ -1,5 +1,4 @@
-"use client";
-import React, { useMemo } from "react";
+import React from "react";
 import Grid from "@/app/components/Grid";
 import WorkItem from "./WorkBox";
 //style css
