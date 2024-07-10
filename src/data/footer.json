@@ -1,55 +1,124 @@
 {
-  "footer": {
-    "footerImg": "/assets/footer-shape-2.png",
-    "whitelogo": "/assets/logo-white.png",
-    "paragraph": "Feel free to reach out with questions or inquiries.",
-    "socialmedia": [
-      {
-        "icon": "MailIcon"
-      },
-      {
-        "icon": "LangIcon"
-      },
-      {
-        "icon": "MailIcon"
-      },
-      {
-        "icon": "SubscribIcon"
-      }
-    ],
+  "images": {
+    "shape": "/assets/footer-shape-2.png",
+    "logo": "/assets/logo-white.png"
+  },
+  "footerImg": "/assets/footer-shape-2.png",
+  "whitelogo": "/assets/logo-white.png",
+  "paragraph": "Feel free to reach out with questions or inquiries.",
+  "socialMedia": [
+    {
+      "icon": "MailIcon",
+      "link": "/#",
+      "title": "Github"
+    },
+    {
+      "icon": "LangIcon",
+      "link": "/#",
+      "title": "Linked In"
+    },
+    {
+      "icon": "MailIcon",
+      "link": "/#",
+      "title": "Instagram"
+    },
+    {
+      "icon": "SubscribIcon",
+      "link": "/#",
+      "title": "X"
+    }
+  ],
+  "grid": {
     "explore": {
       "title": "Explore",
-      "exploredata": [
+      "data": [
         {
-          "icon": "ArrowForwardOutlinedIcon",
-          "title": "About"
+          "icon": "MailIcon",
+          "title": "About",
+          "link": "/about"
         },
         {
-          "icon": "ArrowForwardOutlinedIcon",
-          "title": "Services"
+          "icon": "MailIcon",
+          "title": "Services",
+          "link": "/services"
         },
         {
-          "icon": "ArrowForwardOutlinedIcon",
-          "title": "Portfolio"
+          "icon": "MailIcon",
+          "title": "Work",
+          "link": "/work"
         },
         {
-          "icon": "ArrowForwardOutlinedIcon",
-          "title": "Contact"
+          "icon": "MailIcon",
+          "title": "Contact",
+          "link": "/contact"
         }
       ]
     },
     "address": {
       "title": "Address",
-      "subtitle": "California",
-      "paragraph": " 987 Design Blvd, Suite 543, Beverly Hills, CA 902"
+      "data": [
+        {
+          "icon": "MailIcon",
+          "title": "California"
+        },
+        {
+          "icon": "MailIcon",
+          "title": " 987 Design Blvd, Suite 543, Beverly Hills, CA 902"
+        }
+      ]
     },
     "contact": {
       "title": "Say Hello",
-      "email": "hello@youremail.com",
-      "number": "+1(789) 8001234"
-    },
-    "copyright": {
-      "title": "ThemePure @ 2024. All Rights Reserved."
+      "data": [
+        {
+          "icon": "MailIcon",
+          "title": "hello@youremail.com",
+          "link": "mailto:hello@youremail.com"
+        },
+        {
+          "icon": "MailIcon",
+          "title": "+1(789) 8001234",
+          "link": "tel:+1(789) 8001234"
+        }
+      ]
     }
+  },
+  "explore": {
+    "title": "Explore",
+    "exploredata": [
+      {
+        "icon": "ArrowForwardOutlinedIcon",
+        "title": "About",
+        "link": "/about"
+      },
+      {
+        "icon": "ArrowForwardOutlinedIcon",
+        "title": "Services",
+        "link": "/services"
+      },
+      {
+        "icon": "ArrowForwardOutlinedIcon",
+        "title": "Work",
+        "link": "/work"
+      },
+      {
+        "icon": "ArrowForwardOutlinedIcon",
+        "title": "Contact",
+        "link": "/contact"
+      }
+    ]
+  },
+  "address": {
+    "title": "Address",
+    "subtitle": "California",
+    "paragraph": " 987 Design Blvd, Suite 543, Beverly Hills, CA 902"
+  },
+  "contact": {
+    "title": "Say Hello",
+    "email": "hello@youremail.com",
+    "number": "+1(789) 8001234"
+  },
+  "copyright": {
+    "title": "ThemePure @ 2024. All Rights Reserved."
   }
 }
