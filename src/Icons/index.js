@@ -66,18 +66,18 @@ export const getIcon = (keys = []) => {
 export const renderIconComponent = (key, returnReference = false) => {
     const Component = icons[key];
 
-    if(!Component){
-        if(returnReference){
-            return () => (
-                <React.Fragment>
-                </React.Fragment>
-            );
-        }
-
-        return (
+    if (!Component) {
+        const EmptyComponent = () => (
             <React.Fragment>
             </React.Fragment>
-        )
+        );
+        EmptyComponent.displayName = 'EmptyComponent';
+
+        if (returnReference) {
+            return EmptyComponent;
+        }
+
+        return <EmptyComponent />;
     } 
 
     if(returnReference){
