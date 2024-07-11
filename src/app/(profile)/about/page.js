@@ -7,8 +7,16 @@ import Text from "./sections/Text";
 import Skills from "./sections/Skills";
 import CounterBox from "./sections/CounterBox";
 import AwardArea from "./sections/AwardArea";
-
+//data
 import aboutData from "../../../data/about.page.json";
+//defaultMetadata
+import { defaultMetadata } from "@/config/metadata";
+
+export const metadata = {
+  ...defaultMetadata,
+  title: 'About - Akshay Moradiya',
+  description: 'Learn more about Akshay Moradiya, a Full-Stack Developer with 5+ years of experience in frontend and backend technologies.',
+};
 
 const About = () => {
   const {

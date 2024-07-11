@@ -12,6 +12,14 @@ import BrandButton from "@/app/components/Brand";
 
 //data
 import serviceData from "../../../data/service.page.json";
+//defaultMetadata
+import { defaultMetadata } from "@/config/metadata";
+
+export const metadata = {
+  ...defaultMetadata,
+  title: 'Services - Akshay Moradiya',
+  description: 'Discover the full-stack development services offered by Akshay Moradiya, including frontend and backend development, cloud deployment, and more.',
+};
 
 function Services() {
   const {

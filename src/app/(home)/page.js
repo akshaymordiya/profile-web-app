@@ -6,9 +6,16 @@ import Projects from "./sections/Projects";
 //data
 import homeData from "../../data/home.page.json";
 import { work as projects } from "../../data/work.page.json";
+//defaultMetadata
+import { defaultMetadata } from "@/config/metadata";
+
+export const metadata = {
+  ...defaultMetadata,
+  title: 'Home - Akshay Moradiya',
+  description: 'Welcome to Akshay Moradiya\'s portfolio. Discover my skills, projects, and services in full-stack development.',
+};
 
 export default function Home() {
-
   const {
     hero,
     services,

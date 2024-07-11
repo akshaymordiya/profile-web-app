@@ -1,11 +1,11 @@
 {
   "hero": {
-    "name": ["creative", "visual", "Designer"],
+    "name": ["Envision", "Develop", "Succeed"],
     "button": {
-      "title": "View Our Work",
+      "title": "View My Work",
       "icon": "CallIcon"
     },
-    "description": "Hello, I am Diego a designer from Barcelona. Specialised in creating fantastic digital experiences.!"
+    "description": "Hello! 👋 I'm Akshay, a versatile Full-Stack Developer with over 5 years of experience, ready to bring your project to life."
   },
   "services": {
     "images":{
