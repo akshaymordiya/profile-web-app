@@ -21,8 +21,9 @@
   animation: fadeIn 0.3s ease-in forwards;
   transition: all 0.3s all ease-in-out;
 
-  &.visible {
+  &.visibl {
     visibility: visible;
+    transform: rotate(360deg);
 
     .up_arrow {
       transition: 0.3s all ease-in-out;

@@ -7,7 +7,7 @@ const HorizontalCarousel = ({ items, containerClass = "", itemClass = "" }) => {
 
   return (
     <div className={`${BASE_CLASSNAME}-container ${containerClass}`}>
-      <ui className={`${BASE_CLASSNAME}-container-list`}>
+      <div className={`${BASE_CLASSNAME}-container-list`}>
         {items.map((item, index) => (
           <li className={`carousel-item ${itemClass}`} key={index}>
             {item}
@@ -18,7 +18,7 @@ const HorizontalCarousel = ({ items, containerClass = "", itemClass = "" }) => {
             {item}
           </li>
         ))}
-      </ui>
+      </div>
     </div>
   );
 };

@@ -59,6 +59,8 @@
         }
       }
       .footer-social {
+        display: flex;
+        flex-wrap: wrap;
         a {
           height: 44px;
           width: 44px;
@@ -67,17 +69,25 @@
           border-radius: 100px;
           display: inline-block;
           text-align: center;
+          display: flex;
+          justify-content: center;
           color: $white;
           margin-right: 7px;
           transition: 0.3s;
-          span svg {
-            width: 18px;
+          span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg {
+              width: 18px;
+            }
           }
-          &:hover {
-            background-color: $white;
-            color: $black;
-            border-color: $white;
-          }
+            &:hover {
+              background-color: $white;
+              color: $black;
+              border-color: $white;
+            }
+          
         }
       }
       &-title {

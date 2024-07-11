@@ -59,7 +59,7 @@ const Skills = ({ data = {} }) => {
                 </Link>
                 <Link href={`tel:${info.number}`} className="link">
                   <span>
-                    <IMG useRawImgTag src={info.image} />
+                    <IMG useRawImgTag src={info.image} alt="whatsapp-img" />
                   </span>
                   {info.number}
                 </Link>

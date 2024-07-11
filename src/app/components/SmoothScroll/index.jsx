@@ -58,7 +58,7 @@ const SmoothScroll = ({
   const smoothScrollingHandler = () => {
     const bodyHeight = document.body.clientHeight;
     if(Math.abs(bodyHeight - scrollingContainerRef.current?.getBoundingClientRect().height) > 1){
-      setBodyHeight()
+      setBodyHeight();
     }
 
     if(scrollingContainerRef.current){

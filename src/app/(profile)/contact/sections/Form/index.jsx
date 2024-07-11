@@ -1,22 +1,22 @@
 "use client";
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from "react";
 
 //components
-import Grid from '@/app/components/Grid'
-import SectionBox from '@/app/components/SectionBox'
-import Input from '@/app/components/Input'
-import Alert from '@/app/components/Alert';
+import Grid from "@/app/components/Grid";
+import SectionBox from "@/app/components/SectionBox";
+import Input from "@/app/components/Input";
+import Alert from "@/app/components/Alert";
 //icons
-import TaskAltIcon from '@mui/icons-material/TaskAlt';
-import WarningAmberIcon from '@mui/icons-material/WarningAmber';
-import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
-import HighlightOffIcon from '@mui/icons-material/HighlightOff';
+import TaskAltIcon from "@mui/icons-material/TaskAlt";
+import WarningAmberIcon from "@mui/icons-material/WarningAmber";
+import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
+import HighlightOffIcon from "@mui/icons-material/HighlightOff";
 //validation shcema
 import { validationSchema } from "../../Schema";
 
-import "./index.scss"
+import "./index.scss";
 
-const BASE_CLASSNAME = 'contact_from_container'
+const BASE_CLASSNAME = "contact_from_container";
 
 const Tags = ({
   classNames = "",
@@ -26,67 +26,69 @@ const Tags = ({
   tagClassName = "",
   onUpdate = () => {},
   error = "",
-  isValueCleared = false
+  isValueCleared = false,
 }) => {
-
-  const [mappedTags , setMappedTags] = useState(() => tags.map(t => ({
-    title: t,
-    isSelected: false
-  })));
+  const [mappedTags, setMappedTags] = useState(() =>
+    tags.map((t) => ({
+      title: t,
+      isSelected: false,
+    }))
+  );
 
   useEffect(() => {
-    if(isValueCleared){
-      setMappedTags(tags.map(t =>  ({
-        title: t,
-        isSelected: false
-      })))
+    if (isValueCleared) {
+      setMappedTags(
+        tags.map((t) => ({
+          title: t,
+          isSelected: false,
+        }))
+      );
     }
   }, [isValueCleared]);
 
   const onTagClick = (key) => {
-    const updatedTags = mappedTags.map(mt => {
-      if(mt.title === key){
+    const updatedTags = mappedTags.map((mt) => {
+      if (mt.title === key) {
         return {
           ...mt,
-          isSelected: !mt.isSelected
-        }
+          isSelected: !mt.isSelected,
+        };
       }
-      
-      if(selectMultiple){
-        return mt
+
+      if (selectMultiple) {
+        return mt;
       }
 
       return {
         ...mt,
-        isSelected: false
-      }
+        isSelected: false,
+      };
     });
-    
-    setMappedTags(updatedTags)
-    const resultingTags = updatedTags.filter(t => t.isSelected).map(t => t.title);
+
+    setMappedTags(updatedTags);
+    const resultingTags = updatedTags
+      .filter((t) => t.isSelected)
+      .map((t) => t.title);
     onUpdate(selectMultiple ? resultingTags : resultingTags[0]);
-  }
-  
+  };
+
   return (
-    <SectionBox
-      title={title}
-      containerClass={`tags ${classNames}`}
-    >
+    <SectionBox title={title} containerClass={`tags ${classNames}`}>
       <div className={`tags_list`}>
         {mappedTags.map((t, index) => (
           <div
             key={index}
             className={`tag ${tagClassName} ${t.isSelected ? "selected" : ""}`}
-            onClick={() => onTagClick(t.title)}  
-          >{t.title}</div>
+            onClick={() => onTagClick(t.title)}
+          >
+            {t.title}
+          </div>
         ))}
       </div>
-      {error !== "" && (
-        <p className='error'>{error}</p>
-      )}
+      {error !== "" && <p className="error">{error}</p>}
     </SectionBox>
-  )
-}
+  );
+};
 
 const defaultErrorState = {
   name: "",
@@ -94,39 +96,33 @@ const defaultErrorState = {
   email: "",
   comment: "",
   categoryTags: "",
-  priceRange: ""
-}
+  priceRange: "",
+};
 
 const defaultMessageState = {
   type: "",
-  text: ""
-}
+  text: "",
+};
 
 const icons = {
-  "info": InfoOutlinedIcon,
-  "success": TaskAltIcon,
-  "error": WarningAmberIcon
-}
+  info: InfoOutlinedIcon,
+  success: TaskAltIcon,
+  error: WarningAmberIcon,
+};
 
-const IconCmp = ({
-  type,
-  classNames = ""
-}) => {
-  if(type === ""){
-    return
+const IconCmp = ({ type, classNames = "" }) => {
+  if (type === "") {
+    return;
   }
 
   const Icon = icons[type];
 
-  return <Icon className={classNames} />
-}
+  return <Icon className={classNames} />;
+};
 
-IconCmp.displayName = "IconCmp"
+IconCmp.displayName = "IconCmp";
 
-const Form = ({
-  data = {}
-}) => {
-
+const Form = ({ data = {} }) => {
   const [name, setName] = useState("");
   const [company, setCompany] = useState("");
   const [email, setEmail] = useState("");
@@ -135,8 +131,8 @@ const Form = ({
   const [priceRange, setPriceRange] = useState(null);
   const [errors, setErrors] = useState(defaultErrorState);
   const [isProcessing, setIsProcessing] = useState(false);
-  const [message, setMessage] = useState(defaultMessageState)
-  const [notification, setNotification] = useState(defaultMessageState)
+  const [message, setMessage] = useState(defaultMessageState);
+  const [notification, setNotification] = useState(defaultMessageState);
 
   const clearForm = () => {
     setName("");
@@ -145,57 +141,58 @@ const Form = ({
     setComment("");
     setCategoryTags([]);
     setPriceRange("");
-  }
+  };
 
   const handleChange = (key, value) => {
     const updateFuncs = {
-      "name": setName,
-      "company": setCompany,
-      "email": setEmail,
-      "comment": setComment,
-      "categoryTags": setCategoryTags,
-      "priceRange": setPriceRange
-    }
-
-    updateFuncs[key](value)
-  }
+      name: setName,
+      company: setCompany,
+      email: setEmail,
+      comment: setComment,
+      categoryTags: setCategoryTags,
+      priceRange: setPriceRange,
+    };
+    updateFuncs[key](value);
+  };
 
   const validateFeilds = async (key = undefined) => {
     const stateKeys = {
-      "name": name,
-      "company": company,
-      "email": email,
-      "comment": comment,
-      "categoryTags": categoryTags,
-      "priceRange": priceRange
-    }
+      name: name,
+      company: company,
+      email: email,
+      comment: comment,
+      categoryTags: categoryTags,
+      priceRange: priceRange,
+    };
     try {
-      if(key){
+      if (key) {
         await validationSchema.validateAt(key, {
-          [key]: stateKeys[key]
+          [key]: stateKeys[key],
         });
       } else {
-        await validationSchema.validate({
-          name,
-          company,
-          email,
-          comment,
-          categoryTags,
-          priceRange,
-        }, { abortEarly: false })
+        await validationSchema.validate(
+          {
+            name,
+            company,
+            email,
+            comment,
+            categoryTags,
+            priceRange,
+          },
+          { abortEarly: false }
+        );
       }
-  
-      setErrors((prev) => key ? ({
-        ...prev,
-        [key]: ""
-      }) : defaultErrorState);
-      return true
+
+      setErrors((prev) => (key
+        ? { ...prev, [key]:"" }
+        : defaultErrorState));
+      return true;
     } catch (err) {
       const errors = [];
-      if(key){
-        errors.push(err)
+      if (key) {
+        errors.push(err);
       } else {
-        errors.push(...err.inner)
+        errors.push(...err.inner);
       }
       const validationErrors = {};
       errors.forEach((error) => {
@@ -203,25 +200,25 @@ const Form = ({
       });
       setErrors(() => ({
         ...defaultErrorState,
-        ...validationErrors
+        ...validationErrors,
       }));
-      return false
+      return false;
     }
-  }
+  };
 
   const handleSubmit = async (e) => {
-    if(isProcessing) return
+    if (isProcessing) return;
 
     e.preventDefault();
     const isValidData = await validateFeilds();
-    if(!isValidData) return
+    if (!isValidData) return;
 
     setIsProcessing(true);
     try {
-      const response = await fetch('/contact/api', {
-        method: 'POST',
+      const response = await fetch("/contact/api", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           name,
@@ -229,63 +226,60 @@ const Form = ({
           email,
           comment,
           categoryTags,
-          priceRange
+          priceRange,
         }),
       });
-  
+
       const result = await response.json();
-  
+
       if (response.ok && result?.success) {
         const msg = {
           type: "success",
-          text: "Thanks for reaching out, Your response has been submitted!"
-        }
-        setMessage(msg)
+          text: "Thanks for reaching out, Your response has been submitted!",
+        };
+        setMessage(msg);
         setNotification({
           ...msg,
-          text: "Email send successfully"
-        })
+          text: "Email send successfully",
+        });
         clearForm();
       } else {
         const msg = {
           type: "error",
-          text: "Something went wrong"
-        }
-        setMessage(msg)
-        setNotification(msg)
+          text: "Something went wrong",
+        };
+        setMessage(msg);
+        setNotification(msg);
       }
     } catch (error) {
       const msg = {
         type: "error",
-        text: error?.message ?? "Something went wrong"
-      }
+        text: error?.message ?? "Something went wrong",
+      };
       setMessage(msg);
-      setNotification(msg)
+      setNotification(msg);
     } finally {
-      setIsProcessing(false)
+      setIsProcessing(false);
       setTimeout(() => {
-        clearMessage()
+        clearMessage();
       }, 30000);
     }
-  }
+  };
 
   const handleKeyDown = (e) => {
-    if (e.key === 'Enter') {
+    if (e.key === "Enter") {
       e.preventDefault();
       handleSubmit(e);
     }
-  }
+  };
 
   const clearMessage = () => setMessage(defaultMessageState);
 
   const clearNotifications = () => setNotification(defaultMessageState);
 
   return (
-    <div
-      className={BASE_CLASSNAME}
-      onKeyDown={handleKeyDown}
-    > 
-      <Alert 
+    <div className={BASE_CLASSNAME} onKeyDown={handleKeyDown}>
+      <Alert
         show={notification.type !== ""}
         type={notification.type}
         text={notification.text}
@@ -294,17 +288,14 @@ const Form = ({
       />
       {message.type !== "" && (
         <div className={`${BASE_CLASSNAME}_msg ${message.type}`}>
-          <div className='left'>
-            <IconCmp 
-              type={message.type}
-              classNames='icon'
-            />
+          <div className="left">
+            <IconCmp type={message.type} classNames="icon" />
             <p>{message.text}</p>
           </div>
-          <HighlightOffIcon className='right' onClick={clearMessage} />
+          <HighlightOffIcon className="right" onClick={clearMessage} />
         </div>
       )}
-      <Tags 
+      <Tags
         classNames={`${BASE_CLASSNAME}-tags`}
         tags={data.serviceTags.list}
         selectMultiple
@@ -317,16 +308,8 @@ const Form = ({
         title={data.title}
         containerClass={`${BASE_CLASSNAME}_form_box`}
       >
-        <Grid
-          classNames={`${BASE_CLASSNAME}_form_box_grid`}
-        >
-          <Grid.Item
-            xs={12}
-            sm={12}
-            md={12}
-            lg={6}
-            xlg={6}
-          >
+        <Grid classNames={`${BASE_CLASSNAME}_form_box_grid`}>
+          <Grid.Item xs={12} sm={12} md={12} lg={6} xlg={6}>
             <Input
               id="name"
               required
@@ -338,13 +321,7 @@ const Form = ({
               error={errors.name}
             />
           </Grid.Item>
-          <Grid.Item
-            xs={12}
-            sm={12}
-            md={12}
-            lg={6}
-            xlg={6}
-          >
+          <Grid.Item xs={12} sm={12} md={12} lg={6} xlg={6}>
             <Input
               id="company"
               value={company}
@@ -355,13 +332,7 @@ const Form = ({
               error={errors.company}
             />
           </Grid.Item>
-          <Grid.Item
-            xs={12}
-            sm={12}
-            md={12}
-            lg={12}
-            xlg={12}
-          >
+          <Grid.Item xs={12} sm={12} md={12} lg={12} xlg={12}>
             <Input
               id="email"
               required
@@ -373,13 +344,7 @@ const Form = ({
               error={errors.email}
             />
           </Grid.Item>
-          <Grid.Item
-            xs={12}
-            sm={12}
-            md={12}
-            lg={12}
-            xlg={12}
-          >
+          <Grid.Item xs={12} sm={12} md={12} lg={12} xlg={12}>
             <Input
               id="comment"
               textarea
@@ -402,8 +367,8 @@ const Form = ({
         onUpdate={(value) => handleChange("priceRange", value)}
         isValueCleared={priceRange === ""}
       />
-      <button 
-        type="submit" 
+      <button
+        type="submit"
         className={`${BASE_CLASSNAME}_submit-btn`}
         onClick={handleSubmit}
         disabled={isProcessing}
@@ -417,9 +382,9 @@ const Form = ({
         )}
       </button>
     </div>
-  )
-}
+  );
+};
 
-Form.displayName = "Form"
+Form.displayName = "Form";
 
-export default Form
+export default Form;

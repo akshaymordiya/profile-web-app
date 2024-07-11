@@ -38,7 +38,7 @@ const Work = ({ data = {} }) => {
       >
         {data.right.map((work, index) => (
           <WorkItem
-            key={work}
+            key={work.id}
             work={work}
             imageClass={index % 2 !== 0 ? "big" : ""}
           />

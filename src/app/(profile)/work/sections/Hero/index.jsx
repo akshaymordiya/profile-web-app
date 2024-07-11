@@ -1,7 +1,6 @@
 import React from "react";
 import SectionBox from "@/app/components/SectionBox";
 import WorkSilder from "./Client/WorkSlider";
-import Grid from "@/app/components/Grid";
 import Fade from "@/app/components/Fade";
 
 //style scss

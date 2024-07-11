@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useMemo } from 'react'
+import React, { useState, useMemo } from "react";
 
 //components
 import IMG from "@/app/components/IMG";
@@ -9,34 +9,26 @@ import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 
-import "./index.scss"
+import "./index.scss";
 
-const BASE_CLASSNAME = "portfolio-thumb"
+const BASE_CLASSNAME = "portfolio-thumb";
 
-const ImgGallary = ({
-  primaryImg,
-  gallary = []
-}) => {
-
+const ImgGallary = ({ primaryImg, gallary = [] }) => {
   const [open, setOpen] = useState(false);
-
 
   const imgGallary = useMemo(() => {
     return [
       {
-        src: primaryImg
+        src: primaryImg,
       },
-      ...(gallary ?? []).map(url => ({
-        src: url
-      }))
-    ]
+      ...(gallary ?? []).map((url) => ({
+        src: url,
+      })),
+    ];
   }, [gallary]);
 
   return (
-    <div
-      onClick={() => setOpen(true)}
-      className={BASE_CLASSNAME}
-    >
+    <div onClick={() => setOpen(true)} className={BASE_CLASSNAME}>
       <IMG
         src={primaryImg}
         useRawImgTag
@@ -50,7 +42,7 @@ const ImgGallary = ({
         slides={imgGallary}
       />
     </div>
-  )
-}
+  );
+};
 
-export default ImgGallary
+export default ImgGallary;

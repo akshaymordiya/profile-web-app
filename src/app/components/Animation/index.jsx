@@ -1,8 +1,9 @@
 'use client';
 import React from 'react';
-import Lottie from "lottie-react";
+// import Lottie from "lottie-react";
 
 import "./index.scss";
+import Lottie from 'lottie-react';
 
 const BASE_CLASSNAME = "animation_wrapper"
 

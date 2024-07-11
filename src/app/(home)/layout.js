@@ -1,10 +1,10 @@
 import { Inter } from "next/font/google";
 import "../../styles/global.scss";
-import ScrollToTop from "@/app/components/scrollToTop";
 import Navbar from "@/app/components/Navbar";
 import Footer from "./sections/Footer";
 import SmoothScroll from "@/app/components/SmoothScroll";
 import CustomCursor from "@/app/components/MouseCursor";
+import ScrollToTopButton from "@/app/components/scrollToTop";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,7 +24,7 @@ export default function Layout({ children }) {
             </main>
           <Footer />
           <CustomCursor />
-          <ScrollToTop />
+         <ScrollToTopButton />
         </SmoothScroll>
         <div id="menu-portal"></div>
       </body>

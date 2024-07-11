@@ -103,7 +103,7 @@ const Sticky = ({
         let scrollValue = offset;
         if(offset <= boundryOffset.top){
           scrollValue = boundryOffset.top
-        } else if (offset >= boundryOffset.bottom){
+        } else if (offset >= boundryOffset.bottom)  {
           scrollValue = boundryOffset.bottom
         }
         const stickyElement = behaviour.pos_left.isSticky ? posLeft : posRight;

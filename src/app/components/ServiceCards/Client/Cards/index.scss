@@ -11,13 +11,13 @@
   scroll-behavior: smooth;
   gap: 2.5rem;
 
-  @include respond-to('large_tablet'){
+  @include respond-to("large_tablet") {
     margin-top: 6rem;
   }
-  @include respond-to('small_tablet'){
+  @include respond-to("small_tablet") {
     gap: 1rem;
   }
-  @include respond-to('phone'){
+  @include respond-to("phone") {
     gap: 1rem;
   }
 
@@ -54,15 +54,15 @@
       z-index: 3;
     }
 
-    @include respond-to('large_tablet'){
+    @include respond-to("large_tablet") {
       padding: 4rem;
       width: 100%;
     }
-    @include respond-to('small_tablet'){
+    @include respond-to("small_tablet") {
       padding: 4rem;
       width: 100%;
     }
-    @include respond-to('phone'){
+    @include respond-to("phone") {
       flex-direction: column;
       padding: 2rem;
       width: 100%;
@@ -81,7 +81,7 @@
         }
       }
     }
-    
+
     &_content {
       &_title {
         font-weight: 500;
@@ -91,7 +91,6 @@
         margin-bottom: 16px;
         width: 180px;
       }
-      
 
       &_description {
         font-weight: 400;
@@ -123,7 +122,7 @@
             color: $black;
           }
 
-          @include respond-to('phone'){
+          @include respond-to("phone") {
             margin-bottom: 0.7rem;
           }
         }
@@ -137,29 +136,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 74%;
     padding: 20px;
     background: #4c40f7;
     border-radius: 30px;
     font-weight: 400;
     font-size: 17px;
     transition: all 0.3s ease-in-out;
-
-    @include respond-to("phone"){
-      text-align: center;
+    @include respond-to("large_tablet") {
+      width: 100%;
     }
-    
+    @include respond-to("small_tablet") {
+      width: 100%;
+    }
+    @include respond-to("phone") {
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+    }
     a {
       color: $text-body;
-      
+
       span {
         font-size: 18px;
         margin-left: 0.5rem;
         text-decoration: underline;
         color: $white;
-        
 
-        @include respond-to('phone'){
+        @include respond-to("phone") {
           display: block;
           text-align: center;
           margin-top: 10px;

@@ -43,9 +43,9 @@ const Projects = () => {
               data-aos-duration="1000"
             >
               <IMG
+                useRawImgTag
                 src={item?.image}
                 containerClasses="project-thumb"
-                useRawImgTag
                 useContainer
               />
               <div className="project-content">

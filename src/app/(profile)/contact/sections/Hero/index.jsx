@@ -65,7 +65,9 @@ const Hero = ({ data = {} }) => {
             useRawImgTag
             alt="flower-img"
           />
-          <IMG src={data.flowerText} useRawImgTag alt="flower-text" />
+          <IMG src={data.flowerText}
+            useRawImgTag
+            alt="flower-text" />
         </div>
       </Grid.Item>
       <Grid.Item

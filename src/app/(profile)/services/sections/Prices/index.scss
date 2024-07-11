@@ -27,16 +27,16 @@
     padding: 50px 70px 70px;
     gap: 0;
     width: 100%;
-    @include respond-to("extra_large_desktop") {
-      max-width: 1320px;
-    }
+    // @include respond-to("extra_large_desktop") {
+    //   max-width: 1320px;
+    // }
 
     @include respond-to("large_tablet") {
       padding: 20px 0 10px;
     }
 
     @include respond-to("phone") {
-      padding: 20px 15px 10px;
+      padding: 20px 10px 10px;
     }
     
     &_plan_item {
@@ -100,7 +100,7 @@
 
       &_content {
         text-align: center;
-        margin-bottom: 25px;
+        margin-bottom: 50px;
 
         span {
           font-weight: 500;

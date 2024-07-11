@@ -5,7 +5,6 @@ import Grid from "@/app/components/Grid";
 import IMG from "@/app/components/IMG";
 import Sticky from "@/app/components/Sticky";
 import ParallaxScroll from '@/app/components/ParallaxScroll';
-import Fade from "@/app/components/Fade";
 
 //Client Components
 import Cards from './Client/Cards';
@@ -58,9 +57,9 @@ const ServiceCards = ({
 
         if(img?.usePrallax) {
           return (
-            <ParallaxScroll key={img.id} speed={0.2}>
+            <div key={img.id} speed={0.2}>
               {Image}
-            </ParallaxScroll>
+            </div>
           )
         }
         return Image
