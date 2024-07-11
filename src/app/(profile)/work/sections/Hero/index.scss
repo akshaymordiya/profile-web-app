@@ -15,7 +15,7 @@
   &_title {
     h4 {
       font-weight: 500;
-      font-size: 100px;
+      font-size: 100px !important;
       text-align: center;
       letter-spacing: -0.03em;
       color: $black;
@@ -23,23 +23,23 @@
       margin: 0 auto;
       width: 950px;
       @include respond-to("desktop") {
-        font-size: 50px;
+        font-size: 50px !important;
         width: 550px;
       }
       @include respond-to("large_tablet") {
-        font-size: 50px;
+        font-size: 50px !important;
         width: 550px;
       }
       @include respond-to("small_tablet") {
-        font-size: 50px;
+        font-size: 50px !important;
         width: 550px;
       }
       @include respond-to("phone") {
-        font-size: 40px;
+        font-size: 40px !important;
         width: 380px;
       }
       @include respond-to("small_phone") {
-        font-size: 40px;
+        font-size: 40px !important;
         width: 250px;
       }
     }

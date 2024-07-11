@@ -5,10 +5,9 @@
   background-color: $background_bg;
   padding: 0px 30px;
   padding-top: 120px;
-  padding-bottom: 80px;
   min-height: 100vh;
   display: grid;
-  place-items: center;
+  place-items: unset;
 
   &_img_gallary {
     display: flex;
@@ -29,11 +28,18 @@
   }
 
   &_content {
+    place-content: unset;
+    padding: 4rem 0;
 
+    @include respond-to("large_tablet") {
+      padding: 2rem 0;
+    }
     @include respond-to("small_tablet") {
+      padding: 2rem 0;
       margin-top: 2rem;
     }
     @include respond-to("phone") {
+      padding: 0.5rem 0;
       margin-top: 2rem;
     }
 

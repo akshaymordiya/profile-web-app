@@ -19,7 +19,7 @@ const WorkDetails = ({
       <Grid.Item
         xs={12}
         sm={12}
-        md={6}
+        md={12}
         lg={6}
         xlg={6}
         itemClass={`${BASE_CLASSNAME}_img_gallary`}
@@ -29,7 +29,7 @@ const WorkDetails = ({
           gallary={data.images.gallary}
         />
       </Grid.Item>
-      <Grid.Item xs={12} sm={12} md={6} lg={6} xlg={6} itemClass={`${BASE_CLASSNAME}_content`}>
+      <Grid.Item xs={12} sm={12} md={12} lg={6} xlg={6} itemClass={`${BASE_CLASSNAME}_content`}>
         <h3 className="title">{data?.title}</h3>
         <div className="author_date">
           <span>{data?.author}, &nbsp;{data?.date}</span>

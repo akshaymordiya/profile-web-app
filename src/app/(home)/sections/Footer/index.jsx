@@ -3,6 +3,8 @@ import React from "react";
 import Link from "next/link";
 import IMG from "@/app/components/IMG";
 import Grid from "@/app/components/Grid";
+//icons
+import CallMadeIcon from '@mui/icons-material/CallMade';
 //utils
 import { renderIconComponent } from "@/Icons";
 //data
@@ -74,14 +76,17 @@ const Footer = () => {
             useRawImgTag
             imageClasses="user_img"
           />
-          <IMG 
-            src={footer.images.circle_shape}
-            useRawImgTag
-            imageClasses="circle_shape"
-            useLink
-            href="/contact"
-            linkClass="link"
-          />
+          <div className="circle_shape_wrapper">
+            <IMG 
+              src={footer.images.circle_shape}
+              useRawImgTag
+              imageClasses="circle_shape"
+              useLink
+              href="/contact"
+              linkClass="link"
+            />
+            <CallMadeIcon className="cross_icon" />
+          </div>
         </Grid.Item>
       </Grid>
       <div className={`${BASE_CLASSNAME}_copyright`}>

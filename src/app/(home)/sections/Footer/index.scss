@@ -176,37 +176,56 @@
         }
       }
 
-      .link {
-        display: flex;
-        width: 100%;
-        height: auto;
+      .circle_shape_wrapper {
+        position: absolute;
+        top: 44%;
+        left: 10%;
 
-        @include respond-to("small_tablet"){
-          width: 80%;
-        }
-        
-        @include respond-to("phone"){
-          width: 80%;
-        }
-
-        .circle_shape {
-          position: absolute;
-          top: 44%;
-          left: 10%;
-          animation: animationglob 10s cubic-bezier(1, 0.99, 0.03, 0.01)
-              infinite;
-
+        .link {
+          display: flex;
+          width: 100%;
+          height: auto;
+  
           @include respond-to("small_tablet"){
-            width: 20%;
+            width: 80%;
           }
           
           @include respond-to("phone"){
-            width: 35%;
+            width: 80%;
           }
+  
+          .circle_shape {
+            animation: animationglob 10s cubic-bezier(1, 0.99, 0.03, 0.01)
+                infinite;
+            transition: 0.3s all ease-in-out;
+            border-radius: 100%;
+  
+            @include respond-to("small_tablet"){
+              width: 20%;
+            }
+            
+            @include respond-to("phone"){
+              width: 35%;
+            }
+
+            &:hover {
+              box-shadow: rgb(255, 255, 255) 0px 20px 30px -10px;
+            }
+          }
+        }
+
+        .cross_icon {
+          position: absolute;
+          top: calc(50% - 12px);
+          right: calc(50% - 12px);
+          margin: auto;
+          z-index: 1;
+          color: $white;
+          font-size: 24px;
+          cursor: pointer;
         }
       }
     }
-
   }
 
   &_copyright {

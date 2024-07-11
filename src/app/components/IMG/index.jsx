@@ -24,7 +24,8 @@ const IMG = ({
   id,
   useLink = false,
   href = "#",
-  linkClass = ""
+  linkClass = "",
+  onClick = () => {}
 }) => {
 
   const mappedImage = useMemo(() => {
@@ -34,6 +35,7 @@ const IMG = ({
         src={src}
         className={`${BASE_CLASSNAME} ${imageClasses}`}
         alt={alt}
+        onClick={onClick}
       />
     ) : (
       <Image
@@ -43,6 +45,7 @@ const IMG = ({
         height={height}
         className={`${BASE_CLASSNAME} ${imageClasses}`}
         alt={alt}
+        onClick={onClick}
       />
     );
 
