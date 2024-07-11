@@ -5,9 +5,6 @@ import "./index.scss";
 import Link from "next/link";
 import IMG from "../IMG";
 import Grid from "../Grid";
-import SectionBox from "../SectionBox";
-import Section from "../Section";
-import FooterwidgetTitle from "./FooterWidgetitle";
 //utils
 import { renderIconComponent } from "@/Icons";
 //data
@@ -19,7 +16,7 @@ const Footer = () => {
   return (
     <footer className={BASE_CLASSNAME}>
       <IMG 
-        src={footer.images.shape}
+        src={footer.images.shape_bottom}
         useRawImgTag
         imageClasses={`${BASE_CLASSNAME}_shape_img`}
       />

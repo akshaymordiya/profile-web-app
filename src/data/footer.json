@@ -1,11 +1,13 @@
 {
   "images": {
-    "shape": "/assets/footer-shape-2.png",
-    "logo": "/assets/logo-white.png"
+    "shape_bottom": "/assets/footer-shape-2.png",
+    "shape_top": "/assets/footer-shape.png",
+    "logo": "/assets/logo-white.png",
+    "user": "/assets/footer-3-1.png",
+    "circle_shape": "/assets/foooter-btn.png"
   },
-  "footerImg": "/assets/footer-shape-2.png",
-  "whitelogo": "/assets/logo-white.png",
   "paragraph": "Feel free to reach out with questions or inquiries.",
+  "largeParagraph": "A template made for professional designers, photographers and all people who work with creativity and those who don't, this template is yours, use it as you want happy.",
   "socialMedia": [
     {
       "icon": "MailIcon",
@@ -82,41 +84,6 @@
         }
       ]
     }
-  },
-  "explore": {
-    "title": "Explore",
-    "exploredata": [
-      {
-        "icon": "ArrowForwardOutlinedIcon",
-        "title": "About",
-        "link": "/about"
-      },
-      {
-        "icon": "ArrowForwardOutlinedIcon",
-        "title": "Services",
-        "link": "/services"
-      },
-      {
-        "icon": "ArrowForwardOutlinedIcon",
-        "title": "Work",
-        "link": "/work"
-      },
-      {
-        "icon": "ArrowForwardOutlinedIcon",
-        "title": "Contact",
-        "link": "/contact"
-      }
-    ]
-  },
-  "address": {
-    "title": "Address",
-    "subtitle": "California",
-    "paragraph": " 987 Design Blvd, Suite 543, Beverly Hills, CA 902"
-  },
-  "contact": {
-    "title": "Say Hello",
-    "email": "hello@youremail.com",
-    "number": "+1(789) 8001234"
   },
   "copyright": {
     "title": "ThemePure @ 2024. All Rights Reserved."
