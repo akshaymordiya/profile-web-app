@@ -1,5 +1,7 @@
 import workData from "../../../../data/work.page.json";
 import WorkDetails from "./WorkDetails";
+//defaultMetadata
+import { defaultMetadata } from "@/config/metadata";
 
 export const metadata = {
   ...defaultMetadata,
