@@ -26,7 +26,7 @@ import CurrencyBitcoinIcon from '@mui/icons-material/CurrencyBitcoin';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import CallMadeIcon from '@mui/icons-material/CallMade';
 
-const Icons = {
+const icons = {
     "Fname": DriveFileRenameOutlineIcon,
     "RightIcon": SubdirectoryArrowRightIcon,
     "Arrowoutward" : ArrowOutwardIcon,
@@ -58,13 +58,13 @@ const Icons = {
 export const getIcon = (keys = []) => {
     const iconsMap = {}
     keys.forEach(key => {
-        iconsMap[key] = Icons[key]
+        iconsMap[key] = icons[key]
     })
     return iconsMap
 }
 
 export const renderIconComponent = (key, returnReference = false) => {
-    const Component = Icons[key];
+    const Component = icons[key];
 
     if(!Component){
         if(returnReference){
@@ -87,4 +87,4 @@ export const renderIconComponent = (key, returnReference = false) => {
     return <Component />
 }
 
-export default Icons;
+export default icons;
