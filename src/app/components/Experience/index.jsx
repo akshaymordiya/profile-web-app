@@ -11,21 +11,21 @@ const Experience = ({ timeline = "", label = "", value = "", containerClass = ""
     <div className={`${BASE_CLASSNAME} ${containerClass}`}>
       <Grid classNames={`${BASE_CLASSNAME}_grid`}>
         <Grid.Item 
-          lg={4}
-          xs={4}
-          sm={4}
-          md={4}
-          xlg={4}
+          lg={5}
+          xs={5}
+          sm={5}
+          md={5}
+          xlg={5}
           itemClass={`${BASE_CLASSNAME}_grid-col-1`}
         >
           <span>{timeline}</span>
         </Grid.Item>
         <Grid.Item
-          lg={8}
-          xs={8}
-          sm={8}
-          md={8}
-          xlg={8}
+          lg={7}
+          xs={7}
+          sm={7}
+          md={7}
+          xlg={7}
           itemClass={`${BASE_CLASSNAME}_grid-col-2`}
         >
           <h4>{label}</h4>

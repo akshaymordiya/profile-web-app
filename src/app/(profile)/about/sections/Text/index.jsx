@@ -10,9 +10,8 @@ const BASE_CLASSNAME = "about_text";
 const PersonalInfo = ({
   data = {}
 }) => {
-
   const {
-    paragraph,
+    text
   } = data
 
   return (
@@ -27,7 +26,18 @@ const PersonalInfo = ({
           itemClass={`${BASE_CLASSNAME}_grid-col-1`}
           data-speed="0.5"
         >
-            {paragraph.title}
+            {text.map((c, index) => typeof c === "string" ? (
+              <React.Fragment key={index}>
+                {c}
+              </React.Fragment>
+            ) : c.map((tag, index) => (
+              <Services
+                key={index}
+                ServiceName={tag?.name}
+                ServiceImage={tag?.image}
+              />
+            )))}
+            {/* {paragraph.title}
             &nbsp;
             {(paragraph.services ?? []).map(
               (service, index) => (
@@ -37,7 +47,7 @@ const PersonalInfo = ({
                   ServiceImage={service?.image}
                 />
               )
-            )}
+            )} */}
         </Grid.Item>
       </Grid>
     </div>

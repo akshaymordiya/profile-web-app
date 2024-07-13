@@ -47,6 +47,17 @@
         font-family: $dm-font-family;
       }
     }
+
+    .award-btn-wrapper {
+      width: 40px;
+      height: auto;
+
+      .tech_img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
     .award-btn {
       background-color: $black;
       width: 44px;
@@ -59,6 +70,8 @@
       align-items: center;
       justify-content: center;
       position: relative;
+
+      
       span {
         width: 16px;
         height: 16px;

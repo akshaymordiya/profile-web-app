@@ -10,6 +10,7 @@ const CTA = ({
   icon: Icon,
   iconProps = {},
   btn_color = 'btn-white',
+  isDownload = false,
 }) => {
   const { className = "" } = iconProps;
   return (
@@ -19,6 +20,7 @@ const CTA = ({
         ${linkClass}
       `}
       href={linkHref}
+      download={isDownload}
     >
       <div>
         <span className="text">

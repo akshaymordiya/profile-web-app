@@ -43,81 +43,44 @@
       ]
     },
     "data": {
-      "title": "OUR PROCESS",
-      "excert": " How We_Carry Out Our_Projects",
-      "description": "We offer a range of services to help elevate_your brand & drive results.",
+      "title": "THE APPROACH",
+      "excert": "Achieving Excellence Through a Clear Process",
+      "description": "Offering a variety of services designed to elevate brands and drive results.",
       "serviceCards": [
         {
           "id": "1",
-          "title": "Design Strategy",
-          "desc": " We always ensure that it combines a clean and beautiful visual design.",
-          "icon": "AutoIcon",
-          "tags": ["UI/UX Audit", "Workshops"]
+          "title": "Web App Development",
+          "desc": "Developing dynamic, interactive, and scalable web applications that deliver exceptional user experiences. Utilizing modern technologies like React.js, Next.js, and Node.js ensures robust and efficient web applications.",
+          "icon": "SettingsEthernetIcon",
+          "tags": ["Feature Integration", "Real-time Updates"]
         },
         {
           "id": "2",
-          "title": "Product Leadership",
-          "desc": " We always ensure that it combines a clean and beautiful visual design.",
-          "icon": "Flipfront",
-          "tags": ["UI/UX Audit", "Workshops"]
+          "title": "Website Development",
+          "desc": "Building responsive, SEO-friendly websites that captivate audiences. From front-end design to back-end development, creating seamless and engaging websites tailored to specific business needs.",
+          "icon": "WebIcon",
+          "tags": ["Content Management", "E-commerce Solutions"]
         },
         {
           "id": "3",
-          "title": "Front-End Development",
-          "desc": " We always ensure that it combines a clean and beautiful visual design.",
-          "icon": "PhonelinkIcon",
-          "tags": ["UI/UX Audit", "Workshops"]
+          "title": "UI/UX Design",
+          "desc": "Designing intuitive and visually stunning interfaces. Focusing on user-centric design principles to create digital experiences that are both aesthetically pleasing and highly functional.",
+          "icon": "GridViewSharpIcon",
+          "tags": ["Interface Design", "Accessibility"]
+        },
+        {
+          "id": "4",
+          "title": "REST API Development",
+          "desc": "Developing robust REST APIs for seamless integration and communication between different software systems. Designed to be secure, scalable, and easy to use, ensuring efficient data exchange.",
+          "icon": "WebhookRoundedIcon",
+          "tags": ["Authentication", "Rate Limiting"]
         }
       ],
-      "servicetext": "Call me to get more extra service ",
-      "lightbtn": "Call Now"
+      "servicetext": "Start Your Project with Me",
+      "lightbtn": "Contact Now"
     }
   },
   "projects": {
-    "title": "Articles & Publications",
-    "workproject": [
-      {
-        "image": "/assets/blog-3-1.jpg",
-        "brand": "Branding",
-        "title": "16 witty tips to get six-figure clients on Dribbble",
-        "date": "October 3, 2024",
-        "time": "7 min read"
-      },
-      {
-        "image": "/assets/blog-3-2.jpg",
-        "brand": "Branding",
-        "title": "Bluwalk redesign: sign-up rate increased twice and counting",
-        "date": "November 4, 2024",
-        "time": "7 min read"
-      },
-      {
-        "image": "/assets/blog-3-2.jpg",
-        "brand": "Branding",
-        "title": "16 witty tips to get six-figure clients on Dribbble",
-        "date": "October 3, 2024",
-        "time": "7 min read"
-      },
-      {
-        "image": "/assets/blog-3-1.jpg",
-        "brand": "Branding",
-        "title": "Bluwalk redesign: sign-up rate increased twice and counting",
-        "date": "November 4, 2024",
-        "time": "7 min read"
-      },
-      {
-        "image": "/assets/blog-3-1.jpg",
-        "brand": "Branding",
-        "title": "16 witty tips to get six-figure clients on Dribbble",
-        "date": "October 3, 2024",
-        "time": "7 min read"
-      },
-      {
-        "image": "/assets/blog-3-2.jpg",
-        "brand": "Branding",
-        "title": "Bluwalk redesign: sign-up rate increased twice and counting",
-        "date": "November 4, 2024",
-        "time": "7 min read"
-      }
-    ]
+    "title": "Work Highlights"
   }
 }

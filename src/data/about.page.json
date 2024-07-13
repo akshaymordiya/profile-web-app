@@ -1,6 +1,7 @@
 {
   "hero": {
-    "words": ["I'm", "Diego", "luna"],
+    "words": ["I'm", "Code", "Artist"],
+    "resume": "",
     "icons": {
       "download": "Download"
     },
@@ -30,67 +31,95 @@
     }
   },
   "aboutMe": {
-    "paragraph": {
-      "title": "I'm Diego _____ a self though & self learned designer based in USA. I started as a financial planner & social media marketer, but now I do mix of everything from",
-      "services": [
+    "text": [
+      "I'm Akshay Moradiya, a self-taught Full-Stack Developer based in India. I began my career as a PHP Laravel developer and later transitioned to JavaScript and its frameworks. Now, I focus on ",
+      [
         {
-          "name": "Product Design,",
+          "name": "Web Development,",
           "image": "/assets/ab-1.png"
         },
         {
-          "name": "Photography,",
+          "name": "UI/UX Design,",
           "image": "/assets/ab-2.png"
-        },
-        {
-          "name": "Web Design,",
-          "image": "/assets/ab-3.png"
-        },
-        {
-          "name": "Graphic Design,",
-          "image": "/assets/ab-4.png"
         }
-      ]
-    },
+      ],
+      "and",
+      [
+        {
+          "name": "API Development",
+          "image": "/assets/ab-3.png"
+        }
+      ],
+      "With over 5 years of experience and 15+ successful projects, I bring expertise in both frontend and backend technologies to deliver exceptional user experiences."
+    ],
     "info": {
-      "title": "Personal Info",
-      "description": " Perceived end knowledge certainly day sweetness why cordially.",
-      "email": "example@gmail.com",
-      "icon": "DriveFileRenameOutlineIcon",
+      "title": "CONTACT DETAILS",
+      "description": "Always open to new opportunities and collaborations. Let's connect!",
+      "email": "helloakmoradiya@gmail.com",
+      "icons": {
+        "contact": "ConnectWithoutContactIcon",
+        "mail": "EmailRoundedIcon"
+      },
+      
       "image": "/assets/whatsap.png",
-      "number": "+491 234 5678"
+      "number": "+916355045445"
     },
     "content": {
       "skills": {
-        "title": "Skillsets",
+        "title": "Working Skills",
         "icon": "IncadescentIcon",
         "skillsets": [
-          { "id": "1", "skillslabel": "Figma", "Value": "90" },
-          { "id": "2", "skillslabel": "Sketch", "Value": "82" },
-          { "id": "3", "skillslabel": "Photoshop", "Value": "65" },
-          { "id": "4", "skillslabel": "Invision", "Value": "58" }
+          { 
+            "id": "1", 
+            "skillslabel": "Javascript", 
+            "Value": "95" 
+          },
+          { 
+            "id": "2", 
+            "skillslabel": "React JS", 
+            "Value": "95" },
+          { 
+            "id": "3", 
+            "skillslabel": "Redux / React-router", 
+            "Value": "92"
+          },
+          { 
+            "id": "4", 
+            "skillslabel": "Vue Js / Vuex / Vue-router", 
+            "Value": "85" 
+          },
+          { 
+            "id": "4", 
+            "skillslabel": "Typescript", 
+            "Value": "88" 
+          },
+          { 
+            "id": "4", 
+            "skillslabel": "MERN stack Development", 
+            "Value": "90" 
+          },
+          { 
+            "id": "4", 
+            "skillslabel": "HTML / CSS", 
+            "Value": "80" 
+          }
         ]
       },
       "experiences": {
         "title": "Experience",
-        "icon": "IncadescentIcon",
+        "icon": "ExplicitIcon",
         "data": [
           {
             "id": "1",
-            "label": "UI/UX Lead Designer",
-            "timeline": "2022 - Present",
-            "value": "Amazon INC"
+            "label": "React JS developer",
+            "timeline": "Sept 2021 - Present",
+            "value": "Upforce Tech"
           },
           {
             "id": "2",
-            "label": "Product Lead Designer",
-            "timeline": "2018 - 2022",
-            "value": "Amazon INC"
-          },
-          {
-            "id": "3",
-            "label": "Graphic Designer",
-            "timeline": "2016 - 2018",
-            "value": "Amazon INC"
+            "label": "Full stack web developer",
+            "timeline": "Aug 2020 - Aug 2021",
+            "value": "Trinity Infosystem"
           }
         ]
       },
@@ -100,47 +129,44 @@
         "data": [
           {
             "id": "1",
-            "label": " Stanford University",
-            "timeline": "2014 - 2016",
-            "value": "of California."
+            "label": "B.E in computer science",
+            "timeline": "2017 - 2021",
+            "value": "Gujarat Technological University"
           },
           {
             "id": "2",
-            "label": "Specialization Course.",
-            "timeline": "2012 - 2014",
-            "value": "MIT University"
-          },
-          {
-            "id": "",
-            "label": "Level High School.",
-            "timeline": "2009 - 2012",
-            "value": "San Fransisco"
+            "label": "HSC 12th science",
+            "timeline": "2015 - 2017",
+            "value": "L.P savani school"
           }
         ]
       }
     }
   },
   "counter": {
-    "title": "Achivements",
-    "paragraph": "Over the years, I have successfully delivered innovative solutions that have driven significant business growth. My dedication to excellence has earned me multiple accolades and recognitions within the industry.",
+    "title": "Demonstrating Excellence in Every Project",
+    "paragraph": "Over the past 5+ years, I've dedicated myself to mastering full-stack web development, delivering high-quality projects, and achieving exceptional client satisfaction. My journey has been marked by numerous successful projects and a relentless pursuit of excellence. Here are some highlights:",
     "data": [
       {
         "id": "1",
-        "countnumber": "56",
+        "countnumber": "15",
+        "ancentor": " +",
         "countext": " Projects Completed",
         "image": "/assets/counter/project.png",
-        "text": "Delivered over 100 successful projects on time and within budget."
+        "text": "Delivered over 15 successful projects on time and within budget."
       },
       { 
         "id": "2", 
-        "countnumber": "12", 
-        "countext": "Years Of Experience", 
+        "countnumber": "5", 
+        "ancentor": " +",
+        "countext": "Years of Experience", 
         "image": "/assets/counter/experience.png",
         "text": "5+ years of hands-on experience in full-stack web development."
       },
       { 
         "id": "3", 
-        "countnumber": "34", 
+        "countnumber": "95",
+        "ancentor": " %",
         "countext": "Client Satisfaction",
         "image": "/assets/counter/client.png",
         "text": "Consistently achieved a 95% client satisfaction rate."
@@ -148,119 +174,75 @@
     ]
   },
   "awards": {
-    "title": "Awards & recognitions",
-    "paragraph": "Honored with multiple industry awards for excellence in design and innovation. Recognized globally for outstanding contributions to advancing technology and creativity.",
-    "textoutline": "Award",
-    "textfill": "Award",
+    "title": "Software & Tools",
+    "paragraph": "Honored with multiple industry recognitions for excellence in technology and innovation. These tools and technologies are integral to delivering high-quality projects.",
+    "textoutline": "Tools",
+    "textfill": "& Tech",
     "image": "/assets/award-shape-1.png",
     "awardItems": [
       {
         "id": "1",
-        "title": "Awwwwards SOTD",
-        "subtitle": "FOR DISPLAY 2023",
-        "image": "/assets/award-5.jpg",
+        "title": "Git",
+        "subtitle": "A distributed version control system to manage code efficiently.",
+        "image": "/assets/technologies/git.png",
         "righticon": "SubdirectoryArrowRightIcon",
         "arroward": "Arrowoutward",
         "leftIcon": "RightIcon"
       },
       {
         "id": "2",
-        "title": "Wix.Com",
-        "subtitle": "INTERVIEW 2022",
-        "image": "/assets/award-6.jpg",
+        "title": "GitHub",
+        "subtitle": "A web-based platform for version control and collaborative development.",
+        "image": "/assets/technologies/github.png",
         "righticon": "SubdirectoryArrowRightIcon",
         "arroward": "Arrowoutward",
         "leftIcon": "RightIcon"
       },
       {
         "id": "3",
-        "title": "CSS Awards",
-        "subtitle": "FEATURE 2021",
-        "image": "/assets/award-10.jpg",
+        "title": "Bitbucket",
+        "subtitle": "A Git repository management solution for professional teams.",
+        "image": "/assets/technologies/bitbucket.png",
         "righticon": "SubdirectoryArrowRightIcon",
         "arroward": "Arrowoutward",
         "leftIcon": "RightIcon"
       },
       {
         "id": "4",
-        "title": "Muzli",
-        "subtitle": "FEATURE 2020",
-        "image": "/assets/award-1.jpg",
+        "title": "Jira",
+        "subtitle": "A project management tool for tracking agile software development.",
+        "image": "/assets/technologies/jira.png",
         "righticon": "SubdirectoryArrowRightIcon",
         "arroward": "Arrowoutward",
         "leftIcon": "RightIcon"
       },
       {
         "id": "5",
-        "title": "Awwwwards",
-        "subtitle": "FOR MUTEZA 2019",
-        "image": "/assets/award-4.jpg",
+        "title": "JetBrains IDEs",
+        "subtitle": "Powerful IDEs for writing, debugging, and testing code.",
+        "image": "/assets/technologies/jetbrains.png",
         "righticon": "SubdirectoryArrowRightIcon",
         "arroward": "Arrowoutward",
         "leftIcon": "RightIcon"
       },
       {
         "id": "6",
-        "title": "Chapers Studio",
-        "subtitle": "FOR DISPLAY 2018",
-        "image": "/assets/award-3.jpg",
+        "title": "Figma",
+        "subtitle": "A web-based design tool for collaborative interface design.",
+        "image": "/assets/technologies/figma.png",
+        "righticon": "SubdirectoryArrowRightIcon",
+        "arroward": "Arrowoutward",
+        "leftIcon": "RightIcon"
+      },
+      {
+        "id": "7",
+        "title": "Jenkins",
+        "subtitle": "An open-source automation server for continuous integration and delivery.",
+        "image": "/assets/technologies/jenkins.png",
         "righticon": "SubdirectoryArrowRightIcon",
         "arroward": "Arrowoutward",
         "leftIcon": "RightIcon"
       }
     ]
-  },
-  "footer": {
-    "footerImg": "/assets/footer-shape-2.png",
-    "whitelogo": "/assets/logo-white.png",
-    "paragraph": "Feel free to reach out with questions or inquiries.",
-    "socialmedia": [
-      {
-        "icon": "MailIcon"
-      },
-      {
-        "icon": "LangIcon"
-      },
-      {
-        "icon": "MailIcon"
-      },
-      {
-        "icon": "SubscribIcon"
-      }
-    ],
-    "explore": {
-      "title": "Explore",
-      "exploredata": [
-        {
-          "icon": "ArrowForwardOutlinedIcon",
-          "title": "About"
-        },
-        {
-          "icon": "ArrowForwardOutlinedIcon",
-          "title": "Services"
-        },
-        {
-          "icon": "ArrowForwardOutlinedIcon",
-          "title": "Portfolio"
-        },
-        {
-          "icon": "ArrowForwardOutlinedIcon",
-          "title": "Contact"
-        }
-      ]
-    },
-    "address": {
-      "title": "Address",
-      "subtitle": "California",
-      "paragraph": " 987 Design Blvd, Suite 543, Beverly Hills, CA 902"
-    },
-    "contact": {
-      "title": "Say Hello",
-      "email": "hello@youremail.com",
-      "number": "+1(789) 8001234"
-    },
-    "copyright": {
-      "title": "ThemePure @ 2024. All Rights Reserved."
-    }
   }
 }

@@ -3,8 +3,19 @@ import React, { useEffect, useRef, useState } from "react";
 import "./index.scss";
 
 const BASE_CLASSNAME = "progress-bar_container";
+const colorCodes = [
+  "#FF6464",
+  "#9272D4",
+  "#5185D4",
+  "#CA56F2"
+]
+
+const getBackgroundColor = (index) => {
+  return colorCodes[index % colorCodes.length];
+}
 
 const ProgressBar = ({
+  index,
   label = "",
   progressValue = ""
 }) => {
@@ -42,6 +53,7 @@ const ProgressBar = ({
       <div className={`${BASE_CLASSNAME}_progress-line`}>
         <div
           className={`${BASE_CLASSNAME}_progress-line-value ${isVisible ? `progress-${progressValue}` : ''}`}
+          style={{ backgroundColor: getBackgroundColor(index)}}
         />
       </div>
     </div>

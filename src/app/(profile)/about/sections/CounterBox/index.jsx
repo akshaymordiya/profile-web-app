@@ -35,6 +35,7 @@ const CounterBox = ({
                 delay={index * 200}
               >
                 <Counter
+                  ancentor={item.ancentor}
                   number={item.countnumber}
                   title={item.countext}
                   image={item.image}

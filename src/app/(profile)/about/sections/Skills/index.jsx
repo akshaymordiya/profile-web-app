@@ -9,6 +9,7 @@ import SkillSets from '../../partials/Skillsets';
 
 import "./index.scss";
 import Sticky from '@/app/components/Sticky';
+import { renderIconComponent } from "@/Icons";
 
 const BASE_CLASSNAME = "about_skills_container";
 
@@ -45,16 +46,16 @@ const Skills = ({ data = {} }) => {
             id="sticky_grid-col_left"
           >
             <SectionBox
-              icon={info.icon}
-              iconProps={{
-                class: "box_icon",
-              }}
+              icon={info.icons.contact}
               title={info.title}
               containerClass="box"
             >
               <div className="box_content" >
                 <p>{info.description}</p>
                 <Link href={`mailto:${info.email}`} className="link">
+                  <span>
+                    {renderIconComponent(info.icons.mail)}
+                  </span>
                   {info.email}
                 </Link>
                 <Link href={`tel:${info.number}`} className="link">

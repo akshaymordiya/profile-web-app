@@ -17,6 +17,7 @@ const Hero = ({
 
   const {
     words,
+    resume,
     icons,
     images,
     shapes
@@ -56,6 +57,7 @@ const Hero = ({
             linkText="Download CV"
             linkClass="btn-border-sm"
             icon={renderIconComponent(icons.download, true)}
+            linkHref={resume}
           />
         </Grid.Item>
         <Grid.Item

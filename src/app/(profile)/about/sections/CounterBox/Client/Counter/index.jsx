@@ -8,7 +8,7 @@ import "./index.scss";
 
 const BASE_CLASSNAME = "counter_box";
 
-const Counter = ({ number = 0, text, image, title }) => {
+const Counter = ({ number = 0, text, image, title, ancentor = " +" }) => {
   const [count, setCount] = useState(0);
   const [isInViewport, setIsInViewport] = useState(false);
   const counterRef = useRef(null);
@@ -62,7 +62,7 @@ const Counter = ({ number = 0, text, image, title }) => {
         <span>
           <div className="counter-item">
             <strong>{`${count} `}</strong>
-            <span> +</span>
+            <span>{ancentor}</span>
           </div>
         </span>
         <IMG

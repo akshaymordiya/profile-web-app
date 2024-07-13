@@ -1,26 +1,86 @@
 [
   {
-    "name": "rect js",
+    "name": "JavaScript",
+    "img": "/assets/technologies/javascript.png"
+  },
+  {
+    "name": "TypeScript",
+    "img": "/assets/technologies/typescript.png"
+  },
+  {
+    "name": "React JS",
+    "img": "/assets/technologies/react.png"
+  },
+  {
+    "name": "React-Router",
+    "img": "/assets/technologies/react_router.png"
+  },
+  {
+    "name": "Redux",
+    "img": "/assets/technologies/redux.png"
+  },
+  {
+    "name": "Redux Saga",
+    "img": "/assets/technologies/redux_saga.png"
+  },
+  {
+    "name": "Redux Thunk",
+    "img": "/assets/technologies/redux.png"
+  },
+  {
+    "name": "Redux toolkit",
+    "img": "/assets/technologies/redux.png"
+  },
+  {
+    "name": "Socket.io.",
+    "img": "/assets/technologies/socket.png"
+  },
+  {
+    "name": "NextJS",
+    "img": "/assets/technologies/next.png"
+  },
+  {
+    "name": "Vue Js",
+    "img": "/assets/technologies/vue.png"
+  },
+  {
+    "name": "Vuex",
+    "img": "/assets/technologies/vue.png"
+  },
+  {
+    "name": "Vue-router",
+    "img": "/assets/technologies/vue.png"
+  },
+  {
+    "name": "MUI",
+    "img": "/assets/technologies/mui.png"
+  },
+  {
+    "name": "Ant D.",
+    "img": "/assets/technologies/ant.png"
+  },
+  {
+    "name": "JQuery",
+    "img": "/assets/technologies/jquery.png"
+  },
+  {
+    "name": "HTML5",
+    "img": "/assets/technologies/html.png"
+  },
+  {
+    "name": "CSS3",
+    "img": "/assets/technologies/css.png"
+  },
+  {
+    "name": "SCSS",
+    "img": "/assets/technologies/sass.png"
+  },
+  {
+    "name": "Firebase",
     "img": "/assets/technologies/fb.webp"
   },
   {
-    "name": "node js",
-    "img": "/assets/technologies/fb.webp"
-  },
-  {
-    "name": "github",
-    "img": "/assets/technologies/fb.webp"
-  },
-  {
-    "name": "git",
-    "img": "/assets/technologies/fb.webp"
-  },
-  {
-    "name": "mongo db",
-    "img": "/assets/technologies/fb.webp"
-  },
-  {
-    "name": "MySql",
-    "img": "/assets/technologies/fb.webp"
+    "name": "Node JS",
+    "img": "/assets/technologies/node.png"
   }
 ]

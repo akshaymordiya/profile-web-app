@@ -25,6 +25,13 @@ import EastIcon from "@mui/icons-material/East";
 import CurrencyBitcoinIcon from '@mui/icons-material/CurrencyBitcoin';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import CallMadeIcon from '@mui/icons-material/CallMade';
+import SettingsEthernetIcon from '@mui/icons-material/SettingsEthernet';
+import WebIcon from '@mui/icons-material/Web';
+import GridViewSharpIcon from '@mui/icons-material/GridViewSharp';
+import WebhookRoundedIcon from '@mui/icons-material/WebhookRounded';
+import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
+import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
+import ExplicitIcon from '@mui/icons-material/Explicit';
 
 const icons = {
     "Fname": DriveFileRenameOutlineIcon,
@@ -52,7 +59,14 @@ const icons = {
     "CoronaIcon": CoronavirusOutlinedIcon,
     "Arrowicon": EastIcon,
     "KeyboardArrow": KeyboardDoubleArrowDownIcon,
-    "CallIcon": CallMadeIcon
+    "CallIcon": CallMadeIcon,
+    "SettingsEthernetIcon":SettingsEthernetIcon,
+    "WebIcon": WebIcon,
+    "GridViewSharpIcon": GridViewSharpIcon,
+    "WebhookRoundedIcon": WebhookRoundedIcon,
+    "ConnectWithoutContactIcon": ConnectWithoutContactIcon,
+    "EmailRoundedIcon": EmailRoundedIcon,
+    "ExplicitIcon": ExplicitIcon
 }
 
 export const getIcon = (keys = []) => {

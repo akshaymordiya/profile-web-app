@@ -3,6 +3,7 @@ import React from "react";
 //components
 import HorizontalCarousel from "../HorizontalScroll";
 import IMG from "../IMG";
+import Section from "@/app/components/Section";
 //data
 import data from "../../../data/technologies.json";
 
@@ -12,7 +13,10 @@ const BASE_CLASSNAME = "technologies_container"
 
 const BrandButton = () => {
   return (
-    <section className={BASE_CLASSNAME}>
+    <Section
+      title="Competencies"
+      sectionClass={BASE_CLASSNAME}
+    >
       <HorizontalCarousel
         items={data.map(d => (
           <div key={d.name} className={`${BASE_CLASSNAME}_tech-item-content`}>
@@ -29,7 +33,7 @@ const BrandButton = () => {
         itemClass={`${BASE_CLASSNAME}_tech-item`}
       >
       </HorizontalCarousel>
-    </section>
+    </Section>
   );
 };
 

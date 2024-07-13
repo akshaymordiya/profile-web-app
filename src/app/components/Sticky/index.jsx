@@ -95,7 +95,7 @@ const Sticky = ({
         stickyElement.style.transform = `translateY(0px)`;
         
       } else if(containerRect.top <= 0 && offset <= boundryOffset.bottom) {
-        if(capturedOffset.current === null && containerRect.top >= -100){
+        if(capturedOffset.current === null && containerRect.top >= -180){
           capturedOffset.current = offsetContext.previous
         }
 

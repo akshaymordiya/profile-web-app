@@ -1,18 +1,14 @@
 [
   {
-    "name": "Facebook",
-    "link": "/"
+    "name": "Github",
+    "link": "https://github.com/akshaymordiya"
   },
   {
-    "name": "Twitter",
-    "link": "/"
-  },
-  {
-    "name": "Dribble",
-    "link": "/"
+    "name": "Linked In",
+    "link": "https://www.linkedin.com/in/akshaymoradiya/"
   },
   {
     "name": "Instagram",
-    "link": "/"
+    "link": "https://www.instagram.com/imakshay.js/"
   }
 ]

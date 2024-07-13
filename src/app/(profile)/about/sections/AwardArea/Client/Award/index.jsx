@@ -4,6 +4,7 @@ import Link from "next/link";
 import { renderIconComponent } from "@/Icons";
 
 import "./index.scss";
+import IMG from "@/app/components/IMG";
 
 const BASE_CLASSNAME = "award_item"
 
@@ -33,9 +34,9 @@ const Awards = ({
 
   return (awardItems ?? []).map((item, index) => (
     <div key={index} className={BASE_CLASSNAME}>
-      <Link
+      {/* <Link
         href="#"
-        className={`${BASE_CLASSNAME}_link`}
+        
         onMouseEnter={() => {
           setIsHovered(true);
           setCurrentImageIndex(index);
@@ -45,9 +46,10 @@ const Awards = ({
           setCurrentImageIndex(null);
         }}
       >
+      </Link> */}
+      <div className={`${BASE_CLASSNAME}_link`}>
         <div className="award-item-inner">
           <div className="award-arrow">
-            {/* {item?.RightIcon} */}
             {renderIconComponent(item?.leftIcon)}
             </div>
           <div className="award-content">
@@ -55,16 +57,21 @@ const Awards = ({
             <p>{item?.subtitle}</p>
           </div>
           <div className="award-btn-wrapper">
-            <span className="award-btn">
+            <IMG 
+              src={item.image}
+              useRawImgTag
+              imageClasses="tech_img"
+            />
+            {/* <span className="award-btn">
               <span>
                 {renderIconComponent(item?.arroward)}
                 {renderIconComponent(item?.arroward)}
               </span>
-            </span>
+            </span> */}
           </div>
         </div>
-      </Link>
-      {index === currentImageIndex && (
+      </div>
+      {/* {index === currentImageIndex && (
         <img
           src={item?.image}
           alt={`Image ${index + 1}`}
@@ -75,7 +82,7 @@ const Awards = ({
             transition: "opacity 0.2s ease-in-out",
           }}
         />
-      )}
+      )} */}
       <div className="award-inner-border"></div>
     </div>
   ));

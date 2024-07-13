@@ -3,7 +3,6 @@ import React from "react";
 import SectionBox from "@/app/components/SectionBox";
 import ProgressBar from "@/app/components/Progressbar";
 import Experience from "@/app/components/Experience";
-import { renderIconComponent } from "@/Icons";
 import "./index.scss";
 
 const BASE_CLASSNAME = "personal-info";
@@ -20,6 +19,7 @@ const SkillSets = ({ content: { skills, experiences, educations } }) => {
           {skills.skillsets.map((item, index) => (
             <ProgressBar
               data-aos="fade-left"
+              index={index}
               key={index}
               label={item?.skillslabel}
               progressValue={item?.Value}
