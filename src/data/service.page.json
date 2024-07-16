@@ -1,21 +1,21 @@
 {
   "hero": {
-    "title": "High Quality Projects",
+    "title": "High Quality Services",
     "services": [
       {
         "id": "1",
         "animationdelay": "300",
-        "listName": "Over 40 Websites Built With Envato"
+        "listName": "Crafting Dynamic Web Applications"
       },
       {
         "id": "2",
         "animationdelay": "500",
-        "listName": "Visual Designer for 10+ years"
+        "listName": "Expert in Full-Stack Development"
       },
       {
         "id": "3",
         "animationdelay": "700",
-        "listName": "UI/UX Designer, Envato"
+        "listName": "APIs Built for Efficiency"
       }
     ],
     "slider": {
@@ -73,50 +73,58 @@
       ]
     },
     "data": {
-      "title": "OUR PROCESS",
-      "excert": " How We_Carry Out Our_Projects",
-      "description": "We offer a range of services to help elevate_your brand & drive results.",
+      "title": "THE APPROACH",
+      "excert": "Achieving Excellence Through a Clear Process",
+      "description": "Offering a variety of services designed to elevate brands and drive results.",
       "serviceCards": [
         {
           "id": "1",
-          "title": "Design Strategy",
-          "desc": " We always ensure that it combines a clean and beautiful visual design.",
-          "icon": "AutoIcon",
-          "tags": ["UI/UX Audit", "Workshops"]
+          "title": "Web App Development",
+          "desc": "Developing dynamic, interactive, and scalable web applications that deliver exceptional user experiences. Utilizing modern technologies like React.js, Next.js, and Node.js ensures robust and efficient web applications.",
+          "icon": "SettingsEthernetIcon",
+          "tags": ["Feature Integration", "Real-time Updates"]
         },
         {
           "id": "2",
-          "title": "Product Leadership",
-          "desc": " We always ensure that it combines a clean and beautiful visual design.",
-          "icon": "Flipfront",
-          "tags": ["UI/UX Audit", "Workshops"]
+          "title": "Website Development",
+          "desc": "Building responsive, SEO-friendly websites that captivate audiences. From front-end design to back-end development, creating seamless and engaging websites tailored to specific business needs.",
+          "icon": "WebIcon",
+          "tags": ["Content Management", "E-commerce Solutions"]
         },
         {
           "id": "3",
-          "title": "Front-End Development",
-          "desc": " We always ensure that it combines a clean and beautiful visual design.",
-          "icon": "PhonelinkIcon",
-          "tags": ["UI/UX Audit", "Workshops"]
+          "title": "UI/UX Design",
+          "desc": "Designing intuitive and visually stunning interfaces. Focusing on user-centric design principles to create digital experiences that are both aesthetically pleasing and highly functional.",
+          "icon": "GridViewSharpIcon",
+          "tags": ["Interface Design", "Accessibility"]
+        },
+        {
+          "id": "4",
+          "title": "REST API Development",
+          "desc": "Developing robust REST APIs for seamless integration and communication between different software systems. Designed to be secure, scalable, and easy to use, ensuring efficient data exchange.",
+          "icon": "WebhookRoundedIcon",
+          "tags": ["Authentication", "Rate Limiting"]
         }
       ],
-      "servicetext": "Call me to get more extra service ",
-      "lightbtn": "Call Now"
+      "servicetext": "Start Your Project with Me",
+      "lightbtn": "Contact Now"
     }
   },
   "skills": {
-    "paragraph": "Refined branding and web design strategically created to tell your story, make a connection and establish a cutting-edge online and offline presence.",
+    "paragraph": "Creating beautiful and functional Websites or Web application that tell your story, connect with your audience, and build a strong presence both online and offline.",
     "data": [
       {
         "title": "Design",
         "icon": "Star",
         "list":  [
           {
-            "title": "Web Design",
+            "title": "Front-End Development",
             "icons": {
               "left": "Viewoutline",
               "right": "Arrowoutline"
             },
-            "url": "#"
+            "url": "#",
+            "content": "Creating responsive, user-friendly interfaces using HTML, CSS, JavaScript, and frameworks like React.js and Next.js."
           },
           {
             "title": "UI/UX Design",
@@ -124,7 +132,8 @@
               "left": "VerticalSplit",
               "right": "Arrowoutline"
             },
-            "url": "#"
+            "url": "#",
+            "content": "Crafting intuitive and visually appealing designs that enhance user experience and engagement."
           },
           {
             "title": "Mobile App Design",
@@ -132,15 +141,17 @@
               "left": "AodIcon",
               "right": "Arrowoutline"
             },
-            "url": "#"
+            "url": "#",
+            "content": "Designing sleek and functional mobile interfaces for both Android and iOS platforms."
           },
           {
-            "title": "Branding",
+            "title": "Graphic Design",
             "icons": {
               "left": "AndroidIcon",
               "right": "Arrowoutline"
             },
-            "url": "#"
+            "url": "#",
+            "content": "Developing compelling visuals and graphics that communicate your brand's message effectively."
           }
         ]
       },
@@ -149,36 +160,40 @@
         "icon": "Star",
         "list":  [
           {
-            "title": "Web Development",
+            "title": "Back-End Development",
             "icons": {
               "left": "AutomotionIcon",
               "right": "Arrowoutline"
             },
-            "url": "#"
+            "url": "#",
+            "content": "Building robust and scalable server-side applications using Node.js, Express.js, and PHP Laravel."
           },
           {
-            "title": "Software Development",
+            "title": "Full-Stack Development",
             "icons": {
               "left": "CoronaIcon",
               "right": "Arrowoutline"
             },
-            "url": "#"
+            "url": "#",
+            "content": "Offering comprehensive solutions that cover both front-end and back-end development to create cohesive applications."
           },
           {
-            "title": "CMS Development",
+            "title": "API Development",
             "icons": {
               "left": "AodIcon",
               "right": "Arrowoutline"
             },
-            "url": "#"
+            "url": "#",
+            "content": "Designing secure and efficient RESTful APIs for seamless communication between different software systems."
           },
           {
-            "title": "Front-End Development",
+            "title": "E-commerce Development",
             "icons": {
               "left": "AndroidIcon",
               "right": "Arrowoutline"
             },
-            "url": "#"
+            "url": "#",
+            "content": "Creating customized e-commerce platforms that are secure, scalable, and easy to manage, providing a seamless shopping experience."
           }
         ]
       }
@@ -189,42 +204,42 @@
       "id": 1,
       "images": {
         "quote": "/assets/quote.svg",
-        "avatar": "/assets/avata-1.png"
+        "avatar": "/assets/avatar-1.png"
       },
       "ratings": 5,
-      "feedback": "Will gave our website and brand whole new life while staying true to who we are. We would never have thought of going in the direction he pitched but we couldn't be happier.",
+      "feedback": "I had the pleasure of working with Akshay on my e-commerce website. His expertise in both front-end and back-end development was evident throughout the project. The site is fast, responsive, and has significantly boosted my online sales. Highly recommend his services!",
       "author": {
-        "name": "Mark Zuku",
-        "position": "Founder & CEO",
-        "company": "Tech infotech"
+        "name": "Dhaval C",
+        "position": "Founder",
+        "company": "Rajgharana Enterprise"
       }
     },
     { 
       "id": 2,
       "images": {
         "quote": "/assets/quote.svg",
-        "avatar": "/assets/avata-3.png"
+        "avatar": "/assets/avatar-3.png"
       },
       "ratings": 5,
-      "feedback": "Will gave our website and brand whole new life while staying true to who we are. We would never have thought of going in the direction he pitched but we couldn't be happier.",
+      "feedback": "Working with Akshay was a fantastic experience. He developed a custom CMS for my business that is both user-friendly and powerful. His knowledge of modern web technologies is impressive, and he was always available to answer my questions and make adjustments as needed.",
       "author": {
-        "name": "Carnol Blade",
-        "position": "Founder & CEO",
-        "company": "Cozy infotech"
+        "name": "Mark T",
+        "position": "CEO",
+        "company": "Comicsverse"
       }
     },
     { 
       "id": 3,
       "images": {
         "quote": "/assets/quote.svg",
-        "avatar": "/assets/avata-4.png"
+        "avatar": "/assets/avatar-4.png"
       },
       "ratings": 5,
-      "feedback": "Will gave our website and brand whole new life while staying true to who we are. We would never have thought of going in the direction he pitched but we couldn't be happier.",
+      "feedback": "Working with Akshay on the Airgoship project was an excellent experience. He developed a powerful platform that has greatly improved our shipping and logistics process. The real-time shipment tracking feature has been particularly beneficial for our customers. Akshay's expertise made the development process smooth and efficient. Highly recommend his services!",
       "author": {
-        "name": "Brain O'corner",
-        "position": "Founder & CEO",
-        "company": "brain infotech"
+        "name": "Michael S.",
+        "position": "Founder",
+        "company": "Airgoship"
       }
     },
     { 
@@ -234,41 +249,55 @@
         "avatar": "/assets/avata-5.png"
       },
       "ratings": 5,
-      "feedback": "Will gave our website and brand whole new life while staying true to who we are. We would never have thought of going in the direction he pitched but we couldn't be happier.",
+      "feedback": "Akshay did an amazing job on our Ecrops International website. It showcases our products beautifully and meets all industry standards. His work in WordPress is excellent.",
       "author": {
-        "name": "Leo Das",
+        "name": "Kishan M.",
         "position": "Founder & CEO",
-        "company": "Tobaco infotech"
+        "company": "Ecrops International: Worldwide Cargo Delivery & Agricultural Products"
+      }
+    },
+    { 
+      "id": 5,
+      "images": {
+        "quote": "/assets/quote.svg",
+        "avatar": "/assets/avata-5.png"
+      },
+      "ratings": 5,
+      "feedback": "Akshay did a great job on the frontend of our web scraping tool. He used the React UI library to create a user-friendly interface. He handled the design and development all by himself. The tool now makes data collection easy for us. Highly recommend his skills in React.",
+      "author": {
+        "name": "Gaurang M.",
+        "position": "",
+        "company": ""
       }
     }
   ],
   "prices":{
-    "title":"Services & Pricing",
-    "paragraph":"No surprises. No hassles. Just right.",
+    "title":"Choose Your Perfect Plan",
+    "paragraph":"Flexible Options to Suit Your Needs.",
     "plans":[
       {
         "id": 1,
         "head": {
-          "title": "1 month",
-          "excert": "Paid monthly"
+          "title": "Fixed Price Plan",
+          "excert": "Pay monthly"
         },
         "body": {
           "title": "Cancel anytime",
-          "excert": "$1300/mo"
+          "excert": "$2000/month"
         },
-        "btn": "Get started"
+        "btn": "Contact Now"
       },
       {
         "id": 2,
         "head": {
-          "title": "3 month",
-          "excert": "Paid monthly"
+          "title": "Hourly Plan",
+          "excert": "Pay Per hour"
         },
         "body": {
-          "title": "Save $800",
-          "excert": "$4200/mo"
+          "title": "Paid as you go, Flexible hours",
+          "excert": "$14/hour"
         },
-        "btn": "Get started"
+        "btn": "Contact Now"
       },
       {
         "id": 3,

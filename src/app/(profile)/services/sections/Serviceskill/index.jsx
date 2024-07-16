@@ -1,9 +1,9 @@
 import React from "react";
 import Grid from "@/app/components/Grid";
 import SectionBox from "@/app/components/SectionBox";
-import ServiceCategory from "./ServiceCategory";
+import ServiceCategories from "./ServiceCategories";
 
-import { getIcon, renderIconComponent } from "@/Icons";
+import { renderIconComponent } from "@/Icons";
 
 import "./index.scss";
 
@@ -43,17 +43,10 @@ const Skills = ({
               xlg={7}
               itemClass={`${BASE_CLASSNAME}_grid_col-right`}
             >
-              {skill.list.map((s, index) => {
-                return (
-                  <ServiceCategory
-                    key={index}
-                    title={s.title}
-                    iconLeft={renderIconComponent(s.icons.left)}
-                    iconRight={renderIconComponent(s.icons.right)}
-                    link={s.url}
-                  />
-                );
-              })}
+              <ServiceCategories
+                skillSet={skill.list}
+                skillTitle={skill.title}
+              />
             </Grid.Item>
           </React.Fragment>
         ))}

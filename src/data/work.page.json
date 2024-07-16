@@ -1,6 +1,6 @@
 {
   "hero": {
-    "title": "Award-Winning Projects Design & Dev.",
+    "title": "Innovative Works in Web Design & Development",
     "content": {
       "slider": [
         {
@@ -14,131 +14,141 @@
         }
       ]
     },
-    "projectTitle": "Latest    Project"
+    "projectTitle": "Featured Project"
   },
   "work": {
     "left": [
       {
         "id": 1,
-        "title": "Space Needle",
-        "author": "Branding",
-        "date": "12 April, 2022",
+        "title": "Raj Gharana Ecommerce Website",
+        "author": "Raj gharana Enterprise - Your gateway to timeless elegance",
+        "date": "23 April, 2024",
         "isFeatured": true,
-        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores. Sunt vitae ea magni libero voluptatibus voluptates ad debitis iste itaque laborum vero odit, maiores qui iure animi id at.",
+        "description": "I led the development of Rajgharana's Shopify website, combining HTML, CSS, and custom JavaScript to infuse modern functionality with timeless charm. By customizing Shopify's Liquid files, I optimized the site's performance and aesthetics, ensuring a seamless user experience. Integration of Razorpay payment gateway enhanced transaction security. The result? A captivating digital showcase of India's heritage, inviting customers to explore and indulge in Rajgharana's timeless elegance.",
         "icons":{
           "easticon": "Arrowicon"
         },
         "images": {
-          "main": "/assets/port-inner-up-1.jpg",
+          "main": "/assets/work/RG/thumb.png",
           "gallary":[
-            "/assets/port-inner-up-2.jpg",
-            "/assets/port-inner-up-3.jpg",
-            "/assets/port-inner-up-4.jpg",
-            "/assets/port-inner-up-5.jpg",
-            "/assets/port-inner-up-6.jpg"
+            "/assets/work/RG/1.png",
+            "/assets/work/RG/2.png",
+            "/assets/work/RG/3.png",
+            "/assets/work/RG/4.png",
+            "/assets/work/RG/5.png",
+            "/assets/work/RG/6.png"
           ]
         },
         "tags": {
-          "title": "Popular tags",
+          "title": "Tool & Tech used",
           "list": [
-            "snowflake",
-            "Templates",
-            "Design",
-            "Product design",
-            "Creativity"
+            "Shopify",
+            "Liquid",
+            "HTML5",
+            "CSS 3",
+            "JavaScript"
           ]
-        }
+        },
+        "url": "https://rajgharana.shop/"
       },
       {
         "id": 2,
-        "title": "Crisis Cleanup",
-        "author": "Branding",
-        "date": "23 Jan, 2024",
+        "title": "Yokr.io",
+        "author": "Yokr.io - More than technology. A mindset shift.",
+        "date": "22 May, 2023",
         "isFeatured": true,
-        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores. Sunt vitae ea magni libero voluptatibus voluptates ad debitis iste itaque laborum vero odit, maiores qui iure animi id at.",
+        "description": "I led the creation of Yokr's website using React JS, JavaScript, Redux Toolkit, and captivating spline 3D animations. Yokr is all about embracing the future with web apps, AI, and Web3 tech. Their site reflects this forward-thinking mindset. It was exciting to craft a dynamic, user-friendly site that captures Yokr's innovative spirit and keeps them ahead in the ever-changing tech world.",
         "icons":{
           "easticon": "Arrowicon"
         },
         "images": {
-          "main": "/assets/port-inner-up-2.jpg",
+          "main": "/assets/work/YKR/thumb.PNG",
           "gallary":[
-            "/assets/port-inner-up-1.jpg",
-            "/assets/port-inner-up-3.jpg",
-            "/assets/port-inner-up-4.jpg",
-            "/assets/port-inner-up-5.jpg",
-            "/assets/port-inner-up-6.jpg"
+            "/assets/work/YKR/1.png",
+            "/assets/work/YKR/2.png",
+            "/assets/work/YKR/3.png",
+            "/assets/work/YKR/4.png",
+            "/assets/work/YKR/5.png",
+            "/assets/work/YKR/6.png"
           ]
         },
         "tags": {
-          "title": "Popular tags",
+          "title": "Tool & Tech used",
           "list": [
-            "snowflake",
-            "Templates",
-            "Design",
-            "Product design",
-            "Creativity"
+            "React",
+            "Redux",
+            "JavaScript",
+            "Spline 3D Animation"
           ]
         }
       },
       {
         "id": 3,
-        "title": "Space Needle",
-        "author": "Branding",
-        "date": "12 April, 2022",
+        "title": "Scrapping Tool",
+        "author": "Streamlined Web Information Extraction Solution",
+        "date": "1st Sept, 2022",
         "isFeatured": false,
-        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores. Sunt vitae ea magni libero voluptatibus voluptates ad debitis iste itaque laborum vero odit, maiores qui iure animi id at.",
+        "description": "Scrapping Tool is an efficient, user-friendly software designed to extract vital data from websites This tool facilitates the scraping of primary information such as text, images, and links from websites, making it an essential asset for data collection tasks. Basic Information Scraping: Scrapping Tool specializes in extracting core elements like text, images, and links from aspecified website. It empowers users to gather relevant information effortlessly. HTML Code Analysis: Scrapping Tool functions by meticulously analyzing the HTML code of a webpage.",
         "icons":{
           "easticon": "Arrowicon"
         },
         "images": {
-          "main": "/assets/port-inner-up-3.jpg",
+          "main": "/assets/work/SC/thumb.jpg",
           "gallary":[
-            "/assets/port-inner-up-2.jpg",
-            "/assets/port-inner-up-1.jpg",
-            "/assets/port-inner-up-4.jpg",
-            "/assets/port-inner-up-5.jpg",
-            "/assets/port-inner-up-6.jpg"
+            "/assets/work/SC/01.png",
+            "/assets/work/SC/02.png",
+            "/assets/work/SC/03.png",
+            "/assets/work/SC/04.png",
+            "/assets/work/SC/05.png",
+            "/assets/work/SC/06.png",
+            "/assets/work/SC/07.png"
           ]
         },
         "tags": {
-          "title": "Popular tags",
+          "title": "Tool & Tech used",
           "list": [
-            "snowflake",
-            "Templates",
-            "Design",
-            "Product design",
-            "Creativity"
+            "React",
+            "Material Design",
+            "Redux",
+            "Node.js",
+            "MongoDB"
           ]
         }
       },
       {
         "id": 4,
-        "title": "Space Needle",
-        "author": "Branding",
-        "date": "12 April, 2022",
+        "title": "Kinet Connect",
+        "author": "Interactive Communication & Collaboration Web App",
+        "date": "28 jan, 2022",
         "isFeatured": false,
-        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores. Sunt vitae ea magni libero voluptatibus voluptates ad debitis iste itaque laborum vero odit, maiores qui iure animi id at.",
+        "description": "Introducing Kinet Connect, a revolutionary web application engineered to redefine communication and collaboration It presents an environment where users can establish and join communication rooms, fostering a space that encourages stimulating discussions and global connectivity. Creation and Joining of Communication Rooms: Kinet Connect offers the ability for users to create their own public or private communication rooms, as well as join existing ones, facilitating a diverse range of discussions on a multitude of topics.",
         "icons":{
           "easticon": "Arrowicon"
         },
         "images": {
-          "main": "/assets/port-inner-up-3.jpg",
+          "main": "/assets/work/KC/thumb.jpg",
           "gallary":[
-            "/assets/port-inner-up-2.jpg",
-            "/assets/port-inner-up-1.jpg",
-            "/assets/port-inner-up-4.jpg",
-            "/assets/port-inner-up-5.jpg",
-            "/assets/port-inner-up-6.jpg"
+            "/assets/work/KC/01.png",
+            "/assets/work/KC/02.png",
+            "/assets/work/KC/03.png",
+            "/assets/work/KC/04.png",
+            "/assets/work/KC/05.png",
+            "/assets/work/KC/06.png",
+            "/assets/work/KC/07.png",
+            "/assets/work/KC/08.png",
+            "/assets/work/KC/09.png",
+            "/assets/work/KC/10.png",
+            "/assets/work/KC/11.png"
           ]
         },
         "tags": {
           "title": "Popular tags",
           "list": [
-            "snowflake",
-            "Templates",
-            "Design",
-            "Product design",
-            "Creativity"
+            "React",
+            "Redux",
+            "WebRTC",
+            "HTML",
+            "CSS 3"
           ]
         }
       }
@@ -146,126 +156,119 @@
     "right":  [
       {
         "id": 5,
-        "title": "Space Needle",
-        "author": "Branding",
-        "date": "12 April, 2022",
+        "title": "Ecrops International:",
+        "author": "Worldwide Cargo Delivery & Agricultural Products",
+        "date": "15 Dec, 2023",
         "isFeatured": true,
-        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores. Sunt vitae ea magni libero voluptatibus voluptates ad debitis iste itaque laborum vero odit, maiores qui iure animi id at.",
+        "description": "I led the development of Ecrops International's WordPress website, tailoring it to their needs as a leading exporter of agricultural commodities and Indian spices based in Surat, India. This project emphasized showcasing their product range while ensuring compliance with industry standards. By integrating third-party certifications and prioritizing user experience, we fortified Ecrops International's online presence, enabling them to reach global markets effectively.",
         "icons":{
           "easticon": "Arrowicon"
         },
         "images": {
-          "main": "/assets/port-inner-up-4.jpg",
+          "main": "/assets/work/ECR/thumb.PNG",
           "gallary":[
-            "/assets/port-inner-up-2.jpg",
-            "/assets/port-inner-up-3.jpg",
-            "/assets/port-inner-up-1.jpg",
-            "/assets/port-inner-up-5.jpg",
-            "/assets/port-inner-up-6.jpg"
+            "/assets/work/ECR/1.png",
+            "/assets/work/ECR/2.png",
+            "/assets/work/ECR/3.png",
+            "/assets/work/ECR/4.png",
+            "/assets/work/ECR/5.png",
+            "/assets/work/ECR/6.png",
+            "/assets/work/ECR/7.png",
+            "/assets/work/ECR/8.png",
+            "/assets/work/ECR/9.png",
+            "/assets/work/ECR/10.png"
           ]
         },
         "tags": {
           "title": "Popular tags",
           "list": [
-            "snowflake",
-            "Templates",
-            "Design",
-            "Product design",
-            "Creativity"
+            "WordPress",
+            "PHP",
+            "MySQL",
+            "WordPress Security",
+            "WordPress Development"
           ]
         },
-        "url": "https://akshay-moradiya.vercel.app/"
-      },
+        "url": "https://ecropsinternational.com/"
+      },   
       {
         "id": 6,
-        "title": "Crisis Cleanup",
-        "author": "Branding",
-        "date": "23 Jan, 2024",
-        "isFeatured": true,
-        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores. Sunt vitae ea magni libero voluptatibus voluptates ad debitis iste itaque laborum vero odit, maiores qui iure animi id at.",
+        "title": "Airgoship",
+        "author": "Streamlined Shipping & Logistics Solution",
+        "date": "03 May, 2021",
+        "isFeatured": false,
+        "description": "Airgoship is a robust transportation and logistics solution designed to streamline the process of shipping and enhance customer experience The platform features key functionalities such as Tracking Shipment, Shipment Quote, and a dynamic Admin Panel that ensures seamless management and operations. Track Shipment: This feature empowers customers to monitor their shipments in real-time.",
         "icons":{
           "easticon": "Arrowicon"
         },
         "images": {
-          "main": "/assets/port-inner-up-5.jpg",
+          "main": "/assets/work/AS/thumb.png",
           "gallary":[
-            "/assets/port-inner-up-1.jpg",
-            "/assets/port-inner-up-3.jpg",
-            "/assets/port-inner-up-4.jpg",
-            "/assets/port-inner-up-1.jpg",
-            "/assets/port-inner-up-6.jpg"
+            "/assets/work/AS/1.jpg",
+            "/assets/work/AS/2.jpg",
+            "/assets/work/AS/3.jpg",
+            "/assets/work/AS/4.jpg",
+            "/assets/work/AS/5.jpg"
           ]
         },
         "tags": {
-          "title": "Popular tags",
-          "list": [
-            "snowflake",
-            "Templates",
-            "Design",
-            "Product design",
-            "Creativity"
-          ]
+          "title": "",
+          "list": []
         }
       },
       {
         "id": 7,
-        "title": "Space Needle",
-        "author": "Branding",
-        "date": "12 April, 2022",
+        "title": "Pos App",
+        "author": "Point of sale Application",
+        "date": "1st July, 2021",
         "isFeatured": false,
-        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores. Sunt vitae ea magni libero voluptatibus voluptates ad debitis iste itaque laborum vero odit, maiores qui iure animi id at.",
+        "description": "This app is a comprehensive Point of Sale (POS) solution allowing admins to manage three different outlets from a single platform. It offers parking services, restaurant management with live dining booking, and monthly customer wallet creation for regular patrons. Perfect for streamlined operations and enhanced customer service. \n However If you can't find the project gallary, You can contact me for more details on project. In some of the projects, I've signed NDA and contract, so I can only demonstrate the system under surveillance of our representative. In exceptional cases clients may no longer be using system or project may be abandoned, I will provide offline demonstration of software system.",
         "icons":{
           "easticon": "Arrowicon"
         },
         "images": {
-          "main": "/assets/port-inner-up-6.jpg",
-          "gallary":[
-            "/assets/port-inner-up-2.jpg",
-            "/assets/port-inner-up-1.jpg",
-            "/assets/port-inner-up-4.jpg",
-            "/assets/port-inner-up-5.jpg",
-            "/assets/port-inner-up-1.jpg"
-          ]
+          "main": "/assets/work/thumb-05.jpg",
+          "gallary":[]
         },
         "tags": {
-          "title": "Popular tags",
+          "title": "Technology",
           "list": [
-            "snowflake",
-            "Templates",
-            "Design",
-            "Product design",
-            "Creativity"
+            "Vue Js",
+            "Vuex",
+            "Firebase",
+            "Firestore Realtime Database",
+            "HTML/CSS"
           ]
         }
       },
       {
         "id": 8,
-        "title": "Space Needle",
-        "author": "Branding",
-        "date": "12 April, 2022",
+        "title": "Comic Store",
+        "author": "Dynamic Online Comic Book Store",
+        "date": "20 Nov, 2021",
         "isFeatured": false,
-        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores. Sunt vitae ea magni libero voluptatibus voluptates ad debitis iste itaque laborum vero odit, maiores qui iure animi id at.",
+        "description": "Introducing ComicStore, an innovative digital comic store platform designed specifically to cater to comic book enthusiasts This online platform is replete with an extensive selection of comic books spanning diverse genres, providing an immersive reading experience for users. Extensive Comic Collection: At its core, ComicStore offers a vast library of comic books from various genres, ensuring a multitude of options for all types of readers. Preview Feature: A unique functionality of the platform allows users to preview selected pages from premium titles.",
         "icons":{
           "easticon": "Arrowicon"
         },
         "images": {
-          "main": "/assets/port-inner-up-6.jpg",
+          "main": "/assets/work/UC/01.png",
           "gallary":[
-            "/assets/port-inner-up-2.jpg",
-            "/assets/port-inner-up-1.jpg",
-            "/assets/port-inner-up-4.jpg",
-            "/assets/port-inner-up-5.jpg",
-            "/assets/port-inner-up-1.jpg"
+            "/assets/work/UC/02.png",
+            "/assets/work/UC/03.png",
+            "/assets/work/UC/04.png",
+            "/assets/work/UC/05.png",
+            "/assets/work/UC/06.png"
           ]
         },
         "tags": {
           "title": "Popular tags",
           "list": [
-            "snowflake",
-            "Templates",
-            "Design",
-            "Product design",
-            "Creativity"
+            "Laravel",
+            "PHP",
+            "Elequant ORM",
+            "MySQL",
+            "HTML/CSS"
           ]
         }
       }

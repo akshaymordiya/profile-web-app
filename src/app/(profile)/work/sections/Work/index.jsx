@@ -23,7 +23,7 @@ const Work = ({ data = {} }) => {
           <WorkItem
             key={work.id}
             work={work}
-            imageClass={index % 2 === 0 ? "big" : ""}
+            imageClass={index % 2 === 0 ? "" : ""}
           />
         ))}
       </Grid.Item>
@@ -39,7 +39,7 @@ const Work = ({ data = {} }) => {
           <WorkItem
             key={work}
             work={work}
-            imageClass={index % 2 !== 0 ? "big" : ""}
+            imageClass={index % 2 !== 0 ? "" : ""}
           />
         ))}
       </Grid.Item>

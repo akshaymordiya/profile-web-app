@@ -1,0 +1,69 @@
+@import "../../../../../../styles/variables";
+@import "../../../../../../styles/mixins";
+
+.skill-box-container {
+  border-bottom: 1px solid rgba(2, 11, 24, 0.1);
+  padding: 1.4rem;
+  transition: 0.7s all ease-in-out;
+  display: flex;
+  height: fit-content;
+  flex-direction: column;
+  gap: 0.7rem;
+
+  &:hover {
+    padding: 1.4rem 2.5rem;
+    background: rgba(2, 11, 24, 0.04);
+  }
+  
+  &_title_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    &_title {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      font-weight: 400;
+      font-size: 24px;
+      letter-spacing: 0.02em;
+      color: $black;
+      font-family: $primary-fonts;
+      
+      @include respond-to("phone") {
+        font-size: 20px;
+      }
+      
+      @include respond-to("small_phone") {
+        font-size: 20px;
+      }
+      
+      svg {
+        margin-right: 16px;
+      }
+  
+      
+    }
+  
+    &_accordian {
+      color: $black;
+      transition: 0.3s all ease-in-out;
+    }
+  }
+
+  &_content_text {
+    display: none;
+    height: 0px;
+    opacity: 0;
+    font-size: 18px;
+    line-height: 32px;
+    color: $text-para;
+    transition: 0.5s all ease-in-out;
+
+    &.show {
+      height: fit-content;
+      opacity: 1;
+      display: block;
+    }
+  }
+}

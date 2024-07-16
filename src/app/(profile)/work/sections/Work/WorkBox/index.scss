@@ -24,17 +24,25 @@
     
     @include respond-to("large_tablet") {
       height: 320px !important;
+      max-height: 320px;
+      min-height: 320px;
     }
     @include respond-to("small_tablet") {
       height: 320px !important;
+      max-height: 320px;
+      min-height: 320px;
     }
     @include respond-to("phone") {
       height: 320px !important;
+      max-height: 320px;
+      min-height: 320px;
       position: inherit;
     }
 
     @include respond-to("small_phone") {
       height: 280px !important;
+      max-height: 280px;
+      min-height: 280px;
       margin-bottom: 0;
     }
 
@@ -48,7 +56,6 @@
       border-radius: 12px;
       display: inline-block;
       overflow: hidden;
-
       margin-bottom: 0;
 
       @include respond-to("large_tablet") {
@@ -64,7 +71,8 @@
 
       img {
         border-radius: 12px;
-        width: 100%;
+        width: 100% !important;
+        height: 100% !important;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;

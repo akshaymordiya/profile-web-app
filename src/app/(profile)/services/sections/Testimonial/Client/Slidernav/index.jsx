@@ -45,16 +45,10 @@ const SlideNav = ({
                 </p>
               </div>
               <div className={`${BASE_CLASSNAME}_item_user`}>
-                <div className="avatar_container">
-                  <IMG
-                    src={feedback.images.avatar}
-                    useRawImgTag
-                    imageClasses="image"
-                  />
-                </div>
                 <div className="details">
-                  <h4>{feedback.author.name}</h4>
-                  <p>{feedback.author.position} at <span>{feedback.author.company}</span></p>
+                  <h4>{feedback.author.name}</h4>{feedback.author.position !== "" && (
+                    <p>{feedback.author.position} at <span>{feedback.author.company}</span></p>
+                  )}
                 </div>
               </div>
             </div>
