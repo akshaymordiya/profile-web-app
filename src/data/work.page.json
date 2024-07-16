@@ -196,7 +196,7 @@
         "title": "Airgoship",
         "author": "Streamlined Shipping & Logistics Solution",
         "date": "03 May, 2021",
-        "isFeatured": false,
+        "isFeatured": true,
         "description": "Airgoship is a robust transportation and logistics solution designed to streamline the process of shipping and enhance customer experience The platform features key functionalities such as Tracking Shipment, Shipment Quote, and a dynamic Admin Panel that ensures seamless management and operations. Track Shipment: This feature empowers customers to monitor their shipments in real-time.",
         "icons":{
           "easticon": "Arrowicon"
