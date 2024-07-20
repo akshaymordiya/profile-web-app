@@ -32,6 +32,11 @@ import WebhookRoundedIcon from '@mui/icons-material/WebhookRounded';
 import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
 import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
 import ExplicitIcon from '@mui/icons-material/Explicit';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import NorthEastIcon from '@mui/icons-material/NorthEast';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import CallIcon from '@mui/icons-material/Call';
 
 const icons = {
     "Fname": DriveFileRenameOutlineIcon,
@@ -66,7 +71,12 @@ const icons = {
     "WebhookRoundedIcon": WebhookRoundedIcon,
     "ConnectWithoutContactIcon": ConnectWithoutContactIcon,
     "EmailRoundedIcon": EmailRoundedIcon,
-    "ExplicitIcon": ExplicitIcon
+    "ExplicitIcon": ExplicitIcon,
+    "Github": GitHubIcon,
+    "LinkedIn": LinkedInIcon,
+    "NavArrow": NorthEastIcon,
+    "LocationOn": LocationOnIcon,
+    "Call": CallIcon
 }
 
 export const getIcon = (keys = []) => {

@@ -6,28 +6,23 @@
     "user": "/assets/footer-3-1.png",
     "circle_shape": "/assets/foooter-btn.png"
   },
-  "paragraph": "Feel free to reach out with questions or inquiries.",
-  "largeParagraph": "A template made for professional designers, photographers and all people who work with creativity and those who don't, this template is yours, use it as you want happy.",
+  "paragraph": "Eager to craft innovative solutions to grow your business and reach new heights. Let’s create something amazing together.",
+  "largeParagraph": "Eager to craft innovative solutions to grow your business and reach new heights. Let’s create something amazing together.",
   "socialMedia": [
     {
-      "icon": "MailIcon",
-      "link": "/#",
+      "icon": "Github",
+      "link": "https://github.com/akshaymordiya",
       "title": "Github"
     },
     {
-      "icon": "LangIcon",
-      "link": "/#",
+      "icon": "LinkedIn",
+      "link": "https://www.linkedin.com/in/akshaymoradiya/",
       "title": "Linked In"
     },
     {
-      "icon": "MailIcon",
-      "link": "/#",
+      "icon": "InstaIcon",
+      "link": "https://www.instagram.com/imakshay.js/",
       "title": "Instagram"
-    },
-    {
-      "icon": "SubscribIcon",
-      "link": "/#",
-      "title": "X"
     }
   ],
   "grid": {
@@ -35,22 +30,22 @@
       "title": "Explore",
       "data": [
         {
-          "icon": "MailIcon",
+          "icon": "NavArrow",
           "title": "About",
           "link": "/about"
         },
         {
-          "icon": "MailIcon",
+          "icon": "NavArrow",
           "title": "Services",
           "link": "/services"
         },
         {
-          "icon": "MailIcon",
+          "icon": "NavArrow",
           "title": "Work",
           "link": "/work"
         },
         {
-          "icon": "MailIcon",
+          "icon": "NavArrow",
           "title": "Contact",
           "link": "/contact"
         }
@@ -60,12 +55,8 @@
       "title": "Address",
       "data": [
         {
-          "icon": "MailIcon",
-          "title": "California"
-        },
-        {
-          "icon": "MailIcon",
-          "title": " 987 Design Blvd, Suite 543, Beverly Hills, CA 902"
+          "icon": "LocationOn",
+          "title": "230-Unique Square, Surat, Gujarat India"
         }
       ]
     },
@@ -74,18 +65,18 @@
       "data": [
         {
           "icon": "MailIcon",
-          "title": "hello@youremail.com",
-          "link": "mailto:hello@youremail.com"
+          "title": "helloakmoradiya@gmail.com",
+          "link": "mailto:helloakmoradiya@gmail.com"
         },
         {
-          "icon": "MailIcon",
-          "title": "+1(789) 8001234",
-          "link": "tel:+1(789) 8001234"
+          "icon": "Call",
+          "title": "+916355045445",
+          "link": "tel:+916355045445"
         }
       ]
     }
   },
   "copyright": {
-    "title": "ThemePure @ 2024. All Rights Reserved."
+    "title": "© 2024 Akshay Moradiya. All Rights Reserved."
   }
 }

@@ -147,6 +147,10 @@
               gap: 1rem;
               color: $text-body;
               transition: 0.3s all ease-in-out;
+
+              span {
+                line-height: 26px;
+              }
             }
           }
         }
