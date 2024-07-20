@@ -37,17 +37,6 @@ const PersonalInfo = ({
                 ServiceImage={tag?.image}
               />
             )))}
-            {/* {paragraph.title}
-            &nbsp;
-            {(paragraph.services ?? []).map(
-              (service, index) => (
-                <Services
-                  key={index}
-                  ServiceName={service?.name}
-                  ServiceImage={service?.image}
-                />
-              )
-            )} */}
         </Grid.Item>
       </Grid>
     </div>

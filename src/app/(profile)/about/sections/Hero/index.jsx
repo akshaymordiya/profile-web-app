@@ -4,7 +4,11 @@ import React from "react";
 import IMG from "@/app/components/IMG";
 import Grid from "@/app/components/Grid";
 import AnimatedCharactors from "@/app/components/AnimatedCharactors";
+import Animation from '@/app/components/Animation';
 import CTA from "@/app/components/CTA";
+
+//data
+import techWork from "../../../../../../public/assets/lottie/browser.json"
 
 import { renderIconComponent } from "@/Icons";
 import "./index.scss";
@@ -70,16 +74,12 @@ const Hero = ({
           itemClass="about_image"
           data-speed="0.5"
         >
-          {images.map((img) => (
-            <IMG
-              key={img.src}
-              src={img.src}
-              useContainer
-              useRawImgTag
-              containerClasses={img.class}
-              alt={img.alt}
-            />
-          ))}
+          <Animation 
+            animationData={techWork}
+            loop
+            autoplay
+            className='lottie_animation-browser'
+          />
         </Grid.Item>
       </Grid>
     </div>

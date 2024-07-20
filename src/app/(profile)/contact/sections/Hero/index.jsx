@@ -23,11 +23,11 @@ const Hero = ({ data = {} }) => {
         itemClass={`${BASE_CLASSNAME}_col-1`}
       >
         <span className="title">{data.title}</span>
-        <br />
         {data.name.map((item, index) => (
           <AnimatedCharactors
             key={index}
             charactorClass="animated-letter"
+            wrapperClass="contact_text"
             capitlized
             charactors={item}
             leftSpaceOnLastCharactor
@@ -39,11 +39,11 @@ const Hero = ({ data = {} }) => {
           useRawImgTag
           imageClasses="contact-img"
         />
-        <br />
         {data.Subname.map((item, index) => (
           <AnimatedCharactors
             key={index}
             charactorClass="animated-letter"
+            wrapperClass="contact_text"
             capitlized
             charactors={item}
             leftSpaceOnLastCharactor

@@ -88,10 +88,10 @@
           transition: 0.3s;
           text-decoration: none;
           background-color: $black;
-          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
           &:hover {
-            box-shadow: none;
+            background-color: $purple;
           }
           
           span {
@@ -111,6 +111,10 @@
         position: relative;
         animation: leftToRight 0.9s ease;
         width: 100%;
+
+        .lottie_animation-browser {
+          transform: translateY(-20%);
+        }
         
         .service-signature {
           position: absolute;

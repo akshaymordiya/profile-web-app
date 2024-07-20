@@ -7,17 +7,7 @@
     },
     "images": [
       {
-        "src": "/assets/service-signature.png",
-        "class": "service-signature",
-        "alt": "signature-img"
-      },
-      {
-        "src": "/assets/service-circle-img.png",
-        "class": "servicecircle-img",
-        "alt": "circle-img"
-      },
-      {
-        "src": "/assets/service-hero-1.webp",
+        "src": "/assets/code-work.png",
         "class": "service-img",
         "alt": "service-img"
       }
@@ -36,18 +26,18 @@
       [
         {
           "name": "Web Development,",
-          "image": "/assets/ab-1.png"
+          "image": "/assets/web-development.jpg"
         },
         {
           "name": "UI/UX Design,",
-          "image": "/assets/ab-2.png"
+          "image": "/assets/ui.jpg"
         }
       ],
-      "and",
+      "and ",
       [
         {
-          "name": "API Development",
-          "image": "/assets/ab-3.png"
+          "name": "REST API Development",
+          "image": "/assets/api.jpg"
         }
       ],
       "With over 5 years of experience and 15+ successful projects, I bring expertise in both frontend and backend technologies to deliver exceptional user experiences."

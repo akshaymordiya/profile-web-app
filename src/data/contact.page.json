@@ -2,7 +2,7 @@
   "hero": {
     "title": "GET IN TOUCH",
     "name": ["Let's", "Bring"],
-    "image": "/assets/contact.jpg",
+    "image": "/assets/contact.png",
     "Subname": ["Your", "Ideas", "To", "Life"],
     "flowerImg": "/assets/contact-flower.png",
     "flowerText": "/assets/contact-flower-text.png",

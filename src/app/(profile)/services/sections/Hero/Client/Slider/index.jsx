@@ -2,7 +2,6 @@
 import React from "react";
 import Slider from "react-slick";
 import Grid from "@/app/components/Grid";
-import IMG from "@/app/components/IMG";
 //style scss
 import "./index.scss";
 

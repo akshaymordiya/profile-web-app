@@ -102,6 +102,10 @@
       }
 
       &_tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+
         .tag {
           border: 1px solid $light-grey;
           border-radius: 100px;
@@ -114,17 +118,9 @@
           color: $white;
           transition: 0.3s all ease-in-out;
 
-          &:not(:last-child) {
-            margin-right: 0.5rem;
-          }
-
           &:hover {
             background-color: $white;
             color: $black;
-          }
-
-          @include respond-to('phone'){
-            margin-bottom: 0.7rem;
           }
         }
       }
