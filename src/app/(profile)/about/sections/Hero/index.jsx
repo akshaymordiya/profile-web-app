@@ -58,6 +58,7 @@ const Hero = ({
             linkClass="btn-border-sm"
             icon={renderIconComponent(icons.download, true)}
             linkHref={resume}
+            isDownload
           />
         </Grid.Item>
         <Grid.Item

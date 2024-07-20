@@ -1,7 +1,7 @@
 {
   "hero": {
     "words": ["I'm", "Code", "Artist"],
-    "resume": "",
+    "resume": "/assets/resume/akshay-resume-23.pdf",
     "icons": {
       "download": "Download"
     },

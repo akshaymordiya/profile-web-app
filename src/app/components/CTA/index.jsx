@@ -6,7 +6,7 @@ import "./index.scss";
 const CTA = ({
   linkText = "",
   linkClass = "",
-  linkHref = "/",
+  linkHref = "/assets/resume/akshay-resume-23.pdf",
   icon: Icon,
   iconProps = {},
   btn_color = 'btn-white',
@@ -14,13 +14,14 @@ const CTA = ({
 }) => {
   const { className = "" } = iconProps;
   return (
-    <Link
+    <a
       className={`
         ${btn_color}
         ${linkClass}
       `}
       href={linkHref}
-      download={isDownload}
+      target={isDownload ? '_blank' : '_self'}
+      rel={isDownload ? 'noopener noreferrer' : ''}
     >
       <div>
         <span className="text">
@@ -28,7 +29,7 @@ const CTA = ({
           {Icon && <Icon className={`pencil ${className}`} {...iconProps} />}
         </span>
       </div>
-    </Link>
+    </a>
   );
 };
 
