@@ -253,18 +253,22 @@
 
       @include respond-to ('desktop') {
         transform: none;
+        width: 100%;
       }
       
       @include respond-to ('large_tablet') {
         transform: none;
+        width: 100%;
       }
       
       @include respond-to ('small_tablet') {
         transform: none;
+        width: 100%;
       }
       
       @include respond-to ('phone') {
         transform: none;
+        width: 100%;
       }
 
       &_wrapper {
