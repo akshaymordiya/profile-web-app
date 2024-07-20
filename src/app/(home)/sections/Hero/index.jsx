@@ -10,7 +10,7 @@ import ParallaxScroll from '@/app/components/ParallaxScroll';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import CallMadeIcon from '@mui/icons-material/CallMade';
 //lottie animations
-import menWork from "../../../../../public/assets/lottie/men-work.json";
+import laptopWork from "../../../../../public/assets/lottie/laptop-work.json";
 
 import "./index.scss";
 
@@ -78,7 +78,7 @@ const Hero = ({
             data-speed="0.5"
           >
             <Animation 
-              animationData={menWork}
+              animationData={laptopWork}
               loop
               autoplay
               className='lottie_animation_wrapper'
