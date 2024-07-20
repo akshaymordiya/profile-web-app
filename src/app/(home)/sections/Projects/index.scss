@@ -1,166 +1,6 @@
 @import "../../../../styles/variables";
 @import "../../../../styles/mixins";
 
-// .project_area_grid {
-//   background-color: $background_bg;
-//   display: grid;
-//   place-items: center;
-
-//   .project-title-wrap {
-//     margin-bottom: 60px;
-//     display: flex;
-//     align-items: end;
-//     justify-content: center;
-//     margin: auto;
-//     // padding: 0 6rem;
-//     @include respond-to("large_tablet") {
-//       display: block;
-//       padding: 0 3rem;
-//     }
-//     @include respond-to("small_tablet") {
-//       display: block;
-//       padding: 0 2rem;
-//     }
-//     @include respond-to("phone") {
-//       display: block;
-//       padding: 0 1rem;
-//     }
-//     @include respond-to("small_phone") {
-//       display: block;
-//       padding: 0 1rem;
-//     }
-//     .section-title h4{
-//       font-weight: 500;
-//       font-size: 80px;
-//       line-height: 1;
-//       letter-spacing: -0.02em;
-//       color: $black;
-//       text-align: center;
-//       font-family: $primary-fonts;
-//       margin: 100px 0px 25px;
-//       @include respond-to("desktop") {
-//         font-size: 60px;
-//       }
-//       @include respond-to("large_tablet") {
-//         font-size: 60px;
-//       }
-//       @include respond-to("small_tablet") {
-//         font-size: 40px;
-//       }
-//       @include respond-to("phone") {
-//         font-size: 40px;
-//       }
-//     }
-//   }
-//   .project_area_content{
-//     grid-gap: 65px;
-//     width: 100%;
-//     padding: 50px 50px 50px;
-//     @include respond-to("extra_large_desktop") {
-//       max-width: 1320px;
-//     }
-//     @include respond-to("large_tablet") {
-//       grid-gap: 0px; 
-//       padding: 50px 40px 50px;
-//     }
-//     @include respond-to("small_tablet") {
-//       grid-gap: 0px;
-//       padding: 50px 40px 50px;
-//     }
-//     @include respond-to("phone") {
-//       grid-gap: 0px;
-//       padding: 50px 40px 50px;
-//     }
-//     @include respond-to("small_phone") {
-//       grid-gap: 0px;
-//       padding: 50px 30px 50px;
-//     }
-//   .project-item {
-//     position: relative;
-//     .project-thumb {
-//       overflow: hidden;
-//       width: 100%;
-//       border-radius: 20px;
-//       margin-bottom: 20px;
-//       img {
-//         border-radius: 20px;
-//         transition: all 0.3s ease-in;
-//         width: 100%;
-//       }
-//     }
-//     &:hover {
-//       .project-thumb img {
-//         transform: scale(1.1);
-//       }
-//       :after {
-//         left: 0;
-//         right: auto;
-//         width: 100%;
-//       }
-//     }
-  
-//     .project-category {
-//       margin-bottom: 10px;
-//       span {
-//         font-weight: 400;
-//         font-size: 15px;
-//         text-transform: capitalize;
-//         color: #4e4e53;
-//         height: 36px;
-//         line-height: 34px;
-//         mix-blend-mode: luminosity;
-//         border-radius: 20px;
-//         display: inline-block;
-//       }
-//     }
-//     .project-content-title {
-//       font-weight: 500;
-//       font-size: 34px;
-//       line-height: 1.2;
-//       color: $black;
-//       font-family: $primary-fonts;
-//       margin-bottom: 20px;
-//       display: inline-block;
-//       // width: 420px;
-//       position: relative;
-//       @include respond-to("large_tablet") {
-//         width: 100%;
-//       }
-//       @include respond-to("small_tablet") {
-//         width: 100%;
-//         font-size: 32px;
-//       }
-//       @include respond-to("phone") {
-//         width: 100%;
-//         font-size: 32px;
-//       }
-//     }
-//     .project-brand {
-//       margin-bottom: 30px;
-//       @include respond-to("phone") {
-//         display: block;
-//       }
-//       @include respond-to("small_phone") {
-//         display: block;
-//       }
-//       .project-meta {
-//         display: flex;
-//         align-items: center;
-//         flex-wrap: wrap;
-//         justify-content: space-between;
-//         margin-bottom: 20px;
-//         span {
-//           font-weight: 400;
-//           font-size: 15px;
-//           line-height: 1;
-//           color: #4e4e53;
-//         }
-//       }
-//     }
-//   }
-// }
-// }
-
 .project_area_container {
   padding: 4rem 9rem;
   padding-bottom: 2rem;
@@ -229,12 +69,13 @@
         .content {
           display: flex;
           flex-direction:column;
-          gap: 1.4rem;
+          gap: 1rem;
   
           .tags {
             display: flex;
             flex-wrap: wrap;
             gap: 0.5rem;
+            margin-bottom: 0.4rem;
   
             .tag {
               color: #171718;
@@ -260,17 +101,18 @@
           h2 {
             font-family: $primary-fonts;
             font-size: 30px;
-            font-weight: 700;
+            font-weight: 600;
           }
   
           .author {
             display: flex;
             flex-direction: column;
-            gap: 0.7rem;
+            gap: 1rem;
   
             h4 {
-              font-size: 22px;
-              font-weight: 600;
+              font-size: 16px;
+              font-weight: 400;
+              color: $text-para;
             }
   
             span {
