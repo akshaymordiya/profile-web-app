@@ -6,9 +6,7 @@ export const validationSchema = Yup.object().shape({
     .min(2, 'Name must be at least 2 characters long')
     .max(30, 'Name cannot be longer than 50 characters'),
   company: Yup.string()
-    .required('Company is required')
-    .min(2, 'Company must be at least 2 characters long')
-    .max(30, 'Company cannot be longer than 50 characters'),
+    .max(30, 'Company Name cannot be longer than 50 characters'),
   email: Yup.string()
     .email('Invalid email format')
     .required('Email is required'),

@@ -1,42 +1,40 @@
 {
   "hero": {
-    "title": "Contact Us",
-    "name": ["Let's", "talk"],
+    "title": "GET IN TOUCH",
+    "name": ["Let's", "Bring"],
     "image": "/assets/contact.jpg",
-    "Subname": ["About", "your", "project"],
+    "Subname": ["Your", "Ideas", "To", "Life"],
     "flowerImg": "/assets/contact-flower.png",
     "flowerText": "/assets/contact-flower-text.png",
     "mailinfo": {
       "title": "Email Me:",
       "text": "helloakmoradiya@gmail.com",
-      "para": "Interested in working with me? Submit your project inquiry using the form below."
+      "para": "Ready to start a project? Reach out to me through the form below or shoot me an email directly. Let’s create something amazing together!"
     }
   },
   "form": {
     "title": "Request A Quote",
-    "btnText": "Send Message",
+    "btnText": "Send Email",
     "serviceTags": {
       "title": "I'm interested in...",
       "list": [
-        "branding",
-        "Web Design",
-        "App Design",
-        "Logo",
-        "Digital Marketing",
-        "Android Development",
-        "iOS Development",
-        "Design Concept",
+        "Website Development",
+        "Web Application Development",
+        "System Articeture Design",
+        "Mobile Application Development",
+        "UI/UX Design (Figma)",
+        "Graphics Design",
         "Other"
       ]
     },
     "priceTags": {
       "title": "Project budget (USD)",
       "list": [
-        "10-20k",
-        "30-40k",
-        "40-50K",
-        "50-100K",
-        "> 100K"
+        "$100-$500",
+        "$500-$800",
+        "$800-$1000",
+        "$1000-$2000",
+        "> $2000"
       ]
     }
   }

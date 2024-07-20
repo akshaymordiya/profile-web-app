@@ -1,10 +1,7 @@
 import React from "react";
 import Grid from "@/app/components/Grid";
-import IMG from "@/app/components/IMG";
 import ImgGallary from "@/app/components/ImgGallary";
 import Link from "next/link";
-
-//data json
 
 //style scss
 import "./index.scss";

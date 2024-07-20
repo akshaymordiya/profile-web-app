@@ -41,7 +41,9 @@ const Input = ({
             ...props
           }
         )}
-        <label className={`${BASE_CLASSNAME}_wrapper_label ${textarea ? "textarea_label" : ""} ${labelClass}`}>{placeholder}</label>
+        <label className={`${BASE_CLASSNAME}_wrapper_label ${textarea ? "textarea_label" : ""} ${labelClass}`}>{placeholder}{props?.required ? "*" : (
+          <span className='info'>(optional)</span>
+        )}</label>
       </div>
       {error !== "" && (
         <p className={`${BASE_CLASSNAME}_error_text`}>{error}</p>

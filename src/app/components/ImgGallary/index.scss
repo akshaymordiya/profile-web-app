@@ -74,8 +74,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem 0;
+    padding: 3.5rem 0;
     margin: 3rem 0;
+    overflow-y: auto;
+    scrollbar-width: thin; 
+    scrollbar-color: $purple $white;
+
+    &::-webkit-scrollbar {
+      width: 5px !important;
+      height: 8px !important;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $purple;
+      border-radius: 10px;
+    }
 
     &_img {
       width: 100px;
